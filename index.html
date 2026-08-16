@@ -204,7 +204,7 @@
 </table>
 
 <h2><span class="n">03</span>Filas duplicadas</h2>
-<p class="lead">A diferencia de los nulos, aquí sí aparece un problema real de calidad de datos.</p>
+<p class="lead">A diferencia de los nulos, aquí  aparece un problema real de calidad de datos.</p>
 <div class="callout warn"><b>18.1% del dataset combinado son filas 100% duplicadas</b> (1,177 de 6,497) — es decir, combinaciones idénticas de las 12 variables físico-químicas + calidad. Es más frecuente en blancos (19.1%) que en tintos (15.0%). Esto es una característica documentada del dataset original (posiblemente por redondeo de mediciones que hace coincidir muestras distintas, o por registros repetidos). <b>Importante:</b> si este dataset se usa para entrenar y evaluar modelos con train/test split o cross-validation, estos duplicados pueden filtrarse entre folds e inflar artificialmente las métricas — vale la pena considerar <code>drop_duplicates()</code> antes de modelar.</div>
 <table class="dataframe tabla">
   <thead>
@@ -238,7 +238,7 @@
 </table>
 
 <h2><span class="n">04</span>Estadísticas descriptivas</h2>
-<p class="lead">Resumen de tendencia central y dispersión para las 12 variables numéricas (dataset combinado, 6,497 filas).</p>
+<p class="lead">Resumen de tendencia central y dispersión para las 12 variables numéricas.</p>
 <table class="dataframe tabla">
   <thead>
     <tr style="text-align: left;">
@@ -390,7 +390,7 @@
 </table>
 
 <h3>Medias por tipo de vino</h3>
-<p class="lead" style="margin-top:-4px">Aquí ya se insinúan las diferencias que se exploran más a fondo en la sección 07.</p>
+<p class="lead" style="margin-top:-4px">Aquí ya se diferencian mejor las diferencias que se ven en la sección 07.</p>
 <table class="dataframe tabla">
   <thead>
     <tr style="text-align: left;">
@@ -627,8 +627,6 @@
 <b>Alcohol</b> es, por lejos, la variable más relacionada con la calidad (r=0.44, positiva): a mayor contenido alcohólico, mejor puntaje tienden a recibir los vinos. <b>Densidad</b> (r=−0.31) y <b>acidez volátil</b> (r=−0.27) le siguen, ambas negativas. Ninguna correlación es fuerte en términos absolutos — consistente con lo visto en el modelo de regresión (R²≈0.53): la calidad depende de una combinación de factores, no de una sola variable dominante, y hay un componente subjetivo del catador que ninguna variable química captura.
 </div>
 
-<h3>Colinealidad a vigilar</h3>
-<p style="font-size:14.5px">SO2 libre y SO2 total están fuertemente correlacionadas entre sí (r=0.72, visible en la Fig. 4) — es lógico, ya que el SO2 libre es un subcomponente del total. Para modelos lineales (regresión, regresión logística) esto puede inflar la varianza de los coeficientes; para modelos de árboles (Random Forest, Gradient Boosting) es menos problemático.</p>
 
 <h2><span class="n">08</span>Tinto vs. Blanco</h2>
 <p class="lead">Las variables donde más difieren ambos tipos de vino, según la diferencia de medias observada en la sección 04.</p>
