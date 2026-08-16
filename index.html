@@ -5,15 +5,15 @@
 <title>EDA — Wine Quality Dataset</title>
 <style>
   :root {
-    --bordeaux: #7B1E32;
-    --bordeaux-dark: #591526;
-    --gold: #C9A94A;
-    --gold-light: #F1E6C6;
-    --text: #2B2320;
-    --text-soft: #6B5F55;
+    --bordeaux: #111111;
+    --bordeaux-dark: #000000;
+    --gold: #5A5A5A;
+    --gold-light: #EAEAEA;
+    --text: #111111;
+    --text-soft: #5A5A5A;
     --bg: #FFFFFF;
-    --bg-soft: #FAF8F4;
-    --border: #E4DFD6;
+    --bg-soft: #F5F5F5;
+    --border: #DDDDDD;
   }
   * { box-sizing: border-box; }
   body {
@@ -27,7 +27,7 @@
 
   header.hero {
     background: linear-gradient(135deg, var(--bordeaux) 0%, var(--bordeaux-dark) 100%);
-    color: #F6EFE4;
+    color: #F0F0F0;
     padding: 64px 32px 48px;
     margin-bottom: 48px;
   }
@@ -40,11 +40,10 @@
     font-family: Georgia, "Times New Roman", serif;
     font-size: 40px; margin: 0 0 12px; font-weight: 700; letter-spacing: -0.01em;
   }
-  header.hero p.sub { font-size: 16px; color: #E8D9C3; max-width: 640px; margin: 0; }
+  header.hero p.sub { font-size: 16px; color: #C9C9C9; max-width: 640px; margin: 0; }
   .hero-stats { display: flex; gap: 40px; margin-top: 34px; flex-wrap: wrap; }
-  .hero-stats div { }
   .hero-stats .num { font-family: Georgia, serif; font-size: 28px; font-weight: 700; color: #fff; }
-  .hero-stats .lbl { font-size: 12.5px; color: #D9C6A8; text-transform: uppercase; letter-spacing: 0.06em; }
+  .hero-stats .lbl { font-size: 12.5px; color: #B5B5B5; text-transform: uppercase; letter-spacing: 0.06em; }
 
   h2 {
     font-family: Georgia, "Times New Roman", serif;
@@ -83,8 +82,8 @@
   @media (max-width: 800px) { .grid2 { grid-template-columns: 1fr; } }
 
   .tag { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
-  .tag.red { background: #F3DEE2; color: var(--bordeaux-dark); }
-  .tag.white { background: var(--gold-light); color: #7A5F1E; }
+  .tag.red { background: var(--bordeaux); color: #fff; }
+  .tag.white { background: #fff; color: var(--text); border: 1px solid var(--text); }
 
   footer { margin-top: 70px; padding-top: 20px; border-top: 1px solid var(--border); color: var(--text-soft); font-size: 13px; }
 
@@ -641,7 +640,7 @@
 <li><b>SO2 total</b> es ~3x más alto en blancos (138 mg/L vs 46 mg/L) — los blancos suelen necesitar más conservante porque se oxidan más fácilmente al no fermentar con los hollejos de la uva.</li>
 <li><b>Acidez volátil</b> es casi el doble en tintos (0.53 vs 0.28) — niveles altos se asocian a sabor a vinagre; los tintos toleran más antes de considerarse defectuosos.</li>
 <li><b>Cloruros</b> son ~90% más altos en tintos (0.087 vs 0.046).</li>
-<li>Esta separación tan marcada explica por qué, en el análisis de clasificación anterior, predecir tipo de vino (red/white) a partir de estas variables alcanzó ~95% de accuracy: las distribuciones casi no se superponen en varias variables clave.</li>
+<li>Esta separación tan marcada implica que las distribuciones casi no se superponen en varias variables clave, lo que sugiere que el tipo de vino sería fácil de distinguir a partir de estas variables.</li>
 </ul>
 
 <h2><span class="n">09</span>Calidad por tipo de vino</h2>
@@ -660,12 +659,12 @@
 
 <h2><span class="n">11</span>Conclusiones</h2>
 <ul class="findings">
-<li><b>Sin valores faltantes</b> — no se requiere imputación.</li>
-<li><b>18% de filas duplicadas</b> —  evaluar <code>drop_duplicates()</code> antes de entrenar el modelo, para evitar fuga de información entre train/test.</li>
-<li><b>Atípicos presentes pero minoritarios</b> (0.05%-7.8% según variable) 
-<li><b>Alcohol es el predictor individual más fuerte de calidad</b>, pero incluso así la correlación es moderada (r=0.44) — confirma que la calidad es multifactorial y con ruido subjetivo.
-<li><b>Tinto y blanco son químicamente muy distintos</b> (SO2, acidez volátil, cloruros) — si se sigue modelando calidad, vale la pena probar un modelo separado por tipo de vino, o al menos mantener <code>tipo_vino</code> como feature, ya que agrupa mucha señal.</li>
-<li><b>Clases de calidad desbalanceadas</b> (concentradas en 5-6) — cualquier modelo de clasificación de calidad debería usar métricas como F1 macro o balanced accuracy, no solo accuracy.</li>
+<li><b>Sin valores faltantes</b> en ninguna de las 13 columnas del dataset combinado.</li>
+<li><b>18% de filas duplicadas</b> (1,177 de 6,497), más frecuente en blancos (19.1%) que en tintos (15.0%).</li>
+<li><b>Atípicos presentes pero minoritarios</b> (0.05%-7.8% según variable): ácido cítrico, acidez volátil y acidez fija son las variables con más valores atípicos según el método IQR; densidad y alcohol son las más "limpias".</li>
+<li><b>Alcohol es el predictor individual más fuerte de calidad</b>, pero incluso así la correlación es moderada (r=0.44) — la calidad es multifactorial y con ruido subjetivo, tal como se vio en el techo de R²≈0.53 del modelo de regresión.</li>
+<li><b>Tinto y blanco son químicamente muy distintos</b> (SO2, acidez volátil, cloruros) — es la diferencia más marcada de todo el dataset.</li>
+<li><b>Clases de calidad desbalanceadas</b>: la gran mayoría de los vinos se concentra en calidad 5-6, con muy pocos casos en los extremos (3, 4, 8, 9).</li>
 </ul>
 
 <footer>
