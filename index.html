@@ -718,9 +718,7 @@
 </table>
 <p style="font-size:14.5px">El PR-AUC del mejor modelo (0.59) es bastante más bajo que su ROC-AUC (0.86) — con solo 19% de "vinos buenos", eso es normal y es la métrica a mirar si lo que importa es la precisión al señalar un vino como bueno, no solo qué tan bien se ordenan.</p>
 
-<div class="callout">
-<b>Recomendación: clasificación, con Random Forest (ROC-AUC=0.86).</b> No es solo que el número sea más alto — ROC-AUC y R² miden tareas distintas y no se comparan directamente. La razón real es que predecir el puntaje exacto (3 a 9) es una tarea intrínsecamente más ruidosa, porque la calidad es la mediana de evaluaciones subjetivas de varios catadores; ese ruido humano afecta mucho más a "¿es 5, 6 o 7 exactamente?" que a "¿es claramente bueno o no?". Con las variables fisicoquímicas disponibles hay señal real y útil para lo segundo (0.86 es un modelo genuinamente utilizable), pero no tanta para lo primero (0.39 deja más de la mitad de la varianza sin explicar). Dicho esto, si el objetivo final es puntuar un vino con precisión (control de calidad, pricing), la regresión sigue siendo la tarea que responde esa pregunta, aunque con un techo más bajo.
-</div>
+
 
 <footer>
 Fuente de datos: P. Cortez, A. Cerdeira, F. Almeida, T. Matos, J. Reis. "Wine Quality" dataset, UCI Machine Learning Repository. Reporte generado a partir de <code>winequality-red.csv</code> y <code>winequality-white.csv</code>.
