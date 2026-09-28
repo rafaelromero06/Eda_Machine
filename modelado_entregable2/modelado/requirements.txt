@@ -1,0 +1,27 @@
+
+# --- Nucleo: datos y modelos base ---
+numpy>=1.26
+pandas>=2.2
+scipy>=1.11
+scikit-learn>=1.4
+joblib>=1.4          # ejecución en paralelo (return_as="generator_unordered")
+xgboost>=2.0
+
+#  balanceo de clases (SMOTE, ADASYN) ---
+imbalanced-learn>=0.12
+
+#  optimizacion de hiperparametros ---
+optuna>=3.6       # Bayesiano (sampler TPE)
+deap>=1.4          # Algoritmo genetico
+
+
+shap>=0.45
+lime>=0.2
+
+
+statsmodels>=0.14   # White, BDS, Ljung-Box (residuos)
+scikit-posthocs>=0.9  # Nemenyi post-hoc (tras Friedman)
+
+# --- Visualizacion ---
+matplotlib>=3.8
+seaborn>=0.13

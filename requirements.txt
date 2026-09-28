@@ -1,0 +1,29 @@
+
+# --- Núcleo ---
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.17.1
+scikit-learn==1.8.0
+xgboost==3.4.1
+
+# --- balanceo de clases (SMOTE, ADASYN) ---
+imbalanced-learn==0.14.2
+
+# ---  optimización de hiperparámetros ---
+optuna==5.0.0       # Bayesiano (sampler TPE)
+deap==1.4.4          # Algoritmo genético
+
+# ---  interpretabilidad ---
+shap==0.52.0
+lime==0.2.0.1
+
+# ---  pruebas estadísticas ---
+statsmodels==0.15.0   # White, BDS, Ljung-Box (residuos)
+scikit-posthocs==0.16.1  # Nemenyi post-hoc (tras Friedman)
+
+# --- Visualización (curvas ROC, matrices de confusión, CD diagram, etc.) ---
+matplotlib==3.10.8
+seaborn==0.13.2
+
+# --- Entorno ---
+# Python 3.12.3

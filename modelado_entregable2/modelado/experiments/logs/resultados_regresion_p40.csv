@@ -1,0 +1,141 @@
+tarea,modelo,balanceo,optimizador,fold_externo,rmse,mae,score_interno,n_evaluaciones,tiempo_seg,mejores_hiperparametros,semilla
+regresion,Random Forest,no_aplica,Grid Search,0,0.659238822375331,0.5079556124804036,-0.6948663020010004,24,128.086,"{'max_depth': 25, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 500}",42
+regresion,Random Forest,no_aplica,Grid Search,1,0.6682731547239188,0.5211286169517316,-0.6916603129723781,24,126.405,"{'max_depth': 25, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 500}",43
+regresion,Random Forest,no_aplica,Grid Search,2,0.6829806766788153,0.5194150325889925,-0.6891907327900623,24,121.159,"{'max_depth': 25, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 500}",44
+regresion,Random Forest,no_aplica,Grid Search,3,0.6870062158361462,0.5304167296544001,-0.6894784109116792,24,119.785,"{'max_depth': 25, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 500}",45
+regresion,Random Forest,no_aplica,Grid Search,4,0.6959947183930696,0.5343094877977445,-0.6861728026499178,24,120.438,"{'max_depth': 25, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 500}",46
+regresion,Random Forest,no_aplica,Random Search,0,0.6652416910335837,0.5139482071939686,-0.6952290306641126,40,277.04,"{'max_depth': 16, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 459}",42
+regresion,Random Forest,no_aplica,Random Search,1,0.6698567467023459,0.5245398188375544,-0.6902889527779731,40,243.016,"{'max_depth': 15, 'max_features': 'log2', 'min_samples_leaf': 1, 'n_estimators': 478}",43
+regresion,Random Forest,no_aplica,Random Search,2,0.6817448824712448,0.5183371133580271,-0.6895803049507583,40,241.996,"{'max_depth': 23, 'max_features': 'log2', 'min_samples_leaf': 1, 'n_estimators': 487}",44
+regresion,Random Forest,no_aplica,Random Search,4,0.6991675449585741,0.5380446497305528,-0.6877314697252673,40,199.45,"{'max_depth': 18, 'max_features': 'log2', 'min_samples_leaf': 1, 'n_estimators': 295}",46
+regresion,Random Forest,no_aplica,Random Search,3,0.6928216972199378,0.5363910736882456,-0.6890280217787689,40,254.208,"{'max_depth': 17, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 407}",45
+regresion,Random Forest,no_aplica,Bayesiano,1,0.6702125056923649,0.5247809134571563,-0.6903547340341872,40,226.535,"{'n_estimators': 464, 'max_depth': 15, 'min_samples_leaf': 1, 'max_features': 'log2'}",43
+regresion,Random Forest,no_aplica,Bayesiano,0,0.665775253101416,0.5151875302770705,-0.6946667315893253,40,231.218,"{'n_estimators': 361, 'max_depth': 14, 'min_samples_leaf': 1, 'max_features': 'sqrt'}",42
+regresion,Random Forest,no_aplica,Bayesiano,2,0.6821425475983269,0.5193015644298838,-0.6889807527511302,40,250.829,"{'n_estimators': 398, 'max_depth': 22, 'min_samples_leaf': 1, 'max_features': 'sqrt'}",44
+regresion,Random Forest,no_aplica,Bayesiano,4,0.697297379983555,0.5345021647258209,-0.6862291310633338,40,225.924,"{'n_estimators': 413, 'max_depth': 23, 'min_samples_leaf': 1, 'max_features': 'log2'}",46
+regresion,Random Forest,no_aplica,Bayesiano,3,0.6904660621663822,0.5351046581899355,-0.6882459081784207,40,252.477,"{'n_estimators': 283, 'max_depth': 15, 'min_samples_leaf': 1, 'max_features': 'log2'}",45
+regresion,Random Forest,no_aplica,Genético,2,0.6822976582705644,0.5191669023392388,-0.6885327566639461,40,232.181,"{'n_estimators': 500, 'max_depth': 22, 'min_samples_leaf': 1, 'max_features': 'sqrt'}",44
+regresion,Random Forest,no_aplica,Genético,1,0.6704788079329616,0.5230317017102056,-0.6920175114931185,40,246.882,"{'n_estimators': 443, 'max_depth': 22, 'min_samples_leaf': 2, 'max_features': 'sqrt'}",43
+regresion,Random Forest,no_aplica,Genético,3,0.6903898609794517,0.532148370749379,-0.6889304648074509,40,230.624,"{'n_estimators': 386, 'max_depth': 22, 'min_samples_leaf': 2, 'max_features': 'sqrt'}",45
+regresion,Random Forest,no_aplica,Genético,0,0.6633171728926402,0.5118349784249764,-0.695754141827532,40,300.598,"{'n_estimators': 443, 'max_depth': 22, 'min_samples_leaf': 2, 'max_features': 'sqrt'}",42
+regresion,Random Forest,no_aplica,Genético,4,0.6959947183930696,0.5343094877977445,-0.6861728026499178,40,315.212,"{'n_estimators': 500, 'max_depth': 25, 'min_samples_leaf': 1, 'max_features': 'sqrt'}",46
+regresion,XGBoost,no_aplica,Grid Search,0,0.6903740768113257,0.5353151860093712,-0.7095611785433777,32,146.826,"{'colsample_bytree': 0.5, 'learning_rate': 0.3, 'max_depth': 2, 'n_estimators': 50, 'subsample': 1.0}",42
+regresion,XGBoost,no_aplica,Grid Search,1,0.6947382173588531,0.5510790072437516,-0.7157243283135521,32,146.784,"{'colsample_bytree': 0.5, 'learning_rate': 0.3, 'max_depth': 2, 'n_estimators': 50, 'subsample': 1.0}",43
+regresion,XGBoost,no_aplica,Grid Search,2,0.706311932087484,0.5446531947394063,-0.7100653494936123,32,144.266,"{'colsample_bytree': 0.5, 'learning_rate': 0.3, 'max_depth': 2, 'n_estimators': 50, 'subsample': 1.0}",44
+regresion,XGBoost,no_aplica,Grid Search,3,0.7073511869506537,0.5521087774208614,-0.7069937715366592,32,141.895,"{'colsample_bytree': 0.5, 'learning_rate': 0.3, 'max_depth': 2, 'n_estimators': 50, 'subsample': 1.0}",45
+regresion,XGBoost,no_aplica,Grid Search,4,0.7306814581361688,0.5669015502571163,-0.7052400081851523,32,138.436,"{'colsample_bytree': 0.5, 'learning_rate': 0.3, 'max_depth': 2, 'n_estimators': 50, 'subsample': 1.0}",46
+regresion,XGBoost,no_aplica,Random Search,0,0.6738299934626609,0.5189761815214515,-0.694213297451897,40,236.093,"{'colsample_bytree': np.float64(0.6558555380447055), 'learning_rate': np.float64(0.01942099825171803), 'max_depth': 5, 'n_estimators': 359, 'subsample': np.float64(0.5156566462277793)}",42
+regresion,XGBoost,no_aplica,Random Search,1,0.6720098199627913,0.5260654714770783,-0.6947994191053432,40,229.85,"{'colsample_bytree': np.float64(0.9487120836814451), 'learning_rate': np.float64(0.0190741533107134), 'max_depth': 6, 'n_estimators': 224, 'subsample': np.float64(0.6498083879035124)}",43
+regresion,XGBoost,no_aplica,Random Search,4,0.7016188671646432,0.5398042739782118,-0.6879249491706131,40,164.148,"{'colsample_bytree': np.float64(0.8793015005958655), 'learning_rate': np.float64(0.012725502169508855), 'max_depth': 10, 'n_estimators': 322, 'subsample': np.float64(0.5167077206163266)}",46
+regresion,XGBoost,no_aplica,Random Search,3,0.6920939255325722,0.5357802021772342,-0.6909199241196364,40,182.385,"{'colsample_bytree': np.float64(0.8012448569391568), 'learning_rate': np.float64(0.015310722176585008), 'max_depth': 7, 'n_estimators': 282, 'subsample': np.float64(0.7109996903563747)}",45
+regresion,XGBoost,no_aplica,Random Search,2,0.6863415057017742,0.5207493040794716,-0.6908982295758866,40,239.131,"{'colsample_bytree': np.float64(0.6143014956415555), 'learning_rate': np.float64(0.015804532626268544), 'max_depth': 10, 'n_estimators': 355, 'subsample': np.float64(0.6080319314992984)}",44
+regresion,XGBoost,no_aplica,Genético,0,0.6648284453048672,0.5143431942713889,-0.6924348265190569,40,134.126,"{'n_estimators': 243, 'max_depth': 7, 'learning_rate': 0.0260314, 'subsample': 0.571429, 'colsample_bytree': 0.571429}",42
+regresion,XGBoost,no_aplica,Bayesiano,0,0.6614292395376618,0.513967404240056,-0.6937513101452878,40,254.105,"{'n_estimators': 362, 'max_depth': 8, 'learning_rate': 0.013354615200789642, 'subsample': 0.8035971011007015, 'colsample_bytree': 0.5769206878784098}",42
+regresion,XGBoost,no_aplica,Genético,1,0.6731321745822939,0.5253206975477979,-0.6994794828760024,40,195.289,"{'n_estimators': 114, 'max_depth': 8, 'learning_rate': 0.0587993, 'subsample': 0.571429, 'colsample_bytree': 0.571429}",43
+regresion,XGBoost,no_aplica,Genético,3,0.6958717558640426,0.5400694496649548,-0.6898459925594175,40,179.583,"{'n_estimators': 179, 'max_depth': 7, 'learning_rate': 0.0260314, 'subsample': 0.571429, 'colsample_bytree': 0.571429}",45
+regresion,XGBoost,no_aplica,Bayesiano,3,0.6920252147247915,0.5330705485845867,-0.6902815319661041,40,271.434,"{'n_estimators': 499, 'max_depth': 8, 'learning_rate': 0.010106964354755495, 'subsample': 0.5339604036044505, 'colsample_bytree': 0.6252256055526662}",45
+regresion,XGBoost,no_aplica,Bayesiano,4,0.7087265882889601,0.548878158393659,-0.6856272915995621,40,269.824,"{'n_estimators': 383, 'max_depth': 7, 'learning_rate': 0.011933537051547122, 'subsample': 0.8516781957373966, 'colsample_bytree': 0.9021916589844443}",46
+regresion,XGBoost,no_aplica,Bayesiano,2,0.6886290969313785,0.5274028917004291,-0.6894887837453112,40,335.639,"{'n_estimators': 483, 'max_depth': 6, 'learning_rate': 0.011464224244514938, 'subsample': 0.5567318505599852, 'colsample_bytree': 0.608949434673262}",44
+regresion,XGBoost,no_aplica,Genético,2,0.6896383096225893,0.5263921071712235,-0.690322952038238,40,247.326,"{'n_estimators': 371, 'max_depth': 7, 'learning_rate': 0.0115245, 'subsample': 0.5, 'colsample_bytree': 1.0}",44
+regresion,XGBoost,no_aplica,Bayesiano,1,0.6704264640953865,0.5220009321556952,-0.6911871139801429,40,361.061,"{'n_estimators': 479, 'max_depth': 8, 'learning_rate': 0.009764266172143488, 'subsample': 0.5697467923392405, 'colsample_bytree': 0.8262892799502899}",43
+regresion,XGBoost,no_aplica,Genético,4,0.7105722997896462,0.5462996076820488,-0.692219579259675,40,261.575,"{'n_estimators': 179, 'max_depth': 8, 'learning_rate': 0.0587993, 'subsample': 0.928571, 'colsample_bytree': 0.714286}",46
+regresion,SVR,no_aplica,Grid Search,0,0.684387438042536,0.5223312292436616,-0.7109006050089896,27,67.021,"{'C': 1.0, 'epsilon': 0.0316228, 'gamma': 0.0316228}",42
+regresion,SVR,no_aplica,Grid Search,1,0.6853572380532488,0.5325465088438598,-0.7048111100374976,27,66.438,"{'C': 1.0, 'epsilon': 0.0316228, 'gamma': 0.0316228}",43
+regresion,SVR,no_aplica,Grid Search,2,0.6956379608578569,0.5318871013040187,-0.7071062790863808,27,66.838,"{'C': 1.0, 'epsilon': 0.0316228, 'gamma': 0.0316228}",44
+regresion,SVR,no_aplica,Grid Search,3,0.7156732546261664,0.5492112069625766,-0.6998322702777305,27,67.858,"{'C': 1.0, 'epsilon': 0.0316228, 'gamma': 0.0316228}",45
+regresion,SVR,no_aplica,Grid Search,4,0.7174091473864594,0.541448228764233,-0.6989705316009922,27,66.917,"{'C': 1.0, 'epsilon': 0.0316228, 'gamma': 0.0316228}",46
+regresion,SVR,no_aplica,Random Search,0,0.6795767198852666,0.525359586901308,-0.7056314234325997,40,79.377,"{'C': np.float64(1.7583640270008525), 'epsilon': np.float64(0.2055424552015074), 'gamma': np.float64(0.02944272359149678)}",42
+regresion,SVR,no_aplica,Random Search,1,0.6839541375806664,0.5282396406968972,-0.7015596306259922,40,98.494,"{'C': np.float64(6.589651263273643), 'epsilon': np.float64(0.0674030600717295), 'gamma': np.float64(0.05013861359373328)}",43
+regresion,SVR,no_aplica,Random Search,2,0.6952561260523198,0.5439367681703757,-0.7042138673302795,40,101.955,"{'C': np.float64(6.92774627198084), 'epsilon': np.float64(0.7613400488234835), 'gamma': np.float64(0.01919135083034427)}",44
+regresion,SVR,no_aplica,Random Search,4,0.7169643779572585,0.5443429826681827,-0.6962731345120864,40,89.378,"{'C': np.float64(20.68739101677314), 'epsilon': np.float64(0.13869033270953285), 'gamma': np.float64(0.02709310976560786)}",46
+regresion,SVR,no_aplica,Random Search,3,0.7123977734121804,0.5552067615067772,-0.692383491836365,40,108.007,"{'C': np.float64(0.6000699346172808), 'epsilon': np.float64(0.3306111283285005), 'gamma': np.float64(0.06133055137582192)}",45
+regresion,SVR,no_aplica,Bayesiano,0,0.6842677516177884,0.5148251592432771,-0.7077711918025139,40,115.283,"{'C': 1.0942940727116106, 'gamma': 0.09029756410525663, 'epsilon': 0.0016706725375592515}",42
+regresion,SVR,no_aplica,Bayesiano,3,0.7058807687255241,0.5404397941440484,-0.6928445065922464,40,95.665,"{'C': 2.2106479792801013, 'gamma': 0.07840429030072608, 'epsilon': 0.2699575399800208}",45
+regresion,SVR,no_aplica,Bayesiano,1,0.6799050271968902,0.5376310772735303,-0.6995987911105103,40,123.6,"{'C': 30.818596872525294, 'gamma': 0.017101000784706583, 'epsilon': 0.2928539924325088}",43
+regresion,SVR,no_aplica,Genético,0,0.6928111204537593,0.5311181489994384,-0.7086634114375827,40,107.42,"{'C': 26.827, 'gamma': 0.013895, 'epsilon': 0.13895}",42
+regresion,SVR,no_aplica,Bayesiano,4,0.7098310738214821,0.5330924901448733,-0.696071343647565,40,109.182,"{'C': 0.6432734864733537, 'gamma': 0.08538550738045873, 'epsilon': 0.04258826946853096}",46
+regresion,KNN,no_aplica,Grid Search,0,0.6816934997252533,0.5287583295959379,-0.7148365347609648,40,12.863,"{'n_neighbors': 28, 'p': 1, 'weights': 'distance'}",42
+regresion,KNN,no_aplica,Grid Search,1,0.6972702376322185,0.5414122556345276,-0.7120978092571314,40,13.132,"{'n_neighbors': 16, 'p': 1, 'weights': 'distance'}",43
+regresion,KNN,no_aplica,Grid Search,2,0.692181886478972,0.5270286411573936,-0.7128434109198934,40,13.477,"{'n_neighbors': 16, 'p': 1, 'weights': 'distance'}",44
+regresion,KNN,no_aplica,Grid Search,3,0.7165178702286665,0.5575751500085139,-0.7075033194702258,40,13.871,"{'n_neighbors': 24, 'p': 1, 'weights': 'distance'}",45
+regresion,KNN,no_aplica,Grid Search,4,0.7193442891765314,0.5588998037313248,-0.7079779763319323,40,13.549,"{'n_neighbors': 24, 'p': 1, 'weights': 'distance'}",46
+regresion,SVR,no_aplica,Genético,3,0.713876869740224,0.5513731919780687,-0.6984119573178688,40,85.829,"{'C': 7.19686, 'gamma': 0.013895, 'epsilon': 0.13895}",45
+regresion,SVR,no_aplica,Genético,1,0.6814201408805305,0.528313133772414,-0.7002869464528368,40,114.896,"{'C': 0.517947, 'gamma': 0.0719686, 'epsilon': 0.13895}",43
+regresion,SVR,no_aplica,Bayesiano,2,0.6999597603724874,0.5323979749045205,-0.7020791456284131,40,139.804,"{'C': 2.3929248869489115, 'gamma': 0.043834503920528615, 'epsilon': 0.002902098004828704}",44
+regresion,SVR,no_aplica,Genético,2,0.696159586858769,0.5296565135256018,-0.7001301843059821,40,144.822,"{'C': 1.9307, 'gamma': 0.0719686, 'epsilon': 0.13895}",44
+regresion,SVR,no_aplica,Genético,4,0.7056324878537192,0.5348980364560323,-0.6927589722767687,40,122.341,"{'C': 1.9307, 'gamma': 0.0719686, 'epsilon': 0.13895}",46
+regresion,KNN,no_aplica,Random Search,0,0.6828685430984329,0.5301899576628848,-0.71513151557991,40,12.673,"{'n_neighbors': 17, 'p': 1, 'weights': 'distance'}",42
+regresion,KNN,no_aplica,Random Search,2,0.6918019295971648,0.5286071982643624,-0.7127401935200613,40,12.585,"{'n_neighbors': 21, 'p': 1, 'weights': 'distance'}",44
+regresion,KNN,no_aplica,Random Search,1,0.6970092791628961,0.5424190321704728,-0.7139847419671037,40,13.186,"{'n_neighbors': 22, 'p': 1, 'weights': 'distance'}",43
+regresion,KNN,no_aplica,Random Search,3,0.7260845168855401,0.5654907144529857,-0.7079508557625513,40,12.752,"{'n_neighbors': 21, 'p': 2, 'weights': 'distance'}",45
+regresion,KNN,no_aplica,Random Search,4,0.7194928812238929,0.5585751972703435,-0.7075592882929125,40,13.18,"{'n_neighbors': 22, 'p': 1, 'weights': 'distance'}",46
+regresion,KNN,no_aplica,Bayesiano,1,0.6960333433120771,0.5405820528934687,-0.7117561045218856,40,13.286,"{'n_neighbors': 14, 'weights': 'distance', 'p': 1}",43
+regresion,KNN,no_aplica,Bayesiano,0,0.6816934997252533,0.5287583295959379,-0.7148365347609648,40,13.785,"{'n_neighbors': 28, 'weights': 'distance', 'p': 1}",42
+regresion,KNN,no_aplica,Bayesiano,3,0.7134274829925942,0.5536616072679161,-0.7066623498632186,40,13.284,"{'n_neighbors': 22, 'weights': 'distance', 'p': 1}",45
+regresion,Ridge,no_aplica,Grid Search,0,0.7217266203502297,0.5607129612377844,-0.7363611070123627,40,2.042,{'alpha': 41.2463},42
+regresion,KNN,no_aplica,Genético,0,0.6812853785547384,0.529387827361229,-0.7147950297240059,40,13.378,"{'n_neighbors': 19, 'weights': 'distance', 'p': 1}",42
+regresion,KNN,no_aplica,Bayesiano,4,0.7195164281338785,0.5589779467158368,-0.7075332267433154,40,13.877,"{'n_neighbors': 23, 'weights': 'distance', 'p': 1}",46
+regresion,KNN,no_aplica,Bayesiano,2,0.6918019295971648,0.5286071982643624,-0.7127401935200613,40,14.628,"{'n_neighbors': 21, 'weights': 'distance', 'p': 1}",44
+regresion,Ridge,no_aplica,Grid Search,1,0.71345489045187,0.563280533808411,-0.7383116991966355,40,2.162,{'alpha': 41.2463},43
+regresion,Ridge,no_aplica,Grid Search,2,0.7312052776161553,0.5647082275159547,-0.7330609028911746,40,2.356,{'alpha': 1.70125},44
+regresion,Ridge,no_aplica,Grid Search,3,0.7502620148345918,0.5747426436115725,-0.7283768183299584,40,2.578,{'alpha': 28.9427},45
+regresion,Ridge,no_aplica,Grid Search,4,0.7474848789526672,0.5671632509657535,-0.73164550825356,40,2.551,{'alpha': 41.2463},46
+regresion,Lasso,no_aplica,Grid Search,0,0.7219758589743382,0.560799214008593,-0.7366620448973257,40,2.685,{'alpha': 0.0014251},42
+regresion,Lasso,no_aplica,Grid Search,1,0.7134938773593977,0.5632665614896436,-0.7386053127906976,40,2.553,{'alpha': 0.0014251},43
+regresion,Lasso,no_aplica,Grid Search,2,0.7312160945740923,0.5647291178763051,-0.7330656085293498,40,2.554,{'alpha': 0.0001},44
+regresion,Lasso,no_aplica,Grid Search,3,0.7501427142871846,0.5747723270282004,-0.7286801875074772,40,2.805,{'alpha': 0.0014251},45
+regresion,Lasso,no_aplica,Grid Search,4,0.7476846327684166,0.567449948807641,-0.7318478853755866,40,2.362,{'alpha': 0.0014251},46
+regresion,Decision Tree,no_aplica,Grid Search,0,0.7328910205363591,0.5716092812045597,-0.7564656266263049,36,3.56,"{'max_depth': 6, 'min_samples_leaf': 26}",42
+regresion,Decision Tree,no_aplica,Grid Search,1,0.7288141719753964,0.5688576949389423,-0.7537851635460503,36,3.352,"{'max_depth': 6, 'min_samples_leaf': 60}",43
+regresion,Decision Tree,no_aplica,Grid Search,2,0.7575327342756655,0.5850166838642371,-0.7544893549798086,36,3.267,"{'max_depth': 9, 'min_samples_leaf': 60}",44
+regresion,Decision Tree,no_aplica,Grid Search,3,0.753879365165249,0.5847654285671251,-0.7524242730145015,36,3.903,"{'max_depth': 6, 'min_samples_leaf': 60}",45
+regresion,Decision Tree,no_aplica,Grid Search,4,0.7648793166008433,0.5975601888533836,-0.7487985699156465,36,3.579,"{'max_depth': 6, 'min_samples_leaf': 60}",46
+regresion,KNN,no_aplica,Genético,1,0.6960333433120771,0.5405820528934687,-0.7117561045218856,40,14.039,"{'n_neighbors': 14, 'weights': 'distance', 'p': 1}",43
+regresion,KNN,no_aplica,Genético,3,0.7172222224232264,0.5590971933043788,-0.7068758465535313,40,13.588,"{'n_neighbors': 25, 'weights': 'distance', 'p': 1}",45
+regresion,KNN,no_aplica,Genético,2,0.692181886478972,0.5270286411573936,-0.7128434109198934,40,14.489,"{'n_neighbors': 16, 'weights': 'distance', 'p': 1}",44
+regresion,KNN,no_aplica,Genético,4,0.7193442891765314,0.5588998037313248,-0.7079779763319323,40,14.998,"{'n_neighbors': 24, 'weights': 'distance', 'p': 1}",46
+regresion,Ridge,no_aplica,Random Search,0,0.7219013475035942,0.5608125201244609,-0.7363618430548086,40,2.217,{'alpha': np.float64(51.41096648805744)},42
+regresion,Ridge,no_aplica,Random Search,1,0.7131544376113574,0.5629963527859494,-0.7383421931579984,40,2.649,{'alpha': np.float64(25.263282453298586)},43
+regresion,Ridge,no_aplica,Random Search,2,0.7312442168776764,0.564724043302617,-0.7330610116284199,40,2.544,{'alpha': np.float64(1.2428667044778847)},44
+regresion,Ridge,no_aplica,Random Search,3,0.7503958839380097,0.5748107355731608,-0.7284440039466817,40,2.598,{'alpha': np.float64(17.307283500010488)},45
+regresion,Ridge,no_aplica,Random Search,4,0.7474748007568786,0.5671509003897024,-0.7316453556370899,40,2.755,{'alpha': np.float64(35.355353826447434)},46
+regresion,Ridge,no_aplica,Bayesiano,0,0.7217969396746449,0.5607525448539883,-0.7363587087814984,40,2.921,{'alpha': 45.222008114384884},42
+regresion,Ridge,no_aplica,Bayesiano,1,0.7133523716179042,0.5631851581855292,-0.7383122771083152,40,2.738,{'alpha': 35.6844801298933},43
+regresion,Ridge,no_aplica,Bayesiano,2,0.7312070371228526,0.5647089188101427,-0.733060901099746,40,2.839,{'alpha': 1.6803472428457114},44
+regresion,Ridge,no_aplica,Bayesiano,3,0.7502539387916678,0.5747382797565189,-0.7283754401077774,40,2.805,{'alpha': 29.767209676591655},45
+regresion,Ridge,no_aplica,Bayesiano,4,0.7474765268583043,0.5671532543580542,-0.7316445768234128,40,2.775,{'alpha': 36.475620403528055},46
+regresion,Ridge,no_aplica,Genético,0,0.7216718866818395,0.5606819086751952,-0.7363656238291759,40,2.715,{'alpha': 38.254},42
+regresion,Ridge,no_aplica,Genético,1,0.7134804223245704,0.5633045829387151,-0.7383127986519057,40,2.879,{'alpha': 42.6502},43
+regresion,Ridge,no_aplica,Genético,2,0.731225392262825,0.5647161658732229,-0.7330609203147768,40,2.555,{'alpha': 1.46337},44
+regresion,Ridge,no_aplica,Genético,3,0.7503346180407774,0.5747805092724451,-0.7284031923417741,40,2.671,{'alpha': 22.2053},45
+regresion,Ridge,no_aplica,Genético,4,0.7474876173231884,0.5671677831934163,-0.7316469479139297,40,3.116,{'alpha': 42.6502},46
+regresion,Lasso,no_aplica,Random Search,1,0.7133869295163969,0.5631803903698305,-0.7386018379595093,40,2.715,{'alpha': np.float64(0.0012739282822778226)},43
+regresion,Lasso,no_aplica,Random Search,2,0.7310869671167509,0.5646943844194631,-0.7330704192763967,40,2.715,{'alpha': np.float64(0.00019701287416852478)},44
+regresion,Lasso,no_aplica,Random Search,0,0.7217250632426482,0.5606744972578436,-0.7366752974871714,40,3.123,{'alpha': np.float64(0.0011526449540315614)},42
+regresion,Lasso,no_aplica,Random Search,3,0.7501687903033007,0.5747800770377666,-0.7286780355276474,40,2.777,{'alpha': np.float64(0.0013319269610186542)},45
+regresion,Lasso,no_aplica,Random Search,4,0.7477015845087015,0.5674676816717346,-0.7318453197172624,40,2.987,{'alpha': np.float64(0.001495381326543475)},46
+regresion,Lasso,no_aplica,Bayesiano,0,0.7220869153484177,0.5608532625577333,-0.7366629419730515,40,2.982,{'alpha': 0.0015421911728554156},42
+regresion,Lasso,no_aplica,Bayesiano,1,0.7133795865212458,0.5631743708323891,-0.7386017153785157,40,2.993,{'alpha': 0.0012632444058530599},43
+regresion,Lasso,no_aplica,Bayesiano,2,0.7312148008319204,0.5647287650743056,-0.7330656429995345,40,3.024,{'alpha': 0.00010091019960773672},44
+regresion,Lasso,no_aplica,Bayesiano,3,0.7501899332088449,0.5747860821946046,-0.7286778917643773,40,2.868,{'alpha': 0.0012598376024606029},45
+regresion,Lasso,no_aplica,Bayesiano,4,0.7477578907188588,0.5675265404735121,-0.7318440610994451,40,2.854,{'alpha': 0.0017093406532017435},46
+regresion,Lasso,no_aplica,Genético,0,0.7218279247864577,0.5607258956907551,-0.7366682635383884,40,2.523,{'alpha': 0.00126579},42
+regresion,Lasso,no_aplica,Genético,1,0.7131273385121046,0.5629621710961477,-0.7386191747846431,40,2.597,{'alpha': 0.000880809},43
+regresion,Lasso,no_aplica,Genético,3,0.7502852564490534,0.5748148441458601,-0.7286892258537431,40,2.543,{'alpha': 0.000964388},45
+regresion,Lasso,no_aplica,Genético,2,0.7312032855739514,0.5647256513259137,-0.7330659813270732,40,2.628,{'alpha': 0.000109489},44
+regresion,Lasso,no_aplica,Genético,4,0.7476269225371663,0.5673820676314775,-0.7318667751987883,40,2.432,{'alpha': 0.00115609},46
+regresion,Decision Tree,no_aplica,Random Search,2,0.7546022561760904,0.5762252901818589,-0.7527268400877271,40,3.304,"{'max_depth': 5, 'min_samples_leaf': 51}",44
+regresion,Decision Tree,no_aplica,Random Search,0,0.7362096916853459,0.5687366870860628,-0.7564577867411133,40,3.816,"{'max_depth': 4, 'min_samples_leaf': 34}",42
+regresion,Decision Tree,no_aplica,Random Search,1,0.7301469103889663,0.5684226743818825,-0.7526671115498927,40,3.604,"{'max_depth': 6, 'min_samples_leaf': 58}",43
+regresion,Decision Tree,no_aplica,Random Search,3,0.7627428243864655,0.5902239425161948,-0.7505784322403256,40,3.634,"{'max_depth': 5, 'min_samples_leaf': 42}",45
+regresion,Decision Tree,no_aplica,Random Search,4,0.7652066870064874,0.5897644078703579,-0.7479683059965717,40,3.534,"{'max_depth': 5, 'min_samples_leaf': 11}",46
+regresion,Decision Tree,no_aplica,Bayesiano,0,0.7347946329508318,0.5682835803908887,-0.7539113569078589,40,3.516,"{'max_depth': 6, 'min_samples_leaf': 50}",42
+regresion,Decision Tree,no_aplica,Bayesiano,1,0.7322985373296585,0.5721025917045197,-0.752157208043743,40,3.74,"{'max_depth': 19, 'min_samples_leaf': 57}",43
+regresion,Decision Tree,no_aplica,Bayesiano,3,0.7590426889540658,0.5873761395395787,-0.7512826264279422,40,3.779,"{'max_depth': 11, 'min_samples_leaf': 47}",45
+regresion,Decision Tree,no_aplica,Bayesiano,2,0.7604103756979126,0.58630394604228,-0.7507346745276525,40,4.05,"{'max_depth': 9, 'min_samples_leaf': 55}",44
+regresion,Decision Tree,no_aplica,Bayesiano,4,0.7664364481565171,0.5859385495954095,-0.7478789988877818,40,3.925,"{'max_depth': 5, 'min_samples_leaf': 9}",46
+regresion,Decision Tree,no_aplica,Genético,0,0.7328910205363591,0.5716092812045597,-0.7564656266263049,40,3.805,"{'max_depth': 6, 'min_samples_leaf': 26}",42
+regresion,Decision Tree,no_aplica,Genético,1,0.7288141719753964,0.5688576949389423,-0.7537851635460503,40,3.182,"{'max_depth': 6, 'min_samples_leaf': 60}",43
+regresion,Decision Tree,no_aplica,Genético,3,0.7560732520571777,0.5904479732841434,-0.757095228529754,40,3.17,"{'max_depth': 6, 'min_samples_leaf': 26}",45
+regresion,Decision Tree,no_aplica,Genético,2,0.7575327342756655,0.5850166838642371,-0.7544893549798086,40,3.409,"{'max_depth': 20, 'min_samples_leaf': 60}",44
+regresion,Decision Tree,no_aplica,Genético,4,0.7587925008056284,0.5911560385988005,-0.7470823242964921,40,3.073,"{'max_depth': 6, 'min_samples_leaf': 46}",46
