@@ -1,0 +1,8 @@
+modelo,balanceo,optimizador,auc,auc_std,f1,f1_std,recall,precision,accuracy,score_interno,tiempo_fold_s
+Random Forest,class_weight,Bayesiano,0.8602,0.0146,0.4799,0.0508,0.3846,0.6534,0.8438,0.8536,261.2096
+XGBoost,class_weight,Bayesiano,0.8575,0.0128,0.5592,0.0259,0.6135,0.517,0.8169,0.8523,191.2492
+SVM,class_weight,Bayesiano,0.8468,0.0159,0.548,0.0173,0.8166,0.4127,0.744,0.8452,63.4098
+KNN,sin_balanceo,Bayesiano,0.8449,0.0148,0.436,0.0347,0.3331,0.636,0.8372,0.8421,15.7182
+Regresión Logística (L1/L2),sin_balanceo,Bayesiano,0.8284,0.0203,0.3842,0.0248,0.2904,0.5716,0.8235,0.8283,11.6908
+Decision Tree,class_weight,Bayesiano,0.8011,0.0198,0.5052,0.0214,0.781,0.3742,0.7094,0.804,4.9062
+Naive Bayes,class_weight,Grid Search,0.7645,0.0123,0.4436,0.0163,0.778,0.3103,0.6297,0.764,3.1298

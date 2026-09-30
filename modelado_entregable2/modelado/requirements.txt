@@ -25,3 +25,6 @@ scikit-posthocs>=0.9  # Nemenyi post-hoc (tras Friedman)
 # --- Visualizacion ---
 matplotlib>=3.8
 seaborn>=0.13
+
+# --- Notebooks (Jupyter / VS Code) ---
+ipykernel>=6.27      # kernel para notebooks/resultados_modelado.ipynb

@@ -4,6 +4,7 @@ numpy==2.4.4
 pandas==3.0.2
 scipy==1.17.1
 scikit-learn==1.8.0
+joblib==1.6.0        # ejecución en paralelo (return_as="generator_unordered")
 xgboost==3.4.1
 
 # --- balanceo de clases (SMOTE, ADASYN) ---
@@ -25,5 +26,8 @@ scikit-posthocs==0.16.1  # Nemenyi post-hoc (tras Friedman)
 matplotlib==3.10.8
 seaborn==0.13.2
 
+# --- Notebooks (Jupyter / VS Code) ---
+ipykernel==6.27.0    # kernel para eda/EDA_wine_quality.ipynb y notebooks/resultados_modelado.ipynb
+
 # --- Entorno ---
-# Python 3.12.3
+# Python 3.12.14

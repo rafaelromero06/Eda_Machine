@@ -1,0 +1,5 @@
+optimizador,auc_medio_clf,rango_auc_clf,rmse_medio_reg,rango_rmse_reg,evaluaciones_por_busqueda,segundos_por_evaluacion,horas_cpu_total,veces_mejor_score_interno
+Grid Search,0.8249,2.6444,0.7141,2.6429,34.5588,1.6937,2.764,0
+Random Search,0.8256,2.3926,0.7119,2.5,40.0,2.1897,4.1362,0
+Bayesiano,0.8255,2.3185,0.7112,2.4714,40.0,2.6495,5.0046,28
+Genético,0.8248,2.6444,0.7113,2.3857,40.0,2.4738,4.6727,2

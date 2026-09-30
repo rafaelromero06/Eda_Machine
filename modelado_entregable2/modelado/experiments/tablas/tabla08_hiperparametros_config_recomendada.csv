@@ -1,0 +1,11 @@
+fold_externo,auc,f1,recall,precision,mejores_hiperparametros,tarea,rmse,mae,r2
+0,0.8825,0.6327,0.7413,0.5519,"{'max_depth': 25, 'max_features': 'sqrt', 'min_samples_leaf': 3, 'n_estimators': 324}",clasificacion,,,
+1,0.8423,0.5614,0.6337,0.5039,"{'max_depth': 22, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 253}",clasificacion,,,
+2,0.8439,0.56,0.6238,0.5081,"{'max_depth': 24, 'max_features': 'log2', 'min_samples_leaf': 2, 'n_estimators': 457}",clasificacion,,,
+3,0.8426,0.5354,0.6733,0.4444,"{'max_depth': 25, 'max_features': 'log2', 'min_samples_leaf': 4, 'n_estimators': 404}",clasificacion,,,
+4,0.863,0.586,0.6832,0.513,"{'max_depth': 15, 'max_features': 'sqrt', 'min_samples_leaf': 2, 'n_estimators': 458}",clasificacion,,,
+0,,,,,"{'max_depth': 25, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 500}",regresion,0.6592,0.508,0.422
+1,,,,,"{'max_depth': 25, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 500}",regresion,0.6683,0.5211,0.4082
+2,,,,,"{'max_depth': 25, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 500}",regresion,0.683,0.5194,0.3892
+3,,,,,"{'max_depth': 25, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 500}",regresion,0.687,0.5304,0.3946
+4,,,,,"{'max_depth': 25, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'n_estimators': 500}",regresion,0.696,0.5343,0.4022
