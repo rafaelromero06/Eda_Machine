@@ -854,7 +854,7 @@
 </table>
 <p style="font-size:14.5px">En clasificación quedaron 26 combinaciones empatadas con la mejor. Las cuatro variantes de Random Forest + ADASYN ocuparon los cuatro primeros puestos en F1, así que el optimizador no importa mucho: con Grid Search se obtiene casi lo mismo (F1 0.568) en la mitad del tiempo. En regresión quedaron 6 empatadas y Random Forest con Grid Search fue a la vez la más rápida y la de menor error. Eso sí, Grid Search siempre escogió el extremo de su grilla (profundidad 25, 500 árboles), así que puede que el óptimo esté por fuera del rango que probamos.</p>
 
-<h2 id="s20"><span class="n">20</span>Conclusiones y lo que falta</h2>
+<h2 id="s20"><span class="n">20</span>Conclusiones</h2>
 <ul class="findings">
 <li><b>El modelo importa más que el ajuste.</b> Random Forest y XGBoost fueron los mejores en las dos tareas y le ganan con significancia a los demás. Los modelos lineales se quedan atrás porque la relación no es lineal.</li>
 <li><b>Balancear no mejora el AUC, pero sí ayuda a encontrar los vinos buenos:</b> el recall se duplica a cambio de perder precisión. La mejor técnica depende del modelo.</li>
@@ -862,8 +862,6 @@
 <li><b>Los resultados son confiables:</b> el score interno coincide con el externo, así que no hubo sobreajuste en la búsqueda.</li>
 <li><b>El límite lo ponen los datos, no los hiperparámetros.</b> Con toda la optimización llegamos a AUC 0.86 y R² 0.40, lo mismo que en la primera entrega. Con 11 variables químicas no se puede explicar mucho más de una nota que al final es subjetiva. Lo que sí ayudó fue el balanceo (en Random Forest el F1 subió de 0.46 a 0.57).</li>
 </ul>
-<h3>Lo que nos falta</h3>
-<p style="font-size:14.5px">Para terminar lo que pide la guía todavía nos falta: la matriz de confusión, las curvas ROC y la calibración, el análisis de residuos de la regresión, SHAP y LIME, las curvas de convergencia de los optimizadores y las pruebas de DeLong y Diebold-Mariano. Casi todo eso necesita las predicciones de cada vino, que no guardamos, pero no hay que repetir la búsqueda: los mejores hiperparámetros de cada fold quedaron en el CSV, así que basta con volver a entrenar esos 680 modelos. También queremos probar a mover el umbral de decisión en clasificación y ampliar el rango de profundidad de Random Forest.</p>
 
 
 <footer>
