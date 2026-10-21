@@ -1,0 +1,19 @@
+orden,prueba,hipotesis_nula,estadistico,p_valor,detalle,rechaza_H0_5%
+—,Jarque-Bera,Residuos normales,306.201676,0.0,"asimetría -0.03, curtosis 4.17",sí
+—,Breusch-Pagan,Varianza constante (lineal en las variables),92.222268,0.0,,sí
+—,White,Varianza constante (cuadrados y productos cruzados),306.853735,0.0,,sí
+orden del archivo,Ljung-Box (rezago 10),Sin autocorrelación en el orden de los datos,121.08468,0.0,,sí
+orden del archivo,Ljung-Box (rezago 20),Sin autocorrelación en el orden de los datos,161.291602,0.0,,sí
+orden del archivo,Durbin-Watson,Sin autocorrelación de orden 1 (≈ 2),1.84113,,,—
+orden del archivo,BDS (dimensión 2),Residuos i.i.d. (sin dependencia no lineal),5.510313,0.0,,sí
+orden del archivo,BDS (dimensión 3),Residuos i.i.d. (sin dependencia no lineal),5.563148,0.0,,sí
+orden aleatorio,Ljung-Box (rezago 10),Sin autocorrelación en el orden de los datos,2.792351,0.985897,,no
+orden aleatorio,Ljung-Box (rezago 20),Sin autocorrelación en el orden de los datos,6.732323,0.997475,,no
+orden aleatorio,Durbin-Watson,Sin autocorrelación de orden 1 (≈ 2),2.009425,,,—
+orden aleatorio,BDS (dimensión 2),Residuos i.i.d. (sin dependencia no lineal),1.088571,0.276343,,no
+orden aleatorio,BDS (dimensión 3),Residuos i.i.d. (sin dependencia no lineal),0.761098,0.446599,,no
+ordenado por la predicción,Ljung-Box (rezago 10),Sin autocorrelación en el orden de los datos,13.788471,0.182861,,no
+ordenado por la predicción,Ljung-Box (rezago 20),Sin autocorrelación en el orden de los datos,22.36095,0.32125,,no
+ordenado por la predicción,Durbin-Watson,Sin autocorrelación de orden 1 (≈ 2),1.955126,,,—
+ordenado por la predicción,BDS (dimensión 2),Residuos i.i.d. (sin dependencia no lineal),2.517046,0.011834,,sí
+ordenado por la predicción,BDS (dimensión 3),Residuos i.i.d. (sin dependencia no lineal),2.305281,0.021151,,sí

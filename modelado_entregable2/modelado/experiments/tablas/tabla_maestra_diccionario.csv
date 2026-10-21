@@ -1,0 +1,17 @@
+columna,descripcion
+tarea,clasificacion (quality ≥ 7) o regresion (quality)
+modelo / balanceo / optimizador,la combinación evaluada
+rango,puesto dentro de su tarea según la métrica principal (AUC o RMSE; 1 = mejor)
+"auc, f1, recall, precision, accuracy",media de los 5 folds externos (umbral 0.5); *_std = desviación entre folds
+"rmse, mae, r2",media de los 5 folds externos; *_std = desviación entre folds
+score_interno,mejor score de la validación interna (AUC o RMSE) promediado entre folds
+brecha_interno_externo,métrica externa − interna (AUC: negativo = optimista; RMSE: positivo = optimista)
+"brier, ece, pr_auc","calculadas con las 5,320 predicciones fuera de muestra (vacías para SVM, que no da probabilidades)"
+dif_vs_mejor,AUC (o error cuadrático medio) de la combinación menos el de la mejor de su tarea
+p_vs_mejor_holm,"p-valor de DeLong (clasificación) o Diebold-Mariano (regresión) contra la mejor, ajustado por Holm"
+"p_mcs, en_mcs",p-valor del conjunto de confianza de modelos y si pertenece a él (α = 0.10; pérdida Brier o error cuadrático)
+dentro_1ee,a menos de un error estándar de la mejor métrica principal
+recomendada,configuración elegida con la regla de 1 error estándar
+n_evaluaciones,configuraciones probadas por búsqueda (media de folds)
+"tiempo_fold_s, horas_cpu",segundos por fold externo y horas de CPU de las 5 búsquedas
+hiperparametros_tipicos,mediana (numéricos) o moda (categóricos) de lo elegido en los 5 folds

@@ -1,0 +1,121 @@
+tarea,modelo,balanceo,optimizador,perdida_media,paso_eliminacion,p_mcs,en_mcs
+clasificacion,Random Forest,class_weight,Grid Search,0.108997,92,1.0,True
+clasificacion,Random Forest,class_weight,Bayesiano,0.109341,91,0.3635,True
+clasificacion,Random Forest,sin_balanceo,Grid Search,0.109876,90,0.243,True
+clasificacion,Random Forest,sin_balanceo,Genético,0.110362,89,0.1495,True
+clasificacion,Random Forest,class_weight,Random Search,0.110728,88,0.1495,True
+clasificacion,Random Forest,sin_balanceo,Bayesiano,0.110583,87,0.126,True
+clasificacion,Random Forest,sin_balanceo,Random Search,0.110829,86,0.126,True
+clasificacion,XGBoost,sin_balanceo,Bayesiano,0.111677,85,0.126,True
+clasificacion,XGBoost,sin_balanceo,Random Search,0.112309,84,0.0065,False
+clasificacion,XGBoost,sin_balanceo,Genético,0.112972,83,0.0065,False
+clasificacion,Random Forest,class_weight,Genético,0.1135,82,0.0065,False
+clasificacion,KNN,sin_balanceo,Random Search,0.113826,81,0.0065,False
+clasificacion,KNN,sin_balanceo,Bayesiano,0.11397,80,0.003,False
+clasificacion,KNN,sin_balanceo,Genético,0.114028,79,0.003,False
+clasificacion,KNN,sin_balanceo,Grid Search,0.114083,78,0.0015,False
+clasificacion,Regresión Logística (L1/L2),sin_balanceo,Bayesiano,0.119004,75,0.0,False
+clasificacion,Regresión Logística (L1/L2),sin_balanceo,Grid Search,0.119007,76,0.0,False
+clasificacion,Regresión Logística (L1/L2),sin_balanceo,Random Search,0.119011,72,0.0,False
+clasificacion,Regresión Logística (L1/L2),sin_balanceo,Genético,0.119022,73,0.0,False
+clasificacion,XGBoost,SMOTE,Bayesiano,0.119216,77,0.0,False
+clasificacion,XGBoost,ADASYN,Bayesiano,0.119964,74,0.0,False
+clasificacion,Random Forest,SMOTE,Grid Search,0.120421,71,0.0,False
+clasificacion,XGBoost,SMOTE,Genético,0.120763,70,0.0,False
+clasificacion,Random Forest,SMOTE,Bayesiano,0.122039,69,0.0,False
+clasificacion,XGBoost,SMOTE,Random Search,0.122544,66,0.0,False
+clasificacion,XGBoost,class_weight,Bayesiano,0.12287,68,0.0,False
+clasificacion,Random Forest,SMOTE,Genético,0.123246,64,0.0,False
+clasificacion,Decision Tree,sin_balanceo,Random Search,0.123363,67,0.0,False
+clasificacion,Random Forest,SMOTE,Random Search,0.123718,61,0.0,False
+clasificacion,Random Forest,ADASYN,Grid Search,0.123786,63,0.0,False
+clasificacion,Decision Tree,sin_balanceo,Genético,0.124433,65,0.0,False
+clasificacion,Decision Tree,sin_balanceo,Grid Search,0.124742,62,0.0,False
+clasificacion,XGBoost,ADASYN,Random Search,0.125477,59,0.0,False
+clasificacion,Decision Tree,sin_balanceo,Bayesiano,0.125508,60,0.0,False
+clasificacion,Random Forest,ADASYN,Genético,0.127631,58,0.0,False
+clasificacion,Random Forest,ADASYN,Bayesiano,0.128328,57,0.0,False
+clasificacion,Random Forest,ADASYN,Random Search,0.129006,55,0.0,False
+clasificacion,XGBoost,class_weight,Random Search,0.129511,54,0.0,False
+clasificacion,XGBoost,class_weight,Genético,0.130534,53,0.0,False
+clasificacion,XGBoost,sin_balanceo,Grid Search,0.132706,56,0.0,False
+clasificacion,XGBoost,ADASYN,Genético,0.143454,52,0.0,False
+clasificacion,Regresión Logística (L1/L2),SMOTE,Genético,0.172819,51,0.0,False
+clasificacion,Regresión Logística (L1/L2),SMOTE,Bayesiano,0.172837,50,0.0,False
+clasificacion,Regresión Logística (L1/L2),class_weight,Random Search,0.172884,47,0.0,False
+clasificacion,Regresión Logística (L1/L2),class_weight,Bayesiano,0.172961,45,0.0,False
+clasificacion,Regresión Logística (L1/L2),class_weight,Genético,0.172974,43,0.0,False
+clasificacion,Regresión Logística (L1/L2),SMOTE,Grid Search,0.172974,49,0.0,False
+clasificacion,Regresión Logística (L1/L2),SMOTE,Random Search,0.173079,46,0.0,False
+clasificacion,Regresión Logística (L1/L2),class_weight,Grid Search,0.173079,41,0.0,False
+clasificacion,Decision Tree,SMOTE,Grid Search,0.178781,40,0.0,False
+clasificacion,Decision Tree,SMOTE,Random Search,0.178841,48,0.0,False
+clasificacion,Decision Tree,SMOTE,Bayesiano,0.178943,44,0.0,False
+clasificacion,Decision Tree,SMOTE,Genético,0.179087,39,0.0,False
+clasificacion,Decision Tree,class_weight,Random Search,0.180837,35,0.0,False
+clasificacion,Decision Tree,class_weight,Grid Search,0.183059,33,0.0,False
+clasificacion,Decision Tree,class_weight,Bayesiano,0.183452,28,0.0,False
+clasificacion,Decision Tree,ADASYN,Bayesiano,0.184122,42,0.0,False
+clasificacion,XGBoost,class_weight,Grid Search,0.184379,15,0.0,False
+clasificacion,Decision Tree,class_weight,Genético,0.184764,25,0.0,False
+clasificacion,Regresión Logística (L1/L2),ADASYN,Grid Search,0.184936,23,0.0,False
+clasificacion,Regresión Logística (L1/L2),ADASYN,Bayesiano,0.184993,22,0.0,False
+clasificacion,Regresión Logística (L1/L2),ADASYN,Genético,0.185056,21,0.0,False
+clasificacion,Regresión Logística (L1/L2),ADASYN,Random Search,0.185269,20,0.0,False
+clasificacion,Decision Tree,ADASYN,Grid Search,0.186539,37,0.0,False
+clasificacion,Decision Tree,ADASYN,Genético,0.18819,32,0.0,False
+clasificacion,KNN,SMOTE,Random Search,0.188746,30,0.0,False
+clasificacion,XGBoost,SMOTE,Grid Search,0.188869,14,0.0,False
+clasificacion,KNN,SMOTE,Grid Search,0.189243,27,0.0,False
+clasificacion,Decision Tree,ADASYN,Random Search,0.189332,29,0.0,False
+clasificacion,KNN,SMOTE,Genético,0.190203,26,0.0,False
+clasificacion,KNN,SMOTE,Bayesiano,0.190382,24,0.0,False
+clasificacion,XGBoost,ADASYN,Grid Search,0.19439,13,0.0,False
+clasificacion,Naive Bayes,sin_balanceo,Random Search,0.203532,38,0.0,False
+clasificacion,Naive Bayes,sin_balanceo,Genético,0.203532,36,0.0,False
+clasificacion,Naive Bayes,sin_balanceo,Grid Search,0.203532,34,0.0,False
+clasificacion,Naive Bayes,sin_balanceo,Bayesiano,0.203532,31,0.0,False
+clasificacion,KNN,ADASYN,Genético,0.206451,19,0.0,False
+clasificacion,KNN,ADASYN,Random Search,0.206751,18,0.0,False
+clasificacion,KNN,ADASYN,Bayesiano,0.206806,17,0.0,False
+clasificacion,KNN,ADASYN,Grid Search,0.206991,16,0.0,False
+clasificacion,Naive Bayes,class_weight,Random Search,0.284831,11,0.0,False
+clasificacion,Naive Bayes,class_weight,Genético,0.284831,10,0.0,False
+clasificacion,Naive Bayes,class_weight,Grid Search,0.284831,12,0.0,False
+clasificacion,Naive Bayes,class_weight,Bayesiano,0.284831,9,0.0,False
+clasificacion,Naive Bayes,SMOTE,Bayesiano,0.294501,7,0.0,False
+clasificacion,Naive Bayes,SMOTE,Grid Search,0.294501,8,0.0,False
+clasificacion,Naive Bayes,SMOTE,Random Search,0.294501,6,0.0,False
+clasificacion,Naive Bayes,SMOTE,Genético,0.294501,5,0.0,False
+clasificacion,Naive Bayes,ADASYN,Bayesiano,0.300029,2,0.0,False
+clasificacion,Naive Bayes,ADASYN,Genético,0.300029,4,0.0,False
+clasificacion,Naive Bayes,ADASYN,Grid Search,0.300029,3,0.0,False
+clasificacion,Naive Bayes,ADASYN,Random Search,0.300029,1,0.0,False
+regresion,Random Forest,no_aplica,Grid Search,0.460807,28,1.0,True
+regresion,Random Forest,no_aplica,Genético,0.463222,27,0.043,False
+regresion,Random Forest,no_aplica,Bayesiano,0.464145,26,0.043,False
+regresion,Random Forest,no_aplica,Random Search,0.464974,25,0.043,False
+regresion,XGBoost,no_aplica,Bayesiano,0.468473,24,0.043,False
+regresion,XGBoost,no_aplica,Random Search,0.469594,23,0.019,False
+regresion,XGBoost,no_aplica,Genético,0.471971,22,0.015,False
+regresion,SVR,no_aplica,Bayesiano,0.484513,21,0.0,False
+regresion,SVR,no_aplica,Random Search,0.486909,19,0.0,False
+regresion,SVR,no_aplica,Genético,0.487299,20,0.0,False
+regresion,SVR,no_aplica,Grid Search,0.489775,16,0.0,False
+regresion,KNN,no_aplica,Bayesiano,0.490888,18,0.0,False
+regresion,KNN,no_aplica,Genético,0.491918,17,0.0,False
+regresion,KNN,no_aplica,Grid Search,0.492172,15,0.0,False
+regresion,KNN,no_aplica,Random Search,0.495118,14,0.0,False
+regresion,XGBoost,no_aplica,Grid Search,0.498479,13,0.0,False
+regresion,Lasso,no_aplica,Random Search,0.537221,7,0.0,False
+regresion,Lasso,no_aplica,Genético,0.537224,10,0.0,False
+regresion,Ridge,no_aplica,Bayesiano,0.537226,9,0.0,False
+regresion,Ridge,no_aplica,Grid Search,0.537239,8,0.0,False
+regresion,Ridge,no_aplica,Random Search,0.537252,12,0.0,False
+regresion,Ridge,no_aplica,Genético,0.537259,11,0.0,False
+regresion,Lasso,no_aplica,Grid Search,0.537349,6,0.0,False
+regresion,Lasso,no_aplica,Bayesiano,0.537384,5,0.0,False
+regresion,Decision Tree,no_aplica,Genético,0.557914,4,0.0,False
+regresion,Decision Tree,no_aplica,Grid Search,0.559106,3,0.0,False
+regresion,Decision Tree,no_aplica,Random Search,0.562372,1,0.0,False
+regresion,Decision Tree,no_aplica,Bayesiano,0.563596,2,0.0,False

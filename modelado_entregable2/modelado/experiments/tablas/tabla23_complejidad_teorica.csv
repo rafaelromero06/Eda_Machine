@@ -1,0 +1,9 @@
+modelo,entrenamiento,predicción por caso,memoria del modelo,qué lo encarece
+KNN,O(d·n·log n) (árbol KD) u O(1) (fuerza bruta),O(n·d) fuerza bruta; ≈ O(d·log n) con árbol,O(n·d): guarda los datos,n (no k)
+Naive Bayes,O(n·d),O(d),O(d),—
+Regresión logística / Ridge / Lasso,O(n·d·iteraciones),O(d),O(d),C o alpha (iteraciones)
+Árbol de decisión,O(d·n·log n),O(p),O(hojas),"max_depth, min_samples_leaf"
+Random Forest,O(T·m·n·log n),O(T·p),O(T·hojas),"n_estimators, max_features"
+XGBoost (hist),O(T·(n·d + 2ᵖ·b)),O(T·p),O(T·2ᵖ),"n_estimators, max_depth"
+SVM / SVR (RBF),entre O(n²·d) y O(n³·d),O(n_sv·d),O(n_sv·d),"C, gamma, n"
+SMOTE / ADASYN,O(n_min·log n·d) (vecinos con árbol),—,—,"n_min, k = 5"

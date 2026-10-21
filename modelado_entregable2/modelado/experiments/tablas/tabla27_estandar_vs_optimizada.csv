@@ -1,0 +1,9 @@
+optimizacion,estandar,optimizada,segundos_estandar,segundos_optimizada,aceleracion,resultado_estandar,resultado_optimizada
+XGBoost: búsqueda de cortes,tree_method='exact',tree_method='hist',0.97972,0.50269,1.94896,AUC 0.8748,AUC 0.8763
+SVM: puntaje para el AUC,probability=True (5 folds de Platt),decision_function,1.2162,0.21047,5.77847,AUC 0.8466,AUC 0.8466
+KNN: búsqueda de vecinos (predicción),algorithm='auto' (elige árbol KD),algorithm='brute',0.06101,0.02251,2.71076,AUC 0.8658,AUC 0.8658
+Random Forest con 11 procesos (22 ajustes),n_jobs=-1 dentro de cada proceso,n_jobs=1 (sin anidar),5.77825,5.35625,1.07879,mismo modelo,mismo modelo
+SHAP por vino (Random Forest),"KernelExplainer (1,000 muestras)",TreeExplainer (exacto),0.65149,0.07382,8.82587,aproximado (r = 0.991 con el exacto),exacto
+Grid Search: tamaño de la grilla,"5 valores por hiperparámetro continuo (hasta 3,125 puntos)",grilla adaptativa (≤ 40 puntos),325939.41285,9950.434,32.7563,estimado,medido
+Paralelismo por tareas (experimento completo),1 proceso (estimado),11 procesos + orden LPT,28092.00527,5426.788,5.17654,mismos resultados,mismos resultados
+Predicciones fuera de muestra para el análisis,repetir la validación anidada,reentrenar con los hiperparámetros del log,59678.88,1015.77909,58.75183,—,idénticas (dif. ≤ 6e-17)

@@ -1,0 +1,15 @@
+tarea,modelo,balanceo,optimizador,rango,auc,f1,brier,ece,rmse,mae,r2,dif_vs_mejor,p_vs_mejor_holm,en_mcs,dentro_1ee,horas_cpu_modelo
+clasificacion,Random Forest,class_weight,Bayesiano,2,0.86024,0.47988,0.10934,0.0124,,,,-0.00154,0.29081,True,True,6.24744
+clasificacion,XGBoost,class_weight,Bayesiano,8,0.85747,0.55918,0.12287,0.06803,,,,-0.0054,0.05867,False,True,4.11883
+clasificacion,SVM,class_weight,Bayesiano,34,0.84676,0.548,,,,,,-0.01423,0.00236,,False,2.31377
+clasificacion,KNN,sin_balanceo,Bayesiano,36,0.84487,0.43601,0.11397,0.01139,,,,-0.01598,1e-05,False,False,0.37265
+clasificacion,Regresión Logística (L1/L2),sin_balanceo,Bayesiano,57,0.82838,0.38419,0.119,0.02473,,,,-0.03231,0.0,False,False,0.1942
+clasificacion,Decision Tree,class_weight,Bayesiano,83,0.80107,0.50521,0.18345,0.19241,,,,-0.05951,0.0,False,False,0.15753
+clasificacion,Naive Bayes,class_weight,Grid Search,93,0.76453,0.44362,0.28483,0.30529,,,,-0.09638,0.0,False,False,0.10528
+regresion,Random Forest,no_aplica,Bayesiano,3,,,,,0.68118,0.52578,0.39889,0.00334,0.00152,False,True,1.20668
+regresion,XGBoost,no_aplica,Bayesiano,5,,,,,0.68425,0.52906,0.3935,0.00767,0.00152,False,True,1.18883
+regresion,SVR,no_aplica,Bayesiano,8,,,,,0.69597,0.53168,0.37245,0.02371,0.0,False,False,0.54753
+regresion,KNN,no_aplica,Bayesiano,12,,,,,0.70049,0.54212,0.36432,0.03008,0.0,False,False,0.07517
+regresion,Ridge,no_aplica,Bayesiano,19,,,,,0.73282,0.56611,0.30424,0.07642,0.0,False,False,0.01457
+regresion,Lasso,no_aplica,Bayesiano,24,,,,,0.73293,0.56621,0.30404,0.07658,0.0,False,False,0.0152
+regresion,Decision Tree,no_aplica,Bayesiano,28,,,,,0.7506,0.58,0.27005,0.10279,0.0,False,False,0.01978

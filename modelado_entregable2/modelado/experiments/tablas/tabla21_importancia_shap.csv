@@ -1,0 +1,13 @@
+variable,nombre,clf_media_abs_shap,clf_rango,clf_rango_min_fold,clf_rango_max_fold,clf_cv_entre_folds,reg_media_abs_shap,reg_rango,reg_rango_min_fold,reg_rango_max_fold,reg_cv_entre_folds,xgb_media_abs_shap,xgb_rango
+alcohol,Alcohol,0.11768,1,1,1,0.02914,0.21905,1,1,1,0.02,0.91875,1
+density,Densidad,0.04792,2,2,5,0.0505,0.08999,3,2,3,0.04844,0.37905,3
+volatile acidity,Acidez volátil,0.0445,3,3,4,0.04101,0.09596,2,2,3,0.07082,0.38761,2
+chlorides,Cloruros,0.04447,4,3,4,0.0849,0.06148,5,5,6,0.07221,0.32359,4
+citric acid,Ácido cítrico,0.04126,5,2,5,0.11785,0.05909,7,5,7,0.07589,0.28376,7
+sulphates,Sulfatos,0.03167,6,6,8,0.07846,0.06132,6,5,7,0.12173,0.30958,5
+total sulfur dioxide,SO₂ total,0.03086,7,6,8,0.05415,0.0394,9,8,10,0.03557,0.30364,6
+free sulfur dioxide,SO₂ libre,0.02933,8,7,9,0.09593,0.07975,4,4,4,0.03395,0.26109,9
+pH,pH,0.02506,9,9,10,0.0479,0.03794,10,8,10,0.09591,0.27982,8
+residual sugar,Azúcar residual,0.02328,10,8,11,0.13254,0.04163,8,8,10,0.09694,0.2295,10
+fixed acidity,Acidez fija,0.01919,11,10,11,0.04672,0.01885,11,11,11,0.1243,0.17754,11
+tipo_vino,Tipo de vino,0.00343,12,12,12,0.19792,0.01467,12,12,12,0.16715,0.01986,12

@@ -1,0 +1,15 @@
+comparacion,modelo,fijo,auc_a,auc_b,diferencia,ee,ic_inf,ic_sup,z,p,p_holm
+class_weight − sin balanceo,Random Forest,optimizador bayesiano,0.859081,0.854588,0.004493,0.001759,0.001045,0.00794,2.554151,0.010645,0.031934
+SMOTE − sin balanceo,Random Forest,optimizador bayesiano,0.857536,0.854588,0.002948,0.002257,-0.001476,0.007371,1.306054,0.191534,0.383069
+ADASYN − sin balanceo,Random Forest,optimizador bayesiano,0.855583,0.854588,0.000995,0.002721,-0.004338,0.006328,0.365743,0.714557,0.714557
+Bayesiano − Grid Search,Random Forest,Sin balanceo,0.854588,0.855563,-0.000975,0.000898,-0.002734,0.000785,-1.085805,0.277565,0.555131
+Bayesiano − Grid Search,Random Forest,class_weight,0.859081,0.86062,-0.001539,0.001002,-0.003502,0.000425,-1.535937,0.124554,0.373661
+Bayesiano − Grid Search,Random Forest,SMOTE,0.857536,0.857999,-0.000463,0.000735,-0.001904,0.000977,-0.630469,0.528388,0.555131
+Bayesiano − Grid Search,Random Forest,ADASYN,0.855583,0.857393,-0.00181,0.000904,-0.003582,-3.8e-05,-2.002278,0.045255,0.181019
+class_weight − sin balanceo,XGBoost,optimizador bayesiano,0.855219,0.854684,0.000535,0.001615,-0.002631,0.003701,0.331462,0.740295,1.0
+SMOTE − sin balanceo,XGBoost,optimizador bayesiano,0.856938,0.854684,0.002255,0.002009,-0.001683,0.006192,1.122323,0.261725,0.785176
+ADASYN − sin balanceo,XGBoost,optimizador bayesiano,0.853522,0.854684,-0.001162,0.002303,-0.005676,0.003353,-0.504359,0.614009,1.0
+Bayesiano − Grid Search,XGBoost,Sin balanceo,0.854684,0.850294,0.00439,0.002239,2e-06,0.008777,1.960897,0.049891,0.099782
+Bayesiano − Grid Search,XGBoost,class_weight,0.855219,0.850232,0.004987,0.002313,0.000454,0.00952,2.156203,0.031068,0.093203
+Bayesiano − Grid Search,XGBoost,SMOTE,0.856938,0.850458,0.00648,0.001986,0.002587,0.010373,3.26267,0.001104,0.004415
+Bayesiano − Grid Search,XGBoost,ADASYN,0.853522,0.850678,0.002844,0.002277,-0.001619,0.007308,1.24891,0.211698,0.211698

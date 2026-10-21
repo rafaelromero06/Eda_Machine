@@ -1,0 +1,13 @@
+variable,nombre,media_abs_lime,media_abs_shap,rango_lime,rango_shap
+alcohol,Alcohol,0.11015,0.12135,1,1
+density,Densidad,0.03609,0.0468,4,2
+chlorides,Cloruros,0.03425,0.04478,5,3
+volatile acidity,Acidez volátil,0.0427,0.04132,2,4
+citric acid,Ácido cítrico,0.03915,0.03964,3,5
+sulphates,Sulfatos,0.02694,0.03043,7,6
+free sulfur dioxide,SO₂ libre,0.0302,0.0303,6,7
+total sulfur dioxide,SO₂ total,0.01675,0.02989,9,8
+residual sugar,Azúcar residual,0.01444,0.02706,10,9
+pH,pH,0.02412,0.02511,8,10
+fixed acidity,Acidez fija,0.01283,0.0202,11,11
+tipo_vino,Tipo de vino,0.00474,0.00358,12,12

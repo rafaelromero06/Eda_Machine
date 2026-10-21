@@ -1,0 +1,14 @@
+familia,comparacion,metrica,pares,diferencia,ic_inf,ic_sup,rank_biserial,prob_superioridad,d_z,magnitud,p_wilcoxon,p_holm
+Modelos,Random Forest vs XGBoost,AUC,80,0.002601,0.001581,0.003631,0.587654,0.7375,0.556958,grande,5e-06,3e-05
+Modelos,Random Forest vs SVM,AUC,80,0.018735,0.016666,0.020991,1.0,1.0,1.877326,grande,0.0,0.0
+Modelos,Random Forest vs Reg. logística,AUC,80,0.029493,0.02767,0.03136,1.0,1.0,3.436684,grande,0.0,0.0
+Modelos,Random Forest vs XGBoost (regresión),RMSE,20,0.009997,0.005442,0.015166,0.904762,0.9,0.882409,grande,8.2e-05,0.000328
+Modelos,Random Forest vs SVR (regresión),RMSE,20,0.017283,0.01502,0.019873,1.0,1.0,2.950496,grande,2e-06,1.5e-05
+Balanceo,class_weight vs sin balanceo,F1,120,0.113592,0.088686,0.141089,0.8427,0.783333,0.766805,grande,0.0,0.0
+Balanceo,SMOTE vs sin balanceo,F1,140,0.1187,0.097138,0.141713,0.933941,0.857143,0.886892,grande,0.0,0.0
+Balanceo,SMOTE vs class_weight,F1,120,0.009799,0.003496,0.016755,0.034734,0.470833,0.261329,insignificante,0.742282,0.742282
+Balanceo,ADASYN vs SMOTE,F1,140,-0.006187,-0.008683,-0.003663,-0.469504,0.3,-0.405687,mediano,1e-06,1.3e-05
+Balanceo,class_weight vs sin balanceo,AUC,120,0.00388,0.001923,0.006037,0.514851,0.641667,0.340855,grande,8e-06,3.9e-05
+Optimizador,Bayesiano vs Grid Search (todos los modelos),AUC,135,0.000573,-6.5e-05,0.001224,0.189339,0.57037,0.151512,pequeño,0.089115,0.1875
+Optimizador,Bayesiano vs Grid Search (solo XGBoost),AUC,20,0.00614,0.004728,0.007677,1.0,1.0,1.811223,grande,2e-06,1.5e-05
+Optimizador,"Bayesiano vs Grid Search (XGBoost, regresión)",RMSE,5,0.021644,0.017594,0.025766,1.0,1.0,4.017052,grande,0.0625,0.1875

@@ -1,30 +1,36 @@
 
-# --- Nucleo: datos y modelos base ---
-numpy>=1.26
-pandas>=2.2
-scipy>=1.11
-scikit-learn>=1.4
-joblib>=1.4          # ejecución en paralelo (return_as="generator_unordered")
-xgboost>=2.0
+# --- Núcleo ---
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.17.1
+scikit-learn==1.8.0
+joblib==1.6.0        # ejecución en paralelo (return_as="generator_unordered")
+xgboost==3.4.1
 
-#  balanceo de clases (SMOTE, ADASYN) ---
-imbalanced-learn>=0.12
+# --- balanceo de clases (SMOTE, ADASYN) ---
+imbalanced-learn==0.14.2
 
-#  optimizacion de hiperparametros ---
-optuna>=3.6       # Bayesiano (sampler TPE)
-deap>=1.4          # Algoritmo genetico
+# ---  optimización de hiperparámetros ---
+optuna==5.0.0       # Bayesiano (sampler TPE)
+deap==1.4.4          # Algoritmo genético
 
+# ---  interpretabilidad ---
+shap==0.52.0
+lime==0.2.0.1
 
-shap>=0.45
-lime>=0.2
+# ---  pruebas estadísticas ---
+statsmodels==0.15.0   # White, BDS, Ljung-Box (residuos)
+scikit-posthocs==0.16.1  # Nemenyi post-hoc (tras Friedman)
 
+# --- medición de recursos (costo computacional) ---
+psutil==7.2.2
 
-statsmodels>=0.14   # White, BDS, Ljung-Box (residuos)
-scikit-posthocs>=0.9  # Nemenyi post-hoc (tras Friedman)
-
-# --- Visualizacion ---
-matplotlib>=3.8
-seaborn>=0.13
+# --- Visualización (curvas ROC, matrices de confusión, CD diagram, etc.) ---
+matplotlib==3.10.8
+seaborn==0.13.2
 
 # --- Notebooks (Jupyter / VS Code) ---
-ipykernel>=6.27      # kernel para notebooks/resultados_modelado.ipynb
+ipykernel==6.27.0    # kernel para eda/EDA_wine_quality.ipynb y los notebooks 01 a 06 del modelado
+
+# --- Entorno ---
+# Python 3.12.14

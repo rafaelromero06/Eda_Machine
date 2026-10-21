@@ -1,0 +1,6 @@
+optimizacion,estandar,optimizada,segundos_estandar,segundos_optimizada,aceleracion,resultado_estandar,resultado_optimizada
+XGBoost: búsqueda de cortes,tree_method='exact',tree_method='hist',0.9797201999990648,0.5026889000000665,1.9489592867456098,AUC 0.8748,AUC 0.8763
+SVM: puntaje para el AUC,probability=True (5 folds de Platt),decision_function,1.2162045000004582,0.21047179999914079,5.7784677092390675,AUC 0.8466,AUC 0.8466
+KNN: búsqueda de vecinos (predicción),algorithm='auto' (elige árbol KD),algorithm='brute',0.06101380000109202,0.02250800000001618,2.710760618493343,AUC 0.8658,AUC 0.8658
+Random Forest con 11 procesos (22 ajustes),n_jobs=-1 dentro de cada proceso,n_jobs=1 (sin anidar),5.77824899999905,5.356246600000304,1.07878696249697,mismo modelo,mismo modelo
+SHAP por vino (Random Forest),"KernelExplainer (1,000 muestras)",TreeExplainer (exacto),0.6514908400000422,0.073816060000172,8.825868516939595,aproximado (r = 0.991 con el exacto),exacto

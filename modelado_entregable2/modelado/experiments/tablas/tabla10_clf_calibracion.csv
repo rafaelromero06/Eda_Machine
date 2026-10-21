@@ -1,0 +1,8 @@
+modelo,balanceo,optimizador,auc,pr_auc,brier,brier_skill,log_loss,ece,intercepto_cal,pendiente_cal,prob_media,prevalencia,f1_umbral_05
+Random Forest,class_weight,Bayesiano,0.8591,0.5859,0.1093,0.2886,0.3456,0.0124,-0.0094,1.0941,0.2001,0.1897,0.4826
+KNN,sin_balanceo,Bayesiano,0.8446,0.5571,0.114,0.2584,0.3636,0.0114,-0.0808,0.9897,0.1982,0.1897,0.4369
+Regresión Logística (L1/L2),sin_balanceo,Bayesiano,0.8283,0.5086,0.119,0.2257,0.373,0.0247,-0.0109,0.9954,0.1904,0.1897,0.3843
+XGBoost,class_weight,Bayesiano,0.8552,0.5765,0.1229,0.2005,0.3761,0.068,-0.7111,0.7723,0.2577,0.1897,0.5597
+Random Forest,ADASYN,Random Search,0.8548,0.5673,0.129,0.1606,0.3966,0.1152,-0.8648,1.109,0.3048,0.1897,0.5747
+Decision Tree,class_weight,Bayesiano,0.8011,0.4536,0.1835,-0.1937,0.5821,0.1924,-1.198,0.4423,0.3774,0.1897,0.5048
+Naive Bayes,class_weight,Grid Search,0.7642,0.4512,0.2848,-0.8533,1.0189,0.3053,-1.5386,0.2741,0.4609,0.1897,0.4435

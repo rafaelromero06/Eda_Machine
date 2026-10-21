@@ -1,0 +1,13 @@
+perfil,etapa,segundos,porcentaje
+Random Forest + ADASYN,construcción de los árboles (Cython),6.5585,70.4324
+Random Forest + ADASYN,"resto del ajuste en Python (validación, semillas, joblib por árbol)",2.1121,22.6824
+Random Forest + ADASYN,remuestreo (ADASYN / SMOTE),0.0631,0.6779
+Random Forest + ADASYN,preprocesamiento (escalado y one-hot),0.0239,0.2564
+Random Forest + ADASYN,predicción y AUC de los 3 folds,0.3131,3.3623
+Random Forest + ADASYN,validación cruzada y clonado,0.241,2.5887
+XGBoost + SMOTE,boosting en C++ (XGBoosterUpdateOneIter),1.796,84.621
+XGBoost + SMOTE,"resto del ajuste en Python (validación, semillas, joblib por árbol)",0.2044,9.6326
+XGBoost + SMOTE,remuestreo (ADASYN / SMOTE),0.0199,0.9373
+XGBoost + SMOTE,preprocesamiento (escalado y one-hot),0.0232,1.0932
+XGBoost + SMOTE,predicción y AUC de los 3 folds,0.0606,2.8536
+XGBoost + SMOTE,validación cruzada y clonado,0.0183,0.8622

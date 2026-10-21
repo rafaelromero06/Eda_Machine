@@ -1,0 +1,9 @@
+tarea,modelo,balanceo,optimizador,entrenamiento_s,ms_por_1000_vinos,tamano_MB
+clasificacion,Random Forest,class_weight,Bayesiano,1.8704081000014412,61.11109999983455,28.60280132293701
+clasificacion,XGBoost,class_weight,Bayesiano,0.5014002999996592,10.561200000665849,2.1399173736572266
+clasificacion,SVM,class_weight,Bayesiano,0.2930620999995881,102.71110000030603,0.268524169921875
+clasificacion,KNN,sin_balanceo,Bayesiano,0.009074100000361796,59.74109999988286,0.5484800338745117
+clasificacion,Regresión Logística (L1/L2),sin_balanceo,Bayesiano,0.01073020000148972,2.5490000007266644,0.0027589797973632812
+clasificacion,Decision Tree,class_weight,Bayesiano,0.018039099999441532,2.5205999991158023,0.008782386779785156
+clasificacion,Naive Bayes,class_weight,Grid Search,0.007394700000077137,2.705200000491459,0.0029382705688476562
+regresion,Random Forest,no_aplica,Grid Search,2.5050257000002603,93.66179999960877,82.42629623413086

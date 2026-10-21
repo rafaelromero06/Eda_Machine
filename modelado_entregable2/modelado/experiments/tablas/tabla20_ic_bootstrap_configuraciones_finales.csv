@@ -1,0 +1,18 @@
+tarea,configuracion,metrica,valor,ic95_inf,ic95_sup,ancho_ic
+clasificacion,Random Forest · ADASYN · Random Search (recomendada),AUC,0.8548,0.84276,0.86635,0.02359
+clasificacion,Random Forest · ADASYN · Random Search (recomendada),PR-AUC,0.56728,0.53949,0.59774,0.05825
+clasificacion,Random Forest · ADASYN · Random Search (recomendada),Brier,0.12901,0.12458,0.13363,0.00904
+clasificacion,Random Forest · ADASYN · Random Search (recomendada),F1 (umbral 0.5),0.5747,0.55361,0.595,0.04139
+clasificacion,Random Forest · ADASYN · Random Search (recomendada),Recall (umbral 0.5),0.67096,0.64222,0.70168,0.05946
+clasificacion,Random Forest · ADASYN · Random Search (recomendada),Precisión (umbral 0.5),0.5026,0.48255,0.52329,0.04074
+clasificacion,Random Forest · ADASYN · Random Search (recomendada),Accuracy (umbral 0.5),0.81165,0.80132,0.8218,0.02049
+clasificacion,Random Forest · class_weight · Bayesiano (alternativa calibrada),AUC,0.85908,0.84768,0.87085,0.02317
+clasificacion,Random Forest · class_weight · Bayesiano (alternativa calibrada),PR-AUC,0.58593,0.55722,0.61586,0.05864
+clasificacion,Random Forest · class_weight · Bayesiano (alternativa calibrada),Brier,0.10934,0.10569,0.11305,0.00736
+clasificacion,Random Forest · class_weight · Bayesiano (alternativa calibrada),F1 (umbral 0.5),0.48259,0.45402,0.51319,0.05917
+clasificacion,Random Forest · class_weight · Bayesiano (alternativa calibrada),Recall (umbral 0.5),0.38454,0.3558,0.41628,0.06048
+clasificacion,Random Forest · class_weight · Bayesiano (alternativa calibrada),Precisión (umbral 0.5),0.64775,0.61403,0.68319,0.06916
+clasificacion,Random Forest · class_weight · Bayesiano (alternativa calibrada),Accuracy (umbral 0.5),0.84361,0.83609,0.8515,0.01541
+regresion,Random Forest · Grid Search (recomendada),RMSE,0.67883,0.66293,0.69539,0.03246
+regresion,Random Forest · Grid Search (recomendada),MAE,0.52265,0.5113,0.53437,0.02307
+regresion,Random Forest · Grid Search (recomendada),R²,0.40453,0.38521,0.42329,0.03807

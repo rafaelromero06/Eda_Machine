@@ -1,0 +1,10 @@
+modelo,exponente_ajuste,exponente_ajuste_todo_el_rango,exponente_prediccion,esperado_ajuste,t_ajuste_n4000_s,t_ajuste_n16000_s
+Random Forest,1.0926,0.8716,-0.0175,≈ 1–1.2 (n log n),1.7106,9.8746
+XGBoost,0.717,0.6595,0.0214,≤ 1 (histograma),0.4503,1.2485
+SVM,1.9834,1.7419,0.9473,2–3,0.176,2.9097
+KNN,0.6227,0.4608,0.6809,≈ 1 (árbol KD); predicción ≈ 0.5–1,0.0094,0.0275
+Regresión Logística (L1/L2),0.6014,0.4636,-0.0696,≈ 1,0.0097,0.0264
+Decision Tree,1.3891,1.0004,-0.0206,≈ 1–1.2 (n log n),0.0152,0.1355
+Naive Bayes,0.4652,0.2663,0.0269,1,0.0055,0.0132
+SMOTE (solo remuestreo),1.2438,1.0186,,≈ 1–1.2,0.0083,0.0455
+ADASYN (solo remuestreo),1.1963,1.1942,,≈ 1–1.2,0.0335,0.1552

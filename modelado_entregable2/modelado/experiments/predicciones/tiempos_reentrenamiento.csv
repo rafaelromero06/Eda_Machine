@@ -1,0 +1,681 @@
+modelo,balanceo,optimizador,fold,calibracion,n_train,n_test,t_fit_s,t_pred_s,tarea
+Random Forest,SMOTE,Random Search,0,ninguna,4256,1064,3.9140415000001667,0.14039130000128353,clasificacion
+Random Forest,SMOTE,Grid Search,1,ninguna,4256,1064,6.415686199999982,0.22473079999872425,clasificacion
+Random Forest,SMOTE,Grid Search,2,ninguna,4256,1064,6.566454699999667,0.21950199999992037,clasificacion
+Random Forest,SMOTE,Grid Search,0,ninguna,4256,1064,6.509936099999322,0.2234563000001799,clasificacion
+Random Forest,SMOTE,Grid Search,3,ninguna,4256,1064,6.525408899999093,0.2248829999989539,clasificacion
+Random Forest,ADASYN,Grid Search,0,ninguna,4256,1064,6.6224160000001575,0.2370165000011184,clasificacion
+Random Forest,SMOTE,Grid Search,4,ninguna,4256,1064,6.630270699999528,0.2366319000011572,clasificacion
+Random Forest,ADASYN,Grid Search,4,ninguna,4256,1064,6.650766799999474,0.24207810000007157,clasificacion
+Random Forest,ADASYN,Grid Search,2,ninguna,4256,1064,6.693398200000956,0.24579939999966882,clasificacion
+Random Forest,ADASYN,Grid Search,1,ninguna,4256,1064,6.734858699999677,0.2423642000012478,clasificacion
+Random Forest,ADASYN,Grid Search,3,ninguna,4256,1064,6.7225410000010015,0.24702479999905336,clasificacion
+Random Forest,SMOTE,Genético,0,ninguna,4256,1064,3.3401302000002033,0.133342499999344,clasificacion
+Random Forest,SMOTE,Bayesiano,0,ninguna,4256,1064,2.6665171000004193,0.09146069999951578,clasificacion
+Random Forest,SMOTE,Random Search,1,ninguna,4256,1064,3.168047299999671,0.11287459999948624,clasificacion
+Random Forest,SMOTE,Random Search,4,ninguna,4256,1064,3.7327808999998524,0.12890169999991485,clasificacion
+Random Forest,SMOTE,Bayesiano,2,ninguna,4256,1064,3.9517660000001342,0.15572050000082527,clasificacion
+Random Forest,SMOTE,Bayesiano,4,ninguna,4256,1064,4.979170799999338,0.17377320000014151,clasificacion
+Random Forest,SMOTE,Genético,2,ninguna,4256,1064,4.804288100000122,0.18438160000005155,clasificacion
+Random Forest,SMOTE,Random Search,3,ninguna,4256,1064,4.823861700000634,0.19449319999876025,clasificacion
+Random Forest,SMOTE,Bayesiano,3,ninguna,4256,1064,5.272360499999195,0.19599600000037753,clasificacion
+Random Forest,SMOTE,Random Search,2,ninguna,4256,1064,5.733877300001041,0.2159974999995029,clasificacion
+Random Forest,SMOTE,Bayesiano,1,ninguna,4256,1064,6.011672200000248,0.2073980000004667,clasificacion
+Random Forest,ADASYN,Random Search,1,ninguna,4256,1064,3.419430599999032,0.11926870000024792,clasificacion
+Random Forest,SMOTE,Genético,1,ninguna,4256,1064,6.316485200000898,0.2190005000011297,clasificacion
+Random Forest,SMOTE,Genético,3,ninguna,4256,1064,5.34160139999949,0.21878660000038508,clasificacion
+Random Forest,ADASYN,Random Search,0,ninguna,4256,1064,4.111744600000748,0.13752720000047702,clasificacion
+Random Forest,SMOTE,Genético,4,ninguna,4256,1064,5.976872400000502,0.19090840000171738,clasificacion
+Random Forest,ADASYN,Random Search,4,ninguna,4256,1064,5.615034700000251,0.186194500000056,clasificacion
+Random Forest,ADASYN,Bayesiano,2,ninguna,4256,1064,3.3742039000007935,0.116517999998905,clasificacion
+Random Forest,ADASYN,Bayesiano,0,ninguna,4256,1064,5.440358300000298,0.18797669999912614,clasificacion
+Random Forest,ADASYN,Bayesiano,1,ninguna,4256,1064,5.040500200000679,0.1654992999992828,clasificacion
+Random Forest,ADASYN,Genético,0,ninguna,4256,1064,3.5164573000001837,0.12586299999929906,clasificacion
+Random Forest,ADASYN,Random Search,3,ninguna,4256,1064,4.97674619999998,0.16542950000075507,clasificacion
+Random Forest,ADASYN,Random Search,2,ninguna,4256,1064,6.01638660000026,0.19487189999927068,clasificacion
+Random Forest,ADASYN,Bayesiano,3,ninguna,4256,1064,5.059543700001086,0.16760830000021087,clasificacion
+Random Forest,ADASYN,Bayesiano,4,ninguna,4256,1064,4.5219870999990235,0.15283660000022792,clasificacion
+Random Forest,sin_balanceo,Grid Search,0,ninguna,4256,1064,3.1560227000009036,0.20706320000135747,clasificacion
+Random Forest,sin_balanceo,Grid Search,1,ninguna,4256,1064,3.160794100000203,0.20229960000142455,clasificacion
+Random Forest,sin_balanceo,Grid Search,2,ninguna,4256,1064,3.131563200000528,0.20554570000058447,clasificacion
+Random Forest,sin_balanceo,Grid Search,3,ninguna,4256,1064,3.135644300000422,0.22859799999969255,clasificacion
+Random Forest,sin_balanceo,Grid Search,4,ninguna,4256,1064,3.2436316999992414,0.21644589999959862,clasificacion
+Random Forest,class_weight,Grid Search,0,ninguna,4256,1064,3.2718322000000626,0.25050300000111747,clasificacion
+Random Forest,ADASYN,Genético,4,ninguna,4256,1064,5.0526052999994135,0.20564349999949627,clasificacion
+Random Forest,ADASYN,Genético,2,ninguna,4256,1064,5.780457700000625,0.2783546999999089,clasificacion
+Random Forest,ADASYN,Genético,1,ninguna,4256,1064,5.8005752000008215,0.28729130000101577,clasificacion
+Random Forest,ADASYN,Genético,3,ninguna,4256,1064,4.926026600000114,0.3212528000003658,clasificacion
+Random Forest,class_weight,Grid Search,1,ninguna,4256,1064,4.035053500001595,0.43838270000014745,clasificacion
+Random Forest,class_weight,Grid Search,2,ninguna,4256,1064,4.841939800000546,0.3825027000002592,clasificacion
+Random Forest,class_weight,Grid Search,3,ninguna,4256,1064,4.864158599999428,0.35575989999961166,clasificacion
+Random Forest,class_weight,Grid Search,4,ninguna,4256,1064,5.15910520000034,0.5596209000013914,clasificacion
+XGBoost,SMOTE,Grid Search,0,ninguna,4256,1064,8.916664800000945,0.31879939999998896,clasificacion
+XGBoost,SMOTE,Grid Search,1,ninguna,4256,1064,8.895485699998972,0.2999902999999904,clasificacion
+XGBoost,SMOTE,Grid Search,3,ninguna,4256,1064,9.749389700000393,0.27596080000148504,clasificacion
+XGBoost,SMOTE,Grid Search,4,ninguna,4256,1064,10.020583199999237,0.23366160000114178,clasificacion
+XGBoost,ADASYN,Grid Search,1,ninguna,4256,1064,9.701336199999787,0.2201229999991483,clasificacion
+XGBoost,ADASYN,Grid Search,0,ninguna,4256,1064,10.360557800000606,0.21135460000004969,clasificacion
+Random Forest,sin_balanceo,Random Search,1,ninguna,4256,1064,6.077529099999083,0.2872155000004568,clasificacion
+XGBoost,SMOTE,Grid Search,2,ninguna,4256,1064,11.548109100000147,0.1694831000004342,clasificacion
+Random Forest,sin_balanceo,Random Search,0,ninguna,4256,1064,3.020834900000409,0.14507480000065698,clasificacion
+XGBoost,ADASYN,Grid Search,2,ninguna,4256,1064,9.300139900000431,0.12014490000001388,clasificacion
+XGBoost,ADASYN,Grid Search,3,ninguna,4256,1064,8.271414499999082,0.09131950000119105,clasificacion
+XGBoost,ADASYN,Grid Search,4,ninguna,4256,1064,8.376610000001165,0.0591748999995616,clasificacion
+Random Forest,sin_balanceo,Random Search,3,ninguna,4256,1064,2.124483399999008,0.11881350000112434,clasificacion
+Random Forest,sin_balanceo,Bayesiano,0,ninguna,4256,1064,1.7970258000004833,0.10506839999834483,clasificacion
+Random Forest,sin_balanceo,Random Search,4,ninguna,4256,1064,2.692001400000663,0.15175249999992957,clasificacion
+Random Forest,sin_balanceo,Random Search,2,ninguna,4256,1064,3.781520599999567,0.1896082999992359,clasificacion
+Random Forest,sin_balanceo,Genético,0,ninguna,4256,1064,1.9589670000004844,0.12432389999958104,clasificacion
+Random Forest,sin_balanceo,Bayesiano,2,ninguna,4256,1064,2.4200395999996545,0.14469219999955385,clasificacion
+Random Forest,sin_balanceo,Genético,2,ninguna,4256,1064,1.6079113000014331,0.12319979999847419,clasificacion
+Random Forest,sin_balanceo,Bayesiano,1,ninguna,4256,1064,2.538708100000804,0.18622400000094785,clasificacion
+Random Forest,sin_balanceo,Bayesiano,3,ninguna,4256,1064,2.8606290000006993,0.18813179999960994,clasificacion
+Random Forest,sin_balanceo,Bayesiano,4,ninguna,4256,1064,2.865332600000329,0.19222830000035174,clasificacion
+Random Forest,class_weight,Random Search,0,ninguna,4256,1064,1.9651343999994424,0.12861729999895033,clasificacion
+Random Forest,sin_balanceo,Genético,1,ninguna,4256,1064,2.8817741999991995,0.1908082000009017,clasificacion
+Random Forest,sin_balanceo,Genético,4,ninguna,4256,1064,2.879914099999951,0.19631490000028862,clasificacion
+Random Forest,sin_balanceo,Genético,3,ninguna,4256,1064,2.9383065000001807,0.23049429999991844,clasificacion
+Random Forest,class_weight,Random Search,4,ninguna,4256,1064,2.8546693999996933,0.23140700000112702,clasificacion
+Random Forest,class_weight,Random Search,1,ninguna,4256,1064,3.052283400000306,0.2680686000003334,clasificacion
+Random Forest,class_weight,Genético,0,ninguna,4256,1064,1.3411187000001519,0.11409480000111216,clasificacion
+XGBoost,SMOTE,Random Search,0,ninguna,4256,1064,1.9614249000005657,0.049603299999944284,clasificacion
+Random Forest,class_weight,Random Search,2,ninguna,4256,1064,3.2319317999990744,0.25475529999857827,clasificacion
+XGBoost,SMOTE,Random Search,1,ninguna,4256,1064,1.8776723999999376,0.03437679999842658,clasificacion
+Random Forest,class_weight,Bayesiano,0,ninguna,4256,1064,3.1450303999990865,0.2165475999991031,clasificacion
+XGBoost,SMOTE,Random Search,2,ninguna,4256,1064,2.053067699998792,0.07185679999929562,clasificacion
+Random Forest,class_weight,Bayesiano,1,ninguna,4256,1064,3.5343730000004143,0.31442730000162555,clasificacion
+Random Forest,class_weight,Random Search,3,ninguna,4256,1064,3.7350628999993205,0.34052540000084264,clasificacion
+Random Forest,class_weight,Bayesiano,2,ninguna,4256,1064,2.516961600000286,0.28668180000022403,clasificacion
+Random Forest,class_weight,Genético,2,ninguna,4256,1064,3.16787850000037,0.24521219999951427,clasificacion
+Random Forest,class_weight,Genético,1,ninguna,4256,1064,3.6391736999994464,0.40186349999930826,clasificacion
+Random Forest,class_weight,Bayesiano,3,ninguna,4256,1064,4.247399799998675,0.41096699999980046,clasificacion
+XGBoost,SMOTE,Bayesiano,3,ninguna,4256,1064,2.311780299998645,0.11942929999895568,clasificacion
+XGBoost,SMOTE,Random Search,3,ninguna,4256,1064,2.8547051999994437,0.11117689999991853,clasificacion
+XGBoost,SMOTE,Genético,1,ninguna,4256,1064,2.7523634000008315,0.12823829999979353,clasificacion
+Random Forest,class_weight,Bayesiano,4,ninguna,4256,1064,4.278912799998579,0.40005200000086916,clasificacion
+Random Forest,class_weight,Genético,3,ninguna,4256,1064,5.079062400000112,0.5351313999999547,clasificacion
+Random Forest,class_weight,Genético,4,ninguna,4256,1064,4.868829299999561,0.36019759999908274,clasificacion
+XGBoost,SMOTE,Random Search,4,ninguna,4256,1064,5.49346659999901,0.2004607999988366,clasificacion
+XGBoost,SMOTE,Genético,0,ninguna,4256,1064,4.604118200000812,0.16064109999933862,clasificacion
+XGBoost,SMOTE,Bayesiano,4,ninguna,4256,1064,5.451575400000365,0.20103930000004766,clasificacion
+XGBoost,ADASYN,Random Search,0,ninguna,4256,1064,4.339810200001011,0.16713150000032329,clasificacion
+XGBoost,SMOTE,Genético,2,ninguna,4256,1064,4.134701399998448,0.16392219999943336,clasificacion
+XGBoost,ADASYN,Random Search,3,ninguna,4256,1064,3.875939899999139,0.1526107999998203,clasificacion
+XGBoost,SMOTE,Bayesiano,0,ninguna,4256,1064,5.076687999999194,0.20550579999871843,clasificacion
+XGBoost,SMOTE,Bayesiano,1,ninguna,4256,1064,6.724845599999753,0.2156949000000168,clasificacion
+XGBoost,SMOTE,Genético,3,ninguna,4256,1064,6.106495600000926,0.21665799999937008,clasificacion
+XGBoost,SMOTE,Bayesiano,2,ninguna,4256,1064,7.9247446000008495,0.22442919999957667,clasificacion
+XGBoost,ADASYN,Genético,1,ninguna,4256,1064,4.1927933000006306,0.1594663000014407,clasificacion
+XGBoost,SMOTE,Genético,4,ninguna,4256,1064,5.297450000000026,0.1606286000005639,clasificacion
+XGBoost,ADASYN,Random Search,2,ninguna,4256,1064,6.325830400000996,0.2083904999999504,clasificacion
+XGBoost,ADASYN,Bayesiano,4,ninguna,4256,1064,4.815169700001206,0.1295750000008411,clasificacion
+XGBoost,ADASYN,Random Search,4,ninguna,4256,1064,6.580713299999843,0.17015790000004927,clasificacion
+XGBoost,ADASYN,Random Search,1,ninguna,4256,1064,7.939667200000258,0.20381199999974342,clasificacion
+XGBoost,ADASYN,Bayesiano,0,ninguna,4256,1064,6.321986699998888,0.18177789999936067,clasificacion
+XGBoost,ADASYN,Bayesiano,3,ninguna,4256,1064,5.711777300000904,0.14259470000069996,clasificacion
+XGBoost,ADASYN,Bayesiano,1,ninguna,4256,1064,3.9334817999988445,0.11218349999944621,clasificacion
+SVM,SMOTE,Grid Search,0,ninguna,4256,1064,1.5643758999995043,0.7935312999998132,clasificacion
+SVM,SMOTE,Grid Search,2,ninguna,4256,1064,1.4956396999987192,0.6946199999983946,clasificacion
+XGBoost,ADASYN,Genético,0,ninguna,4256,1064,3.968725799999447,0.07680339999933494,clasificacion
+SVM,SMOTE,Grid Search,3,ninguna,4256,1064,1.3729650000004767,0.6795474999998987,clasificacion
+XGBoost,ADASYN,Genético,3,ninguna,4256,1064,3.799795400000221,0.09397419999913836,clasificacion
+SVM,SMOTE,Grid Search,1,ninguna,4256,1064,1.8300411999989592,0.7863973999992595,clasificacion
+SVM,SMOTE,Grid Search,4,ninguna,4256,1064,1.414228200001162,0.7430058000009012,clasificacion
+XGBoost,ADASYN,Bayesiano,2,ninguna,4256,1064,4.48691449999933,0.07726560000082827,clasificacion
+SVM,ADASYN,Grid Search,0,ninguna,4256,1064,1.6794265000007726,0.8415179000003263,clasificacion
+XGBoost,ADASYN,Genético,2,ninguna,4256,1064,5.304373099999793,0.06641940000008617,clasificacion
+SVM,ADASYN,Grid Search,1,ninguna,4256,1064,1.5861767999995209,0.8635622999991028,clasificacion
+SVM,ADASYN,Grid Search,2,ninguna,4256,1064,1.580762899999172,0.8050669999993261,clasificacion
+SVM,ADASYN,Grid Search,3,ninguna,4256,1064,1.563011500000357,0.8157365000006394,clasificacion
+SVM,SMOTE,Random Search,0,ninguna,4256,1064,1.4766634999996313,0.7317249000006996,clasificacion
+SVM,SMOTE,Random Search,1,ninguna,4256,1064,1.5014611999995395,0.7549507999992784,clasificacion
+SVM,ADASYN,Grid Search,4,ninguna,4256,1064,1.5513360999993893,0.8111740999993344,clasificacion
+SVM,SMOTE,Random Search,2,ninguna,4256,1064,1.3451688999994076,0.7264306999986729,clasificacion
+XGBoost,ADASYN,Genético,4,ninguna,4256,1064,5.2616381000007095,0.06231570000090869,clasificacion
+SVM,SMOTE,Random Search,3,ninguna,4256,1064,1.30260300000009,0.7041664000007586,clasificacion
+SVM,SMOTE,Bayesiano,0,ninguna,4256,1064,1.3050426999998308,0.6856339999994816,clasificacion
+SVM,SMOTE,Random Search,4,ninguna,4256,1064,1.1920346999995672,0.6988425999988976,clasificacion
+SVM,SMOTE,Bayesiano,1,ninguna,4256,1064,1.117740000001504,0.659118400000807,clasificacion
+SVM,SMOTE,Bayesiano,2,ninguna,4256,1064,1.1733934999992925,0.6478536000013264,clasificacion
+SVM,SMOTE,Bayesiano,3,ninguna,4256,1064,1.1591699999989942,0.673763400000098,clasificacion
+SVM,SMOTE,Genético,0,ninguna,4256,1064,1.18197279999913,0.6572021000010864,clasificacion
+SVM,SMOTE,Bayesiano,4,ninguna,4256,1064,1.184301500001311,0.6921615000010206,clasificacion
+SVM,SMOTE,Genético,2,ninguna,4256,1064,1.2260212999990472,0.6300816999992094,clasificacion
+SVM,SMOTE,Genético,1,ninguna,4256,1064,1.1690545000001293,0.6286545999992086,clasificacion
+SVM,SMOTE,Genético,3,ninguna,4256,1064,1.1999292000000423,0.6530716999986907,clasificacion
+SVM,SMOTE,Genético,4,ninguna,4256,1064,1.188708300000144,0.6625335999997333,clasificacion
+SVM,ADASYN,Random Search,0,ninguna,4256,1064,1.3560350999996444,0.7878424000009545,clasificacion
+SVM,ADASYN,Random Search,1,ninguna,4256,1064,1.3755034999994677,0.7384390000006533,clasificacion
+SVM,ADASYN,Random Search,2,ninguna,4256,1064,1.298197699999946,0.7548041999998532,clasificacion
+SVM,ADASYN,Random Search,3,ninguna,4256,1064,1.3140383000009024,0.7573242999987997,clasificacion
+SVM,ADASYN,Bayesiano,0,ninguna,4256,1064,1.3632160000015574,0.7750252000005275,clasificacion
+SVM,ADASYN,Bayesiano,2,ninguna,4256,1064,1.3448105999996187,0.7220471999989968,clasificacion
+SVM,ADASYN,Bayesiano,1,ninguna,4256,1064,1.386987699999736,0.7536696000006486,clasificacion
+SVM,ADASYN,Random Search,4,ninguna,4256,1064,1.4379116000000067,0.7394873000012012,clasificacion
+SVM,ADASYN,Bayesiano,3,ninguna,4256,1064,1.3775729999997566,0.7750332999985403,clasificacion
+SVM,ADASYN,Bayesiano,4,ninguna,4256,1064,1.3824691000008897,0.8044832999985374,clasificacion
+SVM,ADASYN,Genético,0,ninguna,4256,1064,1.3308207999998558,0.7408634000003076,clasificacion
+SVM,ADASYN,Genético,2,ninguna,4256,1064,1.4597840999995242,0.9652615000013611,clasificacion
+SVM,ADASYN,Genético,1,ninguna,4256,1064,1.8997524999995221,0.9713948999997228,clasificacion
+SVM,ADASYN,Genético,3,ninguna,4256,1064,1.8877104999992298,0.9932189999999537,clasificacion
+SVM,ADASYN,Genético,4,ninguna,4256,1064,1.9525369999992108,1.1154141999995772,clasificacion
+XGBoost,sin_balanceo,Random Search,0,ninguna,4256,1064,2.4537101999994775,0.14967410000099335,clasificacion
+XGBoost,class_weight,Grid Search,0,ninguna,4256,1064,6.024567200000092,0.3042409999998199,clasificacion
+XGBoost,sin_balanceo,Grid Search,1,ninguna,4256,1064,6.496731900000668,0.30551070000001346,clasificacion
+XGBoost,sin_balanceo,Grid Search,3,ninguna,4256,1064,6.548709900000176,0.2975165999996534,clasificacion
+XGBoost,sin_balanceo,Grid Search,2,ninguna,4256,1064,6.702210899999045,0.28824920000079146,clasificacion
+XGBoost,sin_balanceo,Grid Search,0,ninguna,4256,1064,6.7785677000010764,0.28121009999995294,clasificacion
+XGBoost,sin_balanceo,Random Search,2,ninguna,4256,1064,0.6652774000012869,0.05320940000092378,clasificacion
+XGBoost,sin_balanceo,Grid Search,4,ninguna,4256,1064,6.921224599998823,0.3004409000004671,clasificacion
+XGBoost,class_weight,Grid Search,2,ninguna,4256,1064,5.9190183999999135,0.255554100000154,clasificacion
+XGBoost,sin_balanceo,Random Search,3,ninguna,4256,1064,1.2834239000003436,0.0993640000015148,clasificacion
+XGBoost,sin_balanceo,Bayesiano,2,ninguna,4256,1064,0.7596628000010242,0.058146400000623544,clasificacion
+XGBoost,sin_balanceo,Bayesiano,0,ninguna,4256,1064,1.3342718000003515,0.08122899999943911,clasificacion
+XGBoost,sin_balanceo,Genético,0,ninguna,4256,1064,1.183534599998893,0.058201899999403395,clasificacion
+XGBoost,sin_balanceo,Bayesiano,3,ninguna,4256,1064,1.3745240999996895,0.054683800000930205,clasificacion
+XGBoost,class_weight,Grid Search,4,ninguna,4256,1064,5.961567599999398,0.2690041999994719,clasificacion
+XGBoost,sin_balanceo,Bayesiano,4,ninguna,4256,1064,1.470786899999439,0.0708809999996447,clasificacion
+XGBoost,class_weight,Grid Search,1,ninguna,4256,1064,8.4306628000013,0.3152915999999095,clasificacion
+XGBoost,sin_balanceo,Random Search,1,ninguna,4256,1064,3.473714799998561,0.19447290000061912,clasificacion
+XGBoost,sin_balanceo,Random Search,4,ninguna,4256,1064,2.3873191000002407,0.1626341000010143,clasificacion
+XGBoost,sin_balanceo,Genético,2,ninguna,4256,1064,1.5370067000003473,0.10772680000081891,clasificacion
+XGBoost,class_weight,Random Search,3,ninguna,4256,1064,1.3075314999987313,0.08591669999987062,clasificacion
+XGBoost,class_weight,Random Search,1,ninguna,4256,1064,1.3230254999998579,0.10423249999985273,clasificacion
+XGBoost,class_weight,Genético,0,ninguna,4256,1064,0.34552550000080373,0.05094459999963874,clasificacion
+XGBoost,sin_balanceo,Bayesiano,1,ninguna,4256,1064,2.153698499998427,0.16870789999848057,clasificacion
+XGBoost,class_weight,Grid Search,3,ninguna,4256,1064,8.336155999999391,0.35004859999935434,clasificacion
+XGBoost,class_weight,Random Search,0,ninguna,4256,1064,2.6152750000001106,0.14953000000059546,clasificacion
+XGBoost,class_weight,Bayesiano,0,ninguna,4256,1064,1.9939974999997503,0.1368108000006032,clasificacion
+XGBoost,sin_balanceo,Genético,3,ninguna,4256,1064,2.627545100000134,0.15656809999927646,clasificacion
+XGBoost,sin_balanceo,Genético,1,ninguna,4256,1064,3.451901899999939,0.18890269999974407,clasificacion
+XGBoost,class_weight,Random Search,4,ninguna,4256,1064,3.1658026999994036,0.16084529999898223,clasificacion
+XGBoost,class_weight,Genético,2,ninguna,4256,1064,2.036002599999847,0.12442770000052406,clasificacion
+XGBoost,class_weight,Random Search,2,ninguna,4256,1064,3.3525111000017205,0.14732759999969858,clasificacion
+XGBoost,class_weight,Bayesiano,2,ninguna,4256,1064,1.8909230999997817,0.09945410000000265,clasificacion
+XGBoost,class_weight,Bayesiano,3,ninguna,4256,1064,2.4304542999998375,0.11089999999967404,clasificacion
+KNN,SMOTE,Grid Search,0,ninguna,4256,1064,0.08014910000019881,0.49334120000094117,clasificacion
+KNN,SMOTE,Grid Search,1,ninguna,4256,1064,0.09299169999940204,0.4460906000003888,clasificacion
+XGBoost,sin_balanceo,Genético,4,ninguna,4256,1064,2.964104900000166,0.10325990000092133,clasificacion
+KNN,SMOTE,Grid Search,2,ninguna,4256,1064,0.057611700000052224,0.3224273000014364,clasificacion
+KNN,SMOTE,Grid Search,3,ninguna,4256,1064,0.05623140000170679,0.3904610000008688,clasificacion
+KNN,SMOTE,Grid Search,4,ninguna,4256,1064,0.056960399999297806,0.3868765999995958,clasificacion
+KNN,ADASYN,Grid Search,0,ninguna,4256,1064,0.10340790000009292,0.411477499999819,clasificacion
+KNN,ADASYN,Grid Search,1,ninguna,4256,1064,0.10214450000057695,0.38784990000021935,clasificacion
+KNN,ADASYN,Grid Search,2,ninguna,4256,1064,0.107314500000939,0.3985369999991235,clasificacion
+XGBoost,class_weight,Genético,4,ninguna,4256,1064,1.424142199999551,0.07314530000076047,clasificacion
+KNN,ADASYN,Grid Search,3,ninguna,4256,1064,0.1138900999994803,0.4016761000002589,clasificacion
+KNN,ADASYN,Grid Search,4,ninguna,4256,1064,0.09831449999910546,0.4155166000000463,clasificacion
+XGBoost,class_weight,Genético,1,ninguna,4256,1064,2.585553599999912,0.111222399998951,clasificacion
+KNN,SMOTE,Random Search,0,ninguna,4256,1064,0.05140170000049693,0.24365020000004733,clasificacion
+SVM,sin_balanceo,Grid Search,3,ninguna,4256,1064,0.41804489999958605,0.32626410000011674,clasificacion
+SVM,sin_balanceo,Grid Search,0,ninguna,4256,1064,0.7223797000006016,0.3174068999996962,clasificacion
+SVM,sin_balanceo,Grid Search,4,ninguna,4256,1064,0.3425345000014204,0.320392499999798,clasificacion
+SVM,sin_balanceo,Grid Search,1,ninguna,4256,1064,0.655196599998817,0.29734549999921,clasificacion
+SVM,sin_balanceo,Grid Search,2,ninguna,4256,1064,0.6761286000000837,0.3294556000000739,clasificacion
+XGBoost,class_weight,Bayesiano,1,ninguna,4256,1064,3.2297357999996166,0.10437069999898085,clasificacion
+XGBoost,class_weight,Bayesiano,4,ninguna,4256,1064,2.8371574000011606,0.05417529999976978,clasificacion
+KNN,SMOTE,Random Search,1,ninguna,4256,1064,0.04439970000021276,0.33543339999960153,clasificacion
+KNN,SMOTE,Random Search,2,ninguna,4256,1064,0.04685160000008182,0.2674022999999579,clasificacion
+XGBoost,class_weight,Genético,3,ninguna,4256,1064,3.0648724999991828,0.05828210000072431,clasificacion
+KNN,SMOTE,Random Search,3,ninguna,4256,1064,0.04291999999986729,0.3067881999995734,clasificacion
+SVM,class_weight,Grid Search,0,ninguna,4256,1064,0.7480754000007437,0.4396353000011004,clasificacion
+KNN,SMOTE,Random Search,4,ninguna,4256,1064,0.041502799998852424,0.3273792999989382,clasificacion
+KNN,SMOTE,Bayesiano,1,ninguna,4256,1064,0.0369141999999556,0.23263039999983448,clasificacion
+KNN,SMOTE,Bayesiano,2,ninguna,4256,1064,0.03572669999994105,0.25069230000008247,clasificacion
+SVM,class_weight,Grid Search,1,ninguna,4256,1064,0.5000531999994564,0.46242549999988114,clasificacion
+KNN,SMOTE,Bayesiano,0,ninguna,4256,1064,0.03726479999932053,0.3276626999995642,clasificacion
+SVM,class_weight,Grid Search,2,ninguna,4256,1064,0.504829499999687,0.41560199999912584,clasificacion
+KNN,SMOTE,Bayesiano,3,ninguna,4256,1064,0.03710219999993569,0.3207430000002205,clasificacion
+KNN,SMOTE,Genético,1,ninguna,4256,1064,0.033997099999396596,0.23124830000051588,clasificacion
+KNN,SMOTE,Bayesiano,4,ninguna,4256,1064,0.037503300000025774,0.3229355999992549,clasificacion
+KNN,SMOTE,Genético,0,ninguna,4256,1064,0.039489500000854605,0.31752120000055584,clasificacion
+KNN,SMOTE,Genético,2,ninguna,4256,1064,0.03712169999926118,0.2546705999993719,clasificacion
+SVM,class_weight,Grid Search,3,ninguna,4256,1064,0.5072239000000991,0.41771089999929245,clasificacion
+KNN,SMOTE,Genético,3,ninguna,4256,1064,0.037004499999966356,0.31752200000119046,clasificacion
+SVM,class_weight,Grid Search,4,ninguna,4256,1064,0.48434070000075735,0.45385429999987537,clasificacion
+KNN,ADASYN,Random Search,0,ninguna,4256,1064,0.08467520000158402,0.22861029999876337,clasificacion
+KNN,SMOTE,Genético,4,ninguna,4256,1064,0.03589569999894593,0.3109061000013753,clasificacion
+KNN,ADASYN,Random Search,1,ninguna,4256,1064,0.07523849999961385,0.3127366999997321,clasificacion
+KNN,ADASYN,Random Search,3,ninguna,4256,1064,0.07704939999894123,0.3194874000000709,clasificacion
+KNN,ADASYN,Random Search,2,ninguna,4256,1064,0.08778710000115098,0.3272787000005337,clasificacion
+KNN,ADASYN,Random Search,4,ninguna,4256,1064,0.08761869999943883,0.31208649999825866,clasificacion
+KNN,ADASYN,Bayesiano,0,ninguna,4256,1064,0.09175839999988966,0.3099622999998246,clasificacion
+KNN,ADASYN,Bayesiano,1,ninguna,4256,1064,0.08577580000019225,0.30523530000027677,clasificacion
+KNN,ADASYN,Bayesiano,4,ninguna,4256,1064,0.08828109999922162,0.30815459999939776,clasificacion
+KNN,ADASYN,Bayesiano,3,ninguna,4256,1064,0.0904512999986764,0.3070609999995213,clasificacion
+KNN,ADASYN,Genético,0,ninguna,4256,1064,0.08215019999988726,0.30958710000049905,clasificacion
+KNN,ADASYN,Bayesiano,2,ninguna,4256,1064,0.09152300000096147,0.32921369999894523,clasificacion
+KNN,ADASYN,Genético,1,ninguna,4256,1064,0.08021219999864115,0.31757330000073125,clasificacion
+KNN,ADASYN,Genético,2,ninguna,4256,1064,0.08628379999936442,0.3254399999987072,clasificacion
+KNN,ADASYN,Genético,3,ninguna,4256,1064,0.081654300000082,0.32374280000112776,clasificacion
+KNN,ADASYN,Genético,4,ninguna,4256,1064,0.08070460000089952,0.33462519999920914,clasificacion
+SVM,sin_balanceo,Bayesiano,3,ninguna,4256,1064,0.29849169999943115,0.31502499999987776,clasificacion
+SVM,sin_balanceo,Random Search,3,ninguna,4256,1064,0.39569680000022345,0.33312300000034156,clasificacion
+SVM,sin_balanceo,Random Search,4,ninguna,4256,1064,0.35103220000019064,0.309984199999235,clasificacion
+SVM,sin_balanceo,Bayesiano,1,ninguna,4256,1064,0.39260620000095514,0.3025042000008398,clasificacion
+SVM,sin_balanceo,Random Search,0,ninguna,4256,1064,0.3460741999988386,0.3036995000002207,clasificacion
+SVM,sin_balanceo,Bayesiano,0,ninguna,4256,1064,0.4430750999999873,0.3126345000000583,clasificacion
+SVM,sin_balanceo,Random Search,1,ninguna,4256,1064,0.49512770000001183,0.31914619999952265,clasificacion
+SVM,sin_balanceo,Bayesiano,2,ninguna,4256,1064,0.37184979999983625,0.32178449999992154,clasificacion
+SVM,sin_balanceo,Random Search,2,ninguna,4256,1064,0.5654259999992064,0.32144030000017665,clasificacion
+SVM,sin_balanceo,Bayesiano,4,ninguna,4256,1064,0.3484257999989495,0.32639130000097794,clasificacion
+SVM,sin_balanceo,Genético,0,ninguna,4256,1064,0.416972099999839,0.31902400000035414,clasificacion
+SVM,sin_balanceo,Genético,4,ninguna,4256,1064,0.3144639999991341,0.3144677000000229,clasificacion
+SVM,sin_balanceo,Genético,3,ninguna,4256,1064,0.32007789999988745,0.3102323000002798,clasificacion
+SVM,sin_balanceo,Genético,1,ninguna,4256,1064,0.32833129999926314,0.31146820000139996,clasificacion
+SVM,sin_balanceo,Genético,2,ninguna,4256,1064,0.4149726000014198,0.31609369999932824,clasificacion
+SVM,class_weight,Random Search,1,ninguna,4256,1064,0.4729382000004989,0.4361007999996218,clasificacion
+SVM,class_weight,Bayesiano,0,ninguna,4256,1064,0.5019677000000229,0.4373967999999877,clasificacion
+SVM,class_weight,Random Search,3,ninguna,4256,1064,0.4876268000007258,0.42736620000141556,clasificacion
+SVM,class_weight,Random Search,2,ninguna,4256,1064,0.4693356000007043,0.45352510000157054,clasificacion
+SVM,class_weight,Bayesiano,1,ninguna,4256,1064,0.4563429999998334,0.4474463000005926,clasificacion
+SVM,class_weight,Random Search,0,ninguna,4256,1064,0.49223589999928663,0.46151759999884234,clasificacion
+Naive Bayes,SMOTE,Grid Search,0,ninguna,4256,1064,0.027089699999123695,0.011019800000212854,clasificacion
+Naive Bayes,SMOTE,Grid Search,1,ninguna,4256,1064,0.02756250000129512,0.01104250000025786,clasificacion
+Naive Bayes,SMOTE,Grid Search,2,ninguna,4256,1064,0.023611099999470753,0.010142099999939092,clasificacion
+Naive Bayes,SMOTE,Grid Search,3,ninguna,4256,1064,0.025863000000754255,0.011510399999679066,clasificacion
+Naive Bayes,SMOTE,Grid Search,4,ninguna,4256,1064,0.028524800000013784,0.009447599999475642,clasificacion
+SVM,class_weight,Random Search,4,ninguna,4256,1064,0.4702082999992854,0.4419388999995135,clasificacion
+Naive Bayes,ADASYN,Grid Search,0,ninguna,4256,1064,0.07709289999911562,0.01213370000004943,clasificacion
+Naive Bayes,ADASYN,Grid Search,1,ninguna,4256,1064,0.07390569999915897,0.010583600000245497,clasificacion
+Naive Bayes,ADASYN,Grid Search,3,ninguna,4256,1064,0.07980879999922763,0.010944199999357807,clasificacion
+Naive Bayes,ADASYN,Grid Search,2,ninguna,4256,1064,0.08154449999892677,0.010466900001119939,clasificacion
+Naive Bayes,ADASYN,Grid Search,4,ninguna,4256,1064,0.0669477999999799,0.010201899998719455,clasificacion
+Regresión Logística (L1/L2),SMOTE,Grid Search,1,ninguna,4256,1064,0.035959200000434066,0.011382900000171503,clasificacion
+Regresión Logística (L1/L2),SMOTE,Grid Search,0,ninguna,4256,1064,0.09083909999935713,0.010370499998316518,clasificacion
+SVM,class_weight,Bayesiano,3,ninguna,4256,1064,0.46345930000097724,0.4135065999998915,clasificacion
+SVM,class_weight,Bayesiano,2,ninguna,4256,1064,0.5072827999993024,0.4251710999997158,clasificacion
+SVM,class_weight,Bayesiano,4,ninguna,4256,1064,0.4451224000004004,0.4612636999991082,clasificacion
+Regresión Logística (L1/L2),SMOTE,Grid Search,3,ninguna,4256,1064,0.03953990000081831,0.010458800001288182,clasificacion
+Regresión Logística (L1/L2),SMOTE,Grid Search,4,ninguna,4256,1064,0.036634699999922304,0.010683099999369006,clasificacion
+Regresión Logística (L1/L2),ADASYN,Grid Search,1,ninguna,4256,1064,0.07883390000097279,0.00983280000036757,clasificacion
+Regresión Logística (L1/L2),ADASYN,Grid Search,0,ninguna,4256,1064,0.08306249999986903,0.009505200001513003,clasificacion
+Decision Tree,SMOTE,Grid Search,0,ninguna,4256,1064,0.0786593000011635,0.009223700000802637,clasificacion
+Decision Tree,SMOTE,Grid Search,2,ninguna,4256,1064,0.06995370000004186,0.00938289999976405,clasificacion
+SVM,class_weight,Genético,0,ninguna,4256,1064,0.46583839999948395,0.4273400000001857,clasificacion
+Regresión Logística (L1/L2),SMOTE,Grid Search,2,ninguna,4256,1064,0.1792295000013837,0.011012599999958184,clasificacion
+Regresión Logística (L1/L2),ADASYN,Grid Search,2,ninguna,4256,1064,0.08354390000022249,0.014044200001080753,clasificacion
+Decision Tree,SMOTE,Grid Search,1,ninguna,4256,1064,0.07702460000109568,0.009698200001366786,clasificacion
+Decision Tree,SMOTE,Grid Search,4,ninguna,4256,1064,0.06402640000123938,0.008914699999877485,clasificacion
+Regresión Logística (L1/L2),ADASYN,Grid Search,4,ninguna,4256,1064,0.07904170000074373,0.00882869999986724,clasificacion
+Decision Tree,SMOTE,Grid Search,3,ninguna,4256,1064,0.06641990000025544,0.00991249999970023,clasificacion
+Regresión Logística (L1/L2),ADASYN,Grid Search,3,ninguna,4256,1064,0.14006549999976414,0.009455100000195671,clasificacion
+Naive Bayes,SMOTE,Random Search,0,ninguna,4256,1064,0.02564449999954377,0.010295400001268717,clasificacion
+Decision Tree,ADASYN,Grid Search,1,ninguna,4256,1064,0.10122410000076343,0.010779100000945618,clasificacion
+Decision Tree,ADASYN,Grid Search,0,ninguna,4256,1064,0.11433089999991353,0.011749299999792129,clasificacion
+Naive Bayes,SMOTE,Random Search,1,ninguna,4256,1064,0.026507100001254003,0.01012059999993653,clasificacion
+Naive Bayes,SMOTE,Random Search,2,ninguna,4256,1064,0.025035500000740285,0.010755299999800627,clasificacion
+Naive Bayes,SMOTE,Random Search,3,ninguna,4256,1064,0.02724090000083379,0.01114390000111598,clasificacion
+Naive Bayes,SMOTE,Random Search,4,ninguna,4256,1064,0.024841399999786518,0.011798600000474835,clasificacion
+Decision Tree,ADASYN,Grid Search,4,ninguna,4256,1064,0.13074419999975362,0.009731399999509449,clasificacion
+Naive Bayes,SMOTE,Bayesiano,0,ninguna,4256,1064,0.02699679999932414,0.01031689999945229,clasificacion
+Naive Bayes,SMOTE,Bayesiano,1,ninguna,4256,1064,0.026172399999268237,0.011180800000147428,clasificacion
+Decision Tree,ADASYN,Grid Search,3,ninguna,4256,1064,0.1109295000005659,0.011121100000309525,clasificacion
+Naive Bayes,SMOTE,Bayesiano,2,ninguna,4256,1064,0.025959399999919697,0.01367240000035963,clasificacion
+SVM,class_weight,Genético,3,ninguna,4256,1064,0.46400510000057693,0.43849609999961103,clasificacion
+Decision Tree,ADASYN,Grid Search,2,ninguna,4256,1064,0.1382510999992519,0.013687599999684608,clasificacion
+Naive Bayes,SMOTE,Bayesiano,3,ninguna,4256,1064,0.026387699999759207,0.013354200000321725,clasificacion
+SVM,class_weight,Genético,4,ninguna,4256,1064,0.47111170000061975,0.45539520000056655,clasificacion
+Naive Bayes,SMOTE,Genético,1,ninguna,4256,1064,0.028773400001227856,0.010338000000047032,clasificacion
+Naive Bayes,SMOTE,Bayesiano,4,ninguna,4256,1064,0.030421100000239676,0.011050600000089617,clasificacion
+Naive Bayes,SMOTE,Genético,3,ninguna,4256,1064,0.02733269999953336,0.010264799999276875,clasificacion
+Naive Bayes,SMOTE,Genético,0,ninguna,4256,1064,0.030994900000223424,0.011469900000520283,clasificacion
+Naive Bayes,SMOTE,Genético,2,ninguna,4256,1064,0.025908300000082818,0.016414600000643986,clasificacion
+Naive Bayes,SMOTE,Genético,4,ninguna,4256,1064,0.03021929999886197,0.015863399999943795,clasificacion
+SVM,class_weight,Genético,1,ninguna,4256,1064,0.47719150000011723,0.4512513999998191,clasificacion
+Naive Bayes,ADASYN,Random Search,0,ninguna,4256,1064,0.07457440000143833,0.010465299999850686,clasificacion
+Naive Bayes,ADASYN,Random Search,1,ninguna,4256,1064,0.0767574000001332,0.0106673000009323,clasificacion
+Naive Bayes,ADASYN,Random Search,4,ninguna,4256,1064,0.07083079999938491,0.010450899999341345,clasificacion
+SVM,class_weight,Genético,2,ninguna,4256,1064,0.4696850000000268,0.42840849999993225,clasificacion
+Naive Bayes,ADASYN,Bayesiano,1,ninguna,4256,1064,0.06965939999827242,0.011276300001554773,clasificacion
+Naive Bayes,ADASYN,Random Search,3,ninguna,4256,1064,0.07959619999928691,0.011701499999617226,clasificacion
+Naive Bayes,ADASYN,Bayesiano,0,ninguna,4256,1064,0.07496509999873524,0.012153899999248097,clasificacion
+Naive Bayes,ADASYN,Random Search,2,ninguna,4256,1064,0.08649270000023535,0.012802699999156175,clasificacion
+Naive Bayes,ADASYN,Bayesiano,2,ninguna,4256,1064,0.07867839999926218,0.012239799998496892,clasificacion
+Naive Bayes,ADASYN,Bayesiano,4,ninguna,4256,1064,0.07308320000083768,0.012993599999390426,clasificacion
+Regresión Logística (L1/L2),SMOTE,Random Search,0,ninguna,4256,1064,0.0381956999990507,0.011384100000213948,clasificacion
+Naive Bayes,ADASYN,Bayesiano,3,ninguna,4256,1064,0.07574419999946258,0.012836699999752454,clasificacion
+Regresión Logística (L1/L2),SMOTE,Random Search,1,ninguna,4256,1064,0.03397450000011304,0.011583600000449223,clasificacion
+Naive Bayes,ADASYN,Genético,1,ninguna,4256,1064,0.0718113999992056,0.012175900001238915,clasificacion
+Regresión Logística (L1/L2),SMOTE,Bayesiano,1,ninguna,4256,1064,0.037016500000390806,0.011718799998561735,clasificacion
+Naive Bayes,ADASYN,Genético,3,ninguna,4256,1064,0.07378699999935634,0.012437300001693075,clasificacion
+Regresión Logística (L1/L2),SMOTE,Random Search,2,ninguna,4256,1064,0.03327549999994517,0.01244820000101754,clasificacion
+Regresión Logística (L1/L2),SMOTE,Bayesiano,2,ninguna,4256,1064,0.03798029999961727,0.012251099999048165,clasificacion
+Naive Bayes,ADASYN,Genético,4,ninguna,4256,1064,0.0762018999994325,0.012700799999947776,clasificacion
+Naive Bayes,ADASYN,Genético,0,ninguna,4256,1064,0.07772909999948752,0.013404999999693246,clasificacion
+Naive Bayes,ADASYN,Genético,2,ninguna,4256,1064,0.08211230000051728,0.016669000000547385,clasificacion
+Regresión Logística (L1/L2),SMOTE,Random Search,4,ninguna,4256,1064,0.03958799999963958,0.011080399999627843,clasificacion
+Regresión Logística (L1/L2),SMOTE,Bayesiano,4,ninguna,4256,1064,0.039942299999893294,0.015165099999649101,clasificacion
+Regresión Logística (L1/L2),SMOTE,Bayesiano,3,ninguna,4256,1064,0.041153800000756746,0.013502300000254763,clasificacion
+Regresión Logística (L1/L2),SMOTE,Genético,1,ninguna,4256,1064,0.03900450000037381,0.012764600000082282,clasificacion
+Regresión Logística (L1/L2),SMOTE,Genético,2,ninguna,4256,1064,0.039297200000874,0.012424700000337907,clasificacion
+Regresión Logística (L1/L2),SMOTE,Genético,4,ninguna,4256,1064,0.04170520000116085,0.010336699999243137,clasificacion
+Regresión Logística (L1/L2),SMOTE,Genético,3,ninguna,4256,1064,0.04373949999899196,0.009899399999994785,clasificacion
+Regresión Logística (L1/L2),SMOTE,Genético,0,ninguna,4256,1064,0.08722979999947711,0.011917400001038914,clasificacion
+Regresión Logística (L1/L2),SMOTE,Bayesiano,0,ninguna,4256,1064,0.09482549999847834,0.013899600000513601,clasificacion
+Regresión Logística (L1/L2),SMOTE,Random Search,3,ninguna,4256,1064,0.11838720000014291,0.009885000001304434,clasificacion
+Regresión Logística (L1/L2),ADASYN,Random Search,0,ninguna,4256,1064,0.08918950000042969,0.011663900000712601,clasificacion
+Regresión Logística (L1/L2),ADASYN,Random Search,1,ninguna,4256,1064,0.08394159999988915,0.011302099999738857,clasificacion
+Regresión Logística (L1/L2),ADASYN,Random Search,2,ninguna,4256,1064,0.08916959999987739,0.010063600000648876,clasificacion
+Regresión Logística (L1/L2),ADASYN,Random Search,4,ninguna,4256,1064,0.08568529999865859,0.011056800000005751,clasificacion
+Regresión Logística (L1/L2),ADASYN,Bayesiano,0,ninguna,4256,1064,0.08768079999936162,0.01129410000066855,clasificacion
+Regresión Logística (L1/L2),ADASYN,Bayesiano,1,ninguna,4256,1064,0.07999169999857259,0.008537800000340212,clasificacion
+Regresión Logística (L1/L2),ADASYN,Bayesiano,2,ninguna,4256,1064,0.09039219999976922,0.009263600000849692,clasificacion
+Regresión Logística (L1/L2),ADASYN,Bayesiano,4,ninguna,4256,1064,0.08082029999968654,0.010525400000915397,clasificacion
+Decision Tree,SMOTE,Random Search,0,ninguna,4256,1064,0.05113379999966128,0.009729199999128468,clasificacion
+Regresión Logística (L1/L2),ADASYN,Genético,0,ninguna,4256,1064,0.08507409999947413,0.010236100000838633,clasificacion
+Regresión Logística (L1/L2),ADASYN,Random Search,3,ninguna,4256,1064,0.14333179999994172,0.009953299999324372,clasificacion
+Regresión Logística (L1/L2),ADASYN,Genético,4,ninguna,4256,1064,0.07953430000088701,0.009436199999981909,clasificacion
+Regresión Logística (L1/L2),ADASYN,Genético,1,ninguna,4256,1064,0.08603149999908055,0.011209299998881761,clasificacion
+Decision Tree,SMOTE,Random Search,1,ninguna,4256,1064,0.07442189999892435,0.011603400000240072,clasificacion
+Regresión Logística (L1/L2),ADASYN,Genético,2,ninguna,4256,1064,0.0889921999987564,0.010022500000559376,clasificacion
+Regresión Logística (L1/L2),ADASYN,Bayesiano,3,ninguna,4256,1064,0.14753970000128902,0.010372500000812579,clasificacion
+Decision Tree,SMOTE,Random Search,2,ninguna,4256,1064,0.06859540000004927,0.010081400001581642,clasificacion
+Decision Tree,SMOTE,Random Search,4,ninguna,4256,1064,0.06932339999912074,0.011935799999264418,clasificacion
+Decision Tree,SMOTE,Bayesiano,0,ninguna,4256,1064,0.06346520000079181,0.009632499999497668,clasificacion
+Decision Tree,SMOTE,Random Search,3,ninguna,4256,1064,0.06954399999995076,0.009091800000533112,clasificacion
+Decision Tree,SMOTE,Bayesiano,2,ninguna,4256,1064,0.08152260000133538,0.009024900000440539,clasificacion
+Decision Tree,SMOTE,Bayesiano,3,ninguna,4256,1064,0.05364069999995991,0.009650399999372894,clasificacion
+Decision Tree,SMOTE,Bayesiano,1,ninguna,4256,1064,0.06319400000029418,0.010665499999959138,clasificacion
+Decision Tree,SMOTE,Genético,0,ninguna,4256,1064,0.07074250000005122,0.009663900000305148,clasificacion
+Regresión Logística (L1/L2),ADASYN,Genético,3,ninguna,4256,1064,0.14678269999967597,0.009733000000778702,clasificacion
+Decision Tree,SMOTE,Genético,3,ninguna,4256,1064,0.051277200000185985,0.011830900000859401,clasificacion
+Decision Tree,SMOTE,Bayesiano,4,ninguna,4256,1064,0.08146640000086336,0.011871599999722093,clasificacion
+Decision Tree,SMOTE,Genético,1,ninguna,4256,1064,0.08125959999961196,0.010675699999410426,clasificacion
+Decision Tree,SMOTE,Genético,2,ninguna,4256,1064,0.0799762999995437,0.011357900000803056,clasificacion
+Decision Tree,SMOTE,Genético,4,ninguna,4256,1064,0.06823470000017551,0.012768099999448168,clasificacion
+Decision Tree,ADASYN,Random Search,0,ninguna,4256,1064,0.10513340000034077,0.00988139999935811,clasificacion
+Decision Tree,ADASYN,Random Search,1,ninguna,4256,1064,0.09763179999936256,0.009599200000593555,clasificacion
+Decision Tree,ADASYN,Bayesiano,1,ninguna,4256,1064,0.09980709999945248,0.009116999999605468,clasificacion
+Decision Tree,ADASYN,Random Search,4,ninguna,4256,1064,0.11853049999990617,0.008713399998669047,clasificacion
+Decision Tree,ADASYN,Random Search,3,ninguna,4256,1064,0.12117439999929047,0.009689599999546772,clasificacion
+Decision Tree,ADASYN,Random Search,2,ninguna,4256,1064,0.14310069999919506,0.0095352999996976,clasificacion
+Decision Tree,ADASYN,Bayesiano,0,ninguna,4256,1064,0.11691629999950237,0.010499500000150874,clasificacion
+Decision Tree,ADASYN,Bayesiano,3,ninguna,4256,1064,0.11473089999890362,0.009892300000501564,clasificacion
+Decision Tree,ADASYN,Genético,0,ninguna,4256,1064,0.11894939999911003,0.009712699998999597,clasificacion
+Decision Tree,ADASYN,Bayesiano,4,ninguna,4256,1064,0.12857249999979103,0.009872700000414625,clasificacion
+Decision Tree,ADASYN,Genético,1,ninguna,4256,1064,0.09192540000003646,0.010431099999550497,clasificacion
+Decision Tree,ADASYN,Bayesiano,2,ninguna,4256,1064,0.1368665999998484,0.011287199999060249,clasificacion
+Decision Tree,ADASYN,Genético,3,ninguna,4256,1064,0.09406010000020615,0.011916900000869646,clasificacion
+Decision Tree,ADASYN,Genético,4,ninguna,4256,1064,0.12554529999943043,0.00977720000082627,clasificacion
+Decision Tree,ADASYN,Genético,2,ninguna,4256,1064,0.15083919999960926,0.010618899999826681,clasificacion
+KNN,sin_balanceo,Grid Search,2,ninguna,4256,1064,0.014026800001374795,0.17314530000112427,clasificacion
+KNN,sin_balanceo,Grid Search,1,ninguna,4256,1064,0.014871199999106466,0.18408460000136984,clasificacion
+KNN,sin_balanceo,Random Search,2,ninguna,4256,1064,0.016706600001271,0.17304519999925105,clasificacion
+KNN,sin_balanceo,Grid Search,0,ninguna,4256,1064,0.01700909999999567,0.23082889999932377,clasificacion
+KNN,sin_balanceo,Grid Search,3,ninguna,4256,1064,0.01482170000053884,0.22386200000073586,clasificacion
+KNN,sin_balanceo,Grid Search,4,ninguna,4256,1064,0.015897700001005433,0.21158360000117682,clasificacion
+KNN,sin_balanceo,Random Search,0,ninguna,4256,1064,0.01647889999912877,0.2195517000000109,clasificacion
+KNN,sin_balanceo,Random Search,3,ninguna,4256,1064,0.01636750000034226,0.2283101999983046,clasificacion
+KNN,sin_balanceo,Random Search,1,ninguna,4256,1064,0.016487299999425886,0.2229829999996582,clasificacion
+KNN,sin_balanceo,Random Search,4,ninguna,4256,1064,0.016591399999015266,0.23393729999952484,clasificacion
+KNN,sin_balanceo,Bayesiano,0,ninguna,4256,1064,0.016946499999903608,0.22297059999982594,clasificacion
+KNN,sin_balanceo,Bayesiano,2,ninguna,4256,1064,0.016242600000623497,0.1788670000005368,clasificacion
+Naive Bayes,sin_balanceo,Grid Search,0,ninguna,4256,1064,0.009782200000699959,0.01170769999953336,clasificacion
+Naive Bayes,sin_balanceo,Grid Search,2,ninguna,4256,1064,0.010576499998933286,0.011357899998984067,clasificacion
+Naive Bayes,sin_balanceo,Grid Search,1,ninguna,4256,1064,0.010557300000073155,0.010992299999998068,clasificacion
+Naive Bayes,sin_balanceo,Grid Search,3,ninguna,4256,1064,0.011113499998828047,0.012419699998645228,clasificacion
+KNN,sin_balanceo,Bayesiano,1,ninguna,4256,1064,0.0164401000001817,0.2139655999999377,clasificacion
+Naive Bayes,sin_balanceo,Grid Search,4,ninguna,4256,1064,0.012650399999984074,0.013618999999380321,clasificacion
+Naive Bayes,class_weight,Grid Search,0,ninguna,4256,1064,0.015023900001324364,0.011514699999679578,clasificacion
+Naive Bayes,class_weight,Grid Search,1,ninguna,4256,1064,0.016846100001203013,0.011796900000263122,clasificacion
+Naive Bayes,class_weight,Grid Search,2,ninguna,4256,1064,0.014064700000744779,0.010779099999126629,clasificacion
+KNN,sin_balanceo,Genético,1,ninguna,4256,1064,0.017094800001359545,0.18276809999952093,clasificacion
+Naive Bayes,class_weight,Grid Search,3,ninguna,4256,1064,0.0127409999986412,0.011565699998755008,clasificacion
+Naive Bayes,class_weight,Grid Search,4,ninguna,4256,1064,0.012978799999473267,0.01138600000012957,clasificacion
+KNN,sin_balanceo,Genético,2,ninguna,4256,1064,0.015893000001597102,0.18968300000051386,clasificacion
+Regresión Logística (L1/L2),class_weight,Grid Search,0,ninguna,4256,1064,0.01957389999915904,0.010920299999270355,clasificacion
+KNN,sin_balanceo,Bayesiano,3,ninguna,4256,1064,0.01622729999871808,0.24275670000133687,clasificacion
+Decision Tree,sin_balanceo,Grid Search,0,ninguna,4256,1064,0.026719100000264007,0.01183139999920968,clasificacion
+Regresión Logística (L1/L2),class_weight,Grid Search,1,ninguna,4256,1064,0.016756200000600074,0.012027799999486888,clasificacion
+KNN,sin_balanceo,Genético,0,ninguna,4256,1064,0.016736000001401408,0.24083369999971183,clasificacion
+Regresión Logística (L1/L2),class_weight,Grid Search,2,ninguna,4256,1064,0.01902420000078564,0.013300800001161406,clasificacion
+KNN,sin_balanceo,Bayesiano,4,ninguna,4256,1064,0.016624699999738368,0.23791700000037963,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Grid Search,3,ninguna,4256,1064,0.0204200000007404,0.01195720000032452,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Grid Search,2,ninguna,4256,1064,0.020814200001041172,0.013942399998995825,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Grid Search,1,ninguna,4256,1064,0.02091189999919152,0.010836600000402541,clasificacion
+KNN,sin_balanceo,Genético,4,ninguna,4256,1064,0.0177229000000807,0.23110860000087996,clasificacion
+Decision Tree,sin_balanceo,Grid Search,1,ninguna,4256,1064,0.029352300000027753,0.011045600000215927,clasificacion
+Decision Tree,sin_balanceo,Grid Search,2,ninguna,4256,1064,0.028249599999981,0.011144699999931618,clasificacion
+Regresión Logística (L1/L2),class_weight,Grid Search,4,ninguna,4256,1064,0.04743710000002466,0.011365799999111914,clasificacion
+Decision Tree,sin_balanceo,Grid Search,3,ninguna,4256,1064,0.026852300001337426,0.011453400000391412,clasificacion
+KNN,sin_balanceo,Genético,3,ninguna,4256,1064,0.01635280000118655,0.2425149999999121,clasificacion
+Decision Tree,sin_balanceo,Grid Search,4,ninguna,4256,1064,0.023951299999680487,0.012988800001039635,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Grid Search,0,ninguna,4256,1064,0.05629419999968377,0.011761800000385847,clasificacion
+Decision Tree,class_weight,Grid Search,0,ninguna,4256,1064,0.02806629999940924,0.009654000001319218,clasificacion
+Decision Tree,class_weight,Grid Search,3,ninguna,4256,1064,0.026530300001468277,0.011542199999894365,clasificacion
+Naive Bayes,sin_balanceo,Random Search,0,ninguna,4256,1064,0.010853499999939231,0.012411699999574921,clasificacion
+Naive Bayes,sin_balanceo,Random Search,1,ninguna,4256,1064,0.011651200000414974,0.013487500000337604,clasificacion
+Naive Bayes,sin_balanceo,Random Search,2,ninguna,4256,1064,0.011819700001069577,0.013146499999493244,clasificacion
+Decision Tree,class_weight,Grid Search,2,ninguna,4256,1064,0.028873699999167002,0.013086299999486073,clasificacion
+Decision Tree,class_weight,Grid Search,1,ninguna,4256,1064,0.028182599999126978,0.012739499999952386,clasificacion
+Decision Tree,class_weight,Grid Search,4,ninguna,4256,1064,0.027338600000803126,0.014232099998480408,clasificacion
+Naive Bayes,sin_balanceo,Random Search,3,ninguna,4256,1064,0.012556699999549892,0.013587200000984012,clasificacion
+Naive Bayes,sin_balanceo,Random Search,4,ninguna,4256,1064,0.010139600000911742,0.01587390000167943,clasificacion
+Naive Bayes,sin_balanceo,Bayesiano,0,ninguna,4256,1064,0.014948399999411777,0.017286099999182625,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Grid Search,4,ninguna,4256,1064,0.09719849999964936,0.01855269999941811,clasificacion
+Naive Bayes,sin_balanceo,Bayesiano,1,ninguna,4256,1064,0.012397000000419212,0.01779030000034254,clasificacion
+Regresión Logística (L1/L2),class_weight,Grid Search,3,ninguna,4256,1064,0.10786299999926996,0.016938099999606493,clasificacion
+Naive Bayes,sin_balanceo,Bayesiano,2,ninguna,4256,1064,0.014161600000079488,0.015265199999703327,clasificacion
+Naive Bayes,sin_balanceo,Bayesiano,3,ninguna,4256,1064,0.014781100000618608,0.017588799999430194,clasificacion
+Naive Bayes,sin_balanceo,Bayesiano,4,ninguna,4256,1064,0.013732199999139993,0.015976300001057098,clasificacion
+Naive Bayes,sin_balanceo,Genético,0,ninguna,4256,1064,0.015240700000504148,0.013846000001649372,clasificacion
+Naive Bayes,sin_balanceo,Genético,1,ninguna,4256,1064,0.017041799999788054,0.015877699999691686,clasificacion
+Naive Bayes,sin_balanceo,Genético,2,ninguna,4256,1064,0.014943700000003446,0.014061099998798454,clasificacion
+Naive Bayes,sin_balanceo,Genético,4,ninguna,4256,1064,0.015995699999621138,0.015543700001217076,clasificacion
+Naive Bayes,sin_balanceo,Genético,3,ninguna,4256,1064,0.013580999999248888,0.014537200000631856,clasificacion
+Naive Bayes,class_weight,Random Search,0,ninguna,4256,1064,0.01701130000037665,0.013396399999692221,clasificacion
+Naive Bayes,class_weight,Random Search,2,ninguna,4256,1064,0.01670439999907103,0.015270500000042375,clasificacion
+Naive Bayes,class_weight,Random Search,1,ninguna,4256,1064,0.01717319999988831,0.015276100000846782,clasificacion
+Naive Bayes,class_weight,Random Search,4,ninguna,4256,1064,0.01566619999903196,0.014100100001087412,clasificacion
+Naive Bayes,class_weight,Random Search,3,ninguna,4256,1064,0.017734099999870523,0.01666090000071563,clasificacion
+Naive Bayes,class_weight,Bayesiano,2,ninguna,4256,1064,0.016461600000184262,0.01359249999950407,clasificacion
+Naive Bayes,class_weight,Bayesiano,1,ninguna,4256,1064,0.01747359999899345,0.016240400000242516,clasificacion
+Naive Bayes,class_weight,Bayesiano,0,ninguna,4256,1064,0.01655639999989944,0.015686400000049616,clasificacion
+Naive Bayes,class_weight,Bayesiano,3,ninguna,4256,1064,0.01407399999879999,0.014460800000961171,clasificacion
+Naive Bayes,class_weight,Bayesiano,4,ninguna,4256,1064,0.017961599998670863,0.014302200001111487,clasificacion
+Naive Bayes,class_weight,Genético,0,ninguna,4256,1064,0.018183799998951145,0.015335399999457877,clasificacion
+Naive Bayes,class_weight,Genético,1,ninguna,4256,1064,0.01668219999919529,0.01550649999990128,clasificacion
+Naive Bayes,class_weight,Genético,3,ninguna,4256,1064,0.015379799999209354,0.014359099999637692,clasificacion
+Naive Bayes,class_weight,Genético,2,ninguna,4256,1064,0.01777120000042487,0.015532399998846813,clasificacion
+Naive Bayes,class_weight,Genético,4,ninguna,4256,1064,0.015379000000393717,0.013374300000577932,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Random Search,0,ninguna,4256,1064,0.02029240000047139,0.013818900000842405,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Bayesiano,1,ninguna,4256,1064,0.0199585999998817,0.013954899999589543,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Random Search,1,ninguna,4256,1064,0.01904589999867312,0.013864500000636326,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Bayesiano,3,ninguna,4256,1064,0.020893199998681666,0.014493399999992107,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Random Search,3,ninguna,4256,1064,0.023037500001009903,0.01318390000051295,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Genético,2,ninguna,4256,1064,0.023971399999936693,0.0119087999992189,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Genético,3,ninguna,4256,1064,0.022621000000071945,0.012536100000943406,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Random Search,2,ninguna,4256,1064,0.05820970000058878,0.01245550000021467,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Bayesiano,0,ninguna,4256,1064,0.025406100001418963,0.013576400000602007,clasificacion
+Regresión Logística (L1/L2),class_weight,Random Search,2,ninguna,4256,1064,0.021612800001094,0.013989600000059,clasificacion
+Regresión Logística (L1/L2),class_weight,Random Search,1,ninguna,4256,1064,0.023003799999059993,0.0132225000015751,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Genético,0,ninguna,4256,1064,0.05672520000007353,0.012139399999796296,clasificacion
+Regresión Logística (L1/L2),class_weight,Random Search,0,ninguna,4256,1064,0.05358610000075714,0.0126271999997698,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Genético,1,ninguna,4256,1064,0.021918999998888467,0.012253400000190595,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Bayesiano,4,ninguna,4256,1064,0.09579660000053991,0.012839499999245163,clasificacion
+Regresión Logística (L1/L2),class_weight,Bayesiano,1,ninguna,4256,1064,0.022742499999367283,0.0131160999990243,clasificacion
+Regresión Logística (L1/L2),class_weight,Genético,0,ninguna,4256,1064,0.021963199998936034,0.012440399999832152,clasificacion
+Regresión Logística (L1/L2),class_weight,Random Search,4,ninguna,4256,1064,0.058958700001312536,0.01184599999942293,clasificacion
+Regresión Logística (L1/L2),class_weight,Genético,2,ninguna,4256,1064,0.022601000000577187,0.011852300000100513,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Random Search,4,ninguna,4256,1064,0.10594899999887275,0.012517600000137463,clasificacion
+Regresión Logística (L1/L2),class_weight,Genético,1,ninguna,4256,1064,0.020335100000011153,0.011239399998885347,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Bayesiano,2,ninguna,4256,1064,0.06161419999989448,0.011389299999791547,clasificacion
+Decision Tree,sin_balanceo,Random Search,0,ninguna,4256,1064,0.0194909000001644,0.012061700001140707,clasificacion
+Regresión Logística (L1/L2),class_weight,Bayesiano,4,ninguna,4256,1064,0.05022300000018731,0.011025399999198271,clasificacion
+Regresión Logística (L1/L2),sin_balanceo,Genético,4,ninguna,4256,1064,0.09228429999893706,0.01180480000039097,clasificacion
+Decision Tree,sin_balanceo,Random Search,1,ninguna,4256,1064,0.027428699999290984,0.012082299999747192,clasificacion
+Regresión Logística (L1/L2),class_weight,Bayesiano,0,ninguna,4256,1064,0.058753600000272854,0.013748199999099597,clasificacion
+Regresión Logística (L1/L2),class_weight,Bayesiano,3,ninguna,4256,1064,0.10243400000035763,0.013547599999583326,clasificacion
+Decision Tree,sin_balanceo,Random Search,2,ninguna,4256,1064,0.027231699999902048,0.014662999999927706,clasificacion
+Regresión Logística (L1/L2),class_weight,Genético,4,ninguna,4256,1064,0.05895979999877454,0.012500299999373965,clasificacion
+Decision Tree,sin_balanceo,Random Search,3,ninguna,4256,1064,0.02995820000069216,0.012063900001521688,clasificacion
+Decision Tree,sin_balanceo,Random Search,4,ninguna,4256,1064,0.028219499999977415,0.011887799999385606,clasificacion
+Decision Tree,sin_balanceo,Bayesiano,0,ninguna,4256,1064,0.02794779999931052,0.011635599999863189,clasificacion
+Decision Tree,sin_balanceo,Bayesiano,1,ninguna,4256,1064,0.02855259999887494,0.012184000001070672,clasificacion
+Decision Tree,sin_balanceo,Bayesiano,2,ninguna,4256,1064,0.024900300000808784,0.011317999998937012,clasificacion
+Decision Tree,sin_balanceo,Genético,0,ninguna,4256,1064,0.025725699999384233,0.011182399999597692,clasificacion
+Decision Tree,sin_balanceo,Bayesiano,4,ninguna,4256,1064,0.026963500000420026,0.011352499999702559,clasificacion
+Decision Tree,sin_balanceo,Bayesiano,3,ninguna,4256,1064,0.028263300000617164,0.010964700000840821,clasificacion
+Decision Tree,sin_balanceo,Genético,2,ninguna,4256,1064,0.025839500000074622,0.011417800000344869,clasificacion
+Regresión Logística (L1/L2),class_weight,Genético,3,ninguna,4256,1064,0.11392589999923075,0.011391899999580346,clasificacion
+Decision Tree,sin_balanceo,Genético,4,ninguna,4256,1064,0.024863099999492988,0.011067700001149205,clasificacion
+Decision Tree,sin_balanceo,Genético,1,ninguna,4256,1064,0.02967760000137787,0.012872600000264356,clasificacion
+Decision Tree,class_weight,Random Search,0,ninguna,4256,1064,0.024432899999737856,0.012099100000341423,clasificacion
+Decision Tree,sin_balanceo,Genético,3,ninguna,4256,1064,0.029065799999443698,0.013377700001001358,clasificacion
+Regresión Logística (L1/L2),class_weight,Bayesiano,2,ninguna,4256,1064,0.15768299999945157,0.012608600000021397,clasificacion
+Decision Tree,class_weight,Random Search,1,ninguna,4256,1064,0.03034000000116066,0.012442900000678492,clasificacion
+Decision Tree,class_weight,Random Search,2,ninguna,4256,1064,0.02563410000038857,0.014279200000601122,clasificacion
+Decision Tree,class_weight,Random Search,4,ninguna,4256,1064,0.03180579999934707,0.010039299999334617,clasificacion
+Decision Tree,class_weight,Random Search,3,ninguna,4256,1064,0.03443650000008347,0.009372200000143494,clasificacion
+Decision Tree,class_weight,Bayesiano,0,ninguna,4256,1064,0.02735949999987497,0.009887700000035693,clasificacion
+Decision Tree,class_weight,Bayesiano,4,ninguna,4256,1064,0.022468600000138395,0.01027329999851645,clasificacion
+Decision Tree,class_weight,Bayesiano,1,ninguna,4256,1064,0.03001819999917643,0.010668000000805478,clasificacion
+Decision Tree,class_weight,Bayesiano,2,ninguna,4256,1064,0.025422299999263487,0.008403499999985797,clasificacion
+Decision Tree,class_weight,Bayesiano,3,ninguna,4256,1064,0.030789000000368105,0.009903500000291388,clasificacion
+Decision Tree,class_weight,Genético,0,ninguna,4256,1064,0.025626299999203184,0.008792900000116788,clasificacion
+Decision Tree,class_weight,Genético,4,ninguna,4256,1064,0.016518300000825548,0.006704000001263921,clasificacion
+Decision Tree,class_weight,Genético,3,ninguna,4256,1064,0.021081800001411466,0.008137500000884756,clasificacion
+Decision Tree,class_weight,Genético,2,ninguna,4256,1064,0.026017599999249796,0.010207399998762412,clasificacion
+Decision Tree,class_weight,Genético,1,ninguna,4256,1064,0.02540000000044529,0.009775900000022375,clasificacion
+Regresión Logística (L1/L2),class_weight,Random Search,3,ninguna,4256,1064,0.07154759999866656,0.006496699999843258,clasificacion
+Random Forest,no_aplica,Random Search,4,ninguna,4256,1064,2.0578313000005437,0.07863319999887608,regresion
+Random Forest,no_aplica,Random Search,3,ninguna,4256,1064,2.6355117999992217,0.11648070000046573,regresion
+Random Forest,no_aplica,Random Search,0,ninguna,4256,1064,2.9645325999990746,0.1032230000000709,regresion
+Random Forest,no_aplica,Bayesiano,1,ninguna,4256,1064,3.057908300001145,0.11064699999951699,regresion
+Random Forest,no_aplica,Random Search,1,ninguna,4256,1064,3.1563533000007737,0.12719010000000708,regresion
+Random Forest,no_aplica,Random Search,2,ninguna,4256,1064,3.55251060000046,0.12325910000072327,regresion
+Random Forest,no_aplica,Grid Search,4,ninguna,4256,1064,3.613848799999687,0.13033529999847815,regresion
+Random Forest,no_aplica,Grid Search,1,ninguna,4256,1064,3.6322034999993775,0.1364995000003546,regresion
+Random Forest,no_aplica,Grid Search,2,ninguna,4256,1064,3.6341085999993084,0.14363000000048487,regresion
+Random Forest,no_aplica,Grid Search,3,ninguna,4256,1064,3.6568270000007033,0.15454380000119272,regresion
+Random Forest,no_aplica,Grid Search,0,ninguna,4256,1064,3.6687574999996286,0.15059260000089125,regresion
+XGBoost,no_aplica,Grid Search,0,ninguna,4256,1064,0.04063550000137184,0.007959200000186684,regresion
+XGBoost,no_aplica,Grid Search,1,ninguna,4256,1064,0.04182279999986349,0.007736400000794674,regresion
+XGBoost,no_aplica,Grid Search,2,ninguna,4256,1064,0.035357299999304814,0.007230799999888404,regresion
+XGBoost,no_aplica,Grid Search,3,ninguna,4256,1064,0.03911319999861007,0.007393500000034692,regresion
+XGBoost,no_aplica,Grid Search,4,ninguna,4256,1064,0.036259500000596745,0.007238199999846984,regresion
+XGBoost,no_aplica,Random Search,0,ninguna,4256,1064,0.4189045000002807,0.013123700000505778,regresion
+XGBoost,no_aplica,Random Search,1,ninguna,4256,1064,0.48912860000018554,0.013397999999142485,regresion
+Random Forest,no_aplica,Bayesiano,0,ninguna,4256,1064,2.4062420000009297,0.09772359999988112,regresion
+Random Forest,no_aplica,Bayesiano,3,ninguna,4256,1064,1.951709099999789,0.09078439999939292,regresion
+XGBoost,no_aplica,Random Search,3,ninguna,4256,1064,0.9975780000004306,0.020286400000259164,regresion
+Random Forest,no_aplica,Bayesiano,2,ninguna,4256,1064,3.0795902000008937,0.14454709999881743,regresion
+XGBoost,no_aplica,Genético,0,ninguna,4256,1064,0.7535062000006292,0.0165101999991748,regresion
+Random Forest,no_aplica,Bayesiano,4,ninguna,4256,1064,3.354305699998804,0.18663070000002335,regresion
+XGBoost,no_aplica,Genético,1,ninguna,4256,1064,0.6130498000002262,0.015274900000804337,regresion
+XGBoost,no_aplica,Genético,3,ninguna,4256,1064,0.617982400000983,0.014446400000451831,regresion
+Random Forest,no_aplica,Genético,3,ninguna,4256,1064,3.0073503000003257,0.17317279999952007,regresion
+Random Forest,no_aplica,Genético,1,ninguna,4256,1064,3.4976907999989635,0.17565359999935026,regresion
+XGBoost,no_aplica,Bayesiano,0,ninguna,4256,1064,1.9785434000004898,0.06957529999999679,regresion
+Random Forest,no_aplica,Genético,0,ninguna,4256,1064,3.5297709000005852,0.23406789999899047,regresion
+Random Forest,no_aplica,Genético,2,ninguna,4256,1064,4.3231063000002905,0.28925969999909285,regresion
+XGBoost,no_aplica,Bayesiano,2,ninguna,4256,1064,1.2632505000001402,0.05002310000054422,regresion
+XGBoost,no_aplica,Random Search,4,ninguna,4256,1064,3.853514399999767,0.08378949999860197,regresion
+XGBoost,no_aplica,Random Search,2,ninguna,4256,1064,3.8224749000000884,0.07565080000131275,regresion
+XGBoost,no_aplica,Bayesiano,4,ninguna,4256,1064,1.910837999999785,0.02291030000014871,regresion
+Random Forest,no_aplica,Genético,4,ninguna,4256,1064,4.562607699999717,0.2121062999995047,regresion
+XGBoost,no_aplica,Genético,4,ninguna,4256,1064,1.1217354000000341,0.01777829999991809,regresion
+XGBoost,no_aplica,Genético,2,ninguna,4256,1064,1.8585145999986707,0.03175829999963753,regresion
+SVR,no_aplica,Grid Search,0,ninguna,4256,1064,0.9244017000000895,0.4403937999995833,regresion
+SVR,no_aplica,Random Search,2,ninguna,4256,1064,0.2810861999987537,0.09373719999894092,regresion
+SVR,no_aplica,Grid Search,1,ninguna,4256,1064,0.9177276999998867,0.38852240000051097,regresion
+SVR,no_aplica,Grid Search,2,ninguna,4256,1064,0.8732462000007217,0.40426619999925606,regresion
+XGBoost,no_aplica,Bayesiano,3,ninguna,4256,1064,2.6563934000005247,0.028843500000220956,regresion
+SVR,no_aplica,Grid Search,3,ninguna,4256,1064,0.8103111000000354,0.3802672999991046,regresion
+SVR,no_aplica,Random Search,0,ninguna,4256,1064,0.6907324999992852,0.3317432000003464,regresion
+SVR,no_aplica,Random Search,3,ninguna,4256,1064,0.5245357000003423,0.2682545999996364,regresion
+SVR,no_aplica,Grid Search,4,ninguna,4256,1064,0.8345243000003393,0.40449030000127095,regresion
+XGBoost,no_aplica,Bayesiano,1,ninguna,4256,1064,2.642350300000544,0.0301275000001624,regresion
+SVR,no_aplica,Random Search,1,ninguna,4256,1064,1.1807337000009284,0.37757349999992584,regresion
+SVR,no_aplica,Bayesiano,3,ninguna,4256,1064,0.7002178999991884,0.28756889999931445,regresion
+KNN,no_aplica,Grid Search,0,ninguna,4256,1064,0.0174537999992026,0.10238810000009835,regresion
+SVR,no_aplica,Bayesiano,0,ninguna,4256,1064,0.877770099999907,0.4231411000000662,regresion
+KNN,no_aplica,Grid Search,1,ninguna,4256,1064,0.015962900000886293,0.10063950000039767,regresion
+KNN,no_aplica,Grid Search,2,ninguna,4256,1064,0.014077699999688775,0.09364539999842236,regresion
+KNN,no_aplica,Grid Search,3,ninguna,4256,1064,0.012896100000943989,0.098445300000094,regresion
+SVR,no_aplica,Random Search,4,ninguna,4256,1064,1.4168081999996502,0.332939300000362,regresion
+KNN,no_aplica,Grid Search,4,ninguna,4256,1064,0.015346000000135973,0.09786179999900924,regresion
+SVR,no_aplica,Bayesiano,4,ninguna,4256,1064,0.7595340999996552,0.374951299998429,regresion
+KNN,no_aplica,Random Search,0,ninguna,4256,1064,0.016425100000560633,0.09759909999957017,regresion
+SVR,no_aplica,Genético,1,ninguna,4256,1064,0.6500517999993463,0.33992010000110895,regresion
+SVR,no_aplica,Genético,3,ninguna,4256,1064,0.7770163000004686,0.34494310000081896,regresion
+KNN,no_aplica,Random Search,2,ninguna,4256,1064,0.015864099999816972,0.10380600000098639,regresion
+KNN,no_aplica,Random Search,3,ninguna,4256,1064,0.015406499998789513,0.07009839999955148,regresion
+KNN,no_aplica,Random Search,1,ninguna,4256,1064,0.01594459999978426,0.10391460000028019,regresion
+SVR,no_aplica,Bayesiano,1,ninguna,4256,1064,1.209575799999584,0.2802521000012348,regresion
+KNN,no_aplica,Random Search,4,ninguna,4256,1064,0.016662300000461983,0.10369730000093114,regresion
+KNN,no_aplica,Bayesiano,1,ninguna,4256,1064,0.016833199999382487,0.09862539999994624,regresion
+KNN,no_aplica,Genético,0,ninguna,4256,1064,0.015996300000551855,0.09956339999916963,regresion
+KNN,no_aplica,Bayesiano,3,ninguna,4256,1064,0.01657110000087414,0.10952290000022913,regresion
+KNN,no_aplica,Bayesiano,0,ninguna,4256,1064,0.017404899999746704,0.11142630000176723,regresion
+KNN,no_aplica,Bayesiano,4,ninguna,4256,1064,0.015471499998966465,0.10780660000091302,regresion
+SVR,no_aplica,Genético,0,ninguna,4256,1064,1.2025890999993862,0.34755260000019916,regresion
+Ridge,no_aplica,Grid Search,0,ninguna,4256,1064,0.010490200000276673,0.00580430000081833,regresion
+KNN,no_aplica,Bayesiano,2,ninguna,4256,1064,0.015819800000826945,0.11193850000017846,regresion
+Ridge,no_aplica,Grid Search,1,ninguna,4256,1064,0.010543700000198442,0.005488700000569224,regresion
+Ridge,no_aplica,Grid Search,2,ninguna,4256,1064,0.011075899999923422,0.0059273000006214716,regresion
+Ridge,no_aplica,Grid Search,3,ninguna,4256,1064,0.010214300000370713,0.005433199999970384,regresion
+Ridge,no_aplica,Grid Search,4,ninguna,4256,1064,0.011003400000845431,0.005341599999155733,regresion
+Lasso,no_aplica,Grid Search,0,ninguna,4256,1064,0.013462899998557987,0.005817799999931594,regresion
+Lasso,no_aplica,Grid Search,1,ninguna,4256,1064,0.012825300000258721,0.007206700000097044,regresion
+Lasso,no_aplica,Grid Search,2,ninguna,4256,1064,0.015783599999849685,0.00593749999825377,regresion
+Lasso,no_aplica,Grid Search,3,ninguna,4256,1064,0.013647600000695093,0.005808099998830585,regresion
+Lasso,no_aplica,Grid Search,4,ninguna,4256,1064,0.012671599999521277,0.006224099999599275,regresion
+Decision Tree,no_aplica,Grid Search,0,ninguna,4256,1064,0.022880399999849033,0.005028899999160785,regresion
+Decision Tree,no_aplica,Grid Search,1,ninguna,4256,1064,0.022454199999629054,0.005123400000229594,regresion
+KNN,no_aplica,Genético,1,ninguna,4256,1064,0.017418999999790685,0.09864449999986391,regresion
+Decision Tree,no_aplica,Grid Search,2,ninguna,4256,1064,0.021317200000339653,0.0056798000005073845,regresion
+Decision Tree,no_aplica,Grid Search,3,ninguna,4256,1064,0.019736300000658957,0.005765800000517629,regresion
+KNN,no_aplica,Genético,3,ninguna,4256,1064,0.01745909999954165,0.10262969999894267,regresion
+Ridge,no_aplica,Random Search,0,ninguna,4256,1064,0.010863999999855878,0.004911800000627409,regresion
+Ridge,no_aplica,Random Search,1,ninguna,4256,1064,0.010527799999181298,0.004567199999655713,regresion
+Decision Tree,no_aplica,Grid Search,4,ninguna,4256,1064,0.0210877999998047,0.0065288999994663754,regresion
+Ridge,no_aplica,Random Search,2,ninguna,4256,1064,0.009910599999784608,0.00616009999976086,regresion
+Ridge,no_aplica,Random Search,3,ninguna,4256,1064,0.010535900000832044,0.006654599999819766,regresion
+KNN,no_aplica,Genético,2,ninguna,4256,1064,0.017382399999405607,0.11279579999973066,regresion
+Ridge,no_aplica,Random Search,4,ninguna,4256,1064,0.010237399999823538,0.006434599999920465,regresion
+KNN,no_aplica,Genético,4,ninguna,4256,1064,0.0164160999993328,0.1108380000005127,regresion
+Ridge,no_aplica,Bayesiano,0,ninguna,4256,1064,0.012930200000482728,0.007256400000187568,regresion
+Ridge,no_aplica,Bayesiano,1,ninguna,4256,1064,0.012977799999134731,0.00707220000003872,regresion
+Ridge,no_aplica,Bayesiano,2,ninguna,4256,1064,0.014534300000377698,0.006697900000290247,regresion
+Ridge,no_aplica,Bayesiano,3,ninguna,4256,1064,0.013894899999286281,0.00634639999952924,regresion
+Ridge,no_aplica,Bayesiano,4,ninguna,4256,1064,0.014868200001728837,0.0077235999997355975,regresion
+Ridge,no_aplica,Genético,1,ninguna,4256,1064,0.013559299999542418,0.008136399999784771,regresion
+Ridge,no_aplica,Genético,0,ninguna,4256,1064,0.01651289999972505,0.012021200000162935,regresion
+Ridge,no_aplica,Genético,2,ninguna,4256,1064,0.016439199998785625,0.009171300000161864,regresion
+Ridge,no_aplica,Genético,3,ninguna,4256,1064,0.01804419999825768,0.007040000000415603,regresion
+Ridge,no_aplica,Genético,4,ninguna,4256,1064,0.01627609999923152,0.008210500000132015,regresion
+Lasso,no_aplica,Random Search,1,ninguna,4256,1064,0.015290199999071774,0.009004699999422883,regresion
+Lasso,no_aplica,Random Search,0,ninguna,4256,1064,0.015548100000160048,0.007545600001321873,regresion
+Lasso,no_aplica,Random Search,2,ninguna,4256,1064,0.020066200000655954,0.0077557999993587146,regresion
+Lasso,no_aplica,Random Search,3,ninguna,4256,1064,0.016548300000067684,0.00749319999886211,regresion
+Lasso,no_aplica,Random Search,4,ninguna,4256,1064,0.014353300000948366,0.007594400000016321,regresion
+Lasso,no_aplica,Bayesiano,0,ninguna,4256,1064,0.017506000000139466,0.011177799999131821,regresion
+Lasso,no_aplica,Bayesiano,1,ninguna,4256,1064,0.017866899999717134,0.009114599999520578,regresion
+Lasso,no_aplica,Bayesiano,2,ninguna,4256,1064,0.02095310000004247,0.008355099998880178,regresion
+Lasso,no_aplica,Bayesiano,3,ninguna,4256,1064,0.02053909999995085,0.006505700001071091,regresion
+Lasso,no_aplica,Bayesiano,4,ninguna,4256,1064,0.020397500000399305,0.006458199999542558,regresion
+Lasso,no_aplica,Genético,0,ninguna,4256,1064,0.01905139999871608,0.006550000000061118,regresion
+Lasso,no_aplica,Genético,1,ninguna,4256,1064,0.01757750000069791,0.006412299999283277,regresion
+Lasso,no_aplica,Genético,3,ninguna,4256,1064,0.015975000000253203,0.008176399998774286,regresion
+Lasso,no_aplica,Genético,4,ninguna,4256,1064,0.014875799999572337,0.005103499999677297,regresion
+Lasso,no_aplica,Genético,2,ninguna,4256,1064,0.017615200000363984,0.006873900001664879,regresion
+Decision Tree,no_aplica,Random Search,2,ninguna,4256,1064,0.024375099999815575,0.005337299999155221,regresion
+Decision Tree,no_aplica,Random Search,0,ninguna,4256,1064,0.022616700000071432,0.005152699999598553,regresion
+Decision Tree,no_aplica,Random Search,1,ninguna,4256,1064,0.024757600000157254,0.005917300000874093,regresion
+Decision Tree,no_aplica,Random Search,3,ninguna,4256,1064,0.023330399999395013,0.005830000000059954,regresion
+Decision Tree,no_aplica,Random Search,4,ninguna,4256,1064,0.023934999999255524,0.005652899999404326,regresion
+Decision Tree,no_aplica,Bayesiano,0,ninguna,4256,1064,0.02344439999978931,0.006379899999956251,regresion
+Decision Tree,no_aplica,Bayesiano,1,ninguna,4256,1064,0.024521999999706168,0.006963700001506368,regresion
+Decision Tree,no_aplica,Bayesiano,3,ninguna,4256,1064,0.022412500000427826,0.00590839999858872,regresion
+Decision Tree,no_aplica,Bayesiano,2,ninguna,4256,1064,0.021818299999722512,0.004955599999448168,regresion
+SVR,no_aplica,Bayesiano,2,ninguna,4256,1064,0.9112213999997039,0.4120906999996805,regresion
+Decision Tree,no_aplica,Bayesiano,4,ninguna,4256,1064,0.020844700000452576,0.005024500000217813,regresion
+Decision Tree,no_aplica,Genético,0,ninguna,4256,1064,0.021929099999397295,0.003737600000022212,regresion
+Decision Tree,no_aplica,Genético,1,ninguna,4256,1064,0.019337200001245947,0.00415419999990263,regresion
+Decision Tree,no_aplica,Genético,3,ninguna,4256,1064,0.020618100001229323,0.004153500000029453,regresion
+Decision Tree,no_aplica,Genético,2,ninguna,4256,1064,0.021437300001707627,0.0052639999994426034,regresion
+Decision Tree,no_aplica,Genético,4,ninguna,4256,1064,0.019367099999726634,0.004920900000797701,regresion
+SVR,no_aplica,Genético,2,ninguna,4256,1064,0.753413600001295,0.34082300000045507,regresion
+SVR,no_aplica,Genético,4,ninguna,4256,1064,0.755823400000736,0.29490000000078,regresion

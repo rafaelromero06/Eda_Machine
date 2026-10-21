@@ -1,0 +1,8 @@
+tarea,metrica,filas,max_diferencia
+clasificacion,auc,540,0.0
+clasificacion,accuracy,540,0.0
+clasificacion,precision,540,5.551115123125783e-17
+clasificacion,recall,540,5.551115123125783e-17
+clasificacion,f1,540,5.551115123125783e-17
+regresion,rmse,140,0.0
+regresion,mae,140,0.0
