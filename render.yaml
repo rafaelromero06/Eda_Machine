@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: calidad-vino-ml
+    runtime: python
+    plan: free
+    rootDir: entregable3
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:server --workers 1 --threads 4 --timeout 120
+    healthCheckPath: /
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.14

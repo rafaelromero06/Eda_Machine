@@ -1,0 +1,12 @@
+{
+  "title": "Calidad del vino: dashboard predictivo y Bosque Ordinal Focalizado",
+  "upload_type": "software",
+  "description": "Código, protocolo pre-registrado, resultados y dashboard del proyecto final de Machine Learning (Universidad del Norte) sobre la calidad del vino Vinho Verde.",
+  "creators": [
+    {"name": "Daza, Roger", "affiliation": "Universidad del Norte"},
+    {"name": "Del Sole, Matteo", "affiliation": "Universidad del Norte"},
+    {"name": "Romero, Rafael", "affiliation": "Universidad del Norte"}
+  ],
+  "license": "MIT",
+  "keywords": ["machine learning", "wine quality", "ordinal classification", "random forests"]
+}

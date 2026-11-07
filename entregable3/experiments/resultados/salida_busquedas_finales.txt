@@ -1,0 +1,18 @@
+== Bosque Ordinal Focalizado 18:16:32
+== fin Bosque Ordinal Focalizado código 0 20:06:56
+== Random Forest 20:06:56
+== fin Random Forest código 0 20:12:07
+== XGBoost 20:12:07
+== fin XGBoost código 0 20:20:36
+== LightGBM 20:20:36
+== fin LightGBM código 0 20:22:48
+== SVM 20:22:48
+== fin SVM código 0 20:27:35
+== KNN 20:27:35
+== fin KNN código 0 20:29:10
+== Regresión Logística (L1/L2) 20:29:10
+== fin Regresión Logística (L1/L2) código 0 20:30:35
+== Decision Tree 20:30:35
+== fin Decision Tree código 0 20:31:19
+== Naive Bayes 20:31:19
+== fin Naive Bayes código 0 20:32:04

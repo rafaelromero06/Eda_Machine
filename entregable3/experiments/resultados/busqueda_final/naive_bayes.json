@@ -1,0 +1,8 @@
+{
+ "modelo": "Naive Bayes",
+ "hiperparametros": {
+  "var_smoothing": 9.9311272588918e-06
+ },
+ "score_interno": 0.7650232077822942,
+ "tiempo_busqueda_s": 10.6
+}

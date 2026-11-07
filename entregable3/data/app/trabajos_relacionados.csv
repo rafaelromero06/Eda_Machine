@@ -1,0 +1,11 @@
+metodo,familia,objetivo,informacion_ordinal,agrega_umbrales,diferencia,referencia
+Random Forest,bagging de árboles CART,clase binaria,no,no,BOF entrena con la nota completa y combina umbrales; RF solo ve la etiqueta binaria.,breiman2001
+Extra-Trees,árboles con cortes aleatorios,clase o valor numérico,no (o como número),no,"BOF conserva los cortes aleatorios y agrega salida múltiple acumulada, núcleo de partición y combinación focalizada.",geurts2006
+Frank y Hall; XGBOrdinal,un clasificador binario por umbral,clase ordinal,"sí, un modelo por umbral",no,BOF comparte los árboles entre umbrales y combina los vecinos para un evento binario.,frank2001
+RF para respuestas ordinales,regresión sobre puntajes de clase,clase ordinal,"sí, con puntajes fijos",no,BOF no asigna puntajes: usa los indicadores acumulados con pesos centrados en el evento.,janitza2016
+Ordinal Forest; fabOF,regresión sobre puntajes optimizados,clase ordinal,"sí, con puntajes optimizados",no,BOF no optimiza puntajes y su objetivo es la probabilidad de un evento.,hornung2020
+Ordered Forest,un bosque de regresión por probabilidad acumulada,probabilidades de clase,sí,no,BOF usa un solo bosque de salida múltiple y combina umbrales vecinos alrededor del evento.,lechner2024
+Árboles ordinales sin puntajes,combinación de árboles binarios,clase ordinal,sí,no,BOF no combina modelos separados: un mismo árbol parte con la impureza de todos los umbrales.,tutz2022
+Criterios ordinales de partición (Gini ordinal),un árbol con impureza acumulada sin ponderar,clase ordinal,sí,no,BOF pondera la impureza con un núcleo centrado en el evento; el Gini ordinal es su caso de ancho infinito.,piccarreta2008
+Bosques distribucionales y de transformación,distribución condicional por verosimilitud,distribución completa,"sí, paramétrica",no,BOF es no paramétrico y se focaliza en un umbral.,hothorn2021
+CRPS ponderado por umbral,regla de puntuación propia,evaluación de pronósticos,no aplica,no aplica,BOF lo usa como criterio de partición de los árboles.,gneiting2011

@@ -1,0 +1,10 @@
+{
+ "modelo": "KNN",
+ "hiperparametros": {
+  "n_neighbors": 41,
+  "weights": "distance",
+  "p": 1
+ },
+ "score_interno": 0.845835496838026,
+ "tiempo_busqueda_s": 64.3
+}

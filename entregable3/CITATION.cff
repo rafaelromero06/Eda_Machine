@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "Si usa este software o sus resultados, cítelo así."
+title: "Calidad del vino: dashboard predictivo y Bosque Ordinal Focalizado"
+version: 1.0.0
+date-released: 2026-10-26
+license: MIT
+repository-code: "https://github.com/rafaelromero06/Eda_Machine"
+authors:
+  - family-names: Daza
+    given-names: Roger
+    affiliation: Universidad del Norte
+  - family-names: Del Sole
+    given-names: Matteo
+    affiliation: Universidad del Norte
+  - family-names: Romero
+    given-names: Rafael
+    affiliation: Universidad del Norte
+keywords:
+  - machine learning
+  - wine quality
+  - ordinal classification
+  - random forests
+  - nested cross-validation
+references:
+  - type: article
+    title: "Modeling wine preferences by data mining from physicochemical properties"
+    authors:
+      - family-names: Cortez
+        given-names: Paulo
+      - family-names: Cerdeira
+        given-names: António
+      - family-names: Almeida
+        given-names: Fernando
+      - family-names: Matos
+        given-names: Telmo
+      - family-names: Reis
+        given-names: José
+    journal: "Decision Support Systems"
+    volume: 47
+    issue: 4
+    start: 547
+    end: 553
+    year: 2009
+    doi: "10.1016/j.dss.2009.05.016"

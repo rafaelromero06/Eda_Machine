@@ -1,0 +1,10 @@
+{
+ "modelo": "Decision Tree",
+ "hiperparametros": {
+  "criterion": "entropy",
+  "max_depth": 3,
+  "min_samples_leaf": 6
+ },
+ "score_interno": 0.8009241446861473,
+ "tiempo_busqueda_s": 13.1
+}

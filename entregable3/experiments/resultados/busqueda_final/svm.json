@@ -1,0 +1,9 @@
+{
+ "modelo": "SVM",
+ "hiperparametros": {
+  "C": 5.456725485601478,
+  "gamma": 0.015876781526923997
+ },
+ "score_interno": 0.8453879652090253,
+ "tiempo_busqueda_s": 247.2
+}

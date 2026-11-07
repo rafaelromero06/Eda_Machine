@@ -1,0 +1,81 @@
+ronda,configuracion,descripcion,auc_media,dif_vs_referencia,pliegues_a_favor,referencia
+1,ETR_q,Extra-Trees regresión sobre la nota,0.8532,0.006,9.0,RFC
+1,RFR_q,Random Forest regresión sobre la nota,0.8501,0.0029,7.0,RFC
+1,ETR_foc_0.5,"Extra-Trees salida múltiple focalizada, ancho 0.5, puntaje solo umbral 7",0.85,0.0028,7.0,RFC
+1,ETR_foc_2.0,"Extra-Trees salida múltiple focalizada, ancho 2.0, puntaje solo umbral 7",0.8499,0.0028,7.0,RFC
+1,ETR_foc_1.0,"Extra-Trees salida múltiple focalizada, ancho 1.0, puntaje solo umbral 7",0.8498,0.0027,7.0,RFC
+1,ETC,Extra-Trees binario,0.8488,0.0017,6.0,RFC
+1,RFR_foc_1.0,"Random Forest salida múltiple focalizada, ancho 1.0, puntaje solo umbral 7",0.8476,0.0004,5.0,RFC
+1,RFR_foc_2.0,"Random Forest salida múltiple focalizada, ancho 2.0, puntaje solo umbral 7",0.8473,0.0001,5.0,RFC
+1,RFR_foc_0.5,"Random Forest salida múltiple focalizada, ancho 0.5, puntaje solo umbral 7",0.8472,0.0,4.0,RFC
+1,RFC,Random Forest binario (referencia),0.8472,0.0,0.0,RFC
+2,"mf=0.6, h_part=0.0, h_agr=0.0","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8417,0.0,0.0,binario con mf=0.6
+2,"mf=0.6, h_part=0.7, h_agr=0.0","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8454,0.0037,8.0,binario con mf=0.6
+2,"mf=0.6, h_part=0.7, h_agr=0.7","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8504,0.0087,8.0,binario con mf=0.6
+2,"mf=0.6, h_part=0.7, h_agr=1.5","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8502,0.0085,8.0,binario con mf=0.6
+2,"mf=0.6, h_part=0.7, h_agr=inf","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8495,0.0078,8.0,binario con mf=0.6
+2,"mf=0.6, h_part=1.5, h_agr=0.0","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8449,0.0032,9.0,binario con mf=0.6
+2,"mf=0.6, h_part=1.5, h_agr=0.7","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8503,0.0086,8.0,binario con mf=0.6
+2,"mf=0.6, h_part=1.5, h_agr=1.5","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.85,0.0082,8.0,binario con mf=0.6
+2,"mf=0.6, h_part=1.5, h_agr=inf","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8492,0.0075,8.0,binario con mf=0.6
+2,"mf=0.6, h_part=inf, h_agr=0.0","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8456,0.0039,9.0,binario con mf=0.6
+2,"mf=0.6, h_part=inf, h_agr=0.7","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8505,0.0087,8.0,binario con mf=0.6
+2,"mf=0.6, h_part=inf, h_agr=1.5","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8499,0.0082,8.0,binario con mf=0.6
+2,"mf=0.6, h_part=inf, h_agr=inf","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8489,0.0072,8.0,binario con mf=0.6
+2,"mf=1.0, h_part=0.0, h_agr=0.0","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8356,0.0,0.0,binario con mf=1.0
+2,"mf=1.0, h_part=0.7, h_agr=0.0","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8415,0.0059,9.0,binario con mf=1.0
+2,"mf=1.0, h_part=0.7, h_agr=0.7","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8472,0.0116,9.0,binario con mf=1.0
+2,"mf=1.0, h_part=0.7, h_agr=1.5","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.847,0.0114,9.0,binario con mf=1.0
+2,"mf=1.0, h_part=0.7, h_agr=inf","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8462,0.0106,9.0,binario con mf=1.0
+2,"mf=1.0, h_part=1.5, h_agr=0.0","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8406,0.005,9.0,binario con mf=1.0
+2,"mf=1.0, h_part=1.5, h_agr=0.7","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8467,0.0111,9.0,binario con mf=1.0
+2,"mf=1.0, h_part=1.5, h_agr=1.5","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8462,0.0106,9.0,binario con mf=1.0
+2,"mf=1.0, h_part=1.5, h_agr=inf","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8452,0.0096,9.0,binario con mf=1.0
+2,"mf=1.0, h_part=inf, h_agr=0.0","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8411,0.0056,9.0,binario con mf=1.0
+2,"mf=1.0, h_part=inf, h_agr=0.7","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8463,0.0107,9.0,binario con mf=1.0
+2,"mf=1.0, h_part=inf, h_agr=1.5","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8455,0.0099,9.0,binario con mf=1.0
+2,"mf=1.0, h_part=inf, h_agr=inf","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8444,0.0088,9.0,binario con mf=1.0
+2,"mf=sqrt, h_part=0.0, h_agr=0.0","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8477,0.0,0.0,binario con mf=sqrt
+2,"mf=sqrt, h_part=0.7, h_agr=0.0","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8483,0.0006,5.0,binario con mf=sqrt
+2,"mf=sqrt, h_part=0.7, h_agr=0.7","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8526,0.0049,8.0,binario con mf=sqrt
+2,"mf=sqrt, h_part=0.7, h_agr=1.5","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8524,0.0047,8.0,binario con mf=sqrt
+2,"mf=sqrt, h_part=0.7, h_agr=inf","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8518,0.0041,7.0,binario con mf=sqrt
+2,"mf=sqrt, h_part=1.5, h_agr=0.0","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8486,0.0009,5.0,binario con mf=sqrt
+2,"mf=sqrt, h_part=1.5, h_agr=0.7","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8531,0.0054,8.0,binario con mf=sqrt
+2,"mf=sqrt, h_part=1.5, h_agr=1.5","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8528,0.0051,8.0,binario con mf=sqrt
+2,"mf=sqrt, h_part=1.5, h_agr=inf","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8521,0.0044,8.0,binario con mf=sqrt
+2,"mf=sqrt, h_part=inf, h_agr=0.0","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8504,0.0027,9.0,binario con mf=sqrt
+2,"mf=sqrt, h_part=inf, h_agr=0.7","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8536,0.0059,8.0,binario con mf=sqrt
+2,"mf=sqrt, h_part=inf, h_agr=1.5","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8533,0.0056,8.0,binario con mf=sqrt
+2,"mf=sqrt, h_part=inf, h_agr=inf","Extra-Trees salida múltiple (sklearn), anchos en unidades de la nota",0.8525,0.0048,8.0,binario con mf=sqrt
+3,"bootstrap no, hoja 1, h_agr 0.7, centro 6.5",Extra-Trees salida múltiple (sklearn),0.8535,0.0,0.0,primera fila
+3,bootstrap 100 %,Extra-Trees salida múltiple (sklearn),0.8534,-0.0001,4.0,primera fila
+3,bootstrap 80 %,Extra-Trees salida múltiple (sklearn),0.8522,-0.0013,3.0,primera fila
+3,bootstrap 50 %,Extra-Trees salida múltiple (sklearn),0.8508,-0.0027,3.0,primera fila
+3,hoja 2,Extra-Trees salida múltiple (sklearn),0.8517,-0.0018,3.0,primera fila
+3,hoja 4,Extra-Trees salida múltiple (sklearn),0.8437,-0.0098,0.0,primera fila
+3,h_agr 0.4,Extra-Trees salida múltiple (sklearn),0.8535,-0.0001,3.0,primera fila
+3,h_agr 1.0,Extra-Trees salida múltiple (sklearn),0.8534,-0.0001,4.0,primera fila
+3,centro 6.0,Extra-Trees salida múltiple (sklearn),0.8479,-0.0056,0.0,primera fila
+3,centro 7.0,Extra-Trees salida múltiple (sklearn),0.8546,0.0011,7.0,primera fila
+3,h_agr 0 (solo umbral 7),Extra-Trees salida múltiple (sklearn),0.85,-0.0035,1.0,primera fila
+3,h_agr inf (uniforme),Extra-Trees salida múltiple (sklearn),0.8522,-0.0013,0.0,primera fila
+4,"binario (h_part 0, h_agr 0)",implementación propia en numpy (400 árboles),0.8479,0.0,,binario
+4,"partición ordinal, solo umbral 7",implementación propia en numpy (400 árboles),0.8497,0.0018,,binario
+4,"partición ordinal, h_agr 0.8 sd",implementación propia en numpy (400 árboles),0.8536,0.0057,,binario
+4,"partición ordinal, agregación uniforme",implementación propia en numpy (400 árboles),0.8521,0.0042,,binario
+4,"partición focal 0.8, agregación 0.8",implementación propia en numpy (400 árboles),0.852,0.0041,,binario
+5,"base: sqrt, 1 corte, hoja 1, h_agr 0.8, h_part inf","implementación propia (300 árboles), anchos en desviaciones de la nota",0.8531,0.0,0.0,base
+5,max_features log2,"implementación propia (300 árboles), anchos en desviaciones de la nota",0.8531,0.0,0.0,base
+5,max_features 5,"implementación propia (300 árboles), anchos en desviaciones de la nota",0.8521,-0.001,3.0,base
+5,max_features 0.6,"implementación propia (300 árboles), anchos en desviaciones de la nota",0.8504,-0.0026,2.0,base
+5,2 cortes,"implementación propia (300 árboles), anchos en desviaciones de la nota",0.8526,-0.0005,5.0,base
+5,4 cortes,"implementación propia (300 árboles), anchos en desviaciones de la nota",0.8531,-0.0,5.0,base
+5,hoja 2,"implementación propia (300 árboles), anchos en desviaciones de la nota",0.8491,-0.004,0.0,base
+5,hoja 3,"implementación propia (300 árboles), anchos en desviaciones de la nota",0.8452,-0.0079,0.0,base
+5,desplazamiento -0.5,"implementación propia (300 árboles), anchos en desviaciones de la nota",0.8529,-0.0002,2.0,base
+5,desplazamiento +0.5,"implementación propia (300 árboles), anchos en desviaciones de la nota",0.851,-0.0021,1.0,base
+5,h_agr 0.3,"implementación propia (300 árboles), anchos en desviaciones de la nota",0.8492,-0.0039,1.0,base
+5,h_agr 1.5,"implementación propia (300 árboles), anchos en desviaciones de la nota",0.853,-0.0001,3.0,base
+5,h_part 0.8,"implementación propia (300 árboles), anchos en desviaciones de la nota",0.8514,-0.0017,1.0,base
+5,h_part 2,"implementación propia (300 árboles), anchos en desviaciones de la nota",0.8533,0.0002,6.0,base

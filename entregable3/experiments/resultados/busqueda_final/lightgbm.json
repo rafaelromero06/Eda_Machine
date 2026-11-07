@@ -1,0 +1,14 @@
+{
+ "modelo": "LightGBM",
+ "hiperparametros": {
+  "n_estimators": 155,
+  "learning_rate": 0.03217554753344029,
+  "num_leaves": 51,
+  "min_child_samples": 13,
+  "subsample": 0.8785359593239845,
+  "colsample_bytree": 0.6944180659331829,
+  "class_weight": "balanced"
+ },
+ "score_interno": 0.8560226918844496,
+ "tiempo_busqueda_s": 85.2
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120 120">
+  <defs>
+    <path id="p" d="M60 53C52.5 44 52 32 60 21c8 11 7.500 23 0 32z"/>
+    <path id="m" d="M60 52.500c-3-6-3-11 0-15.500 3 4.500 3 9.500 0 15.500z" transform="rotate(22.500 60 60)"/>
+    <path id="e" d="M0 0c13.500 3 23 9.500 29 29C9.500 23 3 13.500 0 0z"/>
+    <path id="b" d="M60 0l6.500 6.500L60 13l-6.500-6.500z"/>
+  </defs>
+  <g>
+    <use xlink:href="#p"/>
+    <use xlink:href="#p" transform="rotate(45 60 60)"/>
+    <use xlink:href="#p" transform="rotate(90 60 60)"/>
+    <use xlink:href="#p" transform="rotate(135 60 60)"/>
+    <use xlink:href="#p" transform="rotate(180 60 60)"/>
+    <use xlink:href="#p" transform="rotate(225 60 60)"/>
+    <use xlink:href="#p" transform="rotate(270 60 60)"/>
+    <use xlink:href="#p" transform="rotate(315 60 60)"/>
+    <circle cx="60" cy="60" r="3.500"/>
+    <use xlink:href="#e"/>
+    <use xlink:href="#e" transform="rotate(90 60 60)"/>
+    <use xlink:href="#e" transform="rotate(180 60 60)"/>
+    <use xlink:href="#e" transform="rotate(270 60 60)"/>
+    <use xlink:href="#b"/>
+    <use xlink:href="#b" transform="rotate(90 60 60)"/>
+    <use xlink:href="#b" transform="rotate(180 60 60)"/>
+    <use xlink:href="#b" transform="rotate(270 60 60)"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-width="1.700">
+    <circle cx="60" cy="60" r="43.500"/>
+    <path d="M60 14C60 44 76 60 106 60 76 60 60 76 60 106 60 76 44 60 14 60 44 60 60 44 60 14z" stroke-width="1.200"/>
+    <path d="M37 0a37 37 0 0 1-37 37M83 0a37 37 0 0 0 37 37M120 83a37 37 0 0 0-37 37M0 83a37 37 0 0 1 37 37"/>
+  </g>
+</svg>

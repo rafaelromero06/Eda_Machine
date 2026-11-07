@@ -1,0 +1,33 @@
+cadena,base,consulta,resultados,revisados,relevantes,observacion
+C1,OpenAlex,"""wine quality"" AND ""random forest"" AND ordinal",101,50,5,"Bosques ordinales con puntajes (Janitza et al., 2016) y sin puntajes (Tutz, 2022), comparaciones de ensambles ordinales (Buczak, 2024) y RF/SVM multiclase para vino. Ninguno usa los niveles para un evento binario."
+C1,Semantic Scholar,"""wine quality"" + ""random forest"" + ordinal",0,0,0,Sin trabajos relevantes.
+C1,arXiv,"all:""wine quality"" AND all:""random forest"" AND all:ordinal",0,0,0,Sin trabajos relevantes.
+C1,Crossref,wine quality random forest ordinal,2202089,25,4,"Aplicaciones de RF a vino que tratan la nota como clase o la binarizan sin usar los niveles; bosque ordinal por conjuntos aproximados (Wang et al., 2015)."
+C2,OpenAlex,"""wine quality"" AND (""extra trees"" OR ""extremely randomized trees"" OR ""extra-trees"")",64,50,4,Extra-Trees ya se usó para vino como clasificador estándar (binario o multiclase): la novedad no puede ser el algoritmo base.
+C2,Semantic Scholar,"""wine quality"" + (""extra trees"" | ""extremely randomized trees"")",4,4,3,Los mismos estudios de aplicación a vino; sin información ordinal.
+C2,arXiv,"all:""wine quality"" AND (all:""extra trees"" OR all:""extremely randomized"")",0,0,0,Sin trabajos relevantes.
+C2,Crossref,wine quality extra trees,1771294,25,1,"Comparación de ensambles de árboles en vino sin fuga (Chen, 2025), con la nota como clase multiclase."
+C3,OpenAlex,"""wine quality"" AND ordinal AND (binary OR dichotomized OR dichotomization)",199,50,4,"XGBOrdinal (Frank y Hall con XGBoost), Classifier Pooling (clasificación ordinal agnóstica), pérdidas dependientes de la etiqueta y regresión logística para la preferencia de vino. Su objetivo es predecir la clase ordinal, no un evento binario."
+C3,Semantic Scholar,"""wine quality"" + ordinal + (binary | dichotomized)",2,2,0,Sin trabajos relevantes.
+C3,arXiv,"all:""wine quality"" AND all:ordinal",3,3,1,OGBoost: boosting ordinal con variable latente; predice la clase ordinal.
+C3,Crossref,wine quality ordinal,1588730,25,0,Sin trabajos relevantes.
+C4,OpenAlex,"(""threshold-weighted"" AND ""ranked probability"") AND (tree OR forest)",25,25,1,"El CRPS ponderado por umbral se usa para evaluar o entrenar pronósticos (posprocesamiento de viento extremo), no como criterio de partición de árboles."
+C4,Semantic Scholar,"""threshold-weighted"" + ""ranked probability"" + (tree | forest)",0,0,0,Sin trabajos relevantes.
+C4,arXiv,"all:""threshold-weighted"" AND (all:tree OR all:forest)",1,1,0,Sin trabajos relevantes.
+C4,Crossref,weighted ranked probability score tree,672671,25,0,Sin trabajos relevantes.
+C5,OpenAlex,"ordinal AND (""random forest"" OR ""extremely randomized trees"") AND cumulative AND (dichotomized OR dichotomization OR ""binary outcome"")",484,50,5,"Ordered Forest (Lechner y Okasa) estima cada probabilidad acumulada con un bosque separado y las resta para dar la clase; bosques ordinales con efectos mixtos, fabOF y bosques de Wilcoxon. Ninguno combina umbrales vecinos para un evento binario."
+C5,Semantic Scholar,"ordinal + (""random forest"" | ""extremely randomized trees"") + cumulative + (dichotomized | ""binary outcome"")",0,0,0,Sin trabajos relevantes.
+C5,arXiv,"all:ordinal AND all:""random forest"" AND all:cumulative",0,0,0,Sin trabajos relevantes.
+C5,Crossref,ordinal random forest cumulative,672223,25,4,"Bosques ordinales (Wang et al., 2015; Janitza et al., 2016), RF para clasificación ordinal monótona (2019) y MEfabOF (2024)."
+C6,OpenAlex,"""bosque aleatorio"" AND (""calidad del vino"" OR vino)",30,30,1,"Un estudio en español de IA para la calidad del vino, con clasificadores estándar."
+C6,Semantic Scholar,"""bosque aleatorio"" + vino",0,0,0,Sin trabajos relevantes.
+C6,arXiv,"all:""bosque aleatorio""",0,0,0,Sin trabajos relevantes.
+C6,Crossref,bosque aleatorio vino,10264,25,0,Sin trabajos relevantes.
+C7,OpenAlex,"ordinal AND forest AND (""exceedance probability"" OR ""adjacent thresholds"" OR ""neighbouring thresholds"" OR ""neighboring thresholds"")",113,50,0,Sin trabajos relevantes.
+C7,Semantic Scholar,"ordinal + forest + (""exceedance probability"" | ""adjacent thresholds"")",0,0,0,Sin trabajos relevantes.
+C7,arXiv,all:ordinal AND all:forest AND all:exceedance,0,0,0,Sin trabajos relevantes.
+C7,Crossref,ordinal forest exceedance,397025,25,3,"fabOF, MEfabOF y comparaciones de bosques ordinales; la probabilidad de excedencia no aparece como objetivo de un bosque ordinal."
+C8,OpenAlex,"(""ordinal labels"" OR ""ordinal outcome"") AND (""auxiliary"" OR ""fine-grained"") AND ""binary classification"" AND (tree OR forest)",77,50,2,"Aprovechar etiquetas ordinales para predicciones continuas o suavizadas, siempre con redes neuronales."
+C8,Semantic Scholar,"(""ordinal labels"" | ""ordinal outcome"") + (auxiliary | ""fine-grained"") + ""binary classification""",0,0,0,Sin trabajos relevantes.
+C8,arXiv,"all:ordinal AND all:auxiliary AND all:""binary classification""",0,0,0,Sin trabajos relevantes.
+C8,Crossref,ordinal labels auxiliary binary classification,811582,25,3,"Pérdida de información al binarizar un desenlace ordinal (Harrell, 2018), reducción de la regresión ordinal a clasificación binaria extendida (Li y Lin, 2007) y etiquetas suaves ordinales con redes."

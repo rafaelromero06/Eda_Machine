@@ -1,0 +1,12 @@
+{
+ "modelo": "XGBoost",
+ "hiperparametros": {
+  "n_estimators": 211,
+  "max_depth": 10,
+  "learning_rate": 0.0180703563421257,
+  "subsample": 0.8340886059849478,
+  "colsample_bytree": 0.5584737825102304
+ },
+ "score_interno": 0.856903085265447,
+ "tiempo_busqueda_s": 473.1
+}

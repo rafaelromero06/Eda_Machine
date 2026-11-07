@@ -1,0 +1,20 @@
+{
+ "mejor_benchmark": "CatBoost",
+ "auc_bof": 0.8649248435765817,
+ "auc_mejor_benchmark": 0.8630970234669367,
+ "condicion_1_media_mayor_que_todos": true,
+ "condicion_2_tres_pruebas": false,
+ "pruebas_que_rechazan": {
+  "P1_nemenyi": false,
+  "P2_wilcoxon": true,
+  "P3_t_corregida": false,
+  "P4_delong": true
+ },
+ "condicion_3_efecto_no_despreciable": true,
+ "delta_cliff": 0.0912,
+ "d_cohen_pareada": 0.42285549314966125,
+ "condicion_4_consistencia": false,
+ "conjuntos_donde_bof_gana": 0,
+ "conjuntos_significativamente_peor": 1,
+ "superior": false
+}

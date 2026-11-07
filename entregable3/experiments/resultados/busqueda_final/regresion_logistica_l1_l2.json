@@ -1,0 +1,9 @@
+{
+ "modelo": "Regresión Logística (L1/L2)",
+ "hiperparametros": {
+  "C": 1.6342588311759756,
+  "penalty": "l1"
+ },
+ "score_interno": 0.8283851209286247,
+ "tiempo_busqueda_s": 50.1
+}

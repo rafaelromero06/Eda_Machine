@@ -1,0 +1,6 @@
+prueba,hipotesis_nula,supuestos,estadistico,p_crudo,p_ajustado,efecto,conclusion
+P1. Friedman (Iman–Davenport),Los 10 modelos tienen el mismo rango medio,Bloques independientes (aproximado: pliegues repetidos comparten casos),"F = 208.44 (9, 216 gl)",2.6315648163868953e-101,2.6315648163868953e-101,W de Kendall = 0.90,hay diferencias entre modelos
+P1. Nemenyi (BOF vs CB),Mismo rango medio,"Post-hoc de Friedman, todos los pares",CD = 2.71,0.9986815196721054,0.9986815196721054,δ de Cliff = 0.09,no se rechaza H0
+P2. Wilcoxon (BOF vs CB),Mediana de la diferencia de AUC = 0,Diferencias pareadas simétricas; 25 bloques,W = 88,0.04512268304824829,0.04512268304824829,rango-biserial = 0.46,se rechaza H0 a favor del BOF
+P3. t corregida de Nadeau–Bengio (BOF vs CB),Media de la diferencia de AUC = 0,Normalidad aproximada de las diferencias; varianza corregida por solapamiento,t = 0.79 (24 gl),0.4400060655404752,0.4400060655404752,d pareada = 0.42,no se rechaza H0
+P4. DeLong (BOF vs CB),AUC iguales sobre los mismos 5320 vinos,Casos independientes; predicciones fuera de muestra de la repetición 1,z = 5.05,4.5244404015018094e-07,1.8097761606007238e-06,"ΔAUC = 0.0149 [0.0092, 0.0207] (BCa)",se rechaza H0 a favor del BOF

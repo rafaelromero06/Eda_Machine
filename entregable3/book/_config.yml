@@ -1,0 +1,45 @@
+title: "Calidad del vino: dashboard predictivo y Bosque Ordinal Focalizado"
+author: "Roger Daza, Matteo Del Sole y Rafael Romero"
+copyright: "2026"
+logo: ""
+only_build_toc_files: true
+
+execute:
+  execute_notebooks: force
+  timeout: 600
+  allow_errors: false
+
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - dollarmath
+    - colon_fence
+    - deflist
+    - substitution
+  myst_dmath_double_inline: true
+
+bibtex_bibfiles:
+  - references.bib
+
+sphinx:
+  extra_extensions:
+    - sphinx_proof
+  config:
+    language: es
+    bibtex_reference_style: author_year
+    numfig: true
+    math_numfig: true
+    numfig_secnum_depth: 1
+    html_show_copyright: false
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
+    suppress_warnings: ["mystnb.unknown_mime_type"]
+
+repository:
+  url: https://github.com/rafaelromero06/Eda_Machine
+  path_to_book: entregable3/book
+  branch: main
+
+html:
+  use_repository_button: true
+  use_issues_button: false
+  home_page_in_navbar: true

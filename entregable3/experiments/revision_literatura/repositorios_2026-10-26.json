@@ -1,0 +1,404 @@
+{
+ "fecha": "2026-10-26T13:17:59",
+ "consultas": [
+  {
+   "consulta": "ordinal random forest",
+   "total": 39,
+   "items": [
+    {
+     "repo": "HarshVardhanSh/MammoMasses-Project",
+     "estrellas": 3,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "Predict whether a mammogram mass is benign or malignant  We'll be using the \"mammographic masses\" public dataset from the UCI repository (so"
+    },
+    {
+     "repo": "AlexHuang2/OrdinalForest",
+     "estrellas": 1,
+     "lenguaje": "Python",
+     "descripcion": "Implementation of Ordinal Regression using Random Forests"
+    },
+    {
+     "repo": "zangruofan/Analysis-of-factors-affecting-red-wine-quality",
+     "estrellas": 0,
+     "lenguaje": null,
+     "descripcion": "PCA, K-means, Ordinal Logistic Regression, Decision Tree, Random Forest"
+    },
+    {
+     "repo": "rohinireddy022-ai/Random-Forest-Car-Evaluation",
+     "estrellas": 0,
+     "lenguaje": "Python",
+     "descripcion": "A machine learning project implementing Random Forest Classification on the Car Evaluation dataset, including data preprocessing, ordinal en"
+    },
+    {
+     "repo": "jerickgarcia271/A-Comparison-of-Ordinal-Logistic-Regression-and-Random-Forest-for-Predicting-Social-Anxiety",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "The project aims to determine behavioral, lifestyle, and psychological factors among other that may serve as predictors for mild to severe s"
+    },
+    {
+     "repo": "silkejanitza/varimpRPS",
+     "estrellas": 0,
+     "lenguaje": "R",
+     "descripcion": "Implementation of permutation variable importance measures for ordinal response data as described in 'Random Forests for Ordinal Response Da"
+    },
+    {
+     "repo": "giuliabergonzoli/Master_Thesis",
+     "estrellas": 0,
+     "lenguaje": "HTML",
+     "descripcion": "Proposal of an innovative statistical method, called ordinal mixed- effects random forest (OMERF), which extends the application of random f"
+    },
+    {
+     "repo": "Rosy-ad/Agricultural-Yield-Analysis",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "Machine learning analysis of agricultural yield using regression, ordinal classification, decision trees, and random forests"
+    },
+    {
+     "repo": "subarumuroi/multiomics_integration",
+     "estrellas": 0,
+     "lenguaje": "Python",
+     "descripcion": "Consolidated downstream analysis with sPLS-DA for multiomics, Random Forest, and Ordinal Regression. Includes example data and usage"
+    },
+    {
+     "repo": "tuliovp/randomforestOCR",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "This research uses Online Customer Review as the predicted variable, testing if the different ways the product and order are placed may impa"
+    },
+    {
+     "repo": "Tyenca/CNN-vs-ML-severity-prediction",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "Classifying diabetic retinopathy severity (RetinaMNIST): comparing KNN, logistic regression, random forest, and linear SVM baselines against"
+    },
+    {
+     "repo": "StevanusGerM/Churn-Detection-",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "Projek ramalan kadar berhenti langganan pelanggan (Customer Churn) menggunakan dataset berskala besar melalui algoritma Random Forest Classi"
+    },
+    {
+     "repo": "nandesh2k25/Car-Evaluation",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "Multiclass classification project using the UCI Car Evaluation dataset. Implemented Logistic Regression, Decision Trees, and Random Forest w"
+    },
+    {
+     "repo": "StevanusGerM/Churn-Detection-Pipeline",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "Projek ramalan kadar berhenti langganan pelanggan (Customer Churn) menggunakan dataset berskala besar melalui algoritma Random Forest Classi"
+    },
+    {
+     "repo": "Farhan-ux/wine-quality-predictor",
+     "estrellas": 0,
+     "lenguaje": "Python",
+     "descripcion": "Wine quality prediction with k-NN, Random Forest, and Multi-Class SGD — all from scratch in NumPy. Ordinal classification on 7-class quality"
+    }
+   ]
+  },
+  {
+   "consulta": "ordinal forest",
+   "total": 48,
+   "items": [
+    {
+     "repo": "cran/ordinalForest",
+     "estrellas": 4,
+     "lenguaje": "C++",
+     "descripcion": ":exclamation: This is a read-only mirror of the CRAN R package repository.  ordinalForest — Ordinal Forests: Prediction and Variable Ranking"
+    },
+    {
+     "repo": "HarshVardhanSh/MammoMasses-Project",
+     "estrellas": 3,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "Predict whether a mammogram mass is benign or malignant  We'll be using the \"mammographic masses\" public dataset from the UCI repository (so"
+    },
+    {
+     "repo": "AlexHuang2/OrdinalForest",
+     "estrellas": 1,
+     "lenguaje": "Python",
+     "descripcion": "Implementation of Ordinal Regression using Random Forests"
+    },
+    {
+     "repo": "csamagal/Landsat-ARD-Ordinal-Forest",
+     "estrellas": 1,
+     "lenguaje": "R",
+     "descripcion": "Ordinal Forest model classifying marsh species type based on color-indices and bandwidths of satellite imagery."
+    },
+    {
+     "repo": "shervin-taheripour/forestplotx",
+     "estrellas": 1,
+     "lenguaje": "Python",
+     "descripcion": "Publication-ready forest plots for regression models (logistic, linear, gamma, ordinal) in Python."
+    },
+    {
+     "repo": "Alihaider8014/Data-Visulization-Of-Iris-Forest-Fire-and-Adult-datasets",
+     "estrellas": 1,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "a. The types of the attributes (continuous [interval, ratio], categorical [nominal, ordinal]). Also identify which attribute(s) are input at"
+    },
+    {
+     "repo": "fronori/ordinalForest",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "Python implementation of ordinalForest"
+    },
+    {
+     "repo": "gerdis/ordinalForest_demo",
+     "estrellas": 0,
+     "lenguaje": "R",
+     "descripcion": "little demo project on how to evaluate and interprete ordinal forests"
+    },
+    {
+     "repo": "ahmadaelhafeez-lang/Swarm-Calibrated-Ordinal-Forests",
+     "estrellas": 0,
+     "lenguaje": "Python",
+     "descripcion": "SC-OF: Swarm-Calibrated Ordinal Forests for risk-aware forecasting in non-stationary intraday financial time series."
+    },
+    {
+     "repo": "phibuc/fabOF",
+     "estrellas": 0,
+     "lenguaje": "R",
+     "descripcion": "fabOF: frequency adjusted borders Ordinal Forest"
+    },
+    {
+     "repo": "Bihu-IITR/Ordinal-Forests-3D-plots",
+     "estrellas": 0,
+     "lenguaje": "HTML",
+     "descripcion": "3D plots for predictor-predictant relationships in Type 1-4 water bodies"
+    },
+    {
+     "repo": "zangruofan/Analysis-of-factors-affecting-red-wine-quality",
+     "estrellas": 0,
+     "lenguaje": null,
+     "descripcion": "PCA, K-means, Ordinal Logistic Regression, Decision Tree, Random Forest"
+    },
+    {
+     "repo": "silkejanitza/varimpRPS",
+     "estrellas": 0,
+     "lenguaje": "R",
+     "descripcion": "Implementation of permutation variable importance measures for ordinal response data as described in 'Random Forests for Ordinal Response Da"
+    },
+    {
+     "repo": "jerickgarcia271/A-Comparison-of-Ordinal-Logistic-Regression-and-Random-Forest-for-Predicting-Social-Anxiety",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "The project aims to determine behavioral, lifestyle, and psychological factors among other that may serve as predictors for mild to severe s"
+    },
+    {
+     "repo": "rohinireddy022-ai/Random-Forest-Car-Evaluation",
+     "estrellas": 0,
+     "lenguaje": "Python",
+     "descripcion": "A machine learning project implementing Random Forest Classification on the Car Evaluation dataset, including data preprocessing, ordinal en"
+    }
+   ]
+  },
+  {
+   "consulta": "ordered forest",
+   "total": 25,
+   "items": [
+    {
+     "repo": "Nate0634034090/bug-free-memory",
+     "estrellas": 35,
+     "lenguaje": null,
+     "descripcion": "   ​![​logo​](https://github.com/curated-intel/Ukraine-Cyber-Operations/blob/main/ci-logo.png)      ​#​ ​Ukraine-Cyber-Operations   ​Curated"
+    },
+    {
+     "repo": "okasag/OrderedForest",
+     "estrellas": 4,
+     "lenguaje": "Python",
+     "descripcion": "Python implementation of the Ordered Forest estimator for predicting ordered probabilities."
+    },
+    {
+     "repo": "HarshVardhanSh/MammoMasses-Project",
+     "estrellas": 3,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "Predict whether a mammogram mass is benign or malignant  We'll be using the \"mammographic masses\" public dataset from the UCI repository (so"
+    },
+    {
+     "repo": "Xiangyi-Fan/Analyzing-Forest-Fires-Dataset",
+     "estrellas": 2,
+     "lenguaje": "R",
+     "descripcion": "A course project in UC Berkeley - Found variables that influence the total burned area in the forest fires with 13 variables (including dumm"
+    },
+    {
+     "repo": "phillipjad/go-rsos",
+     "estrellas": 2,
+     "lenguaje": "Go",
+     "descripcion": "Sub-linear set reconciliation on any ordered K/V store — O(log n) range fingerprints via an augmented B+-tree forest, zero dependencies, in "
+    },
+    {
+     "repo": "LilyyVogel/Maternal-Health-Risk-Classification",
+     "estrellas": 1,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "Classifies maternal health risk using three ML models—ordered probit logistic regression, decision tree, and random forest—to identify key r"
+    },
+    {
+     "repo": "Nithilaa/Red-Wine-Quality-Prediction-Kaggle-Dataset-",
+     "estrellas": 1,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "The two datasets are related to red and white variants of the Portuguese \"Vinho Verde\" wine. For more details, consult the reference [Cortez"
+    },
+    {
+     "repo": "gujralsanyam22/WINE-PRICE-PREDICTION",
+     "estrellas": 1,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "Predicting the Quality of Red Wine using Machine Learning Algorithms for Regression Analysis, Data Visualizations and Data Analysis.  Descri"
+    },
+    {
+     "repo": "novanna88bis-debug/orderedforest",
+     "estrellas": 0,
+     "lenguaje": null,
+     "descripcion": "Ordered Forest - code for STATA"
+    },
+    {
+     "repo": "halfflat/ordered_forest",
+     "estrellas": 0,
+     "lenguaje": "C++",
+     "descripcion": "Scratch repo for mucking about with a forest implementation."
+    },
+    {
+     "repo": "wataro/fofo",
+     "estrellas": 0,
+     "lenguaje": "C++",
+     "descripcion": "Formatted Ordered FOrest"
+    },
+    {
+     "repo": "cran/morf",
+     "estrellas": 0,
+     "lenguaje": "C++",
+     "descripcion": ":exclamation: This is a read-only mirror of the CRAN R package repository.  morf — Modified Ordered Random Forest. Homepage: https://riccard"
+    },
+    {
+     "repo": "sankaran99/DTP_StackGuard",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "DTP-StackGuard predicts serious polypharmacy outcomes from temporally ordered, duplicate-aware FAERS reports. It combines permutation-invari"
+    },
+    {
+     "repo": "ssrselvamraju/navigate-jira-structure",
+     "estrellas": 0,
+     "lenguaje": "Python",
+     "descripcion": "Agent skill for Claude Code and Cursor to navigate Tempo / ALM Works Jira Structure hierarchies. Supports Cloud and Data Center, ordered for"
+    },
+    {
+     "repo": "cran/orf",
+     "estrellas": 0,
+     "lenguaje": "R",
+     "descripcion": ":exclamation: This is a read-only mirror of the CRAN R package repository.  orf — Ordered Random Forests. Homepage: https://github.com/okasa"
+    }
+   ]
+  },
+  {
+   "consulta": "cumulative probability random forest ordinal",
+   "total": 0,
+   "items": []
+  },
+  {
+   "consulta": "wine quality ordinal",
+   "total": 24,
+   "items": [
+    {
+     "repo": "timlinty/Wine-Quality-Prediction_OLR_KNN_SVM_DecisionTree",
+     "estrellas": 2,
+     "lenguaje": "R",
+     "descripcion": "Try to predict the wine quality by using Ordinal Logistic Regression(OLR) , KNN, SVM and Decision Tree via R."
+    },
+    {
+     "repo": "bapurba893/Wine_quality_prediction",
+     "estrellas": 1,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "Wine Quality Prediction – A Comparison of Regression, Classification, and Ordinal Regression"
+    },
+    {
+     "repo": "rifaldomalau/Wine-Quality-UCI-untuk-Ordinal-Logistic-Regression",
+     "estrellas": 1,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "Artificial Intelligence -> Machine Learning (ML) -> Supervised Learning -> Regression -> Ordinal Regression"
+    },
+    {
+     "repo": "Phu-Hong-Duong/wine-quality-ordinal",
+     "estrellas": 0,
+     "lenguaje": "Python",
+     "descripcion": "Is wine quality a regression or a classification problem? Both framings compared on shared folds, with an honest nested estimate for thresho"
+    },
+    {
+     "repo": "Wine-Ordinal-Analysis/ordinal-wine-quality-analysis",
+     "estrellas": 0,
+     "lenguaje": "Python",
+     "descripcion": "From grapes to grades: predicting wine quality with machine learning and ordinal classification."
+    },
+    {
+     "repo": "AyushMaria/Wine-Quality-Prediction",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "Predicting the Quality of wine using Ordinal Regression"
+    },
+    {
+     "repo": "SebastianCallh/wine-ordinal-regression",
+     "estrellas": 0,
+     "lenguaje": "Python",
+     "descripcion": "Bayesian ordinal regression for predicting wine quality"
+    },
+    {
+     "repo": "tylncck/Wine_Quality_Kaggle",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "Kaggle Competition (Ordinal Regression with a Tabular Wine Quality Dataset)"
+    },
+    {
+     "repo": "sumeetamin/wine-quality-lab",
+     "estrellas": 0,
+     "lenguaje": "Python",
+     "descripcion": "Reproducible classification benchmark for UCI Wine Quality ratings, with class imbalance and ordinal-label evaluation."
+    },
+    {
+     "repo": "nithinpremkumar1999/playground-series-s3e5",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "Tabular Ordinal Regression with a Wine Quality Dataset"
+    },
+    {
+     "repo": "ChenHsiangYi/Ordinal-Regression-with-a-Tabular-Wine-Quality-Dataset",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": "使用葡萄酒品質資料集進行序數回歸"
+    },
+    {
+     "repo": "zangruofan/Analysis-of-factors-affecting-red-wine-quality",
+     "estrellas": 0,
+     "lenguaje": null,
+     "descripcion": "PCA, K-means, Ordinal Logistic Regression, Decision Tree, Random Forest"
+    },
+    {
+     "repo": "MhmdHesham1/Ordinal-Regression-with-a-Tabular-Wine-Quality-Dataset",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": ""
+    },
+    {
+     "repo": "BHARATH-V-P/Ordinal-Regression-Analysis-of-highly-imbalanced-Wine-Quality-Dataset",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": ""
+    },
+    {
+     "repo": "basaktamer/C17-Ordinal-Regression-with-a-Tabular-Wine-Quality-Dataset",
+     "estrellas": 0,
+     "lenguaje": "Jupyter Notebook",
+     "descripcion": ""
+    }
+   ]
+  },
+  {
+   "consulta": "extremely randomized trees ordinal",
+   "total": 0,
+   "items": []
+  },
+  {
+   "consulta": "threshold weighted ranked probability score",
+   "total": 0,
+   "items": []
+  }
+ ]
+}

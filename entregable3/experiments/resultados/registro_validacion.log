@@ -1,0 +1,453 @@
+2026-10-26 12:36:41 | inicio: todo con 11 procesos
+2026-10-26 12:36:41 | 450 tareas pendientes de 450
+2026-10-26 12:38:50 | [1/450] vino | Random Forest | rep 0 | fold 4 | búsqueda 122s | transcurrido 2.1 min | restante ~960 min
+2026-10-26 12:38:50 | [2/450] vino | Random Forest | rep 0 | fold 0 | búsqueda 123s | transcurrido 2.2 min | restante ~482 min
+2026-10-26 12:38:51 | [3/450] vino | Random Forest | rep 0 | fold 3 | búsqueda 124s | transcurrido 2.2 min | restante ~322 min
+2026-10-26 12:38:51 | [4/450] vino | Random Forest | rep 1 | fold 4 | búsqueda 124s | transcurrido 2.2 min | restante ~242 min
+2026-10-26 12:38:52 | [5/450] vino | Random Forest | rep 1 | fold 1 | búsqueda 124s | transcurrido 2.2 min | restante ~194 min
+2026-10-26 12:38:52 | [6/450] vino | Random Forest | rep 1 | fold 0 | búsqueda 125s | transcurrido 2.2 min | restante ~162 min
+2026-10-26 12:38:53 | [7/450] vino | Random Forest | rep 0 | fold 2 | búsqueda 125s | transcurrido 2.2 min | restante ~139 min
+2026-10-26 12:38:53 | [8/450] vino | Random Forest | rep 1 | fold 3 | búsqueda 125s | transcurrido 2.2 min | restante ~121 min
+2026-10-26 12:38:53 | [9/450] vino | Random Forest | rep 1 | fold 2 | búsqueda 125s | transcurrido 2.2 min | restante ~108 min
+2026-10-26 12:38:54 | [10/450] vino | Random Forest | rep 0 | fold 1 | búsqueda 127s | transcurrido 2.2 min | restante ~98 min
+2026-10-26 12:38:55 | [11/450] vino | Random Forest | rep 2 | fold 0 | búsqueda 128s | transcurrido 2.2 min | restante ~89 min
+2026-10-26 12:41:02 | [12/450] vino | Random Forest | rep 2 | fold 4 | búsqueda 130s | transcurrido 4.3 min | restante ~159 min
+2026-10-26 12:41:03 | [13/450] vino | Random Forest | rep 2 | fold 2 | búsqueda 132s | transcurrido 4.4 min | restante ~147 min
+2026-10-26 12:41:05 | [14/450] vino | Random Forest | rep 2 | fold 1 | búsqueda 135s | transcurrido 4.4 min | restante ~137 min
+2026-10-26 12:41:05 | [15/450] vino | Random Forest | rep 4 | fold 0 | búsqueda 130s | transcurrido 4.4 min | restante ~128 min
+2026-10-26 12:41:06 | [16/450] vino | Random Forest | rep 3 | fold 3 | búsqueda 133s | transcurrido 4.4 min | restante ~120 min
+2026-10-26 12:41:07 | [17/450] vino | Random Forest | rep 3 | fold 0 | búsqueda 135s | transcurrido 4.4 min | restante ~113 min
+2026-10-26 12:41:07 | [18/450] vino | Random Forest | rep 3 | fold 1 | búsqueda 134s | transcurrido 4.4 min | restante ~106 min
+2026-10-26 12:41:08 | [19/450] vino | Random Forest | rep 3 | fold 4 | búsqueda 135s | transcurrido 4.5 min | restante ~101 min
+2026-10-26 12:41:09 | [20/450] vino | Random Forest | rep 4 | fold 1 | búsqueda 132s | transcurrido 4.5 min | restante ~96 min
+2026-10-26 12:41:09 | [21/450] vino | Random Forest | rep 2 | fold 3 | búsqueda 137s | transcurrido 4.5 min | restante ~91 min
+2026-10-26 12:41:10 | [22/450] vino | Random Forest | rep 3 | fold 2 | búsqueda 136s | transcurrido 4.5 min | restante ~87 min
+2026-10-26 12:42:54 | [23/450] abalone | Random Forest | rep 0 | fold 3 | búsqueda 106s | transcurrido 6.2 min | restante ~115 min
+2026-10-26 12:42:58 | [24/450] abalone | Random Forest | rep 0 | fold 4 | búsqueda 109s | transcurrido 6.3 min | restante ~111 min
+2026-10-26 12:42:59 | [25/450] abalone | Random Forest | rep 0 | fold 0 | búsqueda 113s | transcurrido 6.3 min | restante ~107 min
+2026-10-26 12:43:02 | [26/450] abalone | Random Forest | rep 0 | fold 2 | búsqueda 115s | transcurrido 6.3 min | restante ~103 min
+2026-10-26 12:43:04 | [27/450] abalone | Random Forest | rep 0 | fold 1 | búsqueda 117s | transcurrido 6.4 min | restante ~100 min
+2026-10-26 12:43:18 | [28/450] vino | Random Forest | rep 4 | fold 4 | búsqueda 133s | transcurrido 6.6 min | restante ~100 min
+2026-10-26 12:43:26 | [29/450] vino | Random Forest | rep 4 | fold 3 | búsqueda 142s | transcurrido 6.7 min | restante ~98 min
+2026-10-26 12:43:26 | [30/450] vino | Random Forest | rep 4 | fold 2 | búsqueda 144s | transcurrido 6.7 min | restante ~94 min
+2026-10-26 13:31:19 | [31/450] vino | CatBoost | rep 0 | fold 3 | búsqueda 2905s | transcurrido 54.6 min | restante ~738 min
+2026-10-26 13:34:47 | [32/450] vino | CatBoost | rep 1 | fold 4 | búsqueda 3082s | transcurrido 58.1 min | restante ~759 min
+2026-10-26 13:37:46 | [33/450] vino | CatBoost | rep 0 | fold 2 | búsqueda 3397s | transcurrido 61.1 min | restante ~772 min
+2026-10-26 14:06:25 | [34/450] vino | CatBoost | rep 0 | fold 0 | búsqueda 5116s | transcurrido 89.7 min | restante ~1098 min
+2026-10-26 14:16:30 | [35/450] vino | CatBoost | rep 1 | fold 1 | búsqueda 5608s | transcurrido 99.8 min | restante ~1184 min
+2026-10-26 14:26:54 | [36/450] vino | CatBoost | rep 1 | fold 3 | búsqueda 6216s | transcurrido 110.2 min | restante ~1267 min
+2026-10-26 14:37:40 | [37/450] vino | CatBoost | rep 2 | fold 0 | búsqueda 6854s | transcurrido 121.0 min | restante ~1350 min
+2026-10-26 14:58:52 | [38/450] vino | CatBoost | rep 0 | fold 4 | búsqueda 8154s | transcurrido 142.2 min | restante ~1542 min
+2026-10-26 15:05:59 | [39/450] vino | CatBoost | rep 1 | fold 0 | búsqueda 8580s | transcurrido 149.3 min | restante ~1573 min
+2026-10-26 15:09:38 | [40/450] vino | CatBoost | rep 0 | fold 1 | búsqueda 8909s | transcurrido 153.0 min | restante ~1568 min
+2026-10-26 15:15:23 | [41/450] vino | CatBoost | rep 2 | fold 3 | búsqueda 5857s | transcurrido 158.7 min | restante ~1583 min
+2026-10-26 15:29:17 | [42/450] vino | CatBoost | rep 1 | fold 2 | búsqueda 9972s | transcurrido 172.6 min | restante ~1677 min
+2026-10-26 15:33:55 | [43/450] vino | CatBoost | rep 2 | fold 2 | búsqueda 7148s | transcurrido 177.2 min | restante ~1678 min
+2026-10-26 16:11:18 | [44/450] vino | CatBoost | rep 2 | fold 1 | búsqueda 9599s | transcurrido 214.6 min | restante ~1980 min
+2026-10-26 16:11:21 | [45/450] vino | CatBoost | rep 3 | fold 2 | búsqueda 5621s | transcurrido 214.7 min | restante ~1932 min
+2026-10-26 16:14:02 | [46/450] vino | CatBoost | rep 3 | fold 1 | búsqueda 6428s | transcurrido 217.4 min | restante ~1909 min
+2026-10-26 16:28:09 | [47/450] vino | Bosque Ordinal Focalizado | rep 0 | fold 1 | búsqueda 847s | transcurrido 231.5 min | restante ~1985 min
+2026-10-26 16:33:06 | [48/450] vino | Bosque Ordinal Focalizado | rep 0 | fold 0 | búsqueda 1303s | transcurrido 236.4 min | restante ~1980 min
+2026-10-26 16:40:35 | [49/450] vino | CatBoost | rep 3 | fold 0 | búsqueda 8645s | transcurrido 243.9 min | restante ~1996 min
+2026-10-26 16:43:14 | [50/450] vino | CatBoost | rep 4 | fold 1 | búsqueda 5271s | transcurrido 246.5 min | restante ~1972 min
+2026-10-26 16:46:51 | [51/450] vino | CatBoost | rep 4 | fold 0 | búsqueda 5833s | transcurrido 250.2 min | restante ~1957 min
+2026-10-26 17:07:06 | [52/450] vino | Bosque Ordinal Focalizado | rep 0 | fold 4 | búsqueda 1590s | transcurrido 270.4 min | restante ~2070 min
+2026-10-26 17:11:00 | [53/450] vino | Bosque Ordinal Focalizado | rep 0 | fold 2 | búsqueda 2569s | transcurrido 274.3 min | restante ~2055 min
+2026-10-26 17:11:42 | [54/450] vino | CatBoost | rep 2 | fold 4 | búsqueda 11117s | transcurrido 275.0 min | restante ~2017 min
+2026-10-26 17:14:59 | [55/450] vino | Bosque Ordinal Focalizado | rep 0 | fold 3 | búsqueda 2510s | transcurrido 278.3 min | restante ~1999 min
+2026-10-26 17:17:03 | [56/450] vino | CatBoost | rep 3 | fold 3 | búsqueda 8290s | transcurrido 280.4 min | restante ~1973 min
+2026-10-26 17:22:19 | [57/450] vino | Bosque Ordinal Focalizado | rep 1 | fold 0 | búsqueda 2343s | transcurrido 285.6 min | restante ~1969 min
+2026-10-26 17:41:46 | [58/450] vino | Bosque Ordinal Focalizado | rep 1 | fold 1 | búsqueda 3292s | transcurrido 305.1 min | restante ~2062 min
+2026-10-26 17:47:43 | [59/450] vino | Bosque Ordinal Focalizado | rep 1 | fold 3 | búsqueda 2201s | transcurrido 311.0 min | restante ~2061 min
+2026-10-26 17:58:05 | [60/450] vino | Bosque Ordinal Focalizado | rep 2 | fold 2 | búsqueda 2143s | transcurrido 321.4 min | restante ~2089 min
+2026-10-26 18:01:21 | [61/450] vino | Bosque Ordinal Focalizado | rep 1 | fold 2 | búsqueda 3252s | transcurrido 324.7 min | restante ~2070 min
+2026-10-26 18:06:30 | [62/450] vino | CatBoost | rep 3 | fold 4 | búsqueda 10831s | transcurrido 329.8 min | restante ~2064 min
+2026-10-26 18:13:22 | [63/450] vino | Bosque Ordinal Focalizado | rep 2 | fold 0 | búsqueda 3499s | transcurrido 336.7 min | restante ~2068 min
+2026-10-26 18:16:50 | [64/450] vino | Bosque Ordinal Focalizado | rep 1 | fold 4 | búsqueda 3905s | transcurrido 340.1 min | restante ~2052 min
+2026-10-26 18:26:28 | [65/450] vino | Bosque Ordinal Focalizado | rep 2 | fold 1 | búsqueda 4162s | transcurrido 349.8 min | restante ~2072 min
+2026-10-26 18:53:24 | [66/450] vino | Bosque Ordinal Focalizado | rep 2 | fold 3 | búsqueda 4295s | transcurrido 376.7 min | restante ~2192 min
+2026-10-26 18:55:53 | [67/450] vino | Bosque Ordinal Focalizado | rep 2 | fold 4 | búsqueda 4086s | transcurrido 379.2 min | restante ~2168 min
+2026-10-26 19:06:25 | [68/450] vino | Bosque Ordinal Focalizado | rep 3 | fold 0 | búsqueda 4097s | transcurrido 389.7 min | restante ~2189 min
+2026-10-26 19:10:18 | [69/450] vino | Bosque Ordinal Focalizado | rep 4 | fold 0 | búsqueda 2629s | transcurrido 393.6 min | restante ~2173 min
+2026-10-26 19:13:04 | [70/450] vino | Bosque Ordinal Focalizado | rep 3 | fold 1 | búsqueda 4300s | transcurrido 396.4 min | restante ~2152 min
+2026-10-26 19:14:27 | [71/450] vino | CatBoost | rep 4 | fold 4 | búsqueda 10989s | transcurrido 397.8 min | restante ~2123 min
+2026-10-26 19:17:21 | [72/450] vino | Bosque Ordinal Focalizado | rep 3 | fold 2 | búsqueda 4247s | transcurrido 400.7 min | restante ~2103 min
+2026-10-26 19:23:37 | [73/450] vino | Bosque Ordinal Focalizado | rep 3 | fold 3 | búsqueda 4212s | transcurrido 406.9 min | restante ~2102 min
+2026-10-26 19:30:24 | [74/450] vino | CatBoost | rep 4 | fold 3 | búsqueda 14189s | transcurrido 413.7 min | restante ~2102 min
+2026-10-26 19:33:42 | [75/450] abalone | CatBoost | rep 0 | fold 0 | búsqueda 1238s | transcurrido 417.0 min | restante ~2085 min
+2026-10-26 19:34:29 | [76/450] vino | Bosque Ordinal Focalizado | rep 3 | fold 4 | búsqueda 4655s | transcurrido 417.8 min | restante ~2056 min
+2026-10-26 19:38:13 | [77/450] abalone | CatBoost | rep 0 | fold 2 | búsqueda 1252s | transcurrido 421.5 min | restante ~2042 min
+2026-10-26 19:39:21 | [78/450] vino | CatBoost | rep 4 | fold 2 | búsqueda 15004s | transcurrido 422.7 min | restante ~2016 min
+2026-10-26 19:39:36 | [79/450] abalone | CatBoost | rep 0 | fold 1 | búsqueda 1508s | transcurrido 422.9 min | restante ~1986 min
+2026-10-26 19:42:37 | [80/450] abalone | CatBoost | rep 0 | fold 4 | búsqueda 733s | transcurrido 425.9 min | restante ~1970 min
+2026-10-26 19:50:43 | [81/450] vino | XGBoost | rep 0 | fold 0 | búsqueda 485s | transcurrido 434.0 min | restante ~1977 min
+2026-10-26 19:58:48 | [82/450] vino | XGBoost | rep 0 | fold 1 | búsqueda 485s | transcurrido 442.1 min | restante ~1984 min
+2026-10-26 19:59:55 | [83/450] vino | Bosque Ordinal Focalizado | rep 4 | fold 1 | búsqueda 3988s | transcurrido 443.2 min | restante ~1960 min
+2026-10-26 20:00:39 | [84/450] abalone | CatBoost | rep 0 | fold 3 | búsqueda 2222s | transcurrido 444.0 min | restante ~1934 min
+2026-10-26 20:04:58 | [85/450] vino | XGBoost | rep 0 | fold 3 | búsqueda 302s | transcurrido 448.3 min | restante ~1925 min
+2026-10-26 20:05:54 | [86/450] vino | XGBoost | rep 0 | fold 4 | búsqueda 314s | transcurrido 449.2 min | restante ~1901 min
+2026-10-26 20:07:52 | [87/450] vino | XGBoost | rep 0 | fold 2 | búsqueda 543s | transcurrido 451.2 min | restante ~1882 min
+2026-10-26 20:10:39 | [88/450] vino | XGBoost | rep 1 | fold 0 | búsqueda 341s | transcurrido 454.0 min | restante ~1867 min
+2026-10-26 20:11:47 | [89/450] vino | Bosque Ordinal Focalizado | rep 4 | fold 2 | búsqueda 4549s | transcurrido 455.1 min | restante ~1846 min
+2026-10-26 20:14:29 | [90/450] vino | XGBoost | rep 1 | fold 2 | búsqueda 397s | transcurrido 457.8 min | restante ~1831 min
+2026-10-26 20:15:11 | [91/450] vino | XGBoost | rep 1 | fold 1 | búsqueda 557s | transcurrido 458.5 min | restante ~1809 min
+2026-10-26 20:15:17 | [92/450] abalone | Bosque Ordinal Focalizado | rep 0 | fold 1 | búsqueda 2447s | transcurrido 458.6 min | restante ~1785 min
+2026-10-26 20:19:21 | [93/450] vino | XGBoost | rep 1 | fold 4 | búsqueda 454s | transcurrido 462.7 min | restante ~1776 min
+2026-10-26 20:20:27 | [94/450] vino | XGBoost | rep 1 | fold 3 | búsqueda 588s | transcurrido 463.8 min | restante ~1756 min
+2026-10-26 20:22:50 | [95/450] vino | XGBoost | rep 2 | fold 1 | búsqueda 458s | transcurrido 466.1 min | restante ~1742 min
+2026-10-26 20:24:19 | [96/450] vino | XGBoost | rep 2 | fold 2 | búsqueda 542s | transcurrido 467.6 min | restante ~1724 min
+2026-10-26 20:25:26 | [97/450] vino | XGBoost | rep 2 | fold 3 | búsqueda 365s | transcurrido 468.7 min | restante ~1706 min
+2026-10-26 20:25:59 | [98/450] abalone | Bosque Ordinal Focalizado | rep 0 | fold 2 | búsqueda 2866s | transcurrido 469.3 min | restante ~1686 min
+2026-10-26 20:26:27 | [99/450] vino | XGBoost | rep 2 | fold 0 | búsqueda 718s | transcurrido 469.8 min | restante ~1666 min
+2026-10-26 20:27:02 | [100/450] vino | XGBoost | rep 2 | fold 4 | búsqueda 394s | transcurrido 470.3 min | restante ~1646 min
+2026-10-26 20:28:07 | [101/450] vino | XGBoost | rep 3 | fold 0 | búsqueda 317s | transcurrido 471.4 min | restante ~1629 min
+2026-10-26 20:30:58 | [102/450] vino | XGBoost | rep 3 | fold 1 | búsqueda 398s | transcurrido 474.3 min | restante ~1618 min
+2026-10-26 20:31:40 | [103/450] abalone | Bosque Ordinal Focalizado | rep 0 | fold 0 | búsqueda 3478s | transcurrido 475.0 min | restante ~1600 min
+2026-10-26 20:33:09 | [104/450] vino | XGBoost | rep 3 | fold 4 | búsqueda 402s | transcurrido 476.5 min | restante ~1585 min
+2026-10-26 20:33:34 | [105/450] vino | Bosque Ordinal Focalizado | rep 4 | fold 4 | búsqueda 4992s | transcurrido 476.9 min | restante ~1567 min
+2026-10-26 20:34:17 | [106/450] abalone | XGBoost | rep 0 | fold 0 | búsqueda 43s | transcurrido 477.6 min | restante ~1550 min
+2026-10-26 20:34:39 | [107/450] vino | XGBoost | rep 3 | fold 3 | búsqueda 520s | transcurrido 478.0 min | restante ~1532 min
+2026-10-26 20:35:37 | [108/450] vino | Bosque Ordinal Focalizado | rep 4 | fold 3 | búsqueda 5347s | transcurrido 478.9 min | restante ~1517 min
+2026-10-26 20:35:38 | [109/450] vino | XGBoost | rep 3 | fold 2 | búsqueda 612s | transcurrido 479.0 min | restante ~1498 min
+2026-10-26 20:35:43 | [110/450] abalone | XGBoost | rep 0 | fold 1 | búsqueda 85s | transcurrido 479.0 min | restante ~1481 min
+2026-10-26 20:36:52 | [111/450] abalone | XGBoost | rep 0 | fold 4 | búsqueda 73s | transcurrido 480.2 min | restante ~1466 min
+2026-10-26 20:36:58 | [112/450] abalone | XGBoost | rep 0 | fold 2 | búsqueda 139s | transcurrido 480.3 min | restante ~1449 min
+2026-10-26 20:37:02 | [113/450] vino | SVM | rep 0 | fold 0 | búsqueda 79s | transcurrido 480.4 min | restante ~1433 min
+2026-10-26 20:37:07 | [114/450] vino | XGBoost | rep 4 | fold 2 | búsqueda 369s | transcurrido 480.4 min | restante ~1416 min
+2026-10-26 20:37:27 | [115/450] vino | XGBoost | rep 4 | fold 0 | búsqueda 625s | transcurrido 480.8 min | restante ~1400 min
+2026-10-26 20:37:48 | [116/450] vino | XGBoost | rep 4 | fold 1 | búsqueda 581s | transcurrido 481.1 min | restante ~1385 min
+2026-10-26 20:38:03 | [117/450] abalone | XGBoost | rep 0 | fold 3 | búsqueda 146s | transcurrido 481.4 min | restante ~1370 min
+2026-10-26 20:38:15 | [118/450] vino | SVM | rep 0 | fold 3 | búsqueda 72s | transcurrido 481.6 min | restante ~1355 min
+2026-10-26 20:38:24 | [119/450] vino | SVM | rep 0 | fold 2 | búsqueda 84s | transcurrido 481.7 min | restante ~1340 min
+2026-10-26 20:38:30 | [120/450] vino | SVM | rep 0 | fold 1 | búsqueda 98s | transcurrido 481.8 min | restante ~1325 min
+2026-10-26 20:38:47 | [121/450] vino | XGBoost | rep 4 | fold 3 | búsqueda 426s | transcurrido 482.1 min | restante ~1311 min
+2026-10-26 20:38:49 | [122/450] vino | SVM | rep 0 | fold 4 | búsqueda 101s | transcurrido 482.1 min | restante ~1296 min
+2026-10-26 20:39:01 | [123/450] vino | SVM | rep 1 | fold 0 | búsqueda 94s | transcurrido 482.3 min | restante ~1282 min
+2026-10-26 20:39:16 | [124/450] vino | SVM | rep 1 | fold 1 | búsqueda 88s | transcurrido 482.6 min | restante ~1269 min
+2026-10-26 20:39:29 | [125/450] vino | SVM | rep 1 | fold 2 | búsqueda 85s | transcurrido 482.8 min | restante ~1255 min
+2026-10-26 20:39:31 | [126/450] vino | SVM | rep 1 | fold 3 | búsqueda 76s | transcurrido 482.8 min | restante ~1242 min
+2026-10-26 20:39:50 | [127/450] vino | SVM | rep 1 | fold 4 | búsqueda 86s | transcurrido 483.1 min | restante ~1229 min
+2026-10-26 20:39:54 | [128/450] vino | SVM | rep 2 | fold 0 | búsqueda 83s | transcurrido 483.2 min | restante ~1216 min
+2026-10-26 20:39:54 | [129/450] abalone | Bosque Ordinal Focalizado | rep 0 | fold 3 | búsqueda 3632s | transcurrido 483.2 min | restante ~1202 min
+2026-10-26 20:40:08 | [130/450] vino | SVM | rep 2 | fold 1 | búsqueda 81s | transcurrido 483.4 min | restante ~1190 min
+2026-10-26 20:40:16 | [131/450] vino | SVM | rep 2 | fold 2 | búsqueda 87s | transcurrido 483.6 min | restante ~1178 min
+2026-10-26 20:40:20 | [132/450] vino | SVM | rep 2 | fold 3 | búsqueda 78s | transcurrido 483.6 min | restante ~1165 min
+2026-10-26 20:40:37 | [133/450] vino | SVM | rep 2 | fold 4 | búsqueda 80s | transcurrido 483.9 min | restante ~1153 min
+2026-10-26 20:40:46 | [134/450] vino | SVM | rep 3 | fold 0 | búsqueda 76s | transcurrido 484.1 min | restante ~1142 min
+2026-10-26 20:40:47 | [135/450] vino | SVM | rep 3 | fold 1 | búsqueda 75s | transcurrido 484.1 min | restante ~1130 min
+2026-10-26 20:41:05 | [136/450] vino | SVM | rep 3 | fold 2 | búsqueda 74s | transcurrido 484.4 min | restante ~1118 min
+2026-10-26 20:41:07 | [137/450] abalone | Bosque Ordinal Focalizado | rep 0 | fold 4 | búsqueda 3691s | transcurrido 484.4 min | restante ~1107 min
+2026-10-26 20:41:12 | [138/450] vino | SVM | rep 3 | fold 3 | búsqueda 77s | transcurrido 484.5 min | restante ~1095 min
+2026-10-26 20:41:17 | [139/450] vino | SVM | rep 3 | fold 4 | búsqueda 82s | transcurrido 484.6 min | restante ~1084 min
+2026-10-26 20:41:17 | [140/450] vino | XGBoost | rep 4 | fold 4 | búsqueda 488s | transcurrido 484.6 min | restante ~1073 min
+2026-10-26 20:41:28 | [141/450] vino | LightGBM | rep 0 | fold 0 | búsqueda 41s | transcurrido 484.8 min | restante ~1062 min
+2026-10-26 20:41:29 | [142/450] vino | SVM | rep 4 | fold 0 | búsqueda 81s | transcurrido 484.8 min | restante ~1052 min
+2026-10-26 20:41:30 | [143/450] vino | SVM | rep 4 | fold 1 | búsqueda 74s | transcurrido 484.8 min | restante ~1041 min
+2026-10-26 20:41:36 | [144/450] vino | SVM | rep 4 | fold 2 | búsqueda 76s | transcurrido 484.9 min | restante ~1030 min
+2026-10-26 20:41:54 | [145/450] vino | SVM | rep 4 | fold 3 | búsqueda 77s | transcurrido 485.2 min | restante ~1021 min
+2026-10-26 20:41:58 | [146/450] vino | SVM | rep 4 | fold 4 | búsqueda 72s | transcurrido 485.3 min | restante ~1010 min
+2026-10-26 20:42:08 | [147/450] vino | LightGBM | rep 0 | fold 2 | búsqueda 61s | transcurrido 485.4 min | restante ~1001 min
+2026-10-26 20:42:11 | [148/450] vino | LightGBM | rep 1 | fold 1 | búsqueda 44s | transcurrido 485.5 min | restante ~991 min
+2026-10-26 20:42:16 | [149/450] vino | LightGBM | rep 1 | fold 2 | búsqueda 47s | transcurrido 485.6 min | restante ~981 min
+2026-10-26 20:42:20 | [150/450] vino | LightGBM | rep 1 | fold 4 | búsqueda 44s | transcurrido 485.6 min | restante ~971 min
+2026-10-26 20:42:25 | [151/450] vino | LightGBM | rep 0 | fold 1 | búsqueda 80s | transcurrido 485.7 min | restante ~962 min
+2026-10-26 20:42:26 | [152/450] vino | LightGBM | rep 1 | fold 0 | búsqueda 69s | transcurrido 485.7 min | restante ~952 min
+2026-10-26 20:42:30 | [153/450] vino | LightGBM | rep 0 | fold 3 | búsqueda 78s | transcurrido 485.8 min | restante ~943 min
+2026-10-26 20:42:33 | [154/450] vino | LightGBM | rep 0 | fold 4 | búsqueda 76s | transcurrido 485.9 min | restante ~934 min
+2026-10-26 20:42:41 | [155/450] vino | LightGBM | rep 1 | fold 3 | búsqueda 70s | transcurrido 486.0 min | restante ~925 min
+2026-10-26 20:42:47 | [156/450] vino | LightGBM | rep 2 | fold 3 | búsqueda 35s | transcurrido 486.1 min | restante ~916 min
+2026-10-26 20:43:00 | [157/450] vino | LightGBM | rep 2 | fold 2 | búsqueda 51s | transcurrido 486.3 min | restante ~908 min
+2026-10-26 20:43:01 | [158/450] vino | LightGBM | rep 2 | fold 1 | búsqueda 63s | transcurrido 486.3 min | restante ~899 min
+2026-10-26 20:43:05 | [159/450] vino | LightGBM | rep 3 | fold 0 | búsqueda 44s | transcurrido 486.4 min | restante ~890 min
+2026-10-26 20:43:06 | [160/450] vino | LightGBM | rep 4 | fold 1 | búsqueda 19s | transcurrido 486.4 min | restante ~882 min
+2026-10-26 20:43:15 | [161/450] vino | LightGBM | rep 3 | fold 2 | búsqueda 49s | transcurrido 486.6 min | restante ~873 min
+2026-10-26 20:43:20 | [162/450] vino | LightGBM | rep 3 | fold 1 | búsqueda 55s | transcurrido 486.6 min | restante ~865 min
+2026-10-26 20:43:26 | [163/450] vino | LightGBM | rep 2 | fold 4 | búsqueda 70s | transcurrido 486.7 min | restante ~857 min
+2026-10-26 20:43:35 | [164/450] vino | LightGBM | rep 3 | fold 4 | búsqueda 62s | transcurrido 486.9 min | restante ~849 min
+2026-10-26 20:43:41 | [165/450] vino | LightGBM | rep 2 | fold 0 | búsqueda 106s | transcurrido 487.0 min | restante ~841 min
+2026-10-26 20:43:48 | [166/450] abalone | SVM | rep 0 | fold 0 | búsqueda 42s | transcurrido 487.1 min | restante ~833 min
+2026-10-26 20:43:50 | [167/450] vino | LightGBM | rep 3 | fold 3 | búsqueda 80s | transcurrido 487.1 min | restante ~826 min
+2026-10-26 20:43:54 | [168/450] abalone | SVM | rep 0 | fold 1 | búsqueda 39s | transcurrido 487.2 min | restante ~818 min
+2026-10-26 20:43:59 | [169/450] abalone | LightGBM | rep 0 | fold 0 | búsqueda 19s | transcurrido 487.3 min | restante ~810 min
+2026-10-26 20:44:00 | [170/450] abalone | SVM | rep 0 | fold 2 | búsqueda 40s | transcurrido 487.3 min | restante ~803 min
+2026-10-26 20:44:06 | [171/450] abalone | SVM | rep 0 | fold 3 | búsqueda 40s | transcurrido 487.4 min | restante ~795 min
+2026-10-26 20:44:13 | [172/450] vino | LightGBM | rep 4 | fold 2 | búsqueda 73s | transcurrido 487.5 min | restante ~788 min
+2026-10-26 20:44:17 | [173/450] abalone | SVM | rep 0 | fold 4 | búsqueda 42s | transcurrido 487.6 min | restante ~781 min
+2026-10-26 20:44:17 | [174/450] vino | LightGBM | rep 4 | fold 3 | búsqueda 76s | transcurrido 487.6 min | restante ~773 min
+2026-10-26 20:44:20 | [175/450] vino | LightGBM | rep 4 | fold 4 | búsqueda 75s | transcurrido 487.6 min | restante ~766 min
+2026-10-26 20:44:25 | [176/450] abalone | LightGBM | rep 0 | fold 4 | búsqueda 25s | transcurrido 487.7 min | restante ~759 min
+2026-10-26 20:44:26 | [177/450] vino | LightGBM | rep 4 | fold 0 | búsqueda 105s | transcurrido 487.7 min | restante ~752 min
+2026-10-26 20:44:29 | [178/450] abalone | LightGBM | rep 0 | fold 1 | búsqueda 40s | transcurrido 487.8 min | restante ~745 min
+2026-10-26 20:44:33 | [179/450] abalone | LightGBM | rep 0 | fold 3 | búsqueda 39s | transcurrido 487.9 min | restante ~739 min
+2026-10-26 20:44:37 | [180/450] abalone | LightGBM | rep 0 | fold 2 | búsqueda 47s | transcurrido 487.9 min | restante ~732 min
+2026-10-26 20:45:04 | [181/450] estudiantes | Random Forest | rep 0 | fold 0 | búsqueda 44s | transcurrido 488.4 min | restante ~726 min
+2026-10-26 20:45:06 | [182/450] cardiotocografia | Random Forest | rep 0 | fold 0 | búsqueda 66s | transcurrido 488.4 min | restante ~719 min
+2026-10-26 20:45:10 | [183/450] estudiantes | Random Forest | rep 0 | fold 1 | búsqueda 45s | transcurrido 488.5 min | restante ~713 min
+2026-10-26 20:45:11 | [184/450] estudiantes | Random Forest | rep 0 | fold 2 | búsqueda 45s | transcurrido 488.5 min | restante ~706 min
+2026-10-26 20:45:11 | [185/450] cardiotocografia | Random Forest | rep 0 | fold 1 | búsqueda 65s | transcurrido 488.5 min | restante ~700 min
+2026-10-26 20:45:14 | [186/450] estudiantes | Random Forest | rep 0 | fold 3 | búsqueda 45s | transcurrido 488.5 min | restante ~693 min
+2026-10-26 20:45:18 | [187/450] corazon | Random Forest | rep 0 | fold 0 | búsqueda 40s | transcurrido 488.6 min | restante ~687 min
+2026-10-26 20:45:18 | [188/450] estudiantes | Random Forest | rep 0 | fold 4 | búsqueda 45s | transcurrido 488.6 min | restante ~681 min
+2026-10-26 20:45:19 | [189/450] cardiotocografia | Random Forest | rep 0 | fold 2 | búsqueda 65s | transcurrido 488.6 min | restante ~675 min
+2026-10-26 20:45:23 | [190/450] cardiotocografia | Random Forest | rep 0 | fold 3 | búsqueda 66s | transcurrido 488.7 min | restante ~669 min
+2026-10-26 20:45:23 | [191/450] cardiotocografia | Random Forest | rep 0 | fold 4 | búsqueda 66s | transcurrido 488.7 min | restante ~663 min
+2026-10-26 20:45:52 | [192/450] corazon | Random Forest | rep 0 | fold 1 | búsqueda 48s | transcurrido 489.2 min | restante ~657 min
+2026-10-26 20:45:56 | [193/450] corazon | Random Forest | rep 0 | fold 2 | búsqueda 49s | transcurrido 489.2 min | restante ~651 min
+2026-10-26 20:46:03 | [194/450] corazon | Random Forest | rep 0 | fold 3 | búsqueda 52s | transcurrido 489.4 min | restante ~646 min
+2026-10-26 20:46:05 | [195/450] corazon | Random Forest | rep 0 | fold 4 | búsqueda 54s | transcurrido 489.4 min | restante ~640 min
+2026-10-26 20:52:48 | [196/450] cardiotocografia | Bosque Ordinal Focalizado | rep 0 | fold 0 | búsqueda 445s | transcurrido 496.1 min | restante ~643 min
+2026-10-26 20:54:11 | [197/450] cardiotocografia | Bosque Ordinal Focalizado | rep 0 | fold 3 | búsqueda 495s | transcurrido 497.5 min | restante ~639 min
+2026-10-26 20:55:42 | [198/450] cardiotocografia | Bosque Ordinal Focalizado | rep 0 | fold 1 | búsqueda 618s | transcurrido 499.0 min | restante ~635 min
+2026-10-26 20:55:50 | [199/450] cardiotocografia | Bosque Ordinal Focalizado | rep 0 | fold 4 | búsqueda 587s | transcurrido 499.1 min | restante ~630 min
+2026-10-26 20:58:39 | [200/450] estudiantes | CatBoost | rep 0 | fold 4 | búsqueda 169s | transcurrido 502.0 min | restante ~627 min
+2026-10-26 20:58:51 | [201/450] cardiotocografia | Bosque Ordinal Focalizado | rep 0 | fold 2 | búsqueda 778s | transcurrido 502.2 min | restante ~622 min
+2026-10-26 21:01:01 | [202/450] cardiotocografia | CatBoost | rep 0 | fold 1 | búsqueda 947s | transcurrido 504.3 min | restante ~619 min
+2026-10-26 21:03:45 | [203/450] estudiantes | Bosque Ordinal Focalizado | rep 0 | fold 0 | búsqueda 306s | transcurrido 507.1 min | restante ~617 min
+2026-10-26 21:06:13 | [204/450] estudiantes | Bosque Ordinal Focalizado | rep 0 | fold 2 | búsqueda 312s | transcurrido 509.5 min | restante ~614 min
+2026-10-26 21:06:17 | [205/450] estudiantes | CatBoost | rep 0 | fold 3 | búsqueda 635s | transcurrido 509.6 min | restante ~609 min
+2026-10-26 21:06:49 | [206/450] estudiantes | Bosque Ordinal Focalizado | rep 0 | fold 1 | búsqueda 478s | transcurrido 510.1 min | restante ~604 min
+2026-10-26 21:07:22 | [207/450] estudiantes | Bosque Ordinal Focalizado | rep 0 | fold 3 | búsqueda 217s | transcurrido 510.7 min | restante ~599 min
+2026-10-26 21:08:48 | [208/450] corazon | CatBoost | rep 0 | fold 0 | búsqueda 151s | transcurrido 512.1 min | restante ~596 min
+2026-10-26 21:10:21 | [209/450] estudiantes | Bosque Ordinal Focalizado | rep 0 | fold 4 | búsqueda 249s | transcurrido 513.7 min | restante ~592 min
+2026-10-26 21:11:37 | [210/450] corazon | CatBoost | rep 0 | fold 2 | búsqueda 255s | transcurrido 514.9 min | restante ~588 min
+2026-10-26 21:12:02 | [211/450] corazon | Bosque Ordinal Focalizado | rep 0 | fold 0 | búsqueda 25s | transcurrido 515.3 min | restante ~584 min
+2026-10-26 21:12:08 | [212/450] corazon | CatBoost | rep 0 | fold 4 | búsqueda 106s | transcurrido 515.4 min | restante ~579 min
+2026-10-26 21:12:15 | [213/450] corazon | CatBoost | rep 0 | fold 3 | búsqueda 207s | transcurrido 515.6 min | restante ~574 min
+2026-10-26 21:12:27 | [214/450] corazon | Bosque Ordinal Focalizado | rep 0 | fold 2 | búsqueda 20s | transcurrido 515.8 min | restante ~569 min
+2026-10-26 21:12:40 | [215/450] corazon | Bosque Ordinal Focalizado | rep 0 | fold 1 | búsqueda 37s | transcurrido 516.0 min | restante ~564 min
+2026-10-26 21:12:49 | [216/450] corazon | Bosque Ordinal Focalizado | rep 0 | fold 4 | búsqueda 21s | transcurrido 516.1 min | restante ~559 min
+2026-10-26 21:12:51 | [217/450] corazon | Bosque Ordinal Focalizado | rep 0 | fold 3 | búsqueda 36s | transcurrido 516.2 min | restante ~554 min
+2026-10-26 21:13:43 | [218/450] cardiotocografia | XGBoost | rep 0 | fold 0 | búsqueda 63s | transcurrido 517.0 min | restante ~550 min
+2026-10-26 21:14:05 | [219/450] corazon | CatBoost | rep 0 | fold 1 | búsqueda 436s | transcurrido 517.4 min | restante ~546 min
+2026-10-26 21:14:08 | [220/450] estudiantes | CatBoost | rep 0 | fold 0 | búsqueda 1683s | transcurrido 517.5 min | restante ~541 min
+2026-10-26 21:14:24 | [221/450] cardiotocografia | XGBoost | rep 0 | fold 1 | búsqueda 95s | transcurrido 517.7 min | restante ~536 min
+2026-10-26 21:15:18 | [222/450] estudiantes | XGBoost | rep 0 | fold 0 | búsqueda 69s | transcurrido 518.6 min | restante ~533 min
+2026-10-26 21:15:18 | [223/450] cardiotocografia | XGBoost | rep 0 | fold 2 | búsqueda 147s | transcurrido 518.6 min | restante ~528 min
+2026-10-26 21:15:36 | [224/450] estudiantes | XGBoost | rep 0 | fold 1 | búsqueda 72s | transcurrido 518.9 min | restante ~524 min
+2026-10-26 21:15:37 | [225/450] cardiotocografia | XGBoost | rep 0 | fold 3 | búsqueda 114s | transcurrido 518.9 min | restante ~519 min
+2026-10-26 21:15:54 | [226/450] corazon | XGBoost | rep 0 | fold 0 | búsqueda 17s | transcurrido 519.2 min | restante ~515 min
+2026-10-26 21:16:11 | [227/450] corazon | XGBoost | rep 0 | fold 1 | búsqueda 17s | transcurrido 519.5 min | restante ~510 min
+2026-10-26 21:16:18 | [228/450] estudiantes | XGBoost | rep 0 | fold 4 | búsqueda 42s | transcurrido 519.6 min | restante ~506 min
+2026-10-26 21:16:29 | [229/450] corazon | XGBoost | rep 0 | fold 2 | búsqueda 18s | transcurrido 519.8 min | restante ~502 min
+2026-10-26 21:16:31 | [230/450] corazon | XGBoost | rep 0 | fold 3 | búsqueda 13s | transcurrido 519.8 min | restante ~497 min
+2026-10-26 21:16:44 | [231/450] corazon | XGBoost | rep 0 | fold 4 | búsqueda 15s | transcurrido 520.1 min | restante ~493 min
+2026-10-26 21:16:46 | [232/450] vino | KNN | rep 0 | fold 0 | búsqueda 15s | transcurrido 520.1 min | restante ~489 min
+2026-10-26 21:17:00 | [233/450] vino | KNN | rep 0 | fold 2 | búsqueda 14s | transcurrido 520.3 min | restante ~485 min
+2026-10-26 21:17:01 | [234/450] cardiotocografia | XGBoost | rep 0 | fold 4 | búsqueda 176s | transcurrido 520.3 min | restante ~480 min
+2026-10-26 21:17:01 | [235/450] vino | KNN | rep 0 | fold 1 | búsqueda 16s | transcurrido 520.3 min | restante ~476 min
+2026-10-26 21:17:15 | [236/450] vino | KNN | rep 0 | fold 3 | búsqueda 14s | transcurrido 520.6 min | restante ~472 min
+2026-10-26 21:17:17 | [237/450] vino | KNN | rep 1 | fold 0 | búsqueda 16s | transcurrido 520.6 min | restante ~468 min
+2026-10-26 21:17:18 | [238/450] vino | KNN | rep 0 | fold 4 | búsqueda 17s | transcurrido 520.6 min | restante ~464 min
+2026-10-26 21:17:20 | [239/450] estudiantes | XGBoost | rep 0 | fold 2 | búsqueda 122s | transcurrido 520.6 min | restante ~460 min
+2026-10-26 21:17:30 | [240/450] vino | KNN | rep 1 | fold 1 | búsqueda 14s | transcurrido 520.8 min | restante ~456 min
+2026-10-26 21:17:32 | [241/450] vino | KNN | rep 1 | fold 2 | búsqueda 15s | transcurrido 520.9 min | restante ~452 min
+2026-10-26 21:17:34 | [242/450] vino | KNN | rep 1 | fold 3 | búsqueda 15s | transcurrido 520.9 min | restante ~448 min
+2026-10-26 21:17:35 | [243/450] vino | KNN | rep 1 | fold 4 | búsqueda 15s | transcurrido 520.9 min | restante ~444 min
+2026-10-26 21:17:40 | [244/450] estudiantes | XGBoost | rep 0 | fold 3 | búsqueda 142s | transcurrido 521.0 min | restante ~440 min
+2026-10-26 21:17:44 | [245/450] vino | KNN | rep 2 | fold 0 | búsqueda 14s | transcurrido 521.0 min | restante ~436 min
+2026-10-26 21:17:47 | [246/450] vino | KNN | rep 2 | fold 1 | búsqueda 15s | transcurrido 521.1 min | restante ~432 min
+2026-10-26 21:17:49 | [247/450] vino | KNN | rep 2 | fold 2 | búsqueda 15s | transcurrido 521.1 min | restante ~428 min
+2026-10-26 21:17:49 | [248/450] vino | KNN | rep 2 | fold 3 | búsqueda 13s | transcurrido 521.1 min | restante ~424 min
+2026-10-26 21:17:54 | [249/450] vino | KNN | rep 2 | fold 4 | búsqueda 14s | transcurrido 521.2 min | restante ~421 min
+2026-10-26 21:17:58 | [250/450] vino | KNN | rep 3 | fold 0 | búsqueda 14s | transcurrido 521.3 min | restante ~417 min
+2026-10-26 21:18:02 | [251/450] vino | KNN | rep 3 | fold 1 | búsqueda 14s | transcurrido 521.3 min | restante ~413 min
+2026-10-26 21:18:02 | [252/450] vino | KNN | rep 3 | fold 2 | búsqueda 14s | transcurrido 521.4 min | restante ~410 min
+2026-10-26 21:18:03 | [253/450] vino | KNN | rep 3 | fold 3 | búsqueda 13s | transcurrido 521.4 min | restante ~406 min
+2026-10-26 21:18:08 | [254/450] vino | KNN | rep 3 | fold 4 | búsqueda 14s | transcurrido 521.4 min | restante ~402 min
+2026-10-26 21:18:13 | [255/450] vino | KNN | rep 4 | fold 0 | búsqueda 14s | transcurrido 521.5 min | restante ~399 min
+2026-10-26 21:18:15 | [256/450] vino | KNN | rep 4 | fold 1 | búsqueda 13s | transcurrido 521.6 min | restante ~395 min
+2026-10-26 21:18:16 | [257/450] vino | KNN | rep 4 | fold 2 | búsqueda 13s | transcurrido 521.6 min | restante ~392 min
+2026-10-26 21:18:17 | [258/450] vino | KNN | rep 4 | fold 3 | búsqueda 14s | transcurrido 521.6 min | restante ~388 min
+2026-10-26 21:18:19 | [259/450] abalone | KNN | rep 0 | fold 0 | búsqueda 7s | transcurrido 521.6 min | restante ~385 min
+2026-10-26 21:18:22 | [260/450] vino | KNN | rep 4 | fold 4 | búsqueda 13s | transcurrido 521.7 min | restante ~381 min
+2026-10-26 21:18:22 | [261/450] abalone | KNN | rep 0 | fold 1 | búsqueda 7s | transcurrido 521.7 min | restante ~378 min
+2026-10-26 21:18:23 | [262/450] abalone | KNN | rep 0 | fold 2 | búsqueda 7s | transcurrido 521.7 min | restante ~374 min
+2026-10-26 21:18:23 | [263/450] abalone | KNN | rep 0 | fold 3 | búsqueda 7s | transcurrido 521.7 min | restante ~371 min
+2026-10-26 21:18:26 | [264/450] abalone | KNN | rep 0 | fold 4 | búsqueda 7s | transcurrido 521.7 min | restante ~368 min
+2026-10-26 21:18:29 | [265/450] vino | Regresión Logística (L1/L2) | rep 0 | fold 1 | búsqueda 6s | transcurrido 521.8 min | restante ~364 min
+2026-10-26 21:18:32 | [266/450] vino | Regresión Logística (L1/L2) | rep 0 | fold 3 | búsqueda 8s | transcurrido 521.8 min | restante ~361 min
+2026-10-26 21:18:33 | [267/450] vino | Regresión Logística (L1/L2) | rep 0 | fold 4 | búsqueda 7s | transcurrido 521.9 min | restante ~358 min
+2026-10-26 21:18:34 | [268/450] vino | Regresión Logística (L1/L2) | rep 0 | fold 0 | búsqueda 13s | transcurrido 521.9 min | restante ~354 min
+2026-10-26 21:18:34 | [269/450] vino | Regresión Logística (L1/L2) | rep 1 | fold 0 | búsqueda 6s | transcurrido 521.9 min | restante ~351 min
+2026-10-26 21:18:35 | [270/450] cardiotocografia | CatBoost | rep 0 | fold 0 | búsqueda 2003s | transcurrido 521.9 min | restante ~348 min
+2026-10-26 21:18:37 | [271/450] vino | Regresión Logística (L1/L2) | rep 1 | fold 1 | búsqueda 6s | transcurrido 521.9 min | restante ~345 min
+2026-10-26 21:18:40 | [272/450] vino | Regresión Logística (L1/L2) | rep 1 | fold 3 | búsqueda 5s | transcurrido 522.0 min | restante ~342 min
+2026-10-26 21:18:42 | [273/450] vino | Regresión Logística (L1/L2) | rep 0 | fold 2 | búsqueda 19s | transcurrido 522.0 min | restante ~338 min
+2026-10-26 21:18:42 | [274/450] vino | Regresión Logística (L1/L2) | rep 1 | fold 4 | búsqueda 7s | transcurrido 522.0 min | restante ~335 min
+2026-10-26 21:18:44 | [275/450] vino | Regresión Logística (L1/L2) | rep 1 | fold 2 | búsqueda 11s | transcurrido 522.1 min | restante ~332 min
+2026-10-26 21:18:44 | [276/450] vino | Regresión Logística (L1/L2) | rep 2 | fold 0 | búsqueda 10s | transcurrido 522.1 min | restante ~329 min
+2026-10-26 21:18:47 | [277/450] vino | Regresión Logística (L1/L2) | rep 2 | fold 4 | búsqueda 5s | transcurrido 522.1 min | restante ~326 min
+2026-10-26 21:18:48 | [278/450] vino | Regresión Logística (L1/L2) | rep 2 | fold 2 | búsqueda 8s | transcurrido 522.1 min | restante ~323 min
+2026-10-26 21:18:50 | [279/450] vino | Regresión Logística (L1/L2) | rep 2 | fold 1 | búsqueda 13s | transcurrido 522.2 min | restante ~320 min
+2026-10-26 21:18:50 | [280/450] vino | Regresión Logística (L1/L2) | rep 3 | fold 0 | búsqueda 6s | transcurrido 522.2 min | restante ~317 min
+2026-10-26 21:18:53 | [281/450] vino | Regresión Logística (L1/L2) | rep 3 | fold 1 | búsqueda 8s | transcurrido 522.2 min | restante ~314 min
+2026-10-26 21:18:54 | [282/450] vino | Regresión Logística (L1/L2) | rep 3 | fold 2 | búsqueda 8s | transcurrido 522.2 min | restante ~311 min
+2026-10-26 21:18:55 | [283/450] vino | Regresión Logística (L1/L2) | rep 3 | fold 4 | búsqueda 5s | transcurrido 522.2 min | restante ~308 min
+2026-10-26 21:18:58 | [284/450] vino | Regresión Logística (L1/L2) | rep 4 | fold 0 | búsqueda 8s | transcurrido 522.3 min | restante ~305 min
+2026-10-26 21:19:00 | [285/450] vino | Regresión Logística (L1/L2) | rep 3 | fold 3 | búsqueda 11s | transcurrido 522.3 min | restante ~302 min
+2026-10-26 21:19:00 | [286/450] vino | Regresión Logística (L1/L2) | rep 4 | fold 1 | búsqueda 7s | transcurrido 522.3 min | restante ~300 min
+2026-10-26 21:19:00 | [287/450] vino | Regresión Logística (L1/L2) | rep 4 | fold 3 | búsqueda 5s | transcurrido 522.3 min | restante ~297 min
+2026-10-26 21:19:02 | [288/450] vino | Regresión Logística (L1/L2) | rep 4 | fold 2 | búsqueda 8s | transcurrido 522.3 min | restante ~294 min
+2026-10-26 21:19:03 | [289/450] vino | Regresión Logística (L1/L2) | rep 2 | fold 3 | búsqueda 21s | transcurrido 522.4 min | restante ~291 min
+2026-10-26 21:19:03 | [290/450] vino | Decision Tree | rep 0 | fold 0 | búsqueda 4s | transcurrido 522.4 min | restante ~288 min
+2026-10-26 21:19:04 | [291/450] vino | Decision Tree | rep 0 | fold 2 | búsqueda 4s | transcurrido 522.4 min | restante ~285 min
+2026-10-26 21:19:04 | [292/450] vino | Decision Tree | rep 0 | fold 1 | búsqueda 4s | transcurrido 522.4 min | restante ~283 min
+2026-10-26 21:19:06 | [293/450] vino | Decision Tree | rep 0 | fold 3 | búsqueda 4s | transcurrido 522.4 min | restante ~280 min
+2026-10-26 21:19:07 | [294/450] vino | Decision Tree | rep 0 | fold 4 | búsqueda 4s | transcurrido 522.4 min | restante ~277 min
+2026-10-26 21:19:07 | [295/450] vino | Decision Tree | rep 1 | fold 0 | búsqueda 4s | transcurrido 522.4 min | restante ~274 min
+2026-10-26 21:19:07 | [296/450] vino | Decision Tree | rep 1 | fold 1 | búsqueda 4s | transcurrido 522.4 min | restante ~272 min
+2026-10-26 21:19:08 | [297/450] vino | Decision Tree | rep 1 | fold 2 | búsqueda 4s | transcurrido 522.4 min | restante ~269 min
+2026-10-26 21:19:10 | [298/450] vino | Decision Tree | rep 1 | fold 3 | búsqueda 4s | transcurrido 522.5 min | restante ~266 min
+2026-10-26 21:19:11 | [299/450] vino | Decision Tree | rep 1 | fold 4 | búsqueda 4s | transcurrido 522.5 min | restante ~264 min
+2026-10-26 21:19:11 | [300/450] vino | Decision Tree | rep 2 | fold 0 | búsqueda 4s | transcurrido 522.5 min | restante ~261 min
+2026-10-26 21:19:11 | [301/450] vino | Decision Tree | rep 2 | fold 1 | búsqueda 4s | transcurrido 522.5 min | restante ~259 min
+2026-10-26 21:19:12 | [302/450] vino | Decision Tree | rep 2 | fold 2 | búsqueda 4s | transcurrido 522.5 min | restante ~256 min
+2026-10-26 21:19:12 | [303/450] vino | Regresión Logística (L1/L2) | rep 4 | fold 4 | búsqueda 14s | transcurrido 522.5 min | restante ~253 min
+2026-10-26 21:19:13 | [304/450] vino | Decision Tree | rep 2 | fold 3 | búsqueda 4s | transcurrido 522.5 min | restante ~251 min
+2026-10-26 21:19:15 | [305/450] vino | Decision Tree | rep 2 | fold 4 | búsqueda 4s | transcurrido 522.6 min | restante ~248 min
+2026-10-26 21:19:15 | [306/450] vino | Decision Tree | rep 3 | fold 0 | búsqueda 4s | transcurrido 522.6 min | restante ~246 min
+2026-10-26 21:19:15 | [307/450] vino | Decision Tree | rep 3 | fold 1 | búsqueda 4s | transcurrido 522.6 min | restante ~243 min
+2026-10-26 21:19:15 | [308/450] estudiantes | CatBoost | rep 0 | fold 2 | búsqueda 1504s | transcurrido 522.6 min | restante ~241 min
+2026-10-26 21:19:15 | [309/450] vino | Decision Tree | rep 3 | fold 3 | búsqueda 3s | transcurrido 522.6 min | restante ~238 min
+2026-10-26 21:19:15 | [310/450] vino | Decision Tree | rep 3 | fold 2 | búsqueda 4s | transcurrido 522.6 min | restante ~236 min
+2026-10-26 21:19:17 | [311/450] vino | Decision Tree | rep 3 | fold 4 | búsqueda 4s | transcurrido 522.6 min | restante ~234 min
+2026-10-26 21:19:18 | [312/450] vino | Naive Bayes | rep 0 | fold 0 | búsqueda 3s | transcurrido 522.6 min | restante ~231 min
+2026-10-26 21:19:19 | [313/450] vino | Decision Tree | rep 4 | fold 0 | búsqueda 4s | transcurrido 522.6 min | restante ~229 min
+2026-10-26 21:19:19 | [314/450] vino | Decision Tree | rep 4 | fold 4 | búsqueda 4s | transcurrido 522.6 min | restante ~226 min
+2026-10-26 21:19:19 | [315/450] vino | Decision Tree | rep 4 | fold 1 | búsqueda 4s | transcurrido 522.6 min | restante ~224 min
+2026-10-26 21:19:19 | [316/450] vino | Decision Tree | rep 4 | fold 2 | búsqueda 4s | transcurrido 522.6 min | restante ~222 min
+2026-10-26 21:19:19 | [317/450] vino | Decision Tree | rep 4 | fold 3 | búsqueda 4s | transcurrido 522.6 min | restante ~219 min
+2026-10-26 21:19:20 | [318/450] vino | Naive Bayes | rep 0 | fold 1 | búsqueda 3s | transcurrido 522.6 min | restante ~217 min
+2026-10-26 21:19:21 | [319/450] vino | Naive Bayes | rep 0 | fold 2 | búsqueda 3s | transcurrido 522.7 min | restante ~215 min
+2026-10-26 21:19:22 | [320/450] vino | Naive Bayes | rep 0 | fold 4 | búsqueda 3s | transcurrido 522.7 min | restante ~212 min
+2026-10-26 21:19:22 | [321/450] vino | Naive Bayes | rep 1 | fold 0 | búsqueda 3s | transcurrido 522.7 min | restante ~210 min
+2026-10-26 21:19:22 | [322/450] vino | Naive Bayes | rep 0 | fold 3 | búsqueda 3s | transcurrido 522.7 min | restante ~208 min
+2026-10-26 21:19:22 | [323/450] vino | Naive Bayes | rep 1 | fold 1 | búsqueda 3s | transcurrido 522.7 min | restante ~206 min
+2026-10-26 21:19:22 | [324/450] vino | Naive Bayes | rep 1 | fold 2 | búsqueda 3s | transcurrido 522.7 min | restante ~203 min
+2026-10-26 21:19:23 | [325/450] vino | Naive Bayes | rep 1 | fold 3 | búsqueda 3s | transcurrido 522.7 min | restante ~201 min
+2026-10-26 21:19:24 | [326/450] vino | Naive Bayes | rep 1 | fold 4 | búsqueda 3s | transcurrido 522.7 min | restante ~199 min
+2026-10-26 21:19:24 | [327/450] vino | Naive Bayes | rep 2 | fold 0 | búsqueda 3s | transcurrido 522.7 min | restante ~197 min
+2026-10-26 21:19:25 | [328/450] vino | Naive Bayes | rep 2 | fold 1 | búsqueda 3s | transcurrido 522.7 min | restante ~194 min
+2026-10-26 21:19:25 | [329/450] vino | Naive Bayes | rep 2 | fold 2 | búsqueda 3s | transcurrido 522.7 min | restante ~192 min
+2026-10-26 21:19:25 | [330/450] vino | Naive Bayes | rep 2 | fold 3 | búsqueda 3s | transcurrido 522.7 min | restante ~190 min
+2026-10-26 21:19:25 | [331/450] vino | Naive Bayes | rep 2 | fold 4 | búsqueda 3s | transcurrido 522.7 min | restante ~188 min
+2026-10-26 21:19:26 | [332/450] vino | Naive Bayes | rep 3 | fold 0 | búsqueda 3s | transcurrido 522.7 min | restante ~186 min
+2026-10-26 21:19:27 | [333/450] vino | Naive Bayes | rep 3 | fold 1 | búsqueda 3s | transcurrido 522.8 min | restante ~184 min
+2026-10-26 21:19:27 | [334/450] vino | Naive Bayes | rep 3 | fold 2 | búsqueda 3s | transcurrido 522.8 min | restante ~182 min
+2026-10-26 21:19:28 | [335/450] vino | Naive Bayes | rep 3 | fold 3 | búsqueda 3s | transcurrido 522.8 min | restante ~179 min
+2026-10-26 21:19:28 | [336/450] vino | Naive Bayes | rep 3 | fold 4 | búsqueda 3s | transcurrido 522.8 min | restante ~177 min
+2026-10-26 21:19:28 | [337/450] vino | Naive Bayes | rep 4 | fold 1 | búsqueda 3s | transcurrido 522.8 min | restante ~175 min
+2026-10-26 21:19:28 | [338/450] vino | Naive Bayes | rep 4 | fold 0 | búsqueda 3s | transcurrido 522.8 min | restante ~173 min
+2026-10-26 21:19:29 | [339/450] vino | Naive Bayes | rep 4 | fold 2 | búsqueda 3s | transcurrido 522.8 min | restante ~171 min
+2026-10-26 21:19:30 | [340/450] vino | Naive Bayes | rep 4 | fold 4 | búsqueda 3s | transcurrido 522.8 min | restante ~169 min
+2026-10-26 21:19:30 | [341/450] vino | Naive Bayes | rep 4 | fold 3 | búsqueda 3s | transcurrido 522.8 min | restante ~167 min
+2026-10-26 21:19:34 | [342/450] abalone | Decision Tree | rep 0 | fold 1 | búsqueda 4s | transcurrido 522.9 min | restante ~165 min
+2026-10-26 21:19:34 | [343/450] abalone | Decision Tree | rep 0 | fold 0 | búsqueda 4s | transcurrido 522.9 min | restante ~163 min
+2026-10-26 21:19:34 | [344/450] abalone | Regresión Logística (L1/L2) | rep 0 | fold 4 | búsqueda 5s | transcurrido 522.9 min | restante ~161 min
+2026-10-26 21:19:35 | [345/450] abalone | Regresión Logística (L1/L2) | rep 0 | fold 1 | búsqueda 7s | transcurrido 522.9 min | restante ~159 min
+2026-10-26 21:19:36 | [346/450] abalone | Regresión Logística (L1/L2) | rep 0 | fold 2 | búsqueda 8s | transcurrido 522.9 min | restante ~157 min
+2026-10-26 21:19:36 | [347/450] abalone | Regresión Logística (L1/L2) | rep 0 | fold 0 | búsqueda 8s | transcurrido 522.9 min | restante ~155 min
+2026-10-26 21:19:36 | [348/450] abalone | Regresión Logística (L1/L2) | rep 0 | fold 3 | búsqueda 8s | transcurrido 522.9 min | restante ~153 min
+2026-10-26 21:19:38 | [349/450] abalone | Decision Tree | rep 0 | fold 3 | búsqueda 4s | transcurrido 522.9 min | restante ~151 min
+2026-10-26 21:19:38 | [350/450] abalone | Decision Tree | rep 0 | fold 2 | búsqueda 4s | transcurrido 522.9 min | restante ~149 min
+2026-10-26 21:19:38 | [351/450] abalone | Decision Tree | rep 0 | fold 4 | búsqueda 4s | transcurrido 523.0 min | restante ~147 min
+2026-10-26 21:19:39 | [352/450] abalone | Naive Bayes | rep 0 | fold 0 | búsqueda 4s | transcurrido 523.0 min | restante ~146 min
+2026-10-26 21:19:40 | [353/450] abalone | Naive Bayes | rep 0 | fold 1 | búsqueda 4s | transcurrido 523.0 min | restante ~144 min
+2026-10-26 21:19:40 | [354/450] abalone | Naive Bayes | rep 0 | fold 2 | búsqueda 4s | transcurrido 523.0 min | restante ~142 min
+2026-10-26 21:19:40 | [355/450] abalone | Naive Bayes | rep 0 | fold 3 | búsqueda 4s | transcurrido 523.0 min | restante ~140 min
+2026-10-26 21:19:42 | [356/450] abalone | Naive Bayes | rep 0 | fold 4 | búsqueda 4s | transcurrido 523.0 min | restante ~138 min
+2026-10-26 21:19:50 | [357/450] cardiotocografia | SVM | rep 0 | fold 1 | búsqueda 12s | transcurrido 523.2 min | restante ~136 min
+2026-10-26 21:19:51 | [358/450] cardiotocografia | SVM | rep 0 | fold 2 | búsqueda 12s | transcurrido 523.2 min | restante ~134 min
+2026-10-26 21:19:51 | [359/450] cardiotocografia | SVM | rep 0 | fold 3 | búsqueda 11s | transcurrido 523.2 min | restante ~133 min
+2026-10-26 21:19:52 | [360/450] cardiotocografia | SVM | rep 0 | fold 0 | búsqueda 13s | transcurrido 523.2 min | restante ~131 min
+2026-10-26 21:19:54 | [361/450] cardiotocografia | SVM | rep 0 | fold 4 | búsqueda 14s | transcurrido 523.2 min | restante ~129 min
+2026-10-26 21:19:58 | [362/450] estudiantes | SVM | rep 0 | fold 0 | búsqueda 7s | transcurrido 523.3 min | restante ~127 min
+2026-10-26 21:20:01 | [363/450] estudiantes | SVM | rep 0 | fold 1 | búsqueda 7s | transcurrido 523.3 min | restante ~125 min
+2026-10-26 21:20:02 | [364/450] cardiotocografia | LightGBM | rep 0 | fold 0 | búsqueda 22s | transcurrido 523.3 min | restante ~124 min
+2026-10-26 21:20:05 | [365/450] estudiantes | SVM | rep 0 | fold 2 | búsqueda 7s | transcurrido 523.4 min | restante ~122 min
+2026-10-26 21:20:07 | [366/450] estudiantes | SVM | rep 0 | fold 3 | búsqueda 7s | transcurrido 523.4 min | restante ~120 min
+2026-10-26 21:20:09 | [367/450] estudiantes | SVM | rep 0 | fold 4 | búsqueda 7s | transcurrido 523.5 min | restante ~118 min
+2026-10-26 21:20:10 | [368/450] cardiotocografia | LightGBM | rep 0 | fold 1 | búsqueda 28s | transcurrido 523.5 min | restante ~117 min
+2026-10-26 21:20:18 | [369/450] estudiantes | LightGBM | rep 0 | fold 0 | búsqueda 12s | transcurrido 523.6 min | restante ~115 min
+2026-10-26 21:20:18 | [370/450] estudiantes | LightGBM | rep 0 | fold 1 | búsqueda 11s | transcurrido 523.6 min | restante ~113 min
+2026-10-26 21:20:19 | [371/450] cardiotocografia | LightGBM | rep 0 | fold 2 | búsqueda 29s | transcurrido 523.6 min | restante ~112 min
+2026-10-26 21:20:22 | [372/450] estudiantes | LightGBM | rep 0 | fold 2 | búsqueda 13s | transcurrido 523.7 min | restante ~110 min
+2026-10-26 21:20:22 | [373/450] corazon | SVM | rep 0 | fold 0 | búsqueda 4s | transcurrido 523.7 min | restante ~108 min
+2026-10-26 21:20:23 | [374/450] corazon | SVM | rep 0 | fold 1 | búsqueda 4s | transcurrido 523.7 min | restante ~106 min
+2026-10-26 21:20:26 | [375/450] corazon | SVM | rep 0 | fold 2 | búsqueda 4s | transcurrido 523.7 min | restante ~105 min
+2026-10-26 21:20:26 | [376/450] corazon | SVM | rep 0 | fold 3 | búsqueda 4s | transcurrido 523.8 min | restante ~103 min
+2026-10-26 21:20:27 | [377/450] estudiantes | LightGBM | rep 0 | fold 3 | búsqueda 17s | transcurrido 523.8 min | restante ~101 min
+2026-10-26 21:20:27 | [378/450] corazon | SVM | rep 0 | fold 4 | búsqueda 4s | transcurrido 523.8 min | restante ~100 min
+2026-10-26 21:20:27 | [379/450] cardiotocografia | LightGBM | rep 0 | fold 3 | búsqueda 36s | transcurrido 523.8 min | restante ~98 min
+2026-10-26 21:20:29 | [380/450] estudiantes | LightGBM | rep 0 | fold 4 | búsqueda 11s | transcurrido 523.8 min | restante ~96 min
+2026-10-26 21:20:32 | [381/450] corazon | LightGBM | rep 0 | fold 0 | búsqueda 7s | transcurrido 523.9 min | restante ~95 min
+2026-10-26 21:20:33 | [382/450] cardiotocografia | KNN | rep 0 | fold 0 | búsqueda 4s | transcurrido 523.9 min | restante ~93 min
+2026-10-26 21:20:34 | [383/450] corazon | LightGBM | rep 0 | fold 1 | búsqueda 7s | transcurrido 523.9 min | restante ~92 min
+2026-10-26 21:20:34 | [384/450] corazon | LightGBM | rep 0 | fold 4 | búsqueda 7s | transcurrido 523.9 min | restante ~90 min
+2026-10-26 21:20:35 | [385/450] corazon | LightGBM | rep 0 | fold 3 | búsqueda 8s | transcurrido 523.9 min | restante ~88 min
+2026-10-26 21:20:35 | [386/450] corazon | LightGBM | rep 0 | fold 2 | búsqueda 8s | transcurrido 523.9 min | restante ~87 min
+2026-10-26 21:20:37 | [387/450] cardiotocografia | KNN | rep 0 | fold 1 | búsqueda 4s | transcurrido 523.9 min | restante ~85 min
+2026-10-26 21:20:38 | [388/450] cardiotocografia | KNN | rep 0 | fold 2 | búsqueda 4s | transcurrido 523.9 min | restante ~84 min
+2026-10-26 21:20:38 | [389/450] cardiotocografia | KNN | rep 0 | fold 3 | búsqueda 4s | transcurrido 523.9 min | restante ~82 min
+2026-10-26 21:20:39 | [390/450] cardiotocografia | KNN | rep 0 | fold 4 | búsqueda 5s | transcurrido 524.0 min | restante ~81 min
+2026-10-26 21:20:40 | [391/450] cardiotocografia | LightGBM | rep 0 | fold 4 | búsqueda 49s | transcurrido 524.0 min | restante ~79 min
+2026-10-26 21:20:40 | [392/450] estudiantes | KNN | rep 0 | fold 0 | búsqueda 5s | transcurrido 524.0 min | restante ~78 min
+2026-10-26 21:20:40 | [393/450] estudiantes | KNN | rep 0 | fold 1 | búsqueda 5s | transcurrido 524.0 min | restante ~76 min
+2026-10-26 21:20:42 | [394/450] corazon | KNN | rep 0 | fold 0 | búsqueda 3s | transcurrido 524.0 min | restante ~74 min
+2026-10-26 21:20:42 | [395/450] estudiantes | KNN | rep 0 | fold 2 | búsqueda 5s | transcurrido 524.0 min | restante ~73 min
+2026-10-26 21:20:43 | [396/450] estudiantes | KNN | rep 0 | fold 3 | búsqueda 5s | transcurrido 524.0 min | restante ~71 min
+2026-10-26 21:20:43 | [397/450] estudiantes | KNN | rep 0 | fold 4 | búsqueda 5s | transcurrido 524.0 min | restante ~70 min
+2026-10-26 21:20:44 | [398/450] corazon | KNN | rep 0 | fold 3 | búsqueda 3s | transcurrido 524.0 min | restante ~68 min
+2026-10-26 21:20:44 | [399/450] corazon | KNN | rep 0 | fold 1 | búsqueda 4s | transcurrido 524.0 min | restante ~67 min
+2026-10-26 21:20:44 | [400/450] corazon | KNN | rep 0 | fold 2 | búsqueda 4s | transcurrido 524.0 min | restante ~66 min
+2026-10-26 21:20:46 | [401/450] corazon | KNN | rep 0 | fold 4 | búsqueda 4s | transcurrido 524.1 min | restante ~64 min
+2026-10-26 21:20:46 | [402/450] cardiotocografia | Regresión Logística (L1/L2) | rep 0 | fold 0 | búsqueda 4s | transcurrido 524.1 min | restante ~63 min
+2026-10-26 21:20:47 | [403/450] cardiotocografia | Regresión Logística (L1/L2) | rep 0 | fold 1 | búsqueda 4s | transcurrido 524.1 min | restante ~61 min
+2026-10-26 21:20:47 | [404/450] cardiotocografia | Decision Tree | rep 0 | fold 0 | búsqueda 3s | transcurrido 524.1 min | restante ~60 min
+2026-10-26 21:20:47 | [405/450] cardiotocografia | Regresión Logística (L1/L2) | rep 0 | fold 4 | búsqueda 4s | transcurrido 524.1 min | restante ~58 min
+2026-10-26 21:20:48 | [406/450] cardiotocografia | Regresión Logística (L1/L2) | rep 0 | fold 3 | búsqueda 5s | transcurrido 524.1 min | restante ~57 min
+2026-10-26 21:20:49 | [407/450] cardiotocografia | Decision Tree | rep 0 | fold 1 | búsqueda 3s | transcurrido 524.1 min | restante ~55 min
+2026-10-26 21:20:50 | [408/450] cardiotocografia | Decision Tree | rep 0 | fold 2 | búsqueda 3s | transcurrido 524.1 min | restante ~54 min
+2026-10-26 21:20:50 | [409/450] cardiotocografia | Decision Tree | rep 0 | fold 3 | búsqueda 3s | transcurrido 524.1 min | restante ~53 min
+2026-10-26 21:20:50 | [410/450] cardiotocografia | Decision Tree | rep 0 | fold 4 | búsqueda 3s | transcurrido 524.2 min | restante ~51 min
+2026-10-26 21:20:51 | [411/450] cardiotocografia | Naive Bayes | rep 0 | fold 0 | búsqueda 3s | transcurrido 524.2 min | restante ~50 min
+2026-10-26 21:20:51 | [412/450] cardiotocografia | Naive Bayes | rep 0 | fold 1 | búsqueda 3s | transcurrido 524.2 min | restante ~48 min
+2026-10-26 21:20:52 | [413/450] cardiotocografia | Naive Bayes | rep 0 | fold 2 | búsqueda 3s | transcurrido 524.2 min | restante ~47 min
+2026-10-26 21:20:53 | [414/450] cardiotocografia | Naive Bayes | rep 0 | fold 3 | búsqueda 3s | transcurrido 524.2 min | restante ~46 min
+2026-10-26 21:20:53 | [415/450] cardiotocografia | Naive Bayes | rep 0 | fold 4 | búsqueda 3s | transcurrido 524.2 min | restante ~44 min
+2026-10-26 21:20:56 | [416/450] estudiantes | Regresión Logística (L1/L2) | rep 0 | fold 0 | búsqueda 5s | transcurrido 524.2 min | restante ~43 min
+2026-10-26 21:20:56 | [417/450] estudiantes | Regresión Logística (L1/L2) | rep 0 | fold 1 | búsqueda 5s | transcurrido 524.2 min | restante ~41 min
+2026-10-26 21:20:56 | [418/450] estudiantes | Regresión Logística (L1/L2) | rep 0 | fold 2 | búsqueda 5s | transcurrido 524.2 min | restante ~40 min
+2026-10-26 21:20:58 | [419/450] estudiantes | Decision Tree | rep 0 | fold 0 | búsqueda 5s | transcurrido 524.3 min | restante ~39 min
+2026-10-26 21:20:58 | [420/450] estudiantes | Regresión Logística (L1/L2) | rep 0 | fold 3 | búsqueda 6s | transcurrido 524.3 min | restante ~37 min
+2026-10-26 21:20:58 | [421/450] estudiantes | Regresión Logística (L1/L2) | rep 0 | fold 4 | búsqueda 5s | transcurrido 524.3 min | restante ~36 min
+2026-10-26 21:21:01 | [422/450] estudiantes | Decision Tree | rep 0 | fold 1 | búsqueda 5s | transcurrido 524.3 min | restante ~35 min
+2026-10-26 21:21:01 | [423/450] estudiantes | Decision Tree | rep 0 | fold 2 | búsqueda 5s | transcurrido 524.3 min | restante ~33 min
+2026-10-26 21:21:01 | [424/450] estudiantes | Decision Tree | rep 0 | fold 3 | búsqueda 5s | transcurrido 524.3 min | restante ~32 min
+2026-10-26 21:21:02 | [425/450] estudiantes | Decision Tree | rep 0 | fold 4 | búsqueda 5s | transcurrido 524.4 min | restante ~31 min
+2026-10-26 21:21:03 | [426/450] estudiantes | Naive Bayes | rep 0 | fold 0 | búsqueda 5s | transcurrido 524.4 min | restante ~30 min
+2026-10-26 21:21:03 | [427/450] estudiantes | Naive Bayes | rep 0 | fold 1 | búsqueda 5s | transcurrido 524.4 min | restante ~28 min
+2026-10-26 21:21:05 | [428/450] estudiantes | Naive Bayes | rep 0 | fold 4 | búsqueda 5s | transcurrido 524.4 min | restante ~27 min
+2026-10-26 21:21:06 | [429/450] estudiantes | Naive Bayes | rep 0 | fold 2 | búsqueda 5s | transcurrido 524.4 min | restante ~26 min
+2026-10-26 21:21:06 | [430/450] estudiantes | Naive Bayes | rep 0 | fold 3 | búsqueda 5s | transcurrido 524.4 min | restante ~24 min
+2026-10-26 21:21:06 | [431/450] corazon | Regresión Logística (L1/L2) | rep 0 | fold 0 | búsqueda 4s | transcurrido 524.4 min | restante ~23 min
+2026-10-26 21:21:06 | [432/450] corazon | Regresión Logística (L1/L2) | rep 0 | fold 1 | búsqueda 3s | transcurrido 524.4 min | restante ~22 min
+2026-10-26 21:21:07 | [433/450] corazon | Regresión Logística (L1/L2) | rep 0 | fold 2 | búsqueda 4s | transcurrido 524.4 min | restante ~21 min
+2026-10-26 21:21:09 | [434/450] corazon | Regresión Logística (L1/L2) | rep 0 | fold 3 | búsqueda 3s | transcurrido 524.5 min | restante ~19 min
+2026-10-26 21:21:09 | [435/450] corazon | Decision Tree | rep 0 | fold 0 | búsqueda 3s | transcurrido 524.5 min | restante ~18 min
+2026-10-26 21:21:09 | [436/450] corazon | Regresión Logística (L1/L2) | rep 0 | fold 4 | búsqueda 3s | transcurrido 524.5 min | restante ~17 min
+2026-10-26 21:21:09 | [437/450] corazon | Decision Tree | rep 0 | fold 2 | búsqueda 3s | transcurrido 524.5 min | restante ~16 min
+2026-10-26 21:21:09 | [438/450] corazon | Decision Tree | rep 0 | fold 1 | búsqueda 3s | transcurrido 524.5 min | restante ~14 min
+2026-10-26 21:21:10 | [439/450] corazon | Decision Tree | rep 0 | fold 3 | búsqueda 3s | transcurrido 524.5 min | restante ~13 min
+2026-10-26 21:21:12 | [440/450] corazon | Decision Tree | rep 0 | fold 4 | búsqueda 3s | transcurrido 524.5 min | restante ~12 min
+2026-10-26 21:21:12 | [441/450] corazon | Naive Bayes | rep 0 | fold 0 | búsqueda 3s | transcurrido 524.5 min | restante ~11 min
+2026-10-26 21:21:12 | [442/450] corazon | Naive Bayes | rep 0 | fold 1 | búsqueda 3s | transcurrido 524.5 min | restante ~9 min
+2026-10-26 21:21:13 | [443/450] corazon | Naive Bayes | rep 0 | fold 2 | búsqueda 3s | transcurrido 524.5 min | restante ~8 min
+2026-10-26 21:21:13 | [444/450] corazon | Naive Bayes | rep 0 | fold 3 | búsqueda 3s | transcurrido 524.5 min | restante ~7 min
+2026-10-26 21:21:13 | [445/450] corazon | Naive Bayes | rep 0 | fold 4 | búsqueda 3s | transcurrido 524.5 min | restante ~6 min
+2026-10-26 21:22:41 | [446/450] cardiotocografia | Regresión Logística (L1/L2) | rep 0 | fold 2 | búsqueda 118s | transcurrido 526.0 min | restante ~5 min
+2026-10-26 21:32:13 | [447/450] cardiotocografia | CatBoost | rep 0 | fold 2 | búsqueda 2816s | transcurrido 535.5 min | restante ~4 min
+2026-10-26 21:42:55 | [448/450] cardiotocografia | CatBoost | rep 0 | fold 4 | búsqueda 3456s | transcurrido 546.2 min | restante ~2 min
+2026-10-26 21:53:14 | [449/450] cardiotocografia | CatBoost | rep 0 | fold 3 | búsqueda 4076s | transcurrido 556.6 min | restante ~1 min
+2026-10-26 21:58:17 | [450/450] estudiantes | CatBoost | rep 0 | fold 1 | búsqueda 3929s | transcurrido 561.6 min | restante ~0 min
+2026-10-26 21:58:17 | fin

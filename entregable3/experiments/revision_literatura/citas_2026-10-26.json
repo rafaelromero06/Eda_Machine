@@ -1,0 +1,3380 @@
+{
+ "fecha": "2026-10-26T11:55:35",
+ "semillas": {
+  "Tutz2022": {
+   "id": "DOI:10.1007/s00357-021-09406-4",
+   "info": {
+    "paperId": "be5722aa78824e68d2fea0a9ef6f65c934cd84e1",
+    "title": "Ordinal Trees and Random Forests: Score-Free Recursive Partitioning and Improved Ensembles",
+    "venue": "Journal of Classification",
+    "year": 2021,
+    "openAccessPdf": {
+     "url": "https://link.springer.com/content/pdf/10.1007/s00357-021-09406-4.pdf",
+     "status": "HYBRID",
+     "license": "CCBY",
+     "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2102.00415, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "authors": [
+     {
+      "authorId": "67049458",
+      "name": "G. Tutz"
+     }
+    ],
+    "abstract": "Existing ordinal trees and random forests typically use scores that are assigned to the ordered categories, which implies that a higher scale level is used. Versions of ordinal trees are proposed that take the scale level seriously and avoid the assignment of artificial scores. The construction principle is based on an investigation of the binary models that are implicitly used in parametric ordinal regression. These building blocks can be fitted by trees and combined in a similar way as in parametric models. The obtained trees use the ordinal scale level only. Since binary trees and random forests are constituent elements of the proposed trees, one can exploit the wide range of binary trees that have already been developed. A further topic is the potentially poor performance of random forests, which seems to have been neglected in the literature. Ensembles that include parametric models are proposed to obtain prediction methods that tend to perform well in a wide range of settings. The performance of the methods is evaluated empirically by using several data sets."
+   },
+   "referencias": [
+    {
+     "paperId": "e70b2207c6c291612e674f5889053f780eda1091",
+     "title": "Ordinal regression: A review and a taxonomy of models",
+     "venue": "WIREs Computational Statistics",
+     "year": 2021
+    },
+    {
+     "paperId": "8d9f6daf5ae632811e3822a455cb64fbcdad2f14",
+     "title": "Model-based random forests for ordinal regression",
+     "venue": "The international journal of biostatistics",
+     "year": 2020
+    },
+    {
+     "paperId": "1c3677364ea592629848ba2c6bd087f22cc579ea",
+     "title": "Ensemble Learning",
+     "venue": "Encyclopedia of Biometrics",
+     "year": 2019
+    },
+    {
+     "paperId": "bfef2247b5d99eb7558988d5f00faa38df487099",
+     "title": "A method for ordinal outcomes: The ordered stereotype model",
+     "venue": "International journal of methods in psychiatric research",
+     "year": 2019
+    },
+    {
+     "paperId": "95df42b82bedd1fa589866e4a8d1da0622520c69",
+     "title": "Ensemble of optimal trees, random forest and random projection ensemble classification",
+     "venue": "Advances in Data Analysis and Classification",
+     "year": 2019
+    },
+    {
+     "paperId": "0ecae478bbf4c2ca5d902876c3a69c3791f7fd94",
+     "title": "cubremot: A tool for building model-based trees for ordinal responses",
+     "venue": "Expert Syst. Appl.",
+     "year": 2019
+    },
+    {
+     "paperId": "83dc70ed7141030b141a851fc77ad14209030350",
+     "title": "The class of cub models: statistical foundations, inferential issues and empirical evidence",
+     "venue": "Statistical Methods & Applications",
+     "year": 2019
+    },
+    {
+     "paperId": "e0800fb8863a2615c6cc021ab41434dde1fa1ccc",
+     "title": "Pre-election Cross Section (GLES 2017)",
+     "venue": "",
+     "year": 2019
+    },
+    {
+     "paperId": "3e5c6b1669e508cfb86b743dc8dd8f2bae741f10",
+     "title": "Ordinal Forests",
+     "venue": "Journal of Classification",
+     "year": 2019
+    },
+    {
+     "paperId": "b5a6f705241591ad00a1e5e361fd472592769aef",
+     "title": "A new parsimonious model for ordinal longitudinal data with application to subjective evaluations of a gastrointestinal disease",
+     "venue": "Statistical methods in medical research",
+     "year": 2018
+    },
+    {
+     "paperId": "d7ec1fc023ea61146ad0cc442406fe4de7f10a16",
+     "title": "Classification trees for multivariate ordinal response: an application to Student Evaluation Teaching",
+     "venue": "Quality & Quantity",
+     "year": 2016
+    },
+    {
+     "paperId": "da6af72069d401e1aa20152586667ca3cab4a537",
+     "title": "Generalized random forests",
+     "venue": "The Annals of Statistics",
+     "year": 2016
+    },
+    {
+     "paperId": "8cffffd4c1cd1d49b6595a56179f00016cb1d671",
+     "title": "Random forest for ordinal responses: Prediction and variable selection",
+     "venue": "Comput. Stat. Data Anal.",
+     "year": 2016
+    },
+    {
+     "paperId": "fbb26366be1ed6a756d6158c95797e99a8a4fc82",
+     "title": "Model-based clustering of multivariate ordinal data relying on a stochastic binary search algorithm",
+     "venue": "Statistics and Computing",
+     "year": 2015
+    },
+    {
+     "paperId": "292dac5fd88ca2e975635af8e0614d990bd64282",
+     "title": "Correlation and variable importance in random forests",
+     "venue": "Statistics and Computing",
+     "year": 2013
+    },
+    {
+     "paperId": "710e2e0b4fb391ce252d60fa90fbe762e64fa3cc",
+     "title": "A Weighted Random Forests Approach to Improve Predictive Performance",
+     "venue": "Stat. Anal. Data Min.",
+     "year": 2013
+    },
+    {
+     "paperId": "764a22cc5e0af6ff5126bbf40027133811c87899",
+     "title": "An Expanded Derivation of the Threshold Structure of the Polytomous Rasch Model That Dispels Any “Threshold Disorder Controversy”",
+     "venue": "",
+     "year": 2013
+    },
+    {
+     "paperId": "7e2e724b56ae734e72feda324caccfd4f87e6314",
+     "title": "A new variable importance measure for random forests with missing data",
+     "venue": "Statistics and Computing",
+     "year": 2012
+    },
+    {
+     "paperId": "f097b5cb77e30b3a3977ecd8e85923b3a55fe225",
+     "title": "Classification Trees for Ordinal Responses in R: The rpartScore Package",
+     "venue": "",
+     "year": 2012
+    },
+    {
+     "paperId": "7cd29656c450248254dc70574d3ffc97723a9800",
+     "title": "Regression for Categorical Data: List of Examples",
+     "venue": "",
+     "year": 2011
+    },
+    {
+     "paperId": "273cce3f2de29190636e0db5acbdb6a7ea4959f7",
+     "title": "Analysis of Ordinal Categorical Data, 2nd edn by Alan Agresti",
+     "venue": "",
+     "year": 2011
+    },
+    {
+     "paperId": "4c1c6d9fa529e8ca8fbeaa16cc31e2db18a32305",
+     "title": "rpartOrdinal: An R Package for Deriving a Classification Tree for Predicting an Ordinal Response",
+     "venue": "Journal of statistical software",
+     "year": 2010
+    },
+    {
+     "paperId": "fd771c520fa9cf5739be81ec3926925fb4c40e27",
+     "title": "Analysis of Ordinal Categorical Data: Agresti/Analysis",
+     "venue": "",
+     "year": 2010
+    },
+    {
+     "paperId": "bf15a0ccc14ac1deb5cea570c870389c16be019c",
+     "title": "Modeling wine preferences by data mining from physicochemical properties",
+     "venue": "Decis. Support Syst.",
+     "year": 2009
+    },
+    {
+     "paperId": "dcfc6750ae9b8354f60bc460f83a030a6bbfd5d5",
+     "title": "Inference on counterfactual distributions",
+     "venue": "",
+     "year": 2009
+    },
+    {
+     "paperId": "265563ddf70bec5ec6fb49fda7521cd6b8cc16a1",
+     "title": "Graphical diagnostics to check model misspecification for the proportional odds regression model",
+     "venue": "Statistics in medicine",
+     "year": 2009
+    },
+    {
+     "paperId": "d38fb4f5ac99307c52f9e3b15c04e29b60c46aab",
+     "title": "Applied Econometrics with R",
+     "venue": "",
+     "year": 2008
+    },
+    {
+     "paperId": "6bbd8fc39487249bd1b6886e4dc763550877b758",
+     "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+     "venue": "",
+     "year": 2007
+    },
+    {
+     "paperId": "de1729ca1d9dc951976f1f9fe2a08184207263a7",
+     "title": "Support Vector Ordinal Regression",
+     "venue": "Neural Computation",
+     "year": 2007
+    },
+    {
+     "paperId": "7333e127b62eb545d81830df2a66b98c0693a32b",
+     "title": "Quantile Regression Forests",
+     "venue": "J. Mach. Learn. Res.",
+     "year": 2006
+    },
+    {
+     "paperId": "072d09ba865b5c2cfac279696c555730f0cdbce4",
+     "title": "Unbiased Recursive Partitioning: A Conditional Inference Framework",
+     "venue": "",
+     "year": 2006
+    },
+    {
+     "paperId": "3be9646ca993c1444c473f4d140397b2556a3284",
+     "title": "Bagging survival trees",
+     "venue": "Statistics in medicine",
+     "year": 2004
+    },
+    {
+     "paperId": "3d05e99360eb53ca65edcadba30d2e0bf4024d7f",
+     "title": "Assessing practical significance of the proportional odds assumption",
+     "venue": "",
+     "year": 2003
+    },
+    {
+     "paperId": "59bb17b27d7220e930ee6bebe1f94cf43ad42c2d",
+     "title": "Model selection and multimodel inference : a practical information-theoretic approach",
+     "venue": "",
+     "year": 2003
+    },
+    {
+     "paperId": "782eb5c8783fc7bed3baa2a882f021c7d0f25a39",
+     "title": "Using binary logistic regression models for ordinal data with non-proportional odds.",
+     "venue": "Journal of clinical epidemiology",
+     "year": 1998
+    },
+    {
+     "paperId": "2b6f2ecf8f1b71c1235128e13d928cd3fd8b5719",
+     "title": "Demand for Medical Care by the Elderly: A Finite Mixture Approach",
+     "venue": "",
+     "year": 1997
+    },
+    {
+     "paperId": "d1ee87290fa827f1217b8fa2bccb3485da1a300e",
+     "title": "Bagging Predictors",
+     "venue": "Machine Learning",
+     "year": 1996
+    },
+    {
+     "paperId": "7043830f13501cd147a9bba1c25152766123e0f6",
+     "title": "Location-scale cumulative odds models for ordinal data: a generalized non-linear model approach.",
+     "venue": "Statistics in medicine",
+     "year": 1995
+    },
+    {
+     "paperId": "81f3e4fe6e495b0e8f3add84bddb4833634e5311",
+     "title": "The Conditional Distribution of Excess Returns: An Empirical Analysis",
+     "venue": "",
+     "year": 1994
+    },
+    {
+     "paperId": "18f3b5d7f23067e10c94de279b51259ecf08bdf6",
+     "title": "Alternative models for ordinal logistic regression.",
+     "venue": "Statistics in medicine",
+     "year": 1994
+    },
+    {
+     "paperId": "e7ceb7715ce3aef58b54e7ea0b4b1ecbc58ba3de",
+     "title": "Are ordinal models useful for classification?",
+     "venue": "Statistics in medicine",
+     "year": 1991
+    },
+    {
+     "paperId": "ab7853867f6a2974e2389dbb1762923bd3a25486",
+     "title": "Assessing proportionality in the proportional odds model for ordinal logistic regression.",
+     "venue": "Biometrics",
+     "year": 1990
+    },
+    {
+     "paperId": "f488ac84e3b5edeeac344a211ab9406e49edbfab",
+     "title": "Partial Proportional Odds Models for Ordinal Response Variables",
+     "venue": "",
+     "year": 1990
+    },
+    {
+     "paperId": "b81683a1828387b695e5e98aabdc2912e3896e62",
+     "title": "Classification Efficiency of Multinomial Logistic Regression Relative to Ordinal Logistic Regression",
+     "venue": "",
+     "year": 1989
+    },
+    {
+     "paperId": "49ff7161432d29ad4c9ebcea8c97946400fecc92",
+     "title": "The essential process in a family of measurement models",
+     "venue": "",
+     "year": 1984
+    },
+    {
+     "paperId": "11385d19b5027a31228c88fb3cdd7c884b6b328f",
+     "title": "Regression and Ordered Categorical Variables",
+     "venue": "",
+     "year": 1984
+    },
+    {
+     "paperId": "9023c7d0515c543e393be626a7a871e6b22d670c",
+     "title": "A rasch model for partial credit scoring",
+     "venue": "",
+     "year": 1982
+    },
+    {
+     "paperId": "d78000577e6b9f6657b93f241b7eac16fe226b8a",
+     "title": "Association models and the bivariate normal for contingency tables with ordered categories",
+     "venue": "",
+     "year": 1981
+    },
+    {
+     "paperId": "4b81645b75c214480d1e00b3644d27a09fc7c11a",
+     "title": "Association Models and Canonical Correlation in the Analysis of Cross-Classifications Having Ordered Categories",
+     "venue": "",
+     "year": 1981
+    },
+    {
+     "paperId": "99e4ca4d78a9919c74c068a311a024b3cc16ba2f",
+     "title": "Regression, Discrimination and Measurement Models for Ordered Categorical Variables",
+     "venue": "",
+     "year": 1981
+    },
+    {
+     "paperId": "7612627ec11a90641b53351ec69a360462b9db55",
+     "title": "Hedonic housing prices and the demand for clean air",
+     "venue": "",
+     "year": 1978
+    },
+    {
+     "paperId": "a8a11fcb16f126bf0c98248cd7dbd2fd3adc5554",
+     "title": "Contingency Table Analysis",
+     "venue": "The SAGE Encyclopedia of Research Design",
+     "year": 2022
+    },
+    {
+     "paperId": null,
+     "title": "CUB: a class of mixture models for ordinal data",
+     "venue": "R package version 1.1.4, http://cran.rproject.org/package=cub.",
+     "year": 2020
+    },
+    {
+     "paperId": "d7842c43eb8e4530b838ade6388ccde386c03ea2",
+     "title": "Partykit: a modular toolkit for recursive partytioning in R",
+     "venue": "J. Mach. Learn. Res.",
+     "year": 2015
+    },
+    {
+     "paperId": "2670a71a3c3dc838a9a138fad76db19ffe739d77",
+     "title": "Zeileis Conditional Variable Importance for Random Forests",
+     "venue": "",
+     "year": 2015
+    },
+    {
+     "paperId": "1599296187f81c27625cc19082b12d67ff823b52",
+     "title": "Contingency Table Analysis",
+     "venue": "",
+     "year": 2014
+    },
+    {
+     "paperId": "05e6a2f85eb02c25ed659d314b88e3b1c8f57c67",
+     "title": "BMC Bioinformatics BioMed Central Methodology article",
+     "venue": "",
+     "year": 2009
+    },
+    {
+     "paperId": null,
+     "title": "Eds.) Book of short papers SIS (pp",
+     "venue": "",
+     "year": 2008
+    },
+    {
+     "paperId": "8e0be569ea77b8cb29bb0e8b031887630fe7a96c",
+     "title": "Random Forests",
+     "venue": "Machine Learning",
+     "year": 2001
+    },
+    {
+     "paperId": "b1dc1c0de1d57783e813d7d3fc92927766475dc4",
+     "title": "Analyzing Bagging",
+     "venue": "",
+     "year": 2001
+    },
+    {
+     "paperId": "16aba311ac1e82c2ac7e077a19f1b5e7447d1e5e",
+     "title": "A Generalized Partial Credit Model",
+     "venue": "",
+     "year": 1997
+    },
+    {
+     "paperId": "d750c8030d8a1d2a1e045339770fba516743e3b7",
+     "title": "Are ordinal models useful for classification? a revised analysis",
+     "venue": "",
+     "year": 1995
+    },
+    {
+     "paperId": "6bec99e495ecc8b0e152a42427409d119c101891",
+     "title": "Are ordinal models useful for classification?",
+     "venue": "Statistics in medicine",
+     "year": 1992
+    },
+    {
+     "paperId": null,
+     "title": "Publisher's Note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations",
+     "venue": "",
+     "year": null
+    }
+   ],
+   "citas": [
+    {
+     "paperId": "3b4c792aa70a634e52bcf41e638c345d6dfeb32b",
+     "title": "Predicting the impacts of occupational accidents on the construction sites using machine learning algorithms",
+     "venue": "Engineering, Construction and Architectural Management",
+     "year": 2026
+    },
+    {
+     "paperId": "edc2d579e6ef4536cc41e6ab8b4622003da85707",
+     "title": "Cost-Sensitive Ordinal Gini: Formulation, Structural Properties, and Empirical Evaluation",
+     "venue": "Statistics, Optimization &amp; Information Computing",
+     "year": 2026
+    },
+    {
+     "paperId": "8954fc3bf7a0a5d653a3172fb681c267e82d544e",
+     "title": "Using parametric logistic item response theory model trees to detect item parameter heterogeneity in a high-stakes reading comprehension test",
+     "venue": "International Journal of Testing",
+     "year": 2026
+    },
+    {
+     "paperId": "2be0ec11f57df05544398e8555b09142b5a8ab2a",
+     "title": "A Simulation Study to Compare Inferential Properties when Modelling Ordinal Outcomes: The Case for the (Plain but Robust) Proportional Odds Model",
+     "venue": "",
+     "year": 2026
+    },
+    {
+     "paperId": "33eac148e239873a8001ef357a8d1bc4cfa512b6",
+     "title": "Mixed-Effects Frequency-Adjusted Borders Ordinal Forest: A Tree Ensemble Method for Ordinal Prediction with Hierarchical Data",
+     "venue": "Multivariate behavioral research",
+     "year": 2025
+    },
+    {
+     "paperId": "9d05e07c129b93d4b04d92bd7e72d66388c920fd",
+     "title": "Spatiotemporal LSA Modeling Incorporating Comprehensively the Momentary Effects of Rainfall and Earthquake: A Case Study of the Liangshan Prefecture, China",
+     "venue": "Advances in Space Research",
+     "year": 2025
+    },
+    {
+     "paperId": "7fb2e49eae0536a64e9d62cb4b17951619f49913",
+     "title": "Differential Item Functioning Analysis of Likert Scales: An Overview and Demonstration of Rating Scale Tree Model.",
+     "venue": "Psychological reports",
+     "year": 2025
+    },
+    {
+     "paperId": "37565cc7dabd8627bd18cadb12b21f2c95a231e8",
+     "title": "Predicting Hospitalization in Older Adults Using Machine Learning",
+     "venue": "Geriatrics",
+     "year": 2025
+    },
+    {
+     "paperId": "fc553757a0965cb5ec9bd8769b54cb01e849427d",
+     "title": "Splitting criteria for ordinal decision trees: an experimental study",
+     "venue": "Pattern Recognit.",
+     "year": 2024
+    },
+    {
+     "paperId": "67d29031042b215879321d2d3872c7d8fd916069",
+     "title": "Old but Gold or New and Shiny? Comparing Tree Ensembles for Ordinal Prediction with a Classic Parametric Approach",
+     "venue": "Journal of Classification",
+     "year": 2024
+    },
+    {
+     "paperId": "33dec861591cbaafd596eb06e46698d3e0e81c72",
+     "title": "Frequency‐adjusted borders ordinal forest: A novel tree ensemble method for ordinal prediction",
+     "venue": "The British journal of mathematical and statistical psychology",
+     "year": 2024
+    },
+    {
+     "paperId": "12cdb310ae64be74fcb9265cfe1f4161490ea8ee",
+     "title": "Ordinal Mixed-Effects Random Forest",
+     "venue": "",
+     "year": 2024
+    },
+    {
+     "paperId": "4b056c8a67166a91ec61e2a19b45ddad39237485",
+     "title": "Constructing Variables Using Classifiers as an Aid to Regression: An Empirical Assessment",
+     "venue": "ArXiv",
+     "year": 2024
+    },
+    {
+     "paperId": "f73a35d7f74070519d9b71b1f957e3ae98871737",
+     "title": "Integrating deep learning neural network and M5P with conventional statistical models for landslide susceptibility modelling",
+     "venue": "Bulletin of Engineering Geology and the Environment",
+     "year": 2023
+    },
+    {
+     "paperId": "51e53c1542743fe29ddd295f2e995c3df0fcf434",
+     "title": "Classification and regression in prescriptive analytics: Development of hybrid models and an example of ship inspection by port state control",
+     "venue": "Comput. Oper. Res.",
+     "year": 2023
+    },
+    {
+     "paperId": "ea321d74b3aebf30c508400d116be1beaf4eded1",
+     "title": "Climate change perceptions in Bavaria: Revealing the influence of socio-demographic and local environmental factors",
+     "venue": "GAIA - Ecological Perspectives for Science and Society",
+     "year": 2023
+    },
+    {
+     "paperId": "f99ca594f9e6a7cd32b485ce48b244edd15e46cf",
+     "title": "Individual and fleetwide bycatch thresholds in regional fisheries management frameworks",
+     "venue": "Reviews in Fish Biology and Fisheries",
+     "year": 2023
+    },
+    {
+     "paperId": "4bd67e1004652bb4ebab9ac496d14289707a7bd0",
+     "title": "Global governance guard rails for sharks: Progress towards implementing the United Nations international plan of action",
+     "venue": "Fish and Fisheries",
+     "year": 2023
+    },
+    {
+     "paperId": "1aafdc4dd2baba1ec479ce87fe37cb5b91304884",
+     "title": "Sequential Permutation Testing of Random Forest Variable Importance Measures",
+     "venue": "Comput. Stat. Data Anal.",
+     "year": 2022
+    },
+    {
+     "paperId": "b20f84c36bd3bf6055eb9e736d8380afe6bd7e35",
+     "title": "Random Forest estimation of the ordered choice model",
+     "venue": "Empirical Economics",
+     "year": 2019
+    }
+   ]
+  },
+  "LechnerOkasa": {
+   "id": "DOI:10.1007/s00181-024-02646-4",
+   "info": {
+    "paperId": "b20f84c36bd3bf6055eb9e736d8380afe6bd7e35",
+    "title": "Random Forest estimation of the ordered choice model",
+    "venue": "Empirical Economics",
+    "year": 2019,
+    "openAccessPdf": {
+     "url": "https://link.springer.com/content/pdf/10.1007/s00181-024-02646-4.pdf",
+     "status": "HYBRID",
+     "license": "CCBY",
+     "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1907.02436, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "authors": [
+     {
+      "authorId": "144190739",
+      "name": "M. Lechner"
+     },
+     {
+      "authorId": "104310841",
+      "name": "Gabriel Okasa"
+     }
+    ],
+    "abstract": "In this paper we develop a new machine learning estimator for ordered choice models based on the Random Forest. The proposed Ordered Forest flexibly estimates the conditional choice probabilities while taking the ordering information explicitly into account. In addition to common machine learning estimators, it enables the estimation of marginal effects as well as conducting inference and thus provides the same output as classical econometric estimators. An extensive simulation study reveals a good predictive performance, particularly in settings with nonlinearities and high correlation among covariates. An empirical application contrasts the estimation of marginal effects and their standard errors with an Ordered Logit model. A software implementation of the Ordered Forest is provided both in R and Python in the package orf available on CRAN and PyPI, respectively."
+   },
+   "referencias": [
+    {
+     "paperId": "392e0dfabf02fbfcb9149456db1eb103190b1dd2",
+     "title": "Institutions and the resource curse: New insights from causal machine learning",
+     "venue": "PloS one",
+     "year": 2023
+    },
+    {
+     "paperId": "c7f9f3679fd0725259272740795e059e0d0f5b89",
+     "title": "Treatment Effects",
+     "venue": "The Effect",
+     "year": 2021
+    },
+    {
+     "paperId": "de890c357e0def86834eed676f33004bf0af3d2c",
+     "title": "Developing Crash Severity Model Handling Class Imbalance and Implementing Ordered Nature: Focusing on Elderly Drivers",
+     "venue": "International journal of environmental research and public health",
+     "year": 2021
+    },
+    {
+     "paperId": "be5722aa78824e68d2fea0a9ef6f65c934cd84e1",
+     "title": "Ordinal Trees and Random Forests: Score-Free Recursive Partitioning and Improved Ensembles",
+     "venue": "Journal of Classification",
+     "year": 2021
+    },
+    {
+     "paperId": "8d9f6daf5ae632811e3822a455cb64fbcdad2f14",
+     "title": "Model-based random forests for ordinal regression",
+     "venue": "The international journal of biostatistics",
+     "year": 2020
+    },
+    {
+     "paperId": "3b81d6dc81717c91708633b9ffc528724e979ae3",
+     "title": "Cross-Fitting and Averaging for Machine Learning Estimation of Heterogeneous Treatment Effects",
+     "venue": "",
+     "year": 2020
+    },
+    {
+     "paperId": "a1e280b1283914c24b9d874aafa639aa774fd6c7",
+     "title": "Priority to unemployed immigrants? A causal machine learning evaluation of training in Belgium",
+     "venue": "SSRN Electronic Journal",
+     "year": 2019
+    },
+    {
+     "paperId": "ee07ca60a0619f2f0cb72c7fc690c14a6598801e",
+     "title": "Estimating Treatment Effects with Causal Forests: An Application",
+     "venue": "Observational Studies",
+     "year": 2019
+    },
+    {
+     "paperId": "3e5c6b1669e508cfb86b743dc8dd8f2bae741f10",
+     "title": "Ordinal Forests",
+     "venue": "Journal of Classification",
+     "year": 2019
+    },
+    {
+     "paperId": "a666cd0e2f5ca9a25d3ffd1749d5519b46dd05b4",
+     "title": "Modified Causal Forests for Estimating Heterogeneous Causal Effects",
+     "venue": "SSRN Electronic Journal",
+     "year": 2018
+    },
+    {
+     "paperId": "11df421778d470bb3469ac010adbeaf6cd3298e0",
+     "title": "Machine learning estimation of heterogeneous causal effects: Empirical Monte Carlo evidence",
+     "venue": "The Econometrics Journal",
+     "year": 2018
+    },
+    {
+     "paperId": "de15d2d492da816a9dc71b5e05eb095947dd4848",
+     "title": "Regularized Ordinal Regression and the ordinalNet R Package",
+     "venue": "J. Stat. Softw.",
+     "year": 2017
+    },
+    {
+     "paperId": "f75b70c9d7078724b592ec3e21de705e7b6ff73f",
+     "title": "Double/debiased machine learning for treatment and structural parameters",
+     "venue": "",
+     "year": 2017
+    },
+    {
+     "paperId": "68ff38490f4712b9282f7c6dee18c0194f9fb692",
+     "title": "An ensemble of ordered logistic regression and random forest for child garment size matching",
+     "venue": "Comput. Ind. Eng.",
+     "year": 2016
+    },
+    {
+     "paperId": "da6af72069d401e1aa20152586667ca3cab4a537",
+     "title": "Generalized random forests",
+     "venue": "The Annals of Statistics",
+     "year": 2016
+    },
+    {
+     "paperId": "8cffffd4c1cd1d49b6595a56179f00016cb1d671",
+     "title": "Random forest for ordinal responses: Prediction and variable selection",
+     "venue": "Comput. Stat. Data Anal.",
+     "year": 2016
+    },
+    {
+     "paperId": "bddf65576d9305435fac4a1da2cb1ed017718abf",
+     "title": "A random forest guided tour",
+     "venue": "TEST",
+     "year": 2015
+    },
+    {
+     "paperId": "c2fcb00fe4b773f9cb1682aaa69749aac59f711d",
+     "title": "Estimation and Inference of Heterogeneous Treatment Effects using Random Forests",
+     "venue": "Journal of the American Statistical Association",
+     "year": 2015
+    },
+    {
+     "paperId": "95f5ff1c868bb539f8d4bff4196664abcc5c6a86",
+     "title": "Mastering 'Metrics: The Path from Cause to Effect",
+     "venue": "",
+     "year": 2015
+    },
+    {
+     "paperId": "2f735ee65edd5331bf0f4ceed6677ae789407163",
+     "title": "ranger: A Fast Implementation of Random Forests for High Dimensional Data in C++ and R",
+     "venue": "",
+     "year": 2015
+    },
+    {
+     "paperId": "1a472d87ddd9cd3b4b2e3ccaec61a03053586897",
+     "title": "Recursive partitioning for heterogeneous causal effects",
+     "venue": "Proceedings of the National Academy of Sciences",
+     "year": 2015
+    },
+    {
+     "paperId": "3e9a1daf09d089dd365142291ac8e4d68d4afb6b",
+     "title": "Consistency of Random Forests",
+     "venue": "",
+     "year": 2014
+    },
+    {
+     "paperId": "1c08bc78b54684b76e1e8101ae1ba2e881dd6e23",
+     "title": "Asymptotic Theory for Random Forests",
+     "venue": "",
+     "year": 2014
+    },
+    {
+     "paperId": "5995360d3e62118817c9264d7cf6198bd421e2aa",
+     "title": "Quantifying Uncertainty in Random Forests via Confidence Intervals and Hypothesis Tests",
+     "venue": "J. Mach. Learn. Res.",
+     "year": 2014
+    },
+    {
+     "paperId": "b6482fa52cf175c1340671ba36b3c09450341a37",
+     "title": "Forecasting bank credit ratings",
+     "venue": "",
+     "year": 2014
+    },
+    {
+     "paperId": "de40991867f39f33a79c63295eb9410827213a45",
+     "title": "ordinalgmifs: An R Package for Ordinal Regression in High-dimensional Data Settings",
+     "venue": "Cancer informatics",
+     "year": 2014
+    },
+    {
+     "paperId": "4e679a1207617034d0fd3066afa1463904c5484c",
+     "title": "Monte Carlo Simulation and Resampling Methods for Social Science",
+     "venue": "",
+     "year": 2013
+    },
+    {
+     "paperId": null,
+     "title": "Solving the Problem of Inadequate Scoring Rules for Assessing Probabilistic Football Forecast Models",
+     "venue": "",
+     "year": 2012
+    },
+    {
+     "paperId": "b9923c59dbbda8b127881aa488c3dc54136c414d",
+     "title": "Relative status and satisfaction",
+     "venue": "",
+     "year": 2010
+    },
+    {
+     "paperId": "c867bfc8b120fa0f3df7e7f82d75a16663d6d27c",
+     "title": "Modeling Ordered Choices: A Primer",
+     "venue": "",
+     "year": 2010
+    },
+    {
+     "paperId": "29a662662539b9b4f74f24b3e7c3b6b9d9d42e29",
+     "title": "Analysis of a Random Forests Model",
+     "venue": "J. Mach. Learn. Res.",
+     "year": 2010
+    },
+    {
+     "paperId": "f8e78a5819eac73d929356a21e71ca7bface558b",
+     "title": "Bayesian Analysis for the Social Sciences",
+     "venue": "",
+     "year": 2009
+    },
+    {
+     "paperId": "0797aa94724137219bb623dbae99a0e3c3fa2345",
+     "title": "Ordered response models for sovereign debt ratings",
+     "venue": "",
+     "year": 2009
+    },
+    {
+     "paperId": "fc1d1ba95d4b1ce49d50ac82f553b6236305b0b6",
+     "title": "Python 3 Reference Manual",
+     "venue": "",
+     "year": 2009
+    },
+    {
+     "paperId": "492a1ad0f522188f5bc61e1981658db0af108975",
+     "title": "An evaluation of the age-profile in the relationship between household income and the health of children in the United States.",
+     "venue": "Journal of health economics",
+     "year": 2008
+    },
+    {
+     "paperId": "611dfc4c60fd49b2f0b7e32330983c975b47ad79",
+     "title": "Classification trees for ordinal variables",
+     "venue": "Comput. Stat.",
+     "year": 2008
+    },
+    {
+     "paperId": "bf451ac3189a01cac45f08c7b69bc7b8516dec5f",
+     "title": "The impact of health insurance on health.",
+     "venue": "Annual review of public health",
+     "year": 2008
+    },
+    {
+     "paperId": "3b22b4850580dbb209553088e347ea8ef8442fb6",
+     "title": "Nonparametric econometrics: a primer (in Russian)",
+     "venue": "",
+     "year": 2008
+    },
+    {
+     "paperId": "bce66188eed63b485d74a68ab0403c6c42fb8c90",
+     "title": "Semiparametric estimation of multinomial discrete-choice models using a subset of choices",
+     "venue": "",
+     "year": 2007
+    },
+    {
+     "paperId": "6bbd8fc39487249bd1b6886e4dc763550877b758",
+     "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+     "venue": "",
+     "year": 2007
+    },
+    {
+     "paperId": "76e2ddca03e0d78e14764d4fbc92c714ee46be9a",
+     "title": "Bias in random forest variable importance measures: Illustrations, sources and a solution",
+     "venue": "BMC Bioinformatics",
+     "year": 2007
+    },
+    {
+     "paperId": "7333e127b62eb545d81830df2a66b98c0693a32b",
+     "title": "Quantile Regression Forests",
+     "venue": "J. Mach. Learn. Res.",
+     "year": 2006
+    },
+    {
+     "paperId": "072d09ba865b5c2cfac279696c555730f0cdbce4",
+     "title": "Unbiased Recursive Partitioning: A Conditional Inference Framework",
+     "venue": "",
+     "year": 2006
+    },
+    {
+     "paperId": "bd56699173e8db87c93650a44f4b985f518dfc43",
+     "title": "The Effect of Income on Positive and Negative Subjective Well-Being",
+     "venue": "",
+     "year": 2006
+    },
+    {
+     "paperId": "631971d50a047a052d59c152e0153d70210079ba",
+     "title": "Ordered response models",
+     "venue": "",
+     "year": 2006
+    },
+    {
+     "paperId": "fdf39cc2e2170c7c12525d1d041dc91e98e84053",
+     "title": "The Influence of Celebrity Endorsements on Young Adults’ Political Opinions",
+     "venue": "",
+     "year": 2005
+    },
+    {
+     "paperId": "3e7eb2b2bea56a2d739347c8c7b2a501b2a2eb42",
+     "title": "Microeconometrics: Methods and Applications",
+     "venue": "",
+     "year": 2005
+    },
+    {
+     "paperId": "1932ee6b432ce93df923aaad4ee53378bd70bbe8",
+     "title": "A comparison of semiparametric estimators for the ordered response model",
+     "venue": "Comput. Stat. Data Anal.",
+     "year": 2005
+    },
+    {
+     "paperId": "3be9646ca993c1444c473f4d140397b2556a3284",
+     "title": "Bagging survival trees",
+     "venue": "Statistics in medicine",
+     "year": 2004
+    },
+    {
+     "paperId": "5875d4727f636faf123d161338b97ca2c2d0f02e",
+     "title": "Solutions Manual and Supplementary Materials for Econometric Analysis of Cross Section and Panel Data",
+     "venue": "",
+     "year": 2003
+    },
+    {
+     "paperId": "d7d4e474392501c1bd6f17f2b12844831e0b8bbb",
+     "title": "Categorical Data Analysis",
+     "venue": "",
+     "year": 2003
+    },
+    {
+     "paperId": "2fb80b49731390e6a8237afed56ea461c4e0a601",
+     "title": "Shift Restrictions and Semiparametric Estimation in Ordered Response Models",
+     "venue": "",
+     "year": 2002
+    },
+    {
+     "paperId": "c4b23567c79a1958054c6ef121ee85fc8e20f904",
+     "title": "Program Heterogeneity and Propensity Score Matching: An Application to the Evaluation of Active Labor Market Policies",
+     "venue": "Review of Economics and Statistics",
+     "year": 2002
+    },
+    {
+     "paperId": "cb44fb606a3c3ea6146b8e5689edcc11ac0f7190",
+     "title": "Multivariate Statistical Modelling Based on Generalized Linear Models",
+     "venue": "Technometrics",
+     "year": 2002
+    },
+    {
+     "paperId": "76fc26939d73c565431e1f38107a4245e739284e",
+     "title": "A Simple Approach to Ordinal Classification",
+     "venue": "ECML",
+     "year": 2001
+    },
+    {
+     "paperId": "c4f862ce5afb3cd22aa74cb983a3bd47b3aabd50",
+     "title": "Prediction of Ordinal Classes Using Regression Trees",
+     "venue": "Fundam. Informaticae",
+     "year": 2001
+    },
+    {
+     "paperId": "535fc54c49d52140ebd725e8fed1bee479635349",
+     "title": "Semiparametric qualitative response model estimation with unknown heteroscedasticity or instrumental variables",
+     "venue": "",
+     "year": 2000
+    },
+    {
+     "paperId": "6a2c53fa2123674c2688a20491aed1e2e15087f0",
+     "title": "Does more calculus improve student learning in intermediate micro- and macroeconomic theory?",
+     "venue": "",
+     "year": 1998
+    },
+    {
+     "paperId": "8714aa3981cd2357c4100f5236dc98058c8b4989",
+     "title": "A CONSISTENT NONPARAMETRIC TEST OF PARAMETRIC REGRESSION MODELS UNDER CONDITIONAL QUANTILE RESTRICTIONS",
+     "venue": "Econometric Theory",
+     "year": 1998
+    },
+    {
+     "paperId": "428296e90a1df0f55f48e5d697907e781585f49e",
+     "title": "Optimal bandwidth choice for density-weighted averages",
+     "venue": "",
+     "year": 1996
+    },
+    {
+     "paperId": "74b6ce6910096951a4ba4c96c2af6b6956efa8c1",
+     "title": "Structural Regression Trees",
+     "venue": "AAAI/IAAI, Vol. 1",
+     "year": 1996
+    },
+    {
+     "paperId": "041e9be175a0504116d81a3a9097f2ab7f6a8428",
+     "title": "Smoothing bias in the measurement of marginal effects",
+     "venue": "",
+     "year": 1996
+    },
+    {
+     "paperId": "9b0c2dd0c15b0073ab223cd5d4c713c365dbce0a",
+     "title": "Semiparametric maximum likelihood estimation of polychotomous and sequential choice models",
+     "venue": "",
+     "year": 1995
+    },
+    {
+     "paperId": "6ea2b6bbacd7b5e7f444b9ad01336ee670d81b92",
+     "title": "SEMIPARAMETRIC LEAST SQUARES (SLS) AND WEIGHTED SLS ESTIMATION OF SINGLE-INDEX MODELS",
+     "venue": "",
+     "year": 1993
+    },
+    {
+     "paperId": "436024981aec72e6080470fa5c3c12200bd0abcd",
+     "title": "AN EFFICIENT SEMIPARAMETRIC ESTIMATOR FOR BINARY RESPONSE MODELS",
+     "venue": "",
+     "year": 1993
+    },
+    {
+     "paperId": "97f47f3cdb778511d00ec4a6c13f3cf662ef824e",
+     "title": "Nonparametric and Distribution-Free Estimation of the Binary Threshold Crossing and the Binary Choice Models",
+     "venue": "",
+     "year": 1992
+    },
+    {
+     "paperId": "6e171b6e8c04aaca3a63cc94026c070dd7f6c7d3",
+     "title": "A Scoring System for Probability Forecasts of Ranked Categories",
+     "venue": "",
+     "year": 1969
+    },
+    {
+     "paperId": "bf59b10f9e0013d35f47066a0832bb7ff73be32e",
+     "title": "Predicting match outcomes in football by an Ordered Forest estimator",
+     "venue": "A Modern Guide to Sports Economics",
+     "year": 2021
+    },
+    {
+     "paperId": null,
+     "title": "2018) with the default hyperparameters as well. A detailed overview of packages",
+     "venue": "",
+     "year": 2018
+    },
+    {
+     "paperId": "8532d81cf2d0fcbb1bfbb434e2415f009ba603c9",
+     "title": "Binary choice models",
+     "venue": "",
+     "year": 2015
+    },
+    {
+     "paperId": "ee34d500096c6c3e721f8c5d4986ed9cdc770a21",
+     "title": "Regression modeling strategies : with applications to linear models, logistic and ordinal regression, and survival analysis",
+     "venue": "",
+     "year": 2015
+    },
+    {
+     "paperId": null,
+     "title": "rms: Regression Modeling Strategies. R package version",
+     "venue": "regression, and survival analysis. Springer,",
+     "year": 2015
+    },
+    {
+     "paperId": "d9904160fb60d0db85c517406da656b57d944e25",
+     "title": "A consistent nonparametric test of parametric regression functional form in fixed effects panel data models",
+     "venue": "",
+     "year": 2014
+    },
+    {
+     "paperId": "0735ea3c3b72a56072960fa2143c1115def9164c",
+     "title": "Hypothesis tests",
+     "venue": "",
+     "year": 2013
+    },
+    {
+     "paperId": "3e708b0cd19818e0c7408765dd922835661f8a24",
+     "title": "Classification and regression trees",
+     "venue": "WIREs Data Mining Knowl. Discov.",
+     "year": 2011
+    },
+    {
+     "paperId": "a2ce4ac4e959c87a2769630f340c37c29d88aadf",
+     "title": "The Effect of Income on General Life Satisfaction and Dissatisfaction",
+     "venue": "",
+     "year": 2009
+    },
+    {
+     "paperId": "1e95abe87bb9bc4544ef5426e6a4b7d44c7d1f28",
+     "title": "BMC Bioinformatics BioMed Central Methodology article Conditional variable importance for random forests",
+     "venue": "",
+     "year": 2008
+    },
+    {
+     "paperId": null,
+     "title": "Regarding the choice of the tuning",
+     "venue": "",
+     "year": 2008
+    },
+    {
+     "paperId": "75f8a4d7ed6a0f32fa098cac967de247938d9ce5",
+     "title": "An Introduction to the Bootstrap",
+     "venue": "",
+     "year": 2007
+    },
+    {
+     "paperId": "f7f11bc8bbb9834ed8b9e1e2ac60f9d2f6ec02a8",
+     "title": "Survival ensembles.",
+     "venue": "Biostatistics",
+     "year": 2006
+    },
+    {
+     "paperId": "327c3796875d9e9c1eb0f02e01bd6f4937fe35a8",
+     "title": "Additional Proofs for : “ Large Sample Properties of Matching Estimators for Average Treatment Effects ”",
+     "venue": "",
+     "year": 2004
+    },
+    {
+     "paperId": "3b99ab2d53f0ee78adadd798ab1df4e4a704c74b",
+     "title": "NBER WORKING PAPER SERIES BEAUTY IN THE CLASSROOM: PROFESSORS’ PULCHRITUDE AND PUTATIVE PEDAGOGICAL PRODUCTIVITY",
+     "venue": "",
+     "year": 2003
+    },
+    {
+     "paperId": "9529c25408dc86194d417aed73d49ae0e418f1be",
+     "title": "Econometric Analysis of Cross Section and Panel Data",
+     "venue": "",
+     "year": 2002
+    },
+    {
+     "paperId": null,
+     "title": "Economic Status and Health in Childhood: The Origins of the Gradient",
+     "venue": "American Economic Review",
+     "year": 2002
+    },
+    {
+     "paperId": "4cd4ccd9225f0a3c79cd4c72bd171039e28f2ab6",
+     "title": "The Elements of Statistical Learning: Data Mining, Inference, and Prediction",
+     "venue": "Springer Series in Statistics",
+     "year": 2001
+    },
+    {
+     "paperId": "8e0be569ea77b8cb29bb0e8b031887630fe7a96c",
+     "title": "Random Forests",
+     "venue": "Machine Learning",
+     "year": 2001
+    },
+    {
+     "paperId": "b1dc1c0de1d57783e813d7d3fc92927766475dc4",
+     "title": "Analyzing Bagging",
+     "venue": "",
+     "year": 2001
+    },
+    {
+     "paperId": "0d4164ac5591c5a42ef3c2d819e82a978dbfddc3",
+     "title": "On the Asymptotic Theory of Permutation Statistics",
+     "venue": "",
+     "year": 1999
+    },
+    {
+     "paperId": "0447f1683100efb2e468f764ece75952033d3749",
+     "title": "Classification and regression",
+     "venue": "",
+     "year": 1997
+    },
+    {
+     "paperId": "714bd8f8de0982919f2e2954d208e62a22719b7d",
+     "title": "Generalized Linear Models",
+     "venue": "",
+     "year": 1989
+    },
+    {
+     "paperId": "378e8a238d156859dfc88cc13489441d47cf661a",
+     "title": "Classification and regression trees",
+     "venue": "",
+     "year": 1983
+    },
+    {
+     "paperId": "0c86d2393b781941d178bf2bc2709ff4b3db90dd",
+     "title": "Regression Models for Ordinal Data",
+     "venue": "",
+     "year": 1980
+    },
+    {
+     "paperId": "feee6551179612b9691f021b583d8a99b81b9b86",
+     "title": "VERIFICATION OF FORECASTS EXPRESSED IN TERMS OF PROBABILITY",
+     "venue": "",
+     "year": 1950
+    },
+    {
+     "paperId": "021c26570e44f00e32513a9265d26c821a6ea604",
+     "title": "Computational Statistics and Data Analysis",
+     "venue": "",
+     "year": null
+    }
+   ],
+   "citas": [
+    {
+     "paperId": "e3706d268dfa1138e7d1f1c69a322c6157284c4d",
+     "title": "Auxiliary Energy Consumption Characteristics and Prediction Models for Range-Extended Electric Vehicles",
+     "venue": "Machines",
+     "year": 2026
+    },
+    {
+     "paperId": "57e227b4f7c7d742999da8c0219fe7045ffbb687",
+     "title": "The safety risks of roadside trees: An analysis of injury outcomes in vehicle-tree collisions.",
+     "venue": "Accident; analysis and prevention",
+     "year": 2026
+    },
+    {
+     "paperId": "11a292bdf92ed778c214fa52766b042bebdf0766",
+     "title": "Random forests for road traffic safety research: Recent advances, empirical applications, and future directions",
+     "venue": "IATSS Research",
+     "year": 2026
+    },
+    {
+     "paperId": "7d0687e647feb08d60d3909723e20e9daded3f5a",
+     "title": "Rethinking crash risk prediction: classification versus probabilistic perspectives",
+     "venue": "European Transport Research Review",
+     "year": 2026
+    },
+    {
+     "paperId": "6f41aa18e8375cdf4b7388d903ecdae4ee2c07f2",
+     "title": "Application of machine learning to monster level prediction in tabletop RPG game design",
+     "venue": "ArXiv",
+     "year": 2026
+    },
+    {
+     "paperId": "ed01a1d64757a0d3a63e498bb2485506e51ae776",
+     "title": "Coral Sand Dissolution in Fresh/Saline Groundwater of Reclaimed Reef Islands: Dominant Mechanisms, Key Factors, and Alteration Effects",
+     "venue": "Journal of Marine Science and Engineering",
+     "year": 2026
+    },
+    {
+     "paperId": "72011f52bc602fe1092fd0b602a82bf37eb0ca3b",
+     "title": "Integrating machine learning and global sensitivity analysis for modeling public transport acceptance: evidence from Egyptian cities",
+     "venue": "Transportation Planning and Technology",
+     "year": 2026
+    },
+    {
+     "paperId": "03f5d7f4ece1e86a0d38a193a46e11da6191276e",
+     "title": "Thresholds and Tipping Points: Decomposing European Convergence Club Membership",
+     "venue": "Review of Economics",
+     "year": 2025
+    },
+    {
+     "paperId": "0ea0cf3e55907e317943fa7b71599f149151ee87",
+     "title": "Ordinal Sparse Neural Networks for Modeling Gene- and Imaging-Environment Interactions",
+     "venue": "Statistics in medicine",
+     "year": 2025
+    },
+    {
+     "paperId": "4ee226878ff80f7b53d7be8e74a8a868995cda88",
+     "title": "Water Quality Assessment Using the Random Forest Classification Model",
+     "venue": "Water environment research : a research publication of the Water Environment Federation",
+     "year": 2025
+    },
+    {
+     "paperId": "62d02ac953b3cd13798b3c0c310ae362a0225f0a",
+     "title": "The Sleep-Anxiety Dysregulation Model of Alcohol Use Disorder Risk: A Nine-Year Longitudinal Machine Learning Study",
+     "venue": "Journal of affective disorders",
+     "year": 2025
+    },
+    {
+     "paperId": "5931db19c0487dc5a2295bf72f1f8950b2a91ba6",
+     "title": "Comparison of ML Methods for Analyzing Scaffolding Behavior: A Case Study on Safety and Multimodal Results",
+     "venue": "2025 12th International Conference on Information Technology (ICIT)",
+     "year": 2025
+    },
+    {
+     "paperId": "7e9da1e664a7c1ff29bba7fb7da832b4389e4913",
+     "title": "The role of social work in enhancing social governance: Policy, law, practice, and integration of machine learning for improved outcomes",
+     "venue": "Alexandria Engineering Journal",
+     "year": 2025
+    },
+    {
+     "paperId": "0ed1ff544a133326d35e7fc68c639559d21ace1d",
+     "title": "Analyzing tennis match momentum through machine learning techniques and the TOPSIS model",
+     "venue": "International Conference on Big Data, Computational Intelligence and Applications",
+     "year": 2025
+    },
+    {
+     "paperId": "d8b7eafdb645de314864cc0e4733c8e6630059fb",
+     "title": "Heterogeneous Causal Effect Analysis and Application Based on Meta-Learners",
+     "venue": "2025 8th International Symposium on Big Data and Applied Statistics (ISBDAS)",
+     "year": 2025
+    },
+    {
+     "paperId": "2fb1f273f26c72937aaef3bca47fa9a8e0e522c2",
+     "title": "Development of Machine Learning Models for Estimating Metabolizable Protein Supply from Feed in Lactating Dairy Cows",
+     "venue": "Animals : an open access journal from MDPI",
+     "year": 2025
+    },
+    {
+     "paperId": "4b2909e4b5178f3f07c0d80aa611d6a038e1369b",
+     "title": "Ordinal response scales: Psychometric grounding for design and analysis",
+     "venue": "Research Methods in Applied Linguistics",
+     "year": 2024
+    },
+    {
+     "paperId": "254d9e66e65d4580e5bca37987be3cb9a9ea8abb",
+     "title": "Modeling uncertainty with the truncated zeta distribution in mixture models for ordinal responses",
+     "venue": "Communications in Statistics - Theory and Methods",
+     "year": 2024
+    },
+    {
+     "paperId": "84f3af85fcf78bfcb56746d539e79d8e11602d28",
+     "title": "Double Machine Learning for Static Panel Models with Fixed Effects",
+     "venue": "The Econometrics Journal",
+     "year": 2023
+    },
+    {
+     "paperId": "1610d329070b848cbd219ac5c0a786b0644dac43",
+     "title": "Unraveling Genetic Complexity: Fine-tuning Machine Learning Models for DNA Sequence Analysis with K-mer Size",
+     "venue": "2023 5th International Conference on Cybernetics and Intelligent System (ICORIS)",
+     "year": 2023
+    },
+    {
+     "paperId": "cdf3515c2eccd3b573805fef5373829e055b65c0",
+     "title": "Ordered correlation forest",
+     "venue": "SSRN Electronic Journal",
+     "year": 2023
+    },
+    {
+     "paperId": "c20d4c32aaa220c6c73f4450c71a891dbbc03b3d",
+     "title": "Towards machine learning for moral choice analysis in health economics: A literature review and research agenda.",
+     "venue": "Social science & medicine",
+     "year": 2023
+    },
+    {
+     "paperId": "e794037dea95f18ab4455350c5ac4d078e3f1e61",
+     "title": "Does less working time improve life satisfaction? Evidence from European Social Survey",
+     "venue": "Health Economics Review",
+     "year": 2022
+    },
+    {
+     "paperId": "3c9cc4c180d3b33b2cb240a60c54dbc663db9557",
+     "title": "A general framework to quantify the event importance in multi-event contests",
+     "venue": "Annals of Operations Research",
+     "year": 2022
+    },
+    {
+     "paperId": "54e371065e1624ec8b22179959401dda6e2d0dd2",
+     "title": "Improving automotive garage operations by categorical forecasts using a large number of variables",
+     "venue": "Eur. J. Oper. Res.",
+     "year": 2022
+    },
+    {
+     "paperId": "77fb273544191b609f97dcf2ec86e7ad31d91ca1",
+     "title": "Meta-Learners for Estimation of Causal Effects: Finite Sample Cross-Fit Performance",
+     "venue": "",
+     "year": 2022
+    },
+    {
+     "paperId": "65602fcc22b865e9e226960b8ff9da31f542912a",
+     "title": "ProBlock: a novel approach for fake news detection",
+     "venue": "Cluster Computing",
+     "year": 2021
+    },
+    {
+     "paperId": "de890c357e0def86834eed676f33004bf0af3d2c",
+     "title": "Developing Crash Severity Model Handling Class Imbalance and Implementing Ordered Nature: Focusing on Elderly Drivers",
+     "venue": "International journal of environmental research and public health",
+     "year": 2021
+    },
+    {
+     "paperId": "650de575f30e2cb707272c323db8b67dd5a997a7",
+     "title": "Innovative Applications of O.R. Improving automotive garage operations by categorical forecasts using a large number of variables",
+     "venue": "",
+     "year": null
+    },
+    {
+     "paperId": "ca5fe0079f94cfce1c708eff9ae0a641b2069fba",
+     "title": "Estimating Binary Choice Models with Random Forests",
+     "venue": "",
+     "year": null
+    }
+   ]
+  },
+  "Hornung2020": {
+   "id": "DOI:10.1007/s00357-018-9302-x",
+   "info": {
+    "paperId": "3e5c6b1669e508cfb86b743dc8dd8f2bae741f10",
+    "title": "Ordinal Forests",
+    "venue": "Journal of Classification",
+    "year": 2019,
+    "openAccessPdf": {
+     "url": "",
+     "status": null,
+     "license": null,
+     "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s00357-018-9302-x?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s00357-018-9302-x, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "authors": [
+     {
+      "authorId": "145249486",
+      "name": "R. Hornung"
+     }
+    ],
+    "abstract": null
+   },
+   "referencias": [],
+   "citas": [
+    {
+     "paperId": "91ae413de1cab6d58ce29c1f40645b495149c54f",
+     "title": "Ordinal Mixed-Effects Random Forests",
+     "venue": "Journal of Classification",
+     "year": 2026
+    },
+    {
+     "paperId": "ddf64c9e614b9fce6cc434068b0ffa7bab747c26",
+     "title": "Mapping between EQ-5D-5L and EQ-5D-3L in lumbar spine surgery patients: Machine learning compared to crosswalk algorithms",
+     "venue": "Brain & spine",
+     "year": 2026
+    },
+    {
+     "paperId": "1c476d054972c0dbc7e2383fd74d9b33e35d63fe",
+     "title": "Beyond Supervision: The Power of Role Clarity in Construction Safety Climate",
+     "venue": "Construction Research Congress 2026",
+     "year": 2026
+    },
+    {
+     "paperId": "f2b433ed157cd915641b7fbd3768de5c17b20b6c",
+     "title": "Identification and classification of run-off-road conflict using surrogate safety metrics in mixed traffic environments",
+     "venue": "IATSS Research",
+     "year": 2026
+    },
+    {
+     "paperId": "11a292bdf92ed778c214fa52766b042bebdf0766",
+     "title": "Random forests for road traffic safety research: Recent advances, empirical applications, and future directions",
+     "venue": "IATSS Research",
+     "year": 2026
+    },
+    {
+     "paperId": "d9e6b0e41315aa7944f25663359ea1ffb8f18399",
+     "title": "Interaction of road, traffic and environment in the operational design domain of lane support systems: hybrid factorial-observational design and causal analysis.",
+     "venue": "Accident; analysis and prevention",
+     "year": 2026
+    },
+    {
+     "paperId": "b039514bb39a001e972e4e12e5df73061857bbaf",
+     "title": "SAFE Artificial Intelligence to Improve Environmental, Social, and Governance Sustainability",
+     "venue": "Quality and Reliability Engineering International",
+     "year": 2026
+    },
+    {
+     "paperId": "d6b7989e8116f9bd3ed8ddcbb1cdfcebc12f0b17",
+     "title": "Towards a reduction in private cars use? Comparative intentions to use urban and regional Mobility as a Service bundles in four European countries ☆",
+     "venue": "Transport Policy",
+     "year": 2026
+    },
+    {
+     "paperId": "20dcc8b4f1b7d62e049518b6b2711a40be92c439",
+     "title": "An Ensemble Classifier for Ordinal Outcomes in High‐Dimensional Genomics Data",
+     "venue": "Pharmaceutical statistics",
+     "year": 2026
+    },
+    {
+     "paperId": "33f725dda27ad26cd7d3626bd26d25fcf70164df",
+     "title": "Determinants of household level socio–economic impacts of desert locust (Schistocerca gregaria) in Wabe Shebelle River Basin of Ethiopia",
+     "venue": "Discover Sustainability",
+     "year": 2026
+    },
+    {
+     "paperId": "06b255edad48e4a9b76349cd0bc53041935be25e",
+     "title": "DL-HOL: Deep Learning Enhanced Hybrid Ordinal Learning for Healthcare Applications with Interval Labels",
+     "venue": "2026 9th International Conference on Intelligent Computing and Control Systems (ICICCS)",
+     "year": 2026
+    },
+    {
+     "paperId": "a2920470500f1ce18d7dc7daed965fcc90dc76f4",
+     "title": "Class-Focused Variable Importance in Random Forests for Multi-Class Outcomes",
+     "venue": "Journal of Classification",
+     "year": 2026
+    },
+    {
+     "paperId": "2be0ec11f57df05544398e8555b09142b5a8ab2a",
+     "title": "A Simulation Study to Compare Inferential Properties when Modelling Ordinal Outcomes: The Case for the (Plain but Robust) Proportional Odds Model",
+     "venue": "",
+     "year": 2026
+    },
+    {
+     "paperId": "5fb35bc040bbaaa2a48e9c02c5a22fbfa9e9eb78",
+     "title": "Mapping soil property classes over a large territory with multiple soilscapes by digital extrapolations of legacy detailed soil maps: A case study in Karnataka -South India",
+     "venue": "Geoderma",
+     "year": 2026
+    },
+    {
+     "paperId": "5b15c18fbd63e79fedca6a8a20fad8a246e4dba5",
+     "title": "Effect Structures in Ordinal Regression: The Adjacent Categories Approach",
+     "venue": "Stats",
+     "year": 2026
+    },
+    {
+     "paperId": "4fc893384a07fa3306060d6c857e5731cf2bc65d",
+     "title": "Hot stops, cool looks: Aesthetic solutions for thermal comfort at transit stops",
+     "venue": "Urban Climate",
+     "year": 2025
+    },
+    {
+     "paperId": "f88a1cf71b2ebd41eb6c34e59a53f5e8e1d52ceb",
+     "title": "Using the farmers’ knowledge on soils improves local digital soil mapping products: A case study in South India",
+     "venue": "Geoderma",
+     "year": 2025
+    },
+    {
+     "paperId": "33eac148e239873a8001ef357a8d1bc4cfa512b6",
+     "title": "Mixed-Effects Frequency-Adjusted Borders Ordinal Forest: A Tree Ensemble Method for Ordinal Prediction with Hierarchical Data",
+     "venue": "Multivariate behavioral research",
+     "year": 2025
+    },
+    {
+     "paperId": "cd76adf9d7797f996a3b3a78b45d1c7420ef386e",
+     "title": "Prediction of antipsychotic associated weight gain in children and adolescents taking second generation antipsychotics: A machine learning approach.",
+     "venue": "Journal of psychiatric research",
+     "year": 2025
+    },
+    {
+     "paperId": "292356c8943586a15af15d0d83e5114773d674bf",
+     "title": "Moving Beyond Temperature Metrics in Coral Bleaching Prediction Using Interpretable Machine Learning",
+     "venue": "Global Ecology and Biogeography",
+     "year": 2025
+    },
+    {
+     "paperId": "f5fc6aa2d086082a972e376f1b9ab374e3a82d0c",
+     "title": "DNA methylation biomarkers for cervical cancer risk prediction in HIV‐positive Nigerian women",
+     "venue": "International journal of cancer",
+     "year": 2025
+    },
+    {
+     "paperId": "a778cd7755d9d0157a1b355f5de7c5054c69065e",
+     "title": "Ord-MAP criterion: Extending MAP for ordinal classification",
+     "venue": "Knowl. Based Syst.",
+     "year": 2025
+    },
+    {
+     "paperId": "8965b9b235a7f2cffee88e6b1794456ec093e39e",
+     "title": "Evaluating UAV captured RGB and multispectral imagery as a proxy for visual rating of leaf spot in cultivated peanut",
+     "venue": "The Plant Phenome Journal",
+     "year": 2025
+    },
+    {
+     "paperId": "ba8da6b882264154ead1a805b8d6af75a681aec6",
+     "title": "What factors enhance students’ achievement? A machine learning and interpretable methods approach",
+     "venue": "PloS one",
+     "year": 2025
+    },
+    {
+     "paperId": "05cdde4ad12e7eb4b54a163ccb148403db972d61",
+     "title": "Comparing the predictive discrimination of machine learning models for ordinal outcomes: A case study of dehydration prediction in patients with acute diarrhea",
+     "venue": "PLOS digital health",
+     "year": 2025
+    },
+    {
+     "paperId": "fc553757a0965cb5ec9bd8769b54cb01e849427d",
+     "title": "Splitting criteria for ordinal decision trees: an experimental study",
+     "venue": "Pattern Recognit.",
+     "year": 2024
+    },
+    {
+     "paperId": "67d29031042b215879321d2d3872c7d8fd916069",
+     "title": "Old but Gold or New and Shiny? Comparing Tree Ensembles for Ordinal Prediction with a Classic Parametric Approach",
+     "venue": "Journal of Classification",
+     "year": 2024
+    },
+    {
+     "paperId": "33dec861591cbaafd596eb06e46698d3e0e81c72",
+     "title": "Frequency‐adjusted borders ordinal forest: A novel tree ensemble method for ordinal prediction",
+     "venue": "The British journal of mathematical and statistical psychology",
+     "year": 2024
+    },
+    {
+     "paperId": "507549d86ceeb150f999ea901501cf8dd58e8bf3",
+     "title": "Engineering students' interests in nonprofit and public policy careers: Applying a data‐driven approach to identifying contributing factors",
+     "venue": "Journal of Engineering Education",
+     "year": 2024
+    },
+    {
+     "paperId": "520a96d0350e5db454001837380bd03c2759d4b9",
+     "title": "Prediction of Turfgrass Quality Using Multispectral UAV Imagery and Ordinal Forests: Validation Using a Fuzzy Approach",
+     "venue": "Agronomy",
+     "year": 2024
+    },
+    {
+     "paperId": "e0a5e251ef5402fc883adfe2f1522db6e9e5af49",
+     "title": "Developing a Prediction Model for Periodontal Disease Using Ordinal Random Forest",
+     "venue": "Avicenna Journal of Dental Research",
+     "year": 2024
+    },
+    {
+     "paperId": "16c55b46dddbfab23c219eb8a5b38232337f0a04",
+     "title": "A data- and knowledge-driven framework for developing machine learning models to predict soccer match outcomes",
+     "venue": "Machine Learning",
+     "year": 2024
+    },
+    {
+     "paperId": "87ea063b03d4104a2368f50df8e562b104f44ebc",
+     "title": "Harmonizing the CBCL and SDQ ADHD scores by using linear equating, kernel equating, item response theory and machine learning methods",
+     "venue": "Frontiers in psychology",
+     "year": 2024
+    },
+    {
+     "paperId": "12cdb310ae64be74fcb9265cfe1f4161490ea8ee",
+     "title": "Ordinal Mixed-Effects Random Forest",
+     "venue": "",
+     "year": 2024
+    },
+    {
+     "paperId": "06a37ea2d65d3bd31a6d9b79d3a8e4e72f0720a4",
+     "title": "Readability prediction: How many features are necessary?",
+     "venue": "The Annals of Applied Statistics",
+     "year": 2024
+    },
+    {
+     "paperId": "f369d9fec0fd7b2120b710cf5a8add96cf7694a3",
+     "title": "Forecasting the direction of the Fed's monetary policy decisions using random forest",
+     "venue": "Journal of Forecasting",
+     "year": 2024
+    },
+    {
+     "paperId": "321c662e024703f7293ecdf488ffe917a2e895cc",
+     "title": "Modeling of ordinal longitudinal accelerometer data",
+     "venue": "Journal of Statistical Research",
+     "year": 2024
+    },
+    {
+     "paperId": "f2525155601a38db9a7cab2c66aa384cc27a6e14",
+     "title": "Ordered probit Bayesian additive regression trees for ordinal data",
+     "venue": "Stat",
+     "year": 2024
+    },
+    {
+     "paperId": "fbb8aaf4d0002025d851f1e6c75660c8c2649e10",
+     "title": "PERBANDINGAN ORDINAL FOREST DAN REGRESI LOGISTIK ORDINAL",
+     "venue": "Jurnal Aplikasi Statistika &amp; Komputasi Statistik",
+     "year": 2023
+    },
+    {
+     "paperId": "4e8b60dce5a7d8ebb8963a6b64346c3f1a425bf4",
+     "title": "Integrating several analytical methods to assess strength of ecological processes behind metacommunity assembly",
+     "venue": "Oikos",
+     "year": 2023
+    },
+    {
+     "paperId": "325ae13c7334add3f4a9a614ef51c8a73961c31b",
+     "title": "A Novel Hybrid Ordinal Learning Model with Health Care Application",
+     "venue": "IEEE Transactions on Automation Science and Engineering",
+     "year": 2023
+    },
+    {
+     "paperId": "51e53c1542743fe29ddd295f2e995c3df0fcf434",
+     "title": "Classification and regression in prescriptive analytics: Development of hybrid models and an example of ship inspection by port state control",
+     "venue": "Comput. Oper. Res.",
+     "year": 2023
+    },
+    {
+     "paperId": "c34bdb4698fc3ff5dc7d8f4097dadffbbb26cf3b",
+     "title": "Ordinal classification for interval-valued data and interval-valued functional data",
+     "venue": "Expert Syst. Appl.",
+     "year": 2023
+    },
+    {
+     "paperId": "6638b5bd36aea3f445b1690ba313967fc15acfdf",
+     "title": "A Two-Stage Interpretable Machine Learning Framework for Accurate Prediction of Trace Pollutants: With an Application to Microcystin",
+     "venue": "ACS ES&amp;T Water",
+     "year": 2023
+    },
+    {
+     "paperId": "cdf3515c2eccd3b573805fef5373829e055b65c0",
+     "title": "Ordered correlation forest",
+     "venue": "SSRN Electronic Journal",
+     "year": 2023
+    },
+    {
+     "paperId": "97c2a03e7ac34b82e72feb0777cebbb24a3e5797",
+     "title": "First evaluation of fire severity retrieval from PRISMA hyperspectral data",
+     "venue": "Remote Sensing of Environment",
+     "year": 2023
+    },
+    {
+     "paperId": "e074b478d43f46781726c881a34c58f87abbc994",
+     "title": "Early Prediction of Progression to Alzheimer’s Disease using Multi-Modality Neuroimages by a Novel Ordinal Learning Model ADPacer",
+     "venue": "IISE transactions on healthcare systems engineering",
+     "year": 2023
+    },
+    {
+     "paperId": "fd81896ff2ebdb766ba982d71ef6bc8cef4835a3",
+     "title": "Predicting resident satisfaction with public schools in small town Iowa",
+     "venue": "Stat",
+     "year": 2022
+    },
+    {
+     "paperId": "54251cb7908f1c7957580cc1f25bafab3f60719e",
+     "title": "Hierarchical Neyman-Pearson Classification for Prioritizing Severe Disease Categories in COVID-19 Patient Data",
+     "venue": "Journal of the American Statistical Association",
+     "year": 2022
+    },
+    {
+     "paperId": "cf656a634e4de7ebef2bccda717f5bbf01e0373c",
+     "title": "Can footwear satisfaction be predicted from mechanical properties?",
+     "venue": "Footwear Science",
+     "year": 2022
+    },
+    {
+     "paperId": "1aafdc4dd2baba1ec479ce87fe37cb5b91304884",
+     "title": "Sequential Permutation Testing of Random Forest Variable Importance Measures",
+     "venue": "Comput. Stat. Data Anal.",
+     "year": 2022
+    },
+    {
+     "paperId": "3c2e39fd59e9f52105143ff927bdab5bd577fbd5",
+     "title": "A decision tree-based method for ordinal classification problems",
+     "venue": "IISE Transactions",
+     "year": 2022
+    },
+    {
+     "paperId": "b4b4599ef487b7d927f504a77e1892b678c190b6",
+     "title": "Prediction of the Fundus Tessellation Severity With Machine Learning Methods",
+     "venue": "Frontiers in Medicine",
+     "year": 2022
+    },
+    {
+     "paperId": "153605459e2b5976fd80bd958a252be214e049af",
+     "title": "Multivariate genome-wide association study models to improve prediction of Crohn's disease risk and identification of potential novel variants",
+     "venue": "Comput. Biol. Medicine",
+     "year": 2022
+    },
+    {
+     "paperId": "77fb273544191b609f97dcf2ec86e7ad31d91ca1",
+     "title": "Meta-Learners for Estimation of Causal Effects: Finite Sample Cross-Fit Performance",
+     "venue": "",
+     "year": 2022
+    },
+    {
+     "paperId": "bfe379e85b67208a29c1d09d8afdede3b0469bb9",
+     "title": "Comparison of Ordinal Response Modeling Methods like Decision Trees, Ordinal Forest and L1 Penalized Continuation Ratio Regression in High Dimensional Data",
+     "venue": "Iranian South Medical Journal",
+     "year": 2021
+    },
+    {
+     "paperId": "0d83fdc4ddbe793e47ed7dd4db94cbc01f26a44a",
+     "title": "Diversity Forests: Using Split Sampling to Enable Innovative Complex Split Procedures in Random Forests",
+     "venue": "SN Computer Science",
+     "year": 2021
+    },
+    {
+     "paperId": "4b997c9fd1c8682e57b0b6f370a8c70192b7832d",
+     "title": "An Albanian translation of a questionnaire for self-reported tinnitus assessment",
+     "venue": "International journal of audiology",
+     "year": 2021
+    },
+    {
+     "paperId": "75c9ffbe9c35ec84bec46ada1812334005e9a71b",
+     "title": "A Study of Factors Influencing on Passive and Active Acceptance of Home Energy Management Services with Internet of Things",
+     "venue": "Energies",
+     "year": 2021
+    },
+    {
+     "paperId": "2f23bfa34cb47fd5facc8d29e487344975278bfb",
+     "title": "Advanced Statistical Analysis of 3D Kinect Data: A Comparison of the Classification Methods",
+     "venue": "Applied Sciences",
+     "year": 2021
+    },
+    {
+     "paperId": "be5722aa78824e68d2fea0a9ef6f65c934cd84e1",
+     "title": "Ordinal Trees and Random Forests: Score-Free Recursive Partitioning and Improved Ensembles",
+     "venue": "Journal of Classification",
+     "year": 2021
+    },
+    {
+     "paperId": "8d9f6daf5ae632811e3822a455cb64fbcdad2f14",
+     "title": "Model-based random forests for ordinal regression",
+     "venue": "The international journal of biostatistics",
+     "year": 2020
+    },
+    {
+     "paperId": "5e95dc3b504835e9e5bae3c8b8d9d1b9919bcb46",
+     "title": "A new approach in model selection for ordinal target variables",
+     "venue": "Computational Statistics",
+     "year": 2020
+    },
+    {
+     "paperId": "d0899e41bcb277c964f980f9c99e440662a15b0e",
+     "title": "High-dimensional variable selection for ordinal outcomes with error control",
+     "venue": "Briefings Bioinform.",
+     "year": 2020
+    },
+    {
+     "paperId": "d28661a101320e06066031415a79ed4983ceba57",
+     "title": "Predicting Fitness and Performance of Diving using Machine Learning Algorithms",
+     "venue": "2019 IEEE Pune Section International Conference (PuneCon)",
+     "year": 2019
+    },
+    {
+     "paperId": "310094f6cfb8c4fe86edbf390fe055938fbebd4d",
+     "title": "Tree-structured scale effects in binary and ordinal regression",
+     "venue": "Statistics and Computing",
+     "year": 2019
+    },
+    {
+     "paperId": "b20f84c36bd3bf6055eb9e736d8380afe6bd7e35",
+     "title": "Random Forest estimation of the ordered choice model",
+     "venue": "Empirical Economics",
+     "year": 2019
+    },
+    {
+     "paperId": "dc58e7dd79c6c9c278d1a777a4f83af5f38da120",
+     "title": "Predicting matches in international football tournaments with random forests",
+     "venue": "Statistical Modelling",
+     "year": 2018
+    },
+    {
+     "paperId": "e459d8aef60ffd552fed21a0302fd684e7e23db2",
+     "title": "Emerging topics and challenges of learning from noisy data in nonstandard classification: a survey beyond binary class noise",
+     "venue": "Knowledge and Information Systems",
+     "year": 2018
+    },
+    {
+     "paperId": "be60f59665a0bd8d2ad7abd1b62e9c5e2f968bcd",
+     "title": "Assessing the Robustness of Ordinal Classifiers against Imbalanced and Shifting Distributions",
+     "venue": "LIDTA",
+     "year": 2022
+    },
+    {
+     "paperId": "18289f8e0da39ef14aff736a59869f8461cad324",
+     "title": "Ordinal Statistical Models of Physical Activity Levels from Accelerometer Data.",
+     "venue": "International journal of exercise science",
+     "year": 2021
+    },
+    {
+     "paperId": "14588570c2f3314ae6be2b8fdebe0fc03c1c3bdd",
+     "title": "Business Analytics and Quantitative Marketing The relation between network metrics and team performance in football",
+     "venue": "",
+     "year": 2020
+    },
+    {
+     "paperId": "2fd0968e1192daf2212aeb7f64474d260f0d76e4",
+     "title": "Estimating the proportion who benefit from a treatment in a Randomized Controlled Trial",
+     "venue": "",
+     "year": 2019
+    },
+    {
+     "paperId": "1ee30a7c1bae4860804b414ef23f0df5a11c3c5e",
+     "title": "Roman Hornung Diversity Forests: Using Split Sampling to Allow for Complex Split Procedures in Random Forest",
+     "venue": "",
+     "year": null
+    }
+   ]
+  },
+  "Buczak2024": {
+   "id": "DOI:10.1007/s00357-024-09497-9",
+   "info": {
+    "paperId": "67d29031042b215879321d2d3872c7d8fd916069",
+    "title": "Old but Gold or New and Shiny? Comparing Tree Ensembles for Ordinal Prediction with a Classic Parametric Approach",
+    "venue": "Journal of Classification",
+    "year": 2024,
+    "openAccessPdf": {
+     "url": "https://link.springer.com/content/pdf/10.1007/s00357-024-09497-9.pdf",
+     "status": "HYBRID",
+     "license": "CCBY",
+     "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s00357-024-09497-9?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s00357-024-09497-9, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "authors": [
+     {
+      "authorId": "2122535563",
+      "name": "P. Buczak"
+     },
+     {
+      "authorId": "2334672220",
+      "name": "Daniel Horn"
+     },
+     {
+      "authorId": "2304470985",
+      "name": "Markus Pauly"
+     }
+    ],
+    "abstract": "Ordinal data are frequently encountered, e.g., in the life and social sciences. Predicting ordinal outcomes can inform important decisions, e.g., in medicine or education. Two methodological streams tackle prediction of ordinal outcomes: Traditional parametric models, e.g., the proportional odds model (POM), and machine learning-based tree ensemble (TE) methods. A promising TE approach involves selecting the best performing from sets of randomly generated numeric scores assigned to ordinal response categories (ordinal forest; Hornung, 2019). We propose a new method, the ordinal score optimization algorithm, that takes a similar approach but selects scores through non-linear optimization. We compare these and other TE methods with the computationally much less expensive POM. Despite selective efforts, the literature lacks an encompassing simulation-based comparison. Aiming to fill this gap, we find that while TE approaches outperform the POM for strong non-linear effects, the latter is competitive for small sample sizes even under medium non-linear effects."
+   },
+   "referencias": [
+    {
+     "paperId": "a496393ff9e21f3f8ef8be3cebc23b13cac9ead5",
+     "title": "Machine learning procedures for predictor variable selection for schoolwork-related anxiety: evidence from PISA 2015 mathematics, reading, and science assessments",
+     "venue": "Large-scale Assessments in Education",
+     "year": 2022
+    },
+    {
+     "paperId": "9cb5aa936f671813390c3a346e76762b105eda40",
+     "title": "On the role of benchmarking data sets and simulations in method comparison studies",
+     "venue": "Biometrical journal. Biometrische Zeitschrift",
+     "year": 2022
+    },
+    {
+     "paperId": "ddfabb74620ca28a492d89dbb44ffc5213520445",
+     "title": "Sparser Ordinal Regression Models Based on Parametric and Additive Location‐Shift Approaches",
+     "venue": "International Statistical Review",
+     "year": 2022
+    },
+    {
+     "paperId": "be5722aa78824e68d2fea0a9ef6f65c934cd84e1",
+     "title": "Ordinal Trees and Random Forests: Score-Free Recursive Partitioning and Improved Ensembles",
+     "venue": "Journal of Classification",
+     "year": 2021
+    },
+    {
+     "paperId": "e70b2207c6c291612e674f5889053f780eda1091",
+     "title": "Ordinal regression: A review and a taxonomy of models",
+     "venue": "WIREs Computational Statistics",
+     "year": 2021
+    },
+    {
+     "paperId": "8d9f6daf5ae632811e3822a455cb64fbcdad2f14",
+     "title": "Model-based random forests for ordinal regression",
+     "venue": "The international journal of biostatistics",
+     "year": 2020
+    },
+    {
+     "paperId": "3e5c6b1669e508cfb86b743dc8dd8f2bae741f10",
+     "title": "Ordinal Forests",
+     "venue": "Journal of Classification",
+     "year": 2019
+    },
+    {
+     "paperId": "31a65d107bffcbf83811a11a580cafd3d3b9a504",
+     "title": "Hyperparameters and tuning strategies for random forest",
+     "venue": "WIREs Data Mining Knowl. Discov.",
+     "year": 2018
+    },
+    {
+     "paperId": "8cffffd4c1cd1d49b6595a56179f00016cb1d671",
+     "title": "Random forest for ordinal responses: Prediction and variable selection",
+     "venue": "Comput. Stat. Data Anal.",
+     "year": 2016
+    },
+    {
+     "paperId": "2f735ee65edd5331bf0f4ceed6677ae789407163",
+     "title": "ranger: A Fast Implementation of Random Forests for High Dimensional Data in C++ and R",
+     "venue": "",
+     "year": 2015
+    },
+    {
+     "paperId": "ad9e6af6e41a70cd90f0052fbfe38f688f551b8d",
+     "title": "Proportional Odds Models with High‐Dimensional Data Structure",
+     "venue": "",
+     "year": 2013
+    },
+    {
+     "paperId": "f097b5cb77e30b3a3977ecd8e85923b3a55fe225",
+     "title": "Classification Trees for Ordinal Responses in R: The rpartScore Package",
+     "venue": "",
+     "year": 2012
+    },
+    {
+     "paperId": "fbf9f8650c9521472f0297e7c82292235738449b",
+     "title": "Classification and regression trees",
+     "venue": "International Journal of Public Health",
+     "year": 2012
+    },
+    {
+     "paperId": "d893e681843496a9e2e2c34df2076917c2e3557b",
+     "title": "Samples in applied psychology: over a decade of research in review.",
+     "venue": "The Journal of applied psychology",
+     "year": 2011
+    },
+    {
+     "paperId": "4c1c6d9fa529e8ca8fbeaa16cc31e2db18a32305",
+     "title": "rpartOrdinal: An R Package for Deriving a Classification Tree for Predicting an Ordinal Response",
+     "venue": "Journal of statistical software",
+     "year": 2010
+    },
+    {
+     "paperId": "611dfc4c60fd49b2f0b7e32330983c975b47ad79",
+     "title": "Classification trees for ordinal variables",
+     "venue": "Comput. Stat.",
+     "year": 2008
+    },
+    {
+     "paperId": "ec3459bef039d5ac7468ebb8a9239def7e420de7",
+     "title": "Comparison of classification accuracy using Cohen's Weighted Kappa",
+     "venue": "Expert Syst. Appl.",
+     "year": 2008
+    },
+    {
+     "paperId": "072d09ba865b5c2cfac279696c555730f0cdbce4",
+     "title": "Unbiased Recursive Partitioning: A Conditional Inference Framework",
+     "venue": "",
+     "year": 2006
+    },
+    {
+     "paperId": "76fc26939d73c565431e1f38107a4245e739284e",
+     "title": "A Simple Approach to Ordinal Classification",
+     "venue": "ECML",
+     "year": 2001
+    },
+    {
+     "paperId": "c4f862ce5afb3cd22aa74cb983a3bd47b3aabd50",
+     "title": "Prediction of Ordinal Classes Using Regression Trees",
+     "venue": "Fundam. Informaticae",
+     "year": 2001
+    },
+    {
+     "paperId": "d5cec2e4f53a0e749b9ea22697578917fdff00aa",
+     "title": "Adapting arbitrary normal mutation distributions in evolution strategies: the covariance matrix adaptation",
+     "venue": "Proceedings of IEEE International Conference on Evolutionary Computation",
+     "year": 1996
+    },
+    {
+     "paperId": "bc3f90c82139339247bbff4ea2f0c735447fcd5e",
+     "title": "Evolutionary Algorithms",
+     "venue": "Towards Evolvable Hardware",
+     "year": 1995
+    },
+    {
+     "paperId": "ab7853867f6a2974e2389dbb1762923bd3a25486",
+     "title": "Assessing proportionality in the proportional odds model for ordinal logistic regression.",
+     "venue": "Biometrics",
+     "year": 1990
+    },
+    {
+     "paperId": "f488ac84e3b5edeeac344a211ab9406e49edbfab",
+     "title": "Partial Proportional Odds Models for Ordinal Response Variables",
+     "venue": "",
+     "year": 1990
+    },
+    {
+     "paperId": "6fcf3f1c5132e973655d4ab953d2687b225afa89",
+     "title": "Weighted kappa: Nominal scale agreement provision for scaled disagreement or partial credit.",
+     "venue": "",
+     "year": 1968
+    },
+    {
+     "paperId": "3059b066d3e7110cff9754cc9884fd94c2087df1",
+     "title": "The treatment of ties in ranking problems.",
+     "venue": "Biometrika",
+     "year": 1945
+    },
+    {
+     "paperId": "5a00b32876f7d4869bce980500d4ccc978389315",
+     "title": "Why do tree-based models still outperform deep learning on typical tabular data?",
+     "venue": "NeurIPS",
+     "year": 2022
+    },
+    {
+     "paperId": null,
+     "title": "ordinal: Regression models for ordinal data [Computer software manual]. (R package version 2022.11-16)",
+     "venue": "",
+     "year": 2022
+    },
+    {
+     "paperId": null,
+     "title": "ISLR: Data for an introduction to statistical learning with applications in R [Computer software manual]. (R package version 1",
+     "venue": "",
+     "year": 2021
+    },
+    {
+     "paperId": "d7842c43eb8e4530b838ade6388ccde386c03ea2",
+     "title": "Partykit: a modular toolkit for recursive partytioning in R",
+     "venue": "J. Mach. Learn. Res.",
+     "year": 2015
+    },
+    {
+     "paperId": null,
+     "title": "Studentperformance",
+     "venue": "UCIMachineLearningRepository",
+     "year": 2014
+    },
+    {
+     "paperId": null,
+     "title": "Wine quality",
+     "venue": "",
+     "year": 2009
+    },
+    {
+     "paperId": null,
+     "title": "AER: Applied econometrics with R [Computer software manual]",
+     "venue": "CRAN",
+     "year": 2008
+    },
+    {
+     "paperId": "6e633b41d93051375ef9135102d54fa097dc8cf8",
+     "title": "Classification and Regression by randomForest",
+     "venue": "",
+     "year": 2007
+    },
+    {
+     "paperId": null,
+     "title": "TheNLoptnonlinear-optimizationpackage[Computersoftwaremanual]",
+     "venue": "github.com/stevengj/nlopt",
+     "year": 2007
+    },
+    {
+     "paperId": "8e0be569ea77b8cb29bb0e8b031887630fe7a96c",
+     "title": "Random Forests",
+     "venue": "Machine Learning",
+     "year": 2001
+    },
+    {
+     "paperId": "19a151f1b70c834f676eedce2602de83266ddc92",
+     "title": "Functional stability analysis of numerical algorithms",
+     "venue": "",
+     "year": 1990
+    },
+    {
+     "paperId": "0c86d2393b781941d178bf2bc2709ff4b3db90dd",
+     "title": "Regression Models for Ordinal Data",
+     "venue": "",
+     "year": 1980
+    },
+    {
+     "paperId": "017ddb7e815236defd0566bc46f6ed8401cc6ba6",
+     "title": "A Simplex Method for Function Minimization",
+     "venue": "Comput. J.",
+     "year": 1965
+    },
+    {
+     "paperId": "cd69b4cb74582a5a20963c7790fcd98a735528df",
+     "title": "Index for rating diagnostic tests",
+     "venue": "Cancer",
+     "year": 1950
+    },
+    {
+     "paperId": null,
+     "title": "R Core Team (2023)",
+     "venue": "R: A language and environment for statistical computing",
+     "year": null
+    }
+   ],
+   "citas": [
+    {
+     "paperId": "11a292bdf92ed778c214fa52766b042bebdf0766",
+     "title": "Random forests for road traffic safety research: Recent advances, empirical applications, and future directions",
+     "venue": "IATSS Research",
+     "year": 2026
+    },
+    {
+     "paperId": "2be0ec11f57df05544398e8555b09142b5a8ab2a",
+     "title": "A Simulation Study to Compare Inferential Properties when Modelling Ordinal Outcomes: The Case for the (Plain but Robust) Proportional Odds Model",
+     "venue": "",
+     "year": 2026
+    },
+    {
+     "paperId": "33eac148e239873a8001ef357a8d1bc4cfa512b6",
+     "title": "Mixed-Effects Frequency-Adjusted Borders Ordinal Forest: A Tree Ensemble Method for Ordinal Prediction with Hierarchical Data",
+     "venue": "Multivariate behavioral research",
+     "year": 2025
+    },
+    {
+     "paperId": "33dec861591cbaafd596eb06e46698d3e0e81c72",
+     "title": "Frequency‐adjusted borders ordinal forest: A novel tree ensemble method for ordinal prediction",
+     "venue": "The British journal of mathematical and statistical psychology",
+     "year": 2024
+    }
+   ]
+  },
+  "Janitza2016": {
+   "id": "8cffffd4c1cd1d49b6595a56179f00016cb1d671",
+   "info": null,
+   "referencias": [],
+   "citas": [
+    {
+     "paperId": "a7e9707c319b9f983f0f7d49f5ffc0b4c878eabf",
+     "title": "Areas of high risk for mammalian biodiversity and nature's contributions to people under global warming",
+     "venue": "Conservation Science and Practice",
+     "year": 2026
+    },
+    {
+     "paperId": "a1a00c7bb0b055057e247eb78382a843181a1180",
+     "title": "An Investigative Study of Widely Used Ergonomic Risk Assessment Methods Based on Machine Learning and MCDM Approaches",
+     "venue": "Applied Sciences",
+     "year": 2026
+    },
+    {
+     "paperId": "11a292bdf92ed778c214fa52766b042bebdf0766",
+     "title": "Random forests for road traffic safety research: Recent advances, empirical applications, and future directions",
+     "venue": "IATSS Research",
+     "year": 2026
+    },
+    {
+     "paperId": "d9e6b0e41315aa7944f25663359ea1ffb8f18399",
+     "title": "Interaction of road, traffic and environment in the operational design domain of lane support systems: hybrid factorial-observational design and causal analysis.",
+     "venue": "Accident; analysis and prevention",
+     "year": 2026
+    },
+    {
+     "paperId": "c1e683ae06359b20f2ae0a337890cb9a0ae2f8bf",
+     "title": "Combined agricultural and metrological seasonal drought assessment using geospatial technology in North Wollo Zone, Ethiopia",
+     "venue": "Discover Environment",
+     "year": 2026
+    },
+    {
+     "paperId": "b4deb278314ca66212ed75daf67fe154e4c10b52",
+     "title": "Visual Safety Mapping for UAV Landings Using Ordinal Regression Networks",
+     "venue": "IEEE Transactions on Artificial Intelligence",
+     "year": 2026
+    },
+    {
+     "paperId": "bd75bd6ebd25e76e4fb86bbca835975afe61b40d",
+     "title": "Effects of nozzle height and pressure on misting performance, thermal sensation, and physiological responses in a hot-humid urban open space",
+     "venue": "Building and Environment",
+     "year": 2026
+    },
+    {
+     "paperId": "33f725dda27ad26cd7d3626bd26d25fcf70164df",
+     "title": "Determinants of household level socio–economic impacts of desert locust (Schistocerca gregaria) in Wabe Shebelle River Basin of Ethiopia",
+     "venue": "Discover Sustainability",
+     "year": 2026
+    },
+    {
+     "paperId": "11fcb6427cd8cbdfedd4e3d784ba3d10c8162954",
+     "title": "Modelling and Forecasting of Complex Multiple Seasonalities in Categorical Time Series using TSOLR and ISOLR Models",
+     "venue": "Environmetrics",
+     "year": 2026
+    },
+    {
+     "paperId": "a2920470500f1ce18d7dc7daed965fcc90dc76f4",
+     "title": "Class-Focused Variable Importance in Random Forests for Multi-Class Outcomes",
+     "venue": "Journal of Classification",
+     "year": 2026
+    },
+    {
+     "paperId": "2be0ec11f57df05544398e8555b09142b5a8ab2a",
+     "title": "A Simulation Study to Compare Inferential Properties when Modelling Ordinal Outcomes: The Case for the (Plain but Robust) Proportional Odds Model",
+     "venue": "",
+     "year": 2026
+    },
+    {
+     "paperId": "8563ef692d5f0476aec27357533b05e37a6c1c46",
+     "title": "The effect of air pollution and household environmental indicators on anemia status among under-five children in low-middle income countries: exploring potential machine learning applications on demographic and health surveys",
+     "venue": "Scientific Reports",
+     "year": 2026
+    },
+    {
+     "paperId": "d81a45b670b56bda6886c606aede273d3d427f12",
+     "title": "Do Riding Behavior, Speeding, and Law Adherence Differ between Professional and Nonprofessional Riders?",
+     "venue": "Transportation Research Record: Journal of the Transportation Research Board",
+     "year": 2026
+    },
+    {
+     "paperId": "8d5bd92563bf1ef32c7902db5fc5d13d7a853dd1",
+     "title": "Explainable Machine Learning for Multiclass Classification of Concurrent Child Undernutrition in Ethiopia",
+     "venue": "EAI Endorsed Transactions on Intelligent Systems and Machine Learning Applications",
+     "year": 2026
+    },
+    {
+     "paperId": "d9d150fb75dc46b5fd6a504580b6d9e70538349d",
+     "title": "Identifying environmental factors related to motorcyclist crash rates: variable selection using spatial Random Forest with network distance and barriers.",
+     "venue": "Accident; analysis and prevention",
+     "year": 2025
+    },
+    {
+     "paperId": "084e0d305201d654ee5a0706c890df116dfa1de4",
+     "title": "Effects of environment and globalization on the double and triple burdens of infection symptoms among under-five children across low-middle income countries using machine learning algorithms",
+     "venue": "Infectious Diseases of Poverty",
+     "year": 2025
+    },
+    {
+     "paperId": "9ffad92e652257fe4a80b3e47798b394fc19acde",
+     "title": "Systematic framework for deep learning-based predictive injection control with Bayesian hyperparameter optimization for a hydrogen/diesel dual-fuel engine",
+     "venue": "Control Engineering Practice",
+     "year": 2025
+    },
+    {
+     "paperId": "3b33ed6f32a52bc9678dea990958cc6f7e911550",
+     "title": "Investigating the patterns of tree cover and density in relation to abiotic and biotic factors in Kruger National Park",
+     "venue": "Ecosphere",
+     "year": 2025
+    },
+    {
+     "paperId": "33eac148e239873a8001ef357a8d1bc4cfa512b6",
+     "title": "Mixed-Effects Frequency-Adjusted Borders Ordinal Forest: A Tree Ensemble Method for Ordinal Prediction with Hierarchical Data",
+     "venue": "Multivariate behavioral research",
+     "year": 2025
+    },
+    {
+     "paperId": "cd76adf9d7797f996a3b3a78b45d1c7420ef386e",
+     "title": "Prediction of antipsychotic associated weight gain in children and adolescents taking second generation antipsychotics: A machine learning approach.",
+     "venue": "Journal of psychiatric research",
+     "year": 2025
+    },
+    {
+     "paperId": "b443da5326585682de862fc045feded6604084e2",
+     "title": "Hybrid Variable Selection Algorithm Based on Mutual Information and Random Forest",
+     "venue": "2025 IEEE 5th International Conference on Applied Mathematics, Modeling and Computer Simulation (AMMCS)",
+     "year": 2025
+    },
+    {
+     "paperId": "2024ae1d2326496a7d66b1f3c181d5d43a0ddae3",
+     "title": "Optimizing traffic accident loss predictions in China: Integrating importance indicator screening with the ET model for greater accuracy and stability",
+     "venue": "Traffic injury prevention",
+     "year": 2025
+    },
+    {
+     "paperId": "99802d1536f710f104b82e43a204e1dbd8cad80f",
+     "title": "Prediction of the strength characteristics of basalt fibre reinforced concrete using explainable machine learning models",
+     "venue": "Discover Applied Sciences",
+     "year": 2025
+    },
+    {
+     "paperId": "9eaa044c84a3b88b9de35c7eb6b956766f594d32",
+     "title": "Exploring Nonlinear and Interactive Influences of Built Environment on Metro‐To‐Bus Transfer Behavior",
+     "venue": "",
+     "year": 2025
+    },
+    {
+     "paperId": "2cc5292d889e954f81eb54b6148f74241fbe13f4",
+     "title": "Prediction of the monthly river water level by using ensemble decomposition modeling",
+     "venue": "Scientific Reports",
+     "year": 2025
+    },
+    {
+     "paperId": "2dfb497369ed6efa4609514ad8c326d3a1e2a64a",
+     "title": "TOC-UCO: a comprehensive repository of tabular ordinal classification datasets",
+     "venue": "Neurocomputing",
+     "year": 2025
+    },
+    {
+     "paperId": "0e7cef3d93b12267aac81186810ffeedc9a0adad",
+     "title": "Supervised machine learning with finite element residual stress prediction in a laser peened (Ti-6Al-7Nb) titanium alloy for medical applications",
+     "venue": "SSRN Electronic Journal",
+     "year": 2025
+    },
+    {
+     "paperId": "e34601cf557192cf8799e29141025ce374eaa20d",
+     "title": "Interpretation of a Machine Learning Model for Short-Term High Streamflow Prediction",
+     "venue": "Earth",
+     "year": 2025
+    },
+    {
+     "paperId": "63ec40a0a942c803135d4c074993356ba628868b",
+     "title": "Leveraging drone imagery, ground canopy temperature, and machine learning for precise evapotranspiration modeling",
+     "venue": "Remote Sensing Applications: Society and Environment",
+     "year": 2025
+    },
+    {
+     "paperId": "5a88bbfaaad8d2ffefc634c2603849c36e90f210",
+     "title": "Research on Data Prediction Model for Aerodynamic Drag Reduction Effect in Platooning Vehicles",
+     "venue": "Processes",
+     "year": 2025
+    },
+    {
+     "paperId": "676f2c1b8cb600f6d043aed5c2d1cbebecfb2046",
+     "title": "The independent and joint effects of meteorological factors on influenza: A nationwide time series study in China",
+     "venue": "Urban Climate",
+     "year": 2025
+    },
+    {
+     "paperId": "f54884affd582ab0807f7308bd5d6737a6c81645",
+     "title": "Adaptive Ordinal Sample-Weighted Meta-ResNet for Fault Severity Classification Under Class Imbalance",
+     "venue": "IEEE Transactions on Industrial Informatics",
+     "year": 2025
+    },
+    {
+     "paperId": "054f03404364a67106c097d1f84a8a82e45394ee",
+     "title": "Numerical Investigations of Flow over Cambered Deflectors at Re = 1 × 105: A Parametric Study",
+     "venue": "Biomimetics",
+     "year": 2025
+    },
+    {
+     "paperId": "87285a3aaf65af41cff98eeb5c6214759d80e987",
+     "title": "Exploiting taxonomic information from metagenomes to infer bacterial bioindicators and environmental quality at salmon aquaculture installations.",
+     "venue": "Marine pollution bulletin",
+     "year": 2025
+    },
+    {
+     "paperId": "ff51598692df736a2f917a241b6ce605fa417011",
+     "title": "Prevención y gestión de accidentes en la minería subterránea peruana",
+     "venue": "",
+     "year": 2025
+    },
+    {
+     "paperId": "3b202d85e55614746e23bfa958ead705e36cea48",
+     "title": "Optimal Network-Guided Covariate Selection for High-Dimensional Data Integration",
+     "venue": "Journal of the American Statistical Association",
+     "year": 2025
+    },
+    {
+     "paperId": "f4e496d0aca876f9a27beacd7c60733ee8d2c9d2",
+     "title": "Intelligent design of mixture proportions of manufactured sand concrete from environmental, economical and mechanical perspectives",
+     "venue": "Case Studies in Construction Materials",
+     "year": 2025
+    },
+    {
+     "paperId": "91d9d4b46cb3176587365164d256f4359a20b159",
+     "title": "ANN-based correlation for predicting self-pressurization rate in quasi-spherical liquid hydrogen storage tanks",
+     "venue": "International Journal of Hydrogen Energy",
+     "year": 2025
+    },
+    {
+     "paperId": "cc17b219048a6cee465560a1e6fb9e6f8619789f",
+     "title": "Predicting Leadership Status Through Trait Emotional Intelligence and Cognitive Ability",
+     "venue": "Behavioral sciences",
+     "year": 2025
+    },
+    {
+     "paperId": "017a7a15be8e90075f672b351978d944d730cae1",
+     "title": "Machine learning-assisted rapid electromagnetic design of flexible graphene-based absorptive composites",
+     "venue": "Chemical Engineering Journal",
+     "year": 2025
+    },
+    {
+     "paperId": "5aa26cdce7306df6e5efe91a4295fabc6f1d2e2b",
+     "title": "What factors affect sustainable poverty reduction capacity in the Alpine-Gorge regions? Evidence from China",
+     "venue": "Environment, Development and Sustainability",
+     "year": 2025
+    },
+    {
+     "paperId": "014a95738e63256ebf1d71ea530c1a6b57e82fdb",
+     "title": "A data-driven framework to identify influencing factors for soil heavy metal contaminations using random forest and bivariate local Moran's I: A case study.",
+     "venue": "Journal of environmental management",
+     "year": 2025
+    },
+    {
+     "paperId": "1cbcac87d3d0d5c6665b07eb36624c4531962efc",
+     "title": "Fish migration modeling and habitat assessment in a complex fluvial system.",
+     "venue": "Journal of environmental management",
+     "year": 2025
+    },
+    {
+     "paperId": "8ae73ccbacaebf15df0ca0c9bbd7be458c4e864e",
+     "title": "Characterization of ventilated supercavitation regimes using Bayesian optimized Random Forest models",
+     "venue": "Physics of Fluids",
+     "year": 2025
+    },
+    {
+     "paperId": "7c86e9f183aa2a467cebbba578afabfc0623e4c2",
+     "title": "Investigating consumer preferences and perceptions of brands across men’s and women’s sport: a brand architecture approach",
+     "venue": "Sport Management Review",
+     "year": 2024
+    },
+    {
+     "paperId": "fc553757a0965cb5ec9bd8769b54cb01e849427d",
+     "title": "Splitting criteria for ordinal decision trees: an experimental study",
+     "venue": "Pattern Recognit.",
+     "year": 2024
+    },
+    {
+     "paperId": "90c540d4d3d4dc846bce58e64ab1d5c945ca15cc",
+     "title": "Application of machine learning for mass spectrometry-based multi-omics in thyroid diseases",
+     "venue": "Frontiers in molecular biosciences",
+     "year": 2024
+    },
+    {
+     "paperId": "67d29031042b215879321d2d3872c7d8fd916069",
+     "title": "Old but Gold or New and Shiny? Comparing Tree Ensembles for Ordinal Prediction with a Classic Parametric Approach",
+     "venue": "Journal of Classification",
+     "year": 2024
+    },
+    {
+     "paperId": "33dec861591cbaafd596eb06e46698d3e0e81c72",
+     "title": "Frequency‐adjusted borders ordinal forest: A novel tree ensemble method for ordinal prediction",
+     "venue": "The British journal of mathematical and statistical psychology",
+     "year": 2024
+    },
+    {
+     "paperId": "b86f3a4a80686ef155d823213ee329854ddbbc62",
+     "title": "Application of machine learning and deep learning for predicting groundwater levels in the West Coast Aquifer System, South Africa",
+     "venue": "Earth Science Informatics",
+     "year": 2024
+    },
+    {
+     "paperId": "248c18d31666e4afa64b7d77a2278790ad2e25cf",
+     "title": "Multi-temporal image analysis of wetland dynamics using machine learning algorithms.",
+     "venue": "Journal of environmental management",
+     "year": 2024
+    },
+    {
+     "paperId": "66e991a203b696544c360f360a9bfeb7ff81b1e3",
+     "title": "Machine learning models on the rigidity of welded shear tab connections",
+     "venue": "Steel Construction",
+     "year": 2024
+    },
+    {
+     "paperId": "608e6ae4e4f2a60768c1bf1971a057f0c471d932",
+     "title": "Assessing spatiotemporal variations of soil organic carbon and its vulnerability to climate change: a bottom-up machine learning approach",
+     "venue": "Climate Smart Agriculture",
+     "year": 2024
+    },
+    {
+     "paperId": "b9330e47860c94bfd7478c0eddd78912fe62f029",
+     "title": "A novel construction and evaluation framework for driving cycle of electric vehicles based on energy consumption and emission analysis",
+     "venue": "Sustainable Cities and Society",
+     "year": 2024
+    },
+    {
+     "paperId": "2567d498cf08391442089ae08cb7f50461854827",
+     "title": "Combining with acid-base titration, HPLC, ATR-FTIR and chemometrics to study the effects of sulfur fumigation on medicinal and edible starchy samples",
+     "venue": "Journal of Food Composition and Analysis",
+     "year": 2024
+    },
+    {
+     "paperId": "c393c789d615550a2a43956ede7ce87fdd3b6adf",
+     "title": "What are the Determinants of Renewable Energy Consumption? An Application for Variable Selection",
+     "venue": "Renewable Energy",
+     "year": 2024
+    },
+    {
+     "paperId": "e0a5e251ef5402fc883adfe2f1522db6e9e5af49",
+     "title": "Developing a Prediction Model for Periodontal Disease Using Ordinal Random Forest",
+     "venue": "Avicenna Journal of Dental Research",
+     "year": 2024
+    },
+    {
+     "paperId": "649d077943f1dc15a0a8cafedc5c780a6e28ebdc",
+     "title": "DrugReSC: targeting disease-critical cell subpopulations with single-cell transcriptomic data for drug repurposing in cancer",
+     "venue": "Briefings Bioinform.",
+     "year": 2024
+    },
+    {
+     "paperId": "fe6bad062fa9b9e4efa1c10e233604612a560d14",
+     "title": "Enhancing Sustainable Concrete Production by Utilizing Fly Ash and Recycled Concrete Aggregate with Experimental Investigation and Machine Learning Modeling",
+     "venue": "Journal of Building Pathology and Rehabilitation",
+     "year": 2024
+    },
+    {
+     "paperId": "659664a7d455d89c9c519834e5e733cc870ab189",
+     "title": "Factors of acute respiratory infection among under-five children across sub-Saharan African countries using machine learning approaches",
+     "venue": "Scientific Reports",
+     "year": 2024
+    },
+    {
+     "paperId": "3100a8b60f4b4c511c08ee6acfd89be3dc936e2d",
+     "title": "Spatiotemporal distribution, evolution, and complementarity of wind and waves in China’s offshore waters and its implications for the development of green energy",
+     "venue": "Energy Conversion and Management",
+     "year": 2024
+    },
+    {
+     "paperId": "fa658bbce46386321e234987262135a8ebd1ba4d",
+     "title": "Combining Advanced Feature-Selection Methods to Uncover Atypical Energy-Consumption Patterns",
+     "venue": "Future Internet",
+     "year": 2024
+    },
+    {
+     "paperId": "bb33c54bd2780df1670ae3e2d34ac1a927cfde18",
+     "title": "Comparative analysis of intelligent models for predicting compressive strength in recycled aggregate concrete",
+     "venue": "Modeling Earth Systems and Environment",
+     "year": 2024
+    },
+    {
+     "paperId": "a212e04d6cf199d1d33a432b2cce5f260522f913",
+     "title": "Short-term prediction of bank deposit flows: do textual features matter?",
+     "venue": "Annals of Operations Research",
+     "year": 2024
+    },
+    {
+     "paperId": "321c662e024703f7293ecdf488ffe917a2e895cc",
+     "title": "Modeling of ordinal longitudinal accelerometer data",
+     "venue": "Journal of Statistical Research",
+     "year": 2024
+    },
+    {
+     "paperId": "c619e0b1d9fd3e7c773de96ea77deddc1f89fc0a",
+     "title": "Distribution-free Conformal Prediction for Ordinal Classification",
+     "venue": "COPA",
+     "year": 2024
+    },
+    {
+     "paperId": "f622668117583b6af0f5936c144228e6e6363aeb",
+     "title": "Regression Method in Data Mining: A Systematic Literature Review",
+     "venue": "Archives of Computational Methods in Engineering",
+     "year": 2024
+    },
+    {
+     "paperId": "f48e3a876490d4022d91319ba30f702f56b29ed7",
+     "title": "Convolutional Neural Network-Driven Impedance Flow Cytometry for Accurate Bacterial Differentiation.",
+     "venue": "Analytical chemistry",
+     "year": 2024
+    },
+    {
+     "paperId": "d6e7128c84bc277b1b0b0c0dc3b19dbe172cba2d",
+     "title": "Comparison of Three Machine Learning Algorithms for Retrieving Soil Moisture Information from Sentinel-1A SAR Data in Northwest Shandong Plain, China",
+     "venue": "Advances in Space Research",
+     "year": 2024
+    },
+    {
+     "paperId": "6c4c0be183c06f73fb1c9a267e836e1705684547",
+     "title": "Metode Hutan Ordinal untuk Klasifikasi Desa Sesuai dengan Status Indeks Desa Membangun",
+     "venue": "Jurnal Aplikasi Statistika &amp; Komputasi Statistik",
+     "year": 2023
+    },
+    {
+     "paperId": "4e8b60dce5a7d8ebb8963a6b64346c3f1a425bf4",
+     "title": "Integrating several analytical methods to assess strength of ecological processes behind metacommunity assembly",
+     "venue": "Oikos",
+     "year": 2023
+    },
+    {
+     "paperId": "51e53c1542743fe29ddd295f2e995c3df0fcf434",
+     "title": "Classification and regression in prescriptive analytics: Development of hybrid models and an example of ship inspection by port state control",
+     "venue": "Comput. Oper. Res.",
+     "year": 2023
+    },
+    {
+     "paperId": "f585a0690241d3082c300e11e86e5c80860cb5af",
+     "title": "Machine learning approach to railway ballast degradation prognosis considering crumb rubber modification and parent rock strength",
+     "venue": "Construction and Building Materials",
+     "year": 2023
+    },
+    {
+     "paperId": "709cbb8d4d0c3f04c63e1f5958a50f56eda17c7d",
+     "title": "Potentiality of ultraspectral sensor in biophysical and biochemical vegetation parameter inversion",
+     "venue": "International Journal of Remote Sensing",
+     "year": 2023
+    },
+    {
+     "paperId": "09f292564cd01719291d0a1f7178daee984955e4",
+     "title": "Autonomic Neuropathy is Associated with More Densely Interconnected Cytokine Networks in People with HIV",
+     "venue": "Journal of Neuroimmune Pharmacology",
+     "year": 2023
+    },
+    {
+     "paperId": "51e0e7994deea71ee8e1b1260ca87c20c65af3bf",
+     "title": "Size-Dependent Graphene Support for Decorating Gold Nanoparticles as a Catalyst for Hydrogen Evolution Reaction with Machine Learning-Assisted Prediction.",
+     "venue": "ACS applied materials & interfaces",
+     "year": 2023
+    },
+    {
+     "paperId": "3db45d7252c71da956ef3017bedc7b0bda49e0a5",
+     "title": "Towards white box modeling of compressive strength of sustainable ternary cement concrete using explainable artificial intelligence (XAI)",
+     "venue": "Appl. Soft Comput.",
+     "year": 2023
+    },
+    {
+     "paperId": "cdf3515c2eccd3b573805fef5373829e055b65c0",
+     "title": "Ordered correlation forest",
+     "venue": "SSRN Electronic Journal",
+     "year": 2023
+    },
+    {
+     "paperId": "085ff587feaef41efda341d3ab2a09d62f04b38f",
+     "title": "Exploring the Effect of Meteorological Factors on Predicting Hourly Water Levels Based on CEEMDAN and LSTM",
+     "venue": "Water",
+     "year": 2023
+    },
+    {
+     "paperId": "ccffc0e9d65766e37742ae6e3bed5229bf07d86f",
+     "title": "Cascade forest regression algorithm for non-invasive blood pressure estimation using PPG signals",
+     "venue": "Appl. Soft Comput.",
+     "year": 2023
+    },
+    {
+     "paperId": "5c0d7438f082bb263f547192767490b17c09e76c",
+     "title": "Comparison of random forest and support vector machine regression models for forecasting road accidents",
+     "venue": "Scientific African",
+     "year": 2023
+    },
+    {
+     "paperId": "c7e6b28e9d38f0926c6e48bfa736c5ca31b31fda",
+     "title": "Assessing the key factors affecting the substructure of ballast-less railway track under moving load using a double-beam model and random forest method",
+     "venue": "Structures",
+     "year": 2023
+    },
+    {
+     "paperId": "c720159ecb1dae2a405b831e8e4a8c3b8b4d6f93",
+     "title": "Modeling the risk of advancing sand areas using expert algorithms and artificial intelligence",
+     "venue": "Journal of Spatial Analysis Environmental Hazards",
+     "year": 2023
+    },
+    {
+     "paperId": "3d0e091ac09d320f0b678fb8cf4389406b3fed07",
+     "title": "Application of machine learning technology for occupational accident severity prediction in the case of construction collapse accidents",
+     "venue": "Safety Science",
+     "year": 2023
+    },
+    {
+     "paperId": "5ed1cd91f7bbc4935603e5ca482fc3ef4430fd6a",
+     "title": "Analysis of SEP Events and Their Possible Precursors Based on the GSEP Catalog",
+     "venue": "The Astrophysical Journal Supplement Series",
+     "year": 2023
+    },
+    {
+     "paperId": "237d77e0787c5ef016964aa0ba90ae5cf4e10b2e",
+     "title": "When can local bird detection radars best complement broad‐scale early‐warning forecasts of risk potential for bird–aircraft strikes as part of an integrated approach to strike mitigation?",
+     "venue": "Ecography",
+     "year": 2023
+    },
+    {
+     "paperId": "15b017ae77456d5e583a79c22d1f12838270c962",
+     "title": "Predicting the crack width of the engineered cementitious materials via standard machine learning algorithms",
+     "venue": "Journal of Materials Research and Technology",
+     "year": 2023
+    },
+    {
+     "paperId": "bfee0415be188a37dd9addaae8e74df8bd19348c",
+     "title": "Battery-Powered RSU Running Time Monitoring and Prediction Using ML Model Based on Received Signal Strength and Data Transmission Frequency in V2I Applications",
+     "venue": "Sensors",
+     "year": 2023
+    },
+    {
+     "paperId": "6aa30124a833db8b2f87d1d9d028f1b80032362c",
+     "title": "Meta-analysis of engineered nanoparticles dynamic aggregation in freshwater-like systems using machine learning techniques.",
+     "venue": "Journal of environmental management",
+     "year": 2023
+    },
+    {
+     "paperId": "308e49c871ea72552518200af226368bd6f2b01b",
+     "title": "Autonomic Neuropathy is Associated with More Densely Interconnected Cytokine Networks in People with HIV",
+     "venue": "Research square",
+     "year": 2023
+    },
+    {
+     "paperId": "4ab9bc36ede919e29b0033cad1a22ff0ca4939f9",
+     "title": "Prediction of hydraulic conductivity of porous granular media by establishment of random forest algorithm",
+     "venue": "Construction and Building Materials",
+     "year": 2023
+    },
+    {
+     "paperId": "9f653d689b0adc92e38371ab5baa940709815387",
+     "title": "A New Approach for Improving Microbial Fuel Cell Performance Using Artificial Intelligence",
+     "venue": "Sustainability",
+     "year": 2023
+    },
+    {
+     "paperId": "746b6431c87712e6322b2a1ce719df8efa62e99d",
+     "title": "Research on characteristic parameter selection and attention-GRU-based model for braking intention identification",
+     "venue": "Proceedings of the Institution of Mechanical Engineers, Part D: Journal of Automobile Engineering",
+     "year": 2023
+    },
+    {
+     "paperId": "0f61ea69a68e5ee9ccc0fe1776b9cea7aa9ac4e9",
+     "title": "Do lists of amenities influence quality management in the P2P platform of Airbnb? -A study from 15 cities of the US and Canada",
+     "venue": "Journal of Quality Assurance in Hospitality &amp; Tourism",
+     "year": 2022
+    },
+    {
+     "paperId": "bb3010444c6f119036bce63036cc8442a347a506",
+     "title": "Who believes they are good navigators? A machine learning pipeline highlights the impact of gender, commuting time, and education",
+     "venue": "Machine Learning with Applications",
+     "year": 2022
+    },
+    {
+     "paperId": "8e2ef27bc0997e1a3a2cc26e7cf222dd36a64f47",
+     "title": "Just-in-time updating soft sensor model of endpoint carbon content and temperature in BOF steelmaking based on deep residual supervised autoencoder",
+     "venue": "Chemometrics and Intelligent Laboratory Systems",
+     "year": 2022
+    },
+    {
+     "paperId": "4b8294fb8c11608283dd4be9802c74dc8b3b0164",
+     "title": "Investigation of Shared-Bike Demand Using Data Analytics",
+     "venue": "2022 IEEE International Smart Cities Conference (ISC2)",
+     "year": 2022
+    },
+    {
+     "paperId": "693b8efc422b4a4294404ee2cde82363bf59a80a",
+     "title": "Sparse concordance‐based ordinal classification",
+     "venue": "Scandinavian Journal of Statistics",
+     "year": 2022
+    },
+    {
+     "paperId": "06d157639196e59e85b6047cd4a362396a759f76",
+     "title": "Non-invasive blood viscosity detection method based on random forest",
+     "venue": "Other Conferences",
+     "year": 2022
+    },
+    {
+     "paperId": "98a36b044fbc1ef8dfa34a879ac38eac6b6fb6d5",
+     "title": "Predicting the Rheological Properties of Super-Plasticized Concrete Using Modeling Techniques",
+     "venue": "Materials",
+     "year": 2022
+    },
+    {
+     "paperId": "2790f4c8340a38d2e0c05935ed1bd0be96138354",
+     "title": "Wine recommendation algorithm based on partitioning and stacking integration strategy for Chinese wine consumers",
+     "venue": "Italian Journal of Food Science",
+     "year": 2022
+    },
+    {
+     "paperId": "a9d9f399810fb1fee76e542307f85b063fb46eb0",
+     "title": "Extreme Gradient Boosting-Based Machine Learning Approach for Green Building Cost Prediction",
+     "venue": "Sustainability",
+     "year": 2022
+    },
+    {
+     "paperId": "bf7b9f70936d1d04fcdc6c023f0aafd41d3912db",
+     "title": "How to better incorporate geographic variation in Airbnb price modeling?",
+     "venue": "Tourism Economics",
+     "year": 2022
+    },
+    {
+     "paperId": "77fb273544191b609f97dcf2ec86e7ad31d91ca1",
+     "title": "Meta-Learners for Estimation of Causal Effects: Finite Sample Cross-Fit Performance",
+     "venue": "",
+     "year": 2022
+    },
+    {
+     "paperId": "6f4675c3915120468891fa48f67aae9d02093e94",
+     "title": "Global estimates of 500 m daily aerodynamic roughness length from MODIS data",
+     "venue": "ISPRS Journal of Photogrammetry and Remote Sensing",
+     "year": 2022
+    },
+    {
+     "paperId": "5005ac9aed055d4475b70d639ffc01012b4df845",
+     "title": "Compressive strength prediction of basalt fiber reinforced concrete via random forest algorithm",
+     "venue": "Materials Today Communications",
+     "year": 2022
+    },
+    {
+     "paperId": "950b98add93eef894489f9d2a8d6302ae94b251d",
+     "title": "Geospatial Evaluation of Land Use and Land Cover Changes in Ashulia Industrial Hub in Dhaka, Bangladesh",
+     "venue": "Grassroots Journal of Natural Resources",
+     "year": 2021
+    },
+    {
+     "paperId": "c359c4ed3d7d3216468a1f12a35c2bbd4c0176db",
+     "title": "Performance enrichment through parameter tuning of random forest classification for imbalanced data applications",
+     "venue": "Materials Today: Proceedings",
+     "year": 2021
+    },
+    {
+     "paperId": "004d6bc2ede3cce795cc0d679dbeb85d6db21c1c",
+     "title": "Random Forest",
+     "venue": "Machine Learning with Regression in Python",
+     "year": 2021
+    },
+    {
+     "paperId": "f36fa5e74627660355e8e4fcd4668bedb56e6fc2",
+     "title": "An exploratory analysis of forme fruste keratoconus sensitivity diagnostic parameters",
+     "venue": "International Ophthalmology",
+     "year": 2021
+    },
+    {
+     "paperId": "c959ee30b02d77f58f4cfc7f8f20f921b89c440f",
+     "title": "Contribution of ordinal variables to short-term global solar irradiation forecasting for sites with low variabilities",
+     "venue": "Renewable Energy",
+     "year": 2021
+    },
+    {
+     "paperId": "bfe379e85b67208a29c1d09d8afdede3b0469bb9",
+     "title": "Comparison of Ordinal Response Modeling Methods like Decision Trees, Ordinal Forest and L1 Penalized Continuation Ratio Regression in High Dimensional Data",
+     "venue": "Iranian South Medical Journal",
+     "year": 2021
+    },
+    {
+     "paperId": "77e8d640c6b6e8bb9dac336a4fc2f5cff213af1b",
+     "title": "A machine learning classifier approach for identifying the determinants of under-five child undernutrition in Ethiopian administrative zones",
+     "venue": "BMC Medical Informatics and Decision Making",
+     "year": 2021
+    },
+    {
+     "paperId": "52538b7919f3bbc177e09ce5706552468b92e596",
+     "title": "Matching Data Types to the Objectives of Species Distribution Modeling: An Evaluation With Marine Fish Species",
+     "venue": "Frontiers in Marine Science",
+     "year": 2021
+    },
+    {
+     "paperId": "84041a1f020b47f6723d2474e33a1e120b230b26",
+     "title": "Numerical study on the influence of gasoline properties and thermodynamic conditions on premixed laminar flame velocity at multiple conditions",
+     "venue": "",
+     "year": 2021
+    },
+    {
+     "paperId": "42fef45236bac3ff2dc55bcc9678a97d6cb723c6",
+     "title": "PROGNOSIS OF FOREST PRODUCTION USING MACHINE LEARNING TECHNIQUES",
+     "venue": "",
+     "year": 2021
+    },
+    {
+     "paperId": "005ca3c82222755b501307324784c478470bf88e",
+     "title": "Effect of rice (Oryza sativa L.) genotype on yield: Evidence from recruiting spatially consistent rhizosphere microbiome",
+     "venue": "",
+     "year": 2021
+    },
+    {
+     "paperId": "a7865f844ff7f7d277ce7533fc793e298763ac1e",
+     "title": "Teaching in Times of COVID-19: The Evaluation of Distance Teaching in Elementary and Secondary Schools in Germany",
+     "venue": "Frontiers in Education",
+     "year": 2021
+    },
+    {
+     "paperId": "12ca31a77be7e31602f059785910ca6a190ec039",
+     "title": "Prediction of Compressive Strength of Concrete with Manufactured Sand by Ensemble Classification and Regression Tree Method",
+     "venue": "Journal of Materials in Civil Engineering",
+     "year": 2021
+    },
+    {
+     "paperId": "37013a8b6528ac341314556261475b67382b8466",
+     "title": "Goodness-of-fit test for \n \n \n \n $$\\alpha$$\n \n α\n \n -stable distribution based on the quantile conditional variance statistics",
+     "venue": "Statistical Methods & Applications",
+     "year": 2021
+    },
+    {
+     "paperId": "08817fdfe1dd9b4b0ba0eb0e7d5235fdbb294913",
+     "title": "Sentinel-1 and 2 Time-Series for Vegetation Mapping Using Random Forest Classification: A Case Study of Northern Croatia",
+     "venue": "Remote. Sens.",
+     "year": 2021
+    },
+    {
+     "paperId": "3441ff3721de5d533e4ec1c5873895744ff8eb27",
+     "title": "Mapping the Extent of Mangrove Ecosystem Degradation by Integrating an Ecological Conceptual Model with Satellite Data",
+     "venue": "Remote. Sens.",
+     "year": 2021
+    },
+    {
+     "paperId": "1212e17d531e81cea5dce48ede58ec3ba47dc219",
+     "title": "Combining Classification and User-Based Collaborative Filtering for Matching Footwear Size",
+     "venue": "Mathematics",
+     "year": 2021
+    },
+    {
+     "paperId": "fd56a698253a11a5db72a06d53bf355244b5c363",
+     "title": "Individuals’ Intention to Engage in Outpatient Cardiac Rehabilitation Programs: Prediction Based on an Enhanced Model",
+     "venue": "Journal of Clinical Psychology in Medical Settings",
+     "year": 2021
+    },
+    {
+     "paperId": "b822c5eafe9c3eaa7d2cb77bf47a1a2c5faaff0b",
+     "title": "Corporate credit rating feature importance: Does ESG matter?",
+     "venue": "SSRN Electronic Journal",
+     "year": 2021
+    },
+    {
+     "paperId": "be5722aa78824e68d2fea0a9ef6f65c934cd84e1",
+     "title": "Ordinal Trees and Random Forests: Score-Free Recursive Partitioning and Improved Ensembles",
+     "venue": "Journal of Classification",
+     "year": 2021
+    },
+    {
+     "paperId": "73e0991f8d278fd23c1f55d5f0d01e0f205bad66",
+     "title": "Preference modelling in sorting problems: Multiple criteria decision aid and statistical learning perspectives",
+     "venue": "",
+     "year": 2021
+    },
+    {
+     "paperId": "e70b2207c6c291612e674f5889053f780eda1091",
+     "title": "Ordinal regression: A review and a taxonomy of models",
+     "venue": "WIREs Computational Statistics",
+     "year": 2021
+    },
+    {
+     "paperId": "b702c08edb2f9d21a85f63d26a7614f1a4ff239e",
+     "title": "Nonlinear effects of built environment on intermodal transit trips considering spatial heterogeneity",
+     "venue": "Transportation Research Part D: Transport and Environment",
+     "year": 2021
+    },
+    {
+     "paperId": "2f8dfefe53d622d2a50df3bbd8cadf066e19cafc",
+     "title": "A novel hybrid filter/wrapper method for feature selection in archaeological ceramics classification by laser-induced breakdown spectroscopy.",
+     "venue": "The Analyst",
+     "year": 2020
+    },
+    {
+     "paperId": "3a014b64b6608de8f8a92b92ca21520dd3e64d2c",
+     "title": "Feature Extraction for Heroin-Use Classification Using Imbalanced Random Forest Methods",
+     "venue": "Substance use & misuse",
+     "year": 2020
+    },
+    {
+     "paperId": "dd57dbc64cfe09d653dc974c319d864aa7776e42",
+     "title": "Use Information You Have Never Observed Together: Data Fusion as a Major Step Towards Realistic Test Scenarios",
+     "venue": "2020 IEEE 23rd International Conference on Intelligent Transportation Systems (ITSC)",
+     "year": 2020
+    },
+    {
+     "paperId": "1db08f211491fcff9b103a145df619bd72eef7f4",
+     "title": "Physical topography is associated with human personality",
+     "venue": "Nature Human Behaviour",
+     "year": 2020
+    },
+    {
+     "paperId": "44e4c601196f8a06ff853b8954ec717ed98ed7f1",
+     "title": "Injury severity prediction model for two-wheeler crashes at mid-block road sections",
+     "venue": "International Journal of Crashworthiness",
+     "year": 2020
+    },
+    {
+     "paperId": "d5175156af3019917877bf75ff059e89142657ea",
+     "title": "Use of UAS Multispectral Imagery at Different Physiological Stages for Yield Prediction and Input Resource Optimization in Corn",
+     "venue": "Remote. Sens.",
+     "year": 2020
+    },
+    {
+     "paperId": "d4bcc271cd94c8a823192ea414a4f03387b2eeb4",
+     "title": "An analytical toast to wine: Using stacked generalization to predict wine preference",
+     "venue": "Stat. Anal. Data Min.",
+     "year": 2020
+    },
+    {
+     "paperId": "fd9da4c442d9870141c0f6416f66618277d18f04",
+     "title": "Estimating the soil water retention curve: Comparison of multiple nonlinear regression approach and random forest data mining technique",
+     "venue": "Comput. Electron. Agric.",
+     "year": 2020
+    },
+    {
+     "paperId": "6d9c17750b75f77ec2498da935d1631c95515f68",
+     "title": "Forecasting Tourist Arrivals via Random Forest and Long Short-term Memory",
+     "venue": "Cognitive Computation",
+     "year": 2020
+    },
+    {
+     "paperId": "4de599893ac3763bbfd910f3ddbcd2b2a379fd21",
+     "title": "Determination of influential parameters for heat consumption in district heating systems using machine learning",
+     "venue": "",
+     "year": 2020
+    },
+    {
+     "paperId": "14627d7b2c37f22a72237b014be45e8e8a5c1e20",
+     "title": "Toward intelligent construction: Prediction of mechanical properties of manufactured-sand concrete using tree-based models",
+     "venue": "Journal of Cleaner Production",
+     "year": 2020
+    },
+    {
+     "paperId": "345f77b32fbdf0f1ea286c455c5108d78043d2d8",
+     "title": "Network-based Malware Detection with a Two-tier Architecture for Online Incremental Update",
+     "venue": "2020 IEEE/ACM 28th International Symposium on Quality of Service (IWQoS)",
+     "year": 2020
+    },
+    {
+     "paperId": "00b06faba1a908dd7bbd4026192decde28fcc00e",
+     "title": "The determination of ground granulated concrete compressive strength-based machine learning models",
+     "venue": "Periodicals of Engineering and Natural Sciences (PEN)",
+     "year": 2020
+    },
+    {
+     "paperId": "32522a9433bf903e065f9eeaa902174163b47fdf",
+     "title": "A novel hybrid feature selection method based on dynamic feature importance",
+     "venue": "Appl. Soft Comput.",
+     "year": 2020
+    },
+    {
+     "paperId": "e79042aceeb47c5657e8ed7d9890c01358884597",
+     "title": "Subjective sleep quality is poorly associated with actigraphy and heart rate measures in community-dwelling older men.",
+     "venue": "Sleep medicine",
+     "year": 2020
+    },
+    {
+     "paperId": "092ea4e30971e749bd846823287c41de7bf7f7a5",
+     "title": "Prediction of Metabolic Syndrome in a Mexican Population Applying Machine Learning Algorithms",
+     "venue": "Symmetry",
+     "year": 2020
+    },
+    {
+     "paperId": "cec5a6fd0ed146c3e2c0f1e58ac6b10f9c52422f",
+     "title": "Prediction of the spatial distribution of soil arthropods using a random forest model: A case study in Changtu County, Northeast China",
+     "venue": "Agriculture, Ecosystems & Environment",
+     "year": 2020
+    },
+    {
+     "paperId": "31cc02bdafc7ea8af07fdb71e0f1cdf35a1fc91d",
+     "title": "A modified backward elimination approach for the rapid classification of Chinese ceramics using laser-induced breakdown spectroscopy and chemometrics",
+     "venue": "",
+     "year": 2020
+    },
+    {
+     "paperId": "d0899e41bcb277c964f980f9c99e440662a15b0e",
+     "title": "High-dimensional variable selection for ordinal outcomes with error control",
+     "venue": "Briefings Bioinform.",
+     "year": 2020
+    },
+    {
+     "paperId": "c2e2b1cc210be77beccf7c5a8998abd1ba4f4c7f",
+     "title": "Prediction of the Strength of Rubberized Concrete by an Evolved Random Forest Model",
+     "venue": "",
+     "year": 2019
+    },
+    {
+     "paperId": "d28661a101320e06066031415a79ed4983ceba57",
+     "title": "Predicting Fitness and Performance of Diving using Machine Learning Algorithms",
+     "venue": "2019 IEEE Pune Section International Conference (PuneCon)",
+     "year": 2019
+    },
+    {
+     "paperId": "d14a270654da009008799713a30bb15aebe081d8",
+     "title": "Utilizing Partial Least-Squares Path Modeling to Analyze Crash Risk Contributing Factors for Shanghai Urban Expressway System",
+     "venue": "",
+     "year": 2019
+    },
+    {
+     "paperId": "310094f6cfb8c4fe86edbf390fe055938fbebd4d",
+     "title": "Tree-structured scale effects in binary and ordinal regression",
+     "venue": "Statistics and Computing",
+     "year": 2019
+    },
+    {
+     "paperId": "b0d331ff53dc57eda858a40c7caf58960817d950",
+     "title": "Entropy Projection Curved Gabor with Random Forest and SVM for Face Recognition",
+     "venue": "ISVC",
+     "year": 2019
+    },
+    {
+     "paperId": "bd960d617cdcbf8fbb67d4cc2655226f1faab339",
+     "title": "Use of data mining in the corrosion classification of pipelines in Naphtha Hydro-Threating Unit (NHT)",
+     "venue": "Pipeline Science and Technology",
+     "year": 2019
+    },
+    {
+     "paperId": "11c7dd204b7681d1e328d437c9255561bfba3cce",
+     "title": "Do airbnb host listing attributes influence room pricing homogenously?",
+     "venue": "International Journal of Hospitality Management",
+     "year": 2019
+    },
+    {
+     "paperId": "c27459fa03ebe79849541ea69cc65a8510529803",
+     "title": "Extracción de patrones para la Industria 4.0 a través de un modelo predictivo",
+     "venue": "I+D Tecnológico",
+     "year": 2019
+    },
+    {
+     "paperId": "9aa4513211ea16a0c550c019917ee29732624064",
+     "title": "Rapid quantitative analysis of the acidity of iron ore by the laser-induced breakdown spectroscopy (LIBS) technique coupled with variable importance measures-random forests (VIM-RF)",
+     "venue": "Analytical Methods",
+     "year": 2019
+    },
+    {
+     "paperId": "b20f84c36bd3bf6055eb9e736d8380afe6bd7e35",
+     "title": "Random Forest estimation of the ordered choice model",
+     "venue": "Empirical Economics",
+     "year": 2019
+    },
+    {
+     "paperId": "deed45b4246ecb3632245239da6e458b70f97f16",
+     "title": "HPV Vaccination in Correctional Care: Knowledge, Attitudes, and Barriers Among Incarcerated Women",
+     "venue": "Journal of correctional health care : the official journal of the National Commission on Correctional Health Care",
+     "year": 2019
+    },
+    {
+     "paperId": "c9de80e32295f462e693bfce3ff12004a89232e8",
+     "title": "Machine Learning to Identify Dialysis Patients at High Death Risk",
+     "venue": "Kidney international reports",
+     "year": 2019
+    },
+    {
+     "paperId": "c82c42d5b8c68d6f79b6a5444a9bcb7286602eca",
+     "title": "Modelling uniaxial compressive strength of lightweight self-compacting concrete using random forest regression",
+     "venue": "Construction and Building Materials",
+     "year": 2019
+    },
+    {
+     "paperId": "b2af949902a7800380e0bf8b86eb9989746c7c55",
+     "title": "Determination of the influence factors on household vehicle ownership patterns in Phnom Penh using statistical and machine learning methods",
+     "venue": "Journal of Transport Geography",
+     "year": 2019
+    },
+    {
+     "paperId": "098cc5e3a89af0acd6ae06f7be06855e75451626",
+     "title": "Functional Correlations in the Pursuit of Performance Assessment of Classifiers",
+     "venue": "Int. J. Pattern Recognit. Artif. Intell.",
+     "year": 2019
+    },
+    {
+     "paperId": "eb5c651e7490d12ea286604561142223f8fb96c4",
+     "title": "A Brief Review of Random Forests for Water Scientists and Practitioners and Their Recent History in Water Resources",
+     "venue": "Water",
+     "year": 2019
+    },
+    {
+     "paperId": "3e7092e158a651e99455a6c56093fd868a1fe0de",
+     "title": "A comparison of random forest and support vector machine approaches to predict coal spontaneous combustion in gob",
+     "venue": "Fuel",
+     "year": 2019
+    },
+    {
+     "paperId": "1b247fc303df993793b11b2e501e26187d92497d",
+     "title": "Global raptor research and conservation priorities: Tropical raptors fall prey to knowledge gaps",
+     "venue": "Diversity and Distributions",
+     "year": 2019
+    },
+    {
+     "paperId": "e2aa1e934dff308365d9a96345edd961ab376111",
+     "title": "Subject-specific and group-based running pattern classification using a single wearable sensor.",
+     "venue": "Journal of biomechanics",
+     "year": 2019
+    },
+    {
+     "paperId": "3e5c6b1669e508cfb86b743dc8dd8f2bae741f10",
+     "title": "Ordinal Forests",
+     "venue": "Journal of Classification",
+     "year": 2019
+    },
+    {
+     "paperId": "6a13e7237393eafceedb6a03fd32b147282057f4",
+     "title": "Are values related to culture, identity, community cohesion and sense of place the values most vulnerable to climate change?",
+     "venue": "PloS one",
+     "year": 2019
+    },
+    {
+     "paperId": "9879854769b757cc76beeddf8bb5f7e6e68293c8",
+     "title": "Identification of co-located QTLs and genomic regions affecting grapevine cluster architecture",
+     "venue": "Theoretical and Applied Genetics",
+     "year": 2018
+    },
+    {
+     "paperId": "ef7808f86dbd6eea91297d24af6316e93c0078fc",
+     "title": "The role of various risk factors in the prevalence of cardiac autonomic neuropathy and associated diseases",
+     "venue": "",
+     "year": 2018
+    },
+    {
+     "paperId": "f8def155f772de27fa29b5ca9c42da4e90f5f1ad",
+     "title": "Towards Emotion-based Adaptive Games: Emotion Recognition Via Input and Performance Features",
+     "venue": "CHI PLAY",
+     "year": 2018
+    },
+    {
+     "paperId": "8e8305c9ad95a572920dfd564ea90f5f2bc472ab",
+     "title": "An Effective Gas Sensor Array Optimization Method Based on Random Forest*",
+     "venue": "2018 IEEE SENSORS",
+     "year": 2018
+    },
+    {
+     "paperId": "c62ea0ef4915784bc32c49a6c0d60dc2c184690f",
+     "title": "Machine Learning Predictive Model for Industry 4.0",
+     "venue": "KMO",
+     "year": 2018
+    },
+    {
+     "paperId": "d8a7eabc564ffcfe98cb8f7a6c74d15dfb1ebdbb",
+     "title": "Near infrared spectroscopy for classification of bacterial pathogen strains based on spectral transforms and machine learning",
+     "venue": "Chemometrics and Intelligent Laboratory Systems",
+     "year": 2018
+    },
+    {
+     "paperId": "aed73f5be7100074021f369c9c88ae7204c0c6cc",
+     "title": "A random forest approach for predicting coal spontaneous combustion",
+     "venue": "Fuel",
+     "year": 2018
+    },
+    {
+     "paperId": "dfa3bb65e9c8dea6014b96441bd63eac94d11c4a",
+     "title": "A decision tree-based classification framework for used oil analysis applying random forest feature selection",
+     "venue": "",
+     "year": 2018
+    },
+    {
+     "paperId": "b097f87354ab4b381015bfc0d313fd64223a929b",
+     "title": "Attribution of explanatory factors for change in soil organic carbon density in the native grasslands of Inner Mongolia, China",
+     "venue": "Journal of Arid Land",
+     "year": 2018
+    },
+    {
+     "paperId": "4407badc53c885db56ee8ff4c7404d37a382114f",
+     "title": "Rapid Discrimination Between Authentic and Adulterated Andiroba Oil Using FTIR-HATR Spectroscopy and Random Forest",
+     "venue": "Food Analytical Methods",
+     "year": 2018
+    },
+    {
+     "paperId": "3c92f576dfa57b94cf19f4767c7f1077414c3874",
+     "title": "Association between serum magnesium and common complications of diabetes mellitus",
+     "venue": "Technology and health care : official journal of the European Society for Engineering and Medicine",
+     "year": 2018
+    },
+    {
+     "paperId": "33eeb919602310b7997a74584da5bd207fe345ba",
+     "title": "Analyzing Land Cover Change and Urban Growth Trajectories of the Mega-Urban Region of Dhaka Using Remotely Sensed Data and an Ensemble Classifier",
+     "venue": "",
+     "year": 2017
+    },
+    {
+     "paperId": "01c350730d9c11897ae9aee816388c2886d07586",
+     "title": "Single Nucleotide Polymorphism relevance learning with Random Forests for Type 2 diabetes risk prediction",
+     "venue": "Artif. Intell. Medicine",
+     "year": 2017
+    },
+    {
+     "paperId": "774d4259bd1aba4a0337972b71ecea5fe6915f12",
+     "title": "Multiple Random Forests Modelling for Urban Water Consumption Forecasting",
+     "venue": "Water Resources Management",
+     "year": 2017
+    },
+    {
+     "paperId": "0bee6e7ab2c53a65a105be6eaccbdc01c0210be1",
+     "title": "Classification Application Based on Mutual Information and Random Forest Method for High Dimensional Data",
+     "venue": "2017 9th International Conference on Intelligent Human-Machine Systems and Cybernetics (IHMSC)",
+     "year": 2017
+    },
+    {
+     "paperId": "4a4a119117a05a260ab0bef7d139b456b1886a0f",
+     "title": "An ordinal classification approach for CTG categorization",
+     "venue": "2017 39th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)",
+     "year": 2017
+    },
+    {
+     "paperId": "9ac7162bb6c8091e68d0050c2a765a8a99bfae3a",
+     "title": "Variable selection and prediction of uniaxial compressive strength and modulus of elasticity by random forest",
+     "venue": "Appl. Soft Comput.",
+     "year": 2017
+    },
+    {
+     "paperId": "b6297d9f4eb10d832b3a40e279c314dd1c05b63c",
+     "title": "Conditional inference trees for knowledge extraction from motor health condition data",
+     "venue": "Eng. Appl. Artif. Intell.",
+     "year": 2017
+    },
+    {
+     "paperId": "6a670fe2388258e51eeaba6b8a7da5538f4d2d08",
+     "title": "Fishers' Perceived Objectives of Community-Based Coastal Resource Management in the Kei Islands, Indonesia",
+     "venue": "Front. Mar. Sci.",
+     "year": 2017
+    },
+    {
+     "paperId": "c2647681178cbc512e3a300b38372f758afb07ed",
+     "title": "Modeling university student satisfaction: the case of the humanities and social studies degree programs",
+     "venue": "",
+     "year": 2017
+    },
+    {
+     "paperId": "ba8c83245e6c7740e516efb9ba91dde11b23a481",
+     "title": "Modeling of free swelling index based on variable importance measurements of parent coal properties by random forest method",
+     "venue": "",
+     "year": 2016
+    },
+    {
+     "paperId": "e47d918f6277c0be066c8e2ac375ce81f96651cf",
+     "title": "Modeling university student satisfaction: the case of the humanities and social studies degree programs",
+     "venue": "Quality & Quantity",
+     "year": 2016
+    },
+    {
+     "paperId": "89ba994e8e79c06877e4a461964ffc9966cfb55b",
+     "title": "Examining nominal and ordinal classifiers for forecasting wind speed",
+     "venue": "2016 IEEE 8th International Conference on Intelligent Systems (IS)",
+     "year": 2016
+    },
+    {
+     "paperId": "686613016275bba09515bc3a5536156b6387acc0",
+     "title": "Variable selection using Mean Decrease Accuracy and Mean Decrease Gini based on Random Forest",
+     "venue": "2016 7th IEEE International Conference on Software Engineering and Service Science (ICSESS)",
+     "year": 2016
+    },
+    {
+     "paperId": "4e1dc9d51d41b148c7e18eb984ab0b904667c53c",
+     "title": "Estimation of coal gross calorific value based on various analyses by random forest method",
+     "venue": "",
+     "year": 2016
+    },
+    {
+     "paperId": "4908a065a04e23bb1bf56ade39a2f64449b05c86",
+     "title": "Land cover classification using random forest with genetic algorithm-based parameter optimization",
+     "venue": "",
+     "year": 2016
+    },
+    {
+     "paperId": "d9fbeaeec0db2938dc89d6526197b5724541237b",
+     "title": "Using tree-based models to predict drunk driving at Police preventive checkpoints",
+     "venue": "",
+     "year": 2016
+    },
+    {
+     "paperId": "f53c54c5a8369ee2ceab9d3d0af628ccb6ca5a84",
+     "title": "Computational identification of circular RNAs based on conformational and thermodynamic properties in the flanking introns",
+     "venue": "Comput. Biol. Chem.",
+     "year": 2016
+    },
+    {
+     "paperId": "7abf92214bfb5734abf41b0064f35fcbef1d3a2b",
+     "title": "A computationally fast variable importance test for random forests for high-dimensional data",
+     "venue": "Advances in Data Analysis and Classification",
+     "year": 2015
+    },
+    {
+     "paperId": "7bc5be36fc0def1e8ae5417f26f48793e481d437",
+     "title": "Order-Aware Metric Learning for Electronic Health Records Applications",
+     "venue": "BIOSTEC",
+     "year": 2026
+    },
+    {
+     "paperId": "162a33d02c60519c4df051109dcde808f7fdc185",
+     "title": "Non-targeted assessment of biosolid-associated organic compound biodegradation by white-rot fungi",
+     "venue": "Environmental Science: Advances",
+     "year": 2026
+    }
+   ]
+  },
+  "ClassifierPooling2026": {
+   "id": "ARXIV:2603.17278",
+   "info": null,
+   "referencias": [
+    {
+     "paperId": "a66606a0bb11a1d5a7a14ec09df8a3481121ad6c",
+     "title": "MedMNIST v2 - A large-scale lightweight benchmark for 2D and 3D biomedical image classification",
+     "venue": "Scientific Data",
+     "year": 2021
+    },
+    {
+     "paperId": "e70b2207c6c291612e674f5889053f780eda1091",
+     "title": "Ordinal regression: A review and a taxonomy of models",
+     "venue": "WIREs Computational Statistics",
+     "year": 2021
+    },
+    {
+     "paperId": "422fbde1def999c04790032c484168c76f1d229f",
+     "title": "Abalone",
+     "venue": "Health Foods from Ocean Animals",
+     "year": 2020
+    },
+    {
+     "paperId": "7d07edd63b968ad709b7ab3919b33f83a47ec9e3",
+     "title": "CARDIOTOCOGRAPHY",
+     "venue": "The Professional Medical Journal",
+     "year": 2018
+    },
+    {
+     "paperId": "c53fa445bee435f567828db3a0ede0f08abdd0d5",
+     "title": "Computational Radiomics System to Decode the Radiographic Phenotype",
+     "venue": "Cancer research",
+     "year": 2017
+    },
+    {
+     "paperId": "ad4fd2c149f220a62441576af92a8a669fe81246",
+     "title": "Scikit-learn: Machine Learning in Python",
+     "venue": "J. Mach. Learn. Res.",
+     "year": 2011
+    },
+    {
+     "paperId": "bf15a0ccc14ac1deb5cea570c870389c16be019c",
+     "title": "Modeling wine preferences by data mining from physicochemical properties",
+     "venue": "Decis. Support Syst.",
+     "year": 2009
+    },
+    {
+     "paperId": "76fc26939d73c565431e1f38107a4245e739284e",
+     "title": "A Simple Approach to Ordinal Classification",
+     "venue": "ECML",
+     "year": 2001
+    },
+    {
+     "paperId": "d36aece92026ba8296b9069a4b3dadd7f25f9a3e",
+     "title": "Maximum likelihood estimation of the polychoric correlation coefficient",
+     "venue": "",
+     "year": 1979
+    },
+    {
+     "paperId": "1a6099290afeb592d04b9ded83d4499e28924e03",
+     "title": "Statsmodels: Econometric and Statistical Modeling with Python",
+     "venue": "SciPy",
+     "year": 2010
+    },
+    {
+     "paperId": "162d958ff885f1462aeda91cd72582323fd6a1f4",
+     "title": "Gradient-based learning applied to document recognition",
+     "venue": "Proc. IEEE",
+     "year": 1998
+    },
+    {
+     "paperId": null,
+     "title": "Car Evaluation",
+     "venue": "",
+     "year": 1988
+    },
+    {
+     "paperId": "0c86d2393b781941d178bf2bc2709ff4b3db90dd",
+     "title": "Regression Models for Ordinal Data",
+     "venue": "",
+     "year": 1980
+    },
+    {
+     "paperId": "bade8eefe2d2592cc934e606669a0c6318c32ac4",
+     "title": "A statistical model for the analysis of ordinal level dependent variables",
+     "venue": "",
+     "year": 1975
+    }
+   ],
+   "citas": []
+  }
+ }
+}

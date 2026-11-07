@@ -1,0 +1,29 @@
+{
+ "friedman": {
+  "N": 5,
+  "k": 10,
+  "chi2": 29.116363636363644,
+  "p": 0.0006193922837324332,
+  "F_ID": 7.332417582417588,
+  "p_ID": 5.584711540634934e-06,
+  "cd": 6.057992834068865,
+  "W": 0.6470303030303032
+ },
+ "rangos": {
+  "CatBoost": 3.0,
+  "Random Forest": 3.2,
+  "Bosque Ordinal Focalizado": 3.2,
+  "LightGBM": 3.8,
+  "XGBoost": 4.8,
+  "SVM": 5.6,
+  "KNN": 6.2,
+  "Regresión Logística (L1/L2)": 6.2,
+  "Decision Tree": 9.2,
+  "Naive Bayes": 9.8
+ },
+ "bayes_vs_mejor_por_conjunto": {
+  "p_peor": 0.0,
+  "p_equivalente": 1.0,
+  "p_mejor": 0.0
+ }
+}

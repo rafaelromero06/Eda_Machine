@@ -1,0 +1,11 @@
+modelo,rango_medio
+Bosque Ordinal Focalizado,1.68
+CatBoost,2.36
+Random Forest,2.64
+LightGBM,4.44
+XGBoost,4.6
+SVM,5.92
+KNN,6.44
+Regresión Logística (L1/L2),7.92
+Decision Tree,9.0
+Naive Bayes,10.0

@@ -1,0 +1,10 @@
+-r requirements.txt
+optuna==5.0.0
+matplotlib==3.10.8
+psutil==7.2.2
+pytest==8.4.2
+jupyter-book==1.0.4.post1
+ipykernel==6.27.0
+ucimlrepo==0.0.7
+waitress==3.0.2
+sphinx-proof==0.2.1

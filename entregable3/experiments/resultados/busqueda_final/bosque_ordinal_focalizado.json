@@ -1,0 +1,13 @@
+{
+ "modelo": "Bosque Ordinal Focalizado",
+ "hiperparametros": {
+  "n_estimators": 438,
+  "max_features": null,
+  "min_samples_leaf": 1,
+  "ancho_agregacion": 1.2808169943110324,
+  "ancho_particion": 2.550448049715242,
+  "desplazamiento": 0.3374414545918779
+ },
+ "score_interno": 0.8589927837397994,
+ "tiempo_busqueda_s": 6515.9
+}

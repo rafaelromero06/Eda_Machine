@@ -1,0 +1,13 @@
+{
+ "modelo": "CatBoost",
+ "hiperparametros": {
+  "iterations": 766,
+  "learning_rate": 0.013290811331473206,
+  "depth": 9,
+  "l2_leaf_reg": 1.8803545997538655,
+  "bagging_temperature": 0.27583413776432064,
+  "ponderacion": "balanceada"
+ },
+ "score_interno": 0.8613398964572591,
+ "tiempo_busqueda_s": 10289.5
+}

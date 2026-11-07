@@ -1,0 +1,78 @@
+{
+ "abalone": {
+  "uci_id": 1,
+  "nombre": "Abalone",
+  "doi": "10.24432/C55C7W",
+  "url": "https://archive.ics.uci.edu/dataset/1/abalone",
+  "creadores": [
+   "Warwick Nash",
+   "Tracy Sellers",
+   "Simon Talbot",
+   "Andrew Cawthorn",
+   "Wes Ford"
+  ],
+  "anio": 1994,
+  "n": 4177,
+  "articulo": null,
+  "faltantes": "no",
+  "simbolo_faltante": null
+ },
+ "heart_disease": {
+  "uci_id": 45,
+  "nombre": "Heart Disease",
+  "doi": "10.24432/C52P4X",
+  "url": "https://archive.ics.uci.edu/dataset/45/heart+disease",
+  "creadores": [
+   "Andras Janosi",
+   "William Steinbrunn",
+   "Matthias Pfisterer",
+   "Robert Detrano"
+  ],
+  "anio": 1989,
+  "n": 303,
+  "articulo": {
+   "title": "International application of a new probability algorithm for the diagnosis of coronary artery disease.",
+   "authors": "R. Detrano, A. Jánosi, W. Steinbrunn, M. Pfisterer, J. Schmid, S. Sandhu, K. Guppy, S. Lee, V. Froelicher",
+   "venue": "American Journal of Cardiology",
+   "year": 1989,
+   "DOI": null
+  },
+  "faltantes": "yes",
+  "simbolo_faltante": "NaN"
+ },
+ "student_performance": {
+  "uci_id": 320,
+  "nombre": "Student Performance",
+  "doi": "10.24432/C5TG7T",
+  "url": "https://archive.ics.uci.edu/dataset/320/student+performance",
+  "creadores": [
+   "Paulo Cortez"
+  ],
+  "anio": 2008,
+  "n": 649,
+  "articulo": {
+   "title": "Using data mining to predict secondary school student performance",
+   "authors": "P. Cortez, A. M. G. Silva",
+   "venue": "Proceedings of 5th Annual Future Business Technology Conference",
+   "year": 2008,
+   "DOI": null
+  },
+  "faltantes": "no",
+  "simbolo_faltante": null
+ },
+ "cardiotocography": {
+  "uci_id": 193,
+  "nombre": "Cardiotocography",
+  "doi": "10.24432/C51S4N",
+  "url": "https://archive.ics.uci.edu/dataset/193/cardiotocography",
+  "creadores": [
+   "D. Campos",
+   "J. Bernardes"
+  ],
+  "anio": 2000,
+  "n": 2126,
+  "articulo": null,
+  "faltantes": "no",
+  "simbolo_faltante": null
+ }
+}
