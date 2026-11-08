@@ -185,7 +185,76 @@ def ablacion():
     a["modelo"] = a["variante"].map(nombres)
     fig = plots.barras_modelos(a, "auc_media", "¿Qué pasa si se quita cada pieza?", "AUC medio en 25 bloques", "Modelo completo", error="auc_sd", formato=".4f")
     fig.update_xaxes(range=[float((a["auc_media"] - a["auc_sd"]).min()) - 0.01, float((a["auc_media"] + a["auc_sd"]).max()) + 0.012])
-    return [plots.figura(fig), lectura("Cada barra quita una pieza y deja las demás igual, con los mismos hiperparámetros y bloques.")]
+    return [plots.figura(fig), lectura(lectura_ablacion(a))]
+
+
+def lectura_ablacion(a):
+    """Conclusión de la ablación en el conjunto del vino, escrita a partir de los datos."""
+    pruebas = ["wilcoxon_p_holm", "t_p_holm", "delong_p_holm"]
+    resto = a[~a["variante"].isin(["completo", "sin_calibracion"])].copy()
+    resto["rechazos"] = (resto[pruebas] < 0.05).sum(axis=1)
+    frases = ["Cada barra quita una pieza y deja las demás igual, con los mismos hiperparámetros y bloques."]
+    mayor = resto.loc[resto["diferencia_vs_completo"].idxmax()]
+    confirmada = mayor["rechazos"] >= 2
+    frases.append(f"La caída más grande es la de «{mayor['modelo']}»: el AUC baja {numero(mayor['diferencia_vs_completo'], 4)}"
+                  + ("." if confirmada else ", aunque las pruebas pareadas no la confirman (se exigen 2 de 3, con Holm)."))
+    otras = resto[(resto["rechazos"] >= 2) & (resto["variante"] != mayor["variante"])]
+    if len(otras):
+        frases.append("Las pruebas sí confirman la caída de " + unir([f"«{r.modelo}» ({numero(r.diferencia_vs_completo, 4)})" for r in otras.itertuples()]) + ".")
+    elif not confirmada:
+        frases.append("Ninguna otra caída la confirman las pruebas: cada pieza aporta poco por separado.")
+    completo = a[a["variante"] == "completo"]
+    sin_cal = a[a["variante"] == "sin_calibracion"]
+    if len(completo) and len(sin_cal):
+        b0, b1 = float(completo["brier_media"].iloc[0]), float(sin_cal["brier_media"].iloc[0])
+        if abs(float(sin_cal["auc_media"].iloc[0]) - float(completo["auc_media"].iloc[0])) < 1e-6 and b1 > b0:
+            frases.append(f"Quitar la calibración no cambia el AUC, porque conserva el orden de los vinos, pero el puntaje de Brier empeora de "
+                          f"{numero(b0, 4)} a {numero(b1, 4)}: la calibración es lo que permite leer la probabilidad tal cual.")
+    return " ".join(frases)
+
+
+def lectura_sensibilidad(sens, bof, rf):
+    """Conclusión del análisis de sensibilidad del modelo original frente a Random Forest."""
+    frases = ["Cada gráfica mueve un solo hiperparámetro y deja los demás en sus valores finales; la línea ocre es Random Forest en los mismos pliegues."]
+    if bof is not None and rf is not None:
+        relacion = "por encima de" if bof > rf else "por debajo de"
+        frases.append(f"Con los valores finales, el modelo original logra {numero(bof, 4)}, {relacion} Random Forest ({numero(rf, 4)}); "
+                      f"lo supera en {int((sens['auc'] > rf).sum())} de {len(sens)} variaciones.")
+    mejor = sens.loc[sens["auc"].idxmax()]
+    if bof is not None and mejor["auc"] - bof > 0.001:
+        valor = {"inf": "∞", "None": "todas"}.get(str(mejor["valor"]), str(mejor["valor"]))
+        dentro = mejor["auc"] - bof < mejor["auc_sd"]
+        frases.append(f"El mejor resultado ({numero(mejor['auc'], 4)}) aparece con {PARAMETROS.get(mejor['parametro'], mejor['parametro']).lower()} = {valor}; "
+                      + ("la diferencia con el valor final es menor que la variación entre pliegues, así que no contradice a la búsqueda, que eligió con otros pliegues."
+                         if dentro else "la diferencia con el valor final supera la variación entre pliegues."))
+    return " ".join(frases)
+
+
+def lectura_resumen(resumen, mejor):
+    """Conclusiones de la tabla de robustez para el modelo original y el mejor rival."""
+    r = resumen.set_index("Modelo")
+    if ORIGINAL not in r.index:
+        return ""
+    o = r.loc[ORIGINAL]
+    frases = []
+    if "DE entre 10 semillas" in r:
+        frases.append(f"Con 10 semillas distintas, el AUC del modelo original varía apenas {numero(o['DE entre 10 semillas'], 4)}.")
+    if {"AUC tinto → blanco", "AUC blanco → tinto"} <= set(r.columns):
+        rival = f", frente a {numero(r.loc[mejor, 'AUC tinto → blanco'], 3)} y {numero(r.loc[mejor, 'AUC blanco → tinto'], 3)} de {mejor}" if mejor in r.index else ""
+        mejores = [m for m in r.index if m != ORIGINAL and (r.loc[m, "AUC tinto → blanco"] > o["AUC tinto → blanco"]
+                                                            or r.loc[m, "AUC blanco → tinto"] > o["AUC blanco → tinto"])]
+        extra = (f"; solo {unir(mejores)} lo {'supera' if len(mejores) == 1 else 'superan'} en alguna de las dos direcciones" if mejores
+                 else "; ningún otro modelo transfiere mejor")
+        frases.append(f"Entrenado solo con tintos y evaluado en blancos logra {numero(o['AUC tinto → blanco'], 3)}, y al revés "
+                      f"{numero(o['AUC blanco → tinto'], 3)}{rival}{extra}.")
+    if {"AUC de referencia", "AUC con bloques del archivo"} <= set(r.columns):
+        frases.append(f"Con pliegues por bloques de vinos consecutivos (posibles lotes) baja de {numero(o['AUC de referencia'], 3)} a "
+                      f"{numero(o['AUC con bloques del archivo'], 3)}, como el resto de modelos.")
+    if "Cobertura conforme 90 %" in r:
+        c = r["Cobertura conforme 90 %"]
+        frases.append(f"Los conjuntos conformes cubren entre {numero(100 * c.min(), 1)} % y {numero(100 * c.max(), 1)} % de los vinos, "
+                      f"cerca del 90 % prometido.")
+    return " ".join(frases)
 
 
 def robustez():
@@ -195,6 +264,8 @@ def robustez():
         return [pendiente("Los estudios de robustez (sensibilidad, semillas, ruido, tamaño de muestra, cambio de distribución y cobertura conforme)")]
     referencia = tabla_app("robustez_referencia.csv")
     rf = float(referencia.loc[referencia["modelo"] == "Random Forest", "auc"].mean()) if referencia is not None else None
+    bof = float(referencia.loc[referencia["modelo"] == ORIGINAL, "auc"].mean()) if referencia is not None else None
+    mejor = (json_app("veredicto.json") or {}).get("mejor_benchmark", "CatBoost")
     figs = []
     for p in list(dict.fromkeys(sens["parametro"])):
         d = sens[sens["parametro"] == p].copy()
@@ -208,11 +279,10 @@ def robustez():
         figs.append(dbc.Col(plots.figura(fig), lg=4, md=6))
     tabla = dbc.Table.from_dataframe(resumen.round(3), size="sm", hover=True, responsive=True, class_name="tabla-numeros mb-0")
     return [dbc.Row(figs),
-            lectura("Cada gráfica mueve un solo hiperparámetro y deja los demás en sus valores finales. Por encima de la línea ocre, el modelo original "
-                    "conserva su ventaja sobre Random Forest en los mismos pliegues."),
+            lectura(lectura_sensibilidad(sens, bof, rf)),
             html.H3("Resumen de robustez por modelo", className="tarjeta-titulo mt-4"), tabla,
             lectura("Semillas, ruido, tamaño de muestra, cambio de tintos a blancos y cobertura conforme, medidos con los hiperparámetros finales en "
-                    "los 5 pliegues de la repetición 1.")]
+                    "los 5 pliegues de la repetición 1. " + lectura_resumen(resumen, mejor))]
 
 
 def convergencia():

@@ -1,0 +1,21 @@
+estudio,modelo,entrena,evalua,n_entrenamiento,auc,segundos
+cambio_distribucion,Random Forest,red,white,1359,0.7503706709956709,0.8953302000008989
+cambio_distribucion,Random Forest,white,red,3961,0.7513135985198889,2.233057400000689
+cambio_distribucion,XGBoost,red,white,1359,0.746528293135436,0.5519679000062752
+cambio_distribucion,XGBoost,white,red,3961,0.7460684551341351,0.901797999998962
+cambio_distribucion,SVM,red,white,1359,0.7355082714904144,0.0340400999994017
+cambio_distribucion,SVM,white,red,3961,0.638691026827012,0.2978709999952116
+cambio_distribucion,KNN,red,white,1359,0.744379638218924,0.0063225999983842
+cambio_distribucion,KNN,white,red,3961,0.7282678075855689,0.0112809999991441
+cambio_distribucion,Regresión Logística (L1/L2),red,white,1359,0.7835687229437229,0.009616499999538
+cambio_distribucion,Regresión Logística (L1/L2),white,red,3961,0.8426179463459759,0.0372188999972422
+cambio_distribucion,Decision Tree,red,white,1359,0.6966655071119356,0.0058239999998477
+cambio_distribucion,Decision Tree,white,red,3961,0.7801641998149861,0.0105551000015111
+cambio_distribucion,Naive Bayes,red,white,1359,0.7598017161410019,0.0066342999998596
+cambio_distribucion,Naive Bayes,white,red,3961,0.6691813135985198,0.0078194000016083
+cambio_distribucion,LightGBM,red,white,1359,0.7400910250463821,0.1036058000026969
+cambio_distribucion,LightGBM,white,red,3961,0.7352728954671601,0.1591537999993306
+cambio_distribucion,CatBoost,red,white,1359,0.7463783240568955,9.382177300001786
+cambio_distribucion,CatBoost,white,red,3961,0.745305272895467,12.424570399998627
+cambio_distribucion,Bosque Ordinal Focalizado,red,white,1359,0.7811612940630798,3.0225926999992225
+cambio_distribucion,Bosque Ordinal Focalizado,white,red,3961,0.8095513413506013,10.67051750000246

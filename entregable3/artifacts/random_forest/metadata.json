@@ -1,0 +1,299 @@
+{
+  "modelo": "Random Forest",
+  "balanceo": "class_weight",
+  "optimizador": "Grid Search",
+  "tarea": "clasificación: vino bueno (quality >= 7)",
+  "umbral_evento": 7,
+  "entrena_con": "evento binario",
+  "semilla": 42,
+  "presupuesto_evaluaciones": 40,
+  "hiperparametros_finales": {
+    "max_depth": 25,
+    "max_features": "sqrt",
+    "min_samples_leaf": 1,
+    "n_estimators": 500
+  },
+  "score_interno_auc": 0.8592856394306234,
+  "metricas_bucle_externo": {
+    "n_pliegues": 25,
+    "esquema": "validación anidada 5 x 3 repetida 5 veces (semillas 42-46)",
+    "auc": {
+      "media": 0.8608922929757508,
+      "desviacion": 0.012412146807999836
+    },
+    "pr_auc": {
+      "media": 0.596908042348328,
+      "desviacion": 0.02363479335079189
+    },
+    "brier": {
+      "media": 0.10870191852925373,
+      "desviacion": 0.003234502295170718
+    },
+    "log_loss": {
+      "media": 0.34186378637639536,
+      "desviacion": 0.010492045884188275
+    },
+    "f1": {
+      "media": 0.45096354414860435,
+      "desviacion": 0.02988876833507849
+    },
+    "precision": {
+      "media": 0.6721985146993967,
+      "desviacion": 0.03841215069787244
+    },
+    "recall": {
+      "media": 0.34014876114477116,
+      "desviacion": 0.02981623062255151
+    },
+    "accuracy": {
+      "media": 0.8432330827067669,
+      "desviacion": 0.006933050117898105
+    },
+    "tiempo_prediccion_ms_por_caso": 0.2776768
+  },
+  "esquema_entrada": {
+    "fixed acidity": {
+      "etiqueta": "Acidez fija",
+      "tipo": "float",
+      "unidad": "g/L de ácido tartárico",
+      "descripcion": "Ácidos no volátiles; aportan frescura.",
+      "minimo_observado": 3.8,
+      "maximo_observado": 15.9,
+      "minimo_valido": 2.59,
+      "maximo_valido": 17.11,
+      "mediana": 7.0
+    },
+    "volatile acidity": {
+      "etiqueta": "Acidez volátil",
+      "tipo": "float",
+      "unidad": "g/L de ácido acético",
+      "descripcion": "En exceso da olor a vinagre.",
+      "minimo_observado": 0.08,
+      "maximo_observado": 1.58,
+      "minimo_valido": 0.0,
+      "maximo_valido": 1.73,
+      "mediana": 0.3
+    },
+    "citric acid": {
+      "etiqueta": "Ácido cítrico",
+      "tipo": "float",
+      "unidad": "g/L",
+      "descripcion": "Aporta frescura y sabor.",
+      "minimo_observado": 0.0,
+      "maximo_observado": 1.66,
+      "minimo_valido": 0.0,
+      "maximo_valido": 1.826,
+      "mediana": 0.31
+    },
+    "residual sugar": {
+      "etiqueta": "Azúcar residual",
+      "tipo": "float",
+      "unidad": "g/L",
+      "descripcion": "Azúcar que queda tras la fermentación.",
+      "minimo_observado": 0.6,
+      "maximo_observado": 65.8,
+      "minimo_valido": 0.0,
+      "maximo_valido": 72.32,
+      "mediana": 2.7
+    },
+    "chlorides": {
+      "etiqueta": "Cloruros",
+      "tipo": "float",
+      "unidad": "g/L de cloruro de sodio",
+      "descripcion": "Contenido de sal.",
+      "minimo_observado": 0.009,
+      "maximo_observado": 0.611,
+      "minimo_valido": 0.0,
+      "maximo_valido": 0.6712,
+      "mediana": 0.047
+    },
+    "free sulfur dioxide": {
+      "etiqueta": "SO₂ libre",
+      "tipo": "float",
+      "unidad": "mg/L",
+      "descripcion": "Protege el vino de la oxidación y de microbios.",
+      "minimo_observado": 1.0,
+      "maximo_observado": 289.0,
+      "minimo_valido": 0.0,
+      "maximo_valido": 317.8,
+      "mediana": 28.0
+    },
+    "total sulfur dioxide": {
+      "etiqueta": "SO₂ total",
+      "tipo": "float",
+      "unidad": "mg/L",
+      "descripcion": "SO₂ libre más el combinado.",
+      "minimo_observado": 6.0,
+      "maximo_observado": 440.0,
+      "minimo_valido": 0.0,
+      "maximo_valido": 483.4,
+      "mediana": 116.0
+    },
+    "density": {
+      "etiqueta": "Densidad",
+      "tipo": "float",
+      "unidad": "g/cm³",
+      "descripcion": "Depende sobre todo del alcohol y del azúcar.",
+      "minimo_observado": 0.98711,
+      "maximo_observado": 1.03898,
+      "minimo_valido": 0.9819,
+      "maximo_valido": 1.0442,
+      "mediana": 0.99465
+    },
+    "pH": {
+      "etiqueta": "pH",
+      "tipo": "float",
+      "unidad": "escala 0–14",
+      "descripcion": "Acidez global; los vinos están entre 2.7 y 4.",
+      "minimo_observado": 2.72,
+      "maximo_observado": 4.01,
+      "minimo_valido": 2.591,
+      "maximo_valido": 4.139,
+      "mediana": 3.21
+    },
+    "sulphates": {
+      "etiqueta": "Sulfatos",
+      "tipo": "float",
+      "unidad": "g/L de sulfato de potasio",
+      "descripcion": "Aditivo que contribuye al SO₂.",
+      "minimo_observado": 0.22,
+      "maximo_observado": 2.0,
+      "minimo_valido": 0.042,
+      "maximo_valido": 2.178,
+      "mediana": 0.51
+    },
+    "alcohol": {
+      "etiqueta": "Alcohol",
+      "tipo": "float",
+      "unidad": "% vol.",
+      "descripcion": "Grado alcohólico.",
+      "minimo_observado": 8.0,
+      "maximo_observado": 14.9,
+      "minimo_valido": 7.31,
+      "maximo_valido": 15.59,
+      "mediana": 10.4
+    },
+    "tipo_vino": {
+      "etiqueta": "Tipo de vino",
+      "tipo": "categorical",
+      "unidad": "tinto / blanco",
+      "descripcion": "Vinho Verde tinto o blanco.",
+      "categorias": [
+        "red",
+        "white"
+      ]
+    }
+  },
+  "salida": "probabilidad de vino bueno",
+  "versiones": {
+    "python": "3.12.14",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0",
+    "imbalanced-learn": "0.14.2",
+    "xgboost": "3.4.1",
+    "lightgbm": "4.6.0",
+    "catboost": "1.2.8",
+    "joblib": "1.6.0",
+    "optuna": "5.0.0"
+  },
+  "fecha": "2026-11-07",
+  "tiempo_ajuste_s": 2.223,
+  "tamano_archivo_mb": 11.011,
+  "sha256": "8916cd9879304803ffb6038574e40bb605e64eec07bd67768b8363f087b07037",
+  "prueba_ida_y_vuelta": {
+    "n_casos": 200,
+    "semilla": 2026,
+    "diferencia_maxima": 0.0,
+    "identicas": true
+  },
+  "tiempo_busqueda_final_s": 280.9,
+  "reduccion_arboles": {
+    "arboles_busqueda": 500,
+    "arboles_desplegados": 425,
+    "criterio": "menor número de árboles con AUC fuera de bolsa a menos de 0.001 del bosque completo",
+    "curva_auc_fuera_de_bolsa": [
+      [
+        25,
+        0.8171630459246507
+      ],
+      [
+        50,
+        0.8403663019831491
+      ],
+      [
+        75,
+        0.8508358662089903
+      ],
+      [
+        100,
+        0.8562864628917336
+      ],
+      [
+        125,
+        0.8563664665884562
+      ],
+      [
+        150,
+        0.8579978063354192
+      ],
+      [
+        175,
+        0.8576413530832114
+      ],
+      [
+        200,
+        0.8586069149402076
+      ],
+      [
+        225,
+        0.8601108924803192
+      ],
+      [
+        250,
+        0.8606294221870942
+      ],
+      [
+        275,
+        0.8614293442064794
+      ],
+      [
+        300,
+        0.86211811166447
+      ],
+      [
+        325,
+        0.862041556402951
+      ],
+      [
+        350,
+        0.8625560629353218
+      ],
+      [
+        375,
+        0.8627351516702266
+      ],
+      [
+        400,
+        0.8632126449980793
+      ],
+      [
+        425,
+        0.8634048377867575
+      ],
+      [
+        450,
+        0.8636384117978785
+      ],
+      [
+        475,
+        0.864132227719028
+      ],
+      [
+        500,
+        0.8642929247995137
+      ]
+    ]
+  }
+}

@@ -8,11 +8,50 @@
   "semilla": 42,
   "presupuesto_evaluaciones": 40,
   "hiperparametros_finales": {
-    "n_estimators": 60
+    "n_estimators": 438,
+    "max_features": null,
+    "min_samples_leaf": 1,
+    "ancho_agregacion": 1.2808169943110324,
+    "ancho_particion": 2.550448049715242,
+    "desplazamiento": 0.3374414545918779
   },
-  "score_interno_auc": 0.85,
+  "score_interno_auc": 0.8589927837397994,
   "metricas_bucle_externo": {
-    "simulado": true
+    "n_pliegues": 25,
+    "esquema": "validación anidada 5 x 3 repetida 5 veces (semillas 42-46)",
+    "auc": {
+      "media": 0.8649248435765817,
+      "desviacion": 0.012316749155398514
+    },
+    "pr_auc": {
+      "media": 0.6031911819369086,
+      "desviacion": 0.021970728176403127
+    },
+    "brier": {
+      "media": 0.10750685330259334,
+      "desviacion": 0.003644974355313017
+    },
+    "log_loss": {
+      "media": 0.33766843145462533,
+      "desviacion": 0.011049836236900899
+    },
+    "f1": {
+      "media": 0.49643179325104553,
+      "desviacion": 0.023988510003858644
+    },
+    "precision": {
+      "media": 0.6510274465068683,
+      "desviacion": 0.034651727424187685
+    },
+    "recall": {
+      "media": 0.4023949559135018,
+      "desviacion": 0.02913392311334395
+    },
+    "accuracy": {
+      "media": 0.8454135338345865,
+      "desviacion": 0.006668518431461434
+    },
+    "tiempo_prediccion_ms_por_caso": 2.6428415999999997
   },
   "esquema_entrada": {
     "fixed acidity": {
@@ -161,32 +200,86 @@
     "joblib": "1.6.0",
     "optuna": "5.0.0"
   },
-  "fecha": "2026-10-26",
-  "tiempo_ajuste_s": 5.727,
-  "tamano_archivo_mb": 3.532,
-  "sha256": "f86ace1a1e9a0f42a8e3f44e93fc9180cf30895c529ac8f629f029d64736fc16",
+  "fecha": "2026-11-07",
+  "tiempo_ajuste_s": 6.478,
+  "tamano_archivo_mb": 10.437,
+  "sha256": "393b8457d4167611db531b5c756fbfff56f737567ce946c7e674834ad3e94db9",
   "prueba_ida_y_vuelta": {
     "n_casos": 200,
     "semilla": 2026,
     "diferencia_maxima": 0.0,
     "identicas": true
   },
+  "tiempo_busqueda_final_s": 6515.9,
   "reduccion_arboles": {
-    "arboles_busqueda": 60,
-    "arboles_desplegados": 60,
+    "arboles_busqueda": 438,
+    "arboles_desplegados": 231,
+    "criterio": "menor número de árboles con AUC fuera de bolsa a menos de 0.001 del bosque completo",
     "curva_auc_fuera_de_bolsa": [
       [
-        10,
-        0.8
+        5,
+        0.756496276825797
       ],
       [
-        30,
-        0.84
+        7,
+        0.7723671680364798
       ],
       [
-        60,
-        0.85
+        9,
+        0.7842723420119962
+      ],
+      [
+        13,
+        0.8029883981276049
+      ],
+      [
+        18,
+        0.8187185400996599
+      ],
+      [
+        25,
+        0.8318174012178494
+      ],
+      [
+        34,
+        0.8397719067018958
+      ],
+      [
+        47,
+        0.8457048245217768
+      ],
+      [
+        64,
+        0.8506252817658931
+      ],
+      [
+        89,
+        0.8537131255949988
+      ],
+      [
+        122,
+        0.857293865762533
+      ],
+      [
+        168,
+        0.8584780584114347
+      ],
+      [
+        231,
+        0.8608720770775845
+      ],
+      [
+        318,
+        0.861600501540416
+      ],
+      [
+        438,
+        0.8617455657146457
       ]
     ]
+  },
+  "compactacion": {
+    "tipos": "hijos int32, valores y pesos float32, cortes float64",
+    "diferencia_maxima_probabilidad": 2.853522849122214e-07
   }
 }

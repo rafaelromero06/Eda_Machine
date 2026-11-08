@@ -8,12 +8,46 @@
   "semilla": 42,
   "presupuesto_evaluaciones": 40,
   "hiperparametros_finales": {
-    "C": 1.0,
-    "penalty": "l2"
+    "C": 1.6342588311759756,
+    "penalty": "l1"
   },
-  "score_interno_auc": 0.85,
+  "score_interno_auc": 0.8283851209286247,
   "metricas_bucle_externo": {
-    "simulado": true
+    "n_pliegues": 25,
+    "esquema": "validación anidada 5 x 3 repetida 5 veces (semillas 42-46)",
+    "auc": {
+      "media": 0.8289167436431433,
+      "desviacion": 0.015523903962842325
+    },
+    "pr_auc": {
+      "media": 0.5148509159541148,
+      "desviacion": 0.026811361760219678
+    },
+    "brier": {
+      "media": 0.11885762285537785,
+      "desviacion": 0.004032768703466177
+    },
+    "log_loss": {
+      "media": 0.3726335488916257,
+      "desviacion": 0.011958646813969106
+    },
+    "f1": {
+      "media": 0.3866762213853619,
+      "desviacion": 0.02809189784544489
+    },
+    "precision": {
+      "media": 0.5713856501517321,
+      "desviacion": 0.036371235056528034
+    },
+    "recall": {
+      "media": 0.29298458204029354,
+      "desviacion": 0.027430790830784122
+    },
+    "accuracy": {
+      "media": 0.8240601503759399,
+      "desviacion": 0.00687975916541283
+    },
+    "tiempo_prediccion_ms_por_caso": 0.009996
   },
   "esquema_entrada": {
     "fixed acidity": {
@@ -162,14 +196,15 @@
     "joblib": "1.6.0",
     "optuna": "5.0.0"
   },
-  "fecha": "2026-10-26",
-  "tiempo_ajuste_s": 0.041,
+  "fecha": "2026-11-07",
+  "tiempo_ajuste_s": 0.183,
   "tamano_archivo_mb": 0.002,
-  "sha256": "9ccd9e3d08bc057d5297ee71076523d8021312873ecf379b347404b774fa9a8c",
+  "sha256": "226829d7b6ef2637c5f77f13c56a97b5bec162264dd1162d4ae0503f7742923e",
   "prueba_ida_y_vuelta": {
     "n_casos": 200,
     "semilla": 2026,
     "diferencia_maxima": 0.0,
     "identicas": true
-  }
+  },
+  "tiempo_busqueda_final_s": 50.1
 }

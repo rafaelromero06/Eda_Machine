@@ -1,3 +1,4 @@
+import threading
 from functools import lru_cache
 from pathlib import Path
 
@@ -151,13 +152,26 @@ def json_app(nombre: str):
     return json.loads(ruta.read_text(encoding="utf-8")) if ruta.exists() else None
 
 
-@lru_cache(maxsize=1)
+_MODELO_EN_MEMORIA: dict = {}
+_CANDADO_MODELO = threading.Lock()
+
+
 def modelo_final(carpeta: str):
-    """Pipeline final serializado y su metadata; solo el último modelo usado queda en memoria (límite de Render)."""
+    """Pipeline final serializado y su metadata, con un solo modelo en memoria a la vez (límite de Render).
+
+    El modelo anterior se libera antes de cargar el nuevo, así el pico de memoria es el de un solo modelo.
+    """
+    import gc
     import json
     import joblib
-    ruta = RUTA_ARTEFACTOS / carpeta
-    return joblib.load(ruta / "modelo.joblib"), json.loads((ruta / "metadata.json").read_text(encoding="utf-8"))
+    with _CANDADO_MODELO:
+        if carpeta not in _MODELO_EN_MEMORIA:
+            _MODELO_EN_MEMORIA.clear()
+            gc.collect()
+            ruta = RUTA_ARTEFACTOS / carpeta
+            _MODELO_EN_MEMORIA[carpeta] = (joblib.load(ruta / "modelo.joblib"),
+                                           json.loads((ruta / "metadata.json").read_text(encoding="utf-8")))
+        return _MODELO_EN_MEMORIA[carpeta]
 
 
 @lru_cache(maxsize=None)

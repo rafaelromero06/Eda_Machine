@@ -1,0 +1,81 @@
+modelo,alfa,tipo,clase,cobertura
+Bosque Ordinal Focalizado,0.05,marginal,0.0,0.996288564138251
+Bosque Ordinal Focalizado,0.05,marginal,1.0,0.7710604558969276
+Bosque Ordinal Focalizado,0.05,por_clase,0.0,0.9515193690559035
+Bosque Ordinal Focalizado,0.05,por_clase,1.0,0.9672943508424183
+Bosque Ordinal Focalizado,0.1,marginal,0.0,0.980746926467177
+Bosque Ordinal Focalizado,0.1,marginal,1.0,0.5639246778989098
+Bosque Ordinal Focalizado,0.1,por_clase,0.0,0.9007190906982139
+Bosque Ordinal Focalizado,0.1,por_clase,1.0,0.9147670961347869
+CatBoost,0.05,marginal,0.0,0.9679888656924147
+CatBoost,0.05,marginal,1.0,0.8761149653121902
+CatBoost,0.05,por_clase,0.0,0.9480398979355137
+CatBoost,0.05,por_clase,1.0,0.9663032705649157
+CatBoost,0.1,marginal,0.0,0.9248434237995825
+CatBoost,0.1,marginal,1.0,0.8047571853320119
+CatBoost,0.1,por_clase,0.0,0.8970076548364648
+CatBoost,0.1,por_clase,1.0,0.9177403369672944
+Decision Tree,0.05,marginal,0.0,1.0
+Decision Tree,0.05,marginal,1.0,0.7888999008919723
+Decision Tree,0.05,por_clase,0.0,0.9872419392252377
+Decision Tree,0.05,por_clase,1.0,0.9781962338949455
+Decision Tree,0.1,marginal,0.0,0.9946648109487358
+Decision Tree,0.1,marginal,1.0,0.66798810703667
+Decision Tree,0.1,por_clase,0.0,0.9299466481094874
+Decision Tree,0.1,por_clase,1.0,0.9474727452923687
+KNN,0.05,marginal,0.0,0.9993041057759221
+KNN,0.05,marginal,1.0,0.7601585728444004
+KNN,0.05,por_clase,0.0,0.9485038274182325
+KNN,0.05,por_clase,1.0,0.9623389494549058
+KNN,0.1,marginal,0.0,0.991881234052424
+KNN,0.1,marginal,1.0,0.5193260654112983
+KNN,0.1,por_clase,0.0,0.9051264207840408
+KNN,0.1,por_clase,1.0,0.9236868186323092
+LightGBM,0.05,marginal,0.0,0.9737879842263976
+LightGBM,0.05,marginal,1.0,0.8681863230921705
+LightGBM,0.05,por_clase,0.0,0.94595221526328
+LightGBM,0.05,por_clase,1.0,0.9613478691774032
+LightGBM,0.1,marginal,0.0,0.929714683368128
+LightGBM,0.1,marginal,1.0,0.8037661050545094
+LightGBM,0.1,por_clase,0.0,0.8983994432846207
+LightGBM,0.1,por_clase,1.0,0.9167492566897919
+Naive Bayes,0.05,marginal,0.0,0.9538390164694966
+Naive Bayes,0.05,marginal,1.0,0.9415262636273538
+Naive Bayes,0.05,por_clase,0.0,0.9498956158663883
+Naive Bayes,0.05,por_clase,1.0,0.9573835480673935
+Naive Bayes,0.1,marginal,0.0,0.9018789144050104
+Naive Bayes,0.1,marginal,1.0,0.9048562933597621
+Naive Bayes,0.1,por_clase,0.0,0.9028067733704478
+Naive Bayes,0.1,por_clase,1.0,0.9127849355797819
+Random Forest,0.05,marginal,0.0,0.9986082115518441
+Random Forest,0.05,marginal,1.0,0.7680872150644202
+Random Forest,0.05,por_clase,0.0,0.9485038274182325
+Random Forest,0.05,por_clase,1.0,0.9623389494549058
+Random Forest,0.1,marginal,0.0,0.9895615866388309
+Random Forest,0.1,marginal,1.0,0.5272547076313181
+Random Forest,0.1,por_clase,0.0,0.8977035490605428
+Random Forest,0.1,por_clase,1.0,0.9147670961347869
+Regresión Logística (L1/L2),0.05,marginal,0.0,0.9979123173277662
+Regresión Logística (L1/L2),0.05,marginal,1.0,0.755203171456888
+Regresión Logística (L1/L2),0.05,por_clase,0.0,0.9512874043145442
+Regresión Logística (L1/L2),0.05,por_clase,1.0,0.9524281466798811
+Regresión Logística (L1/L2),0.1,marginal,0.0,0.9900255161215495
+Regresión Logística (L1/L2),0.1,marginal,1.0,0.5312190287413281
+Regresión Logística (L1/L2),0.1,por_clase,0.0,0.900023196474136
+Regresión Logística (L1/L2),0.1,por_clase,1.0,0.912784935579782
+SVM,0.05,marginal,0.0,0.9443284620737648
+SVM,0.05,marginal,1.0,0.9722497522299306
+SVM,0.05,por_clase,0.0,0.9498956158663883
+SVM,0.05,por_clase,1.0,0.9514370664023787
+SVM,0.1,marginal,0.0,0.8893528183716075
+SVM,0.1,marginal,1.0,0.9395441030723488
+SVM,0.1,por_clase,0.0,0.8963117606123869
+SVM,0.1,por_clase,1.0,0.8969276511397423
+XGBoost,0.05,marginal,0.0,0.9723961957782417
+XGBoost,0.05,marginal,1.0,0.8553022794846382
+XGBoost,0.05,por_clase,0.0,0.9413129204360937
+XGBoost,0.05,por_clase,1.0,0.9623389494549058
+XGBoost,0.1,marginal,0.0,0.9294827186267687
+XGBoost,0.1,marginal,1.0,0.7641228939544104
+XGBoost,0.1,por_clase,0.0,0.8953839016469497
+XGBoost,0.1,por_clase,1.0,0.8989098116947473

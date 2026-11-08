@@ -1,0 +1,51 @@
+estudio,modelo,fold,parametro,valor,auc,segundos
+bloques_archivo,Random Forest,0,tamano_bloque,10,0.8441746404284768,2.324147500003164
+bloques_archivo,Random Forest,1,tamano_bloque,10,0.8395695965786919,2.17057520000526
+bloques_archivo,Random Forest,2,tamano_bloque,10,0.8599705882352942,1.985928399997647
+bloques_archivo,Random Forest,3,tamano_bloque,10,0.8615306978748497,2.232782600003702
+bloques_archivo,Random Forest,4,tamano_bloque,10,0.8415377906976744,2.3096856999982265
+bloques_archivo,XGBoost,0,tamano_bloque,10,0.8376060660769092,0.9171382000058657
+bloques_archivo,XGBoost,1,tamano_bloque,10,0.837696335078534,1.0621405999991111
+bloques_archivo,XGBoost,2,tamano_bloque,10,0.85527807486631,1.2461256999959005
+bloques_archivo,XGBoost,3,tamano_bloque,10,0.8674786237554148,1.1431131999997888
+bloques_archivo,XGBoost,4,tamano_bloque,10,0.8364825581395348,1.173734099997091
+bloques_archivo,SVM,0,tamano_bloque,10,0.8336522838057412,0.3102175000021816
+bloques_archivo,SVM,1,tamano_bloque,10,0.8257956149598842,0.2964903999964008
+bloques_archivo,SVM,2,tamano_bloque,10,0.8568930481283422,0.34167199999501463
+bloques_archivo,SVM,3,tamano_bloque,10,0.8640935791884965,0.27857570000196574
+bloques_archivo,SVM,4,tamano_bloque,10,0.8378430232558141,0.3166572000045562
+bloques_archivo,KNN,0,tamano_bloque,10,0.8288680267196245,0.010048500000266358
+bloques_archivo,KNN,1,tamano_bloque,10,0.82146537295475,0.00784150000254158
+bloques_archivo,KNN,2,tamano_bloque,10,0.846572192513369,0.011682299998938106
+bloques_archivo,KNN,3,tamano_bloque,10,0.8593760631421379,0.009262699997634627
+bloques_archivo,KNN,4,tamano_bloque,10,0.8283749999999999,0.010535600005823653
+bloques_archivo,Regresión Logística (L1/L2),0,tamano_bloque,10,0.8174459890473612,0.12337530000513652
+bloques_archivo,Regresión Logística (L1/L2),1,tamano_bloque,10,0.8097314296946198,0.13158760000078473
+bloques_archivo,Regresión Logística (L1/L2),2,tamano_bloque,10,0.8361390374331551,0.16755340000236174
+bloques_archivo,Regresión Logística (L1/L2),3,tamano_bloque,10,0.8430178494477331,0.13290649999544257
+bloques_archivo,Regresión Logística (L1/L2),4,tamano_bloque,10,0.8293604651162791,0.13411620000260882
+bloques_archivo,Decision Tree,0,tamano_bloque,10,0.7934615153156407,0.012393000004522037
+bloques_archivo,Decision Tree,1,tamano_bloque,10,0.7813198005825277,0.011929699998290744
+bloques_archivo,Decision Tree,2,tamano_bloque,10,0.8082727272727273,0.011760400004277471
+bloques_archivo,Decision Tree,3,tamano_bloque,10,0.8221830985915494,0.011974699998972937
+bloques_archivo,Decision Tree,4,tamano_bloque,10,0.7983081395348837,0.01128160000371281
+bloques_archivo,Naive Bayes,0,tamano_bloque,10,0.7467111993741349,0.009451099998841528
+bloques_archivo,Naive Bayes,1,tamano_bloque,10,0.7622476755475344,0.007056499998725485
+bloques_archivo,Naive Bayes,2,tamano_bloque,10,0.7837112299465241,0.006750700005795807
+bloques_archivo,Naive Bayes,3,tamano_bloque,10,0.8156766687078996,0.005762299995694775
+bloques_archivo,Naive Bayes,4,tamano_bloque,10,0.7033081395348837,0.0075668000063160434
+bloques_archivo,LightGBM,0,tamano_bloque,10,0.8377866040801589,0.1714161999989301
+bloques_archivo,LightGBM,1,tamano_bloque,10,0.8377439856095396,0.148858200001996
+bloques_archivo,LightGBM,2,tamano_bloque,10,0.8623796791443852,0.15374509999674046
+bloques_archivo,LightGBM,3,tamano_bloque,10,0.8645018257694314,0.1628359999958775
+bloques_archivo,LightGBM,4,tamano_bloque,10,0.8420930232558139,0.13720079999620793
+bloques_archivo,CatBoost,0,tamano_bloque,10,0.849160498284889,13.564845299995795
+bloques_archivo,CatBoost,1,tamano_bloque,10,0.8456897116547242,14.11875229999714
+bloques_archivo,CatBoost,2,tamano_bloque,10,0.8605561497326204,13.87010719999671
+bloques_archivo,CatBoost,3,tamano_bloque,10,0.8700755256174729,13.82185169999866
+bloques_archivo,CatBoost,4,tamano_bloque,10,0.8414011627906975,13.130417799999123
+bloques_archivo,Bosque Ordinal Focalizado,0,tamano_bloque,10,0.836522838057411,11.988702500006184
+bloques_archivo,Bosque Ordinal Focalizado,1,tamano_bloque,10,0.8402396821709582,12.547955699999875
+bloques_archivo,Bosque Ordinal Focalizado,2,tamano_bloque,10,0.8695401069518718,12.198576599999797
+bloques_archivo,Bosque Ordinal Focalizado,3,tamano_bloque,10,0.8660781111791522,12.12188530000276
+bloques_archivo,Bosque Ordinal Focalizado,4,tamano_bloque,10,0.8511860465116279,12.345237800000177

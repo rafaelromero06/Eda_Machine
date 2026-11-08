@@ -1,0 +1,121 @@
+modelo,variable,importancia,escala,n_vinos
+Bosque Ordinal Focalizado,fixed acidity,0.005727641604209196,puntaje agregado del bosque,300
+Bosque Ordinal Focalizado,volatile acidity,0.026889594399723115,puntaje agregado del bosque,300
+Bosque Ordinal Focalizado,citric acid,0.008568901396148007,puntaje agregado del bosque,300
+Bosque Ordinal Focalizado,residual sugar,0.010054186357171523,puntaje agregado del bosque,300
+Bosque Ordinal Focalizado,chlorides,0.008854827944070541,puntaje agregado del bosque,300
+Bosque Ordinal Focalizado,free sulfur dioxide,0.016442472532819497,puntaje agregado del bosque,300
+Bosque Ordinal Focalizado,total sulfur dioxide,0.008577410635160808,puntaje agregado del bosque,300
+Bosque Ordinal Focalizado,density,0.012472524443043627,puntaje agregado del bosque,300
+Bosque Ordinal Focalizado,pH,0.009508110878520503,puntaje agregado del bosque,300
+Bosque Ordinal Focalizado,sulphates,0.012132545361991492,puntaje agregado del bosque,300
+Bosque Ordinal Focalizado,alcohol,0.07927589435228606,puntaje agregado del bosque,300
+Bosque Ordinal Focalizado,tipo_vino,0.005539224850086291,puntaje agregado del bosque,300
+Random Forest,fixed acidity,0.02474991356097928,probabilidad de vino bueno,300
+Random Forest,volatile acidity,0.03843945836647909,probabilidad de vino bueno,300
+Random Forest,citric acid,0.036231321997923206,probabilidad de vino bueno,300
+Random Forest,residual sugar,0.029268261674049764,probabilidad de vino bueno,300
+Random Forest,chlorides,0.05166198431852303,probabilidad de vino bueno,300
+Random Forest,free sulfur dioxide,0.03303816452859886,probabilidad de vino bueno,300
+Random Forest,total sulfur dioxide,0.03987002488296237,probabilidad de vino bueno,300
+Random Forest,density,0.05349793727181775,probabilidad de vino bueno,300
+Random Forest,pH,0.02930724001516128,probabilidad de vino bueno,300
+Random Forest,sulphates,0.036160603790085635,probabilidad de vino bueno,300
+Random Forest,alcohol,0.11477447939860329,probabilidad de vino bueno,300
+Random Forest,tipo_vino,0.0032043099921185763,probabilidad de vino bueno,300
+XGBoost,fixed acidity,0.12575508654117584,logit (log-odds) de vino bueno,300
+XGBoost,volatile acidity,0.25758951902389526,logit (log-odds) de vino bueno,300
+XGBoost,citric acid,0.28605011105537415,logit (log-odds) de vino bueno,300
+XGBoost,residual sugar,0.15748217701911926,logit (log-odds) de vino bueno,300
+XGBoost,chlorides,0.24957549571990967,logit (log-odds) de vino bueno,300
+XGBoost,free sulfur dioxide,0.19249005615711212,logit (log-odds) de vino bueno,300
+XGBoost,total sulfur dioxide,0.17820648849010468,logit (log-odds) de vino bueno,300
+XGBoost,density,0.298294335603714,logit (log-odds) de vino bueno,300
+XGBoost,pH,0.1887604147195816,logit (log-odds) de vino bueno,300
+XGBoost,sulphates,0.18290705978870392,logit (log-odds) de vino bueno,300
+XGBoost,alcohol,0.7537288665771484,logit (log-odds) de vino bueno,300
+XGBoost,tipo_vino,0.026970431208610535,logit (log-odds) de vino bueno,300
+SVM,fixed acidity,0.2872347253878162,función de decisión,120
+SVM,volatile acidity,0.3273711836044064,función de decisión,120
+SVM,citric acid,0.12151911959051082,función de decisión,120
+SVM,residual sugar,0.5317686712481996,función de decisión,120
+SVM,chlorides,0.17681042037548664,función de decisión,120
+SVM,free sulfur dioxide,0.2142771932633896,función de decisión,120
+SVM,total sulfur dioxide,0.34517291262656824,función de decisión,120
+SVM,density,0.828156063756626,función de decisión,120
+SVM,pH,0.2685608217294926,función de decisión,120
+SVM,sulphates,0.20402240097441393,función de decisión,120
+SVM,alcohol,0.35203337720855193,función de decisión,120
+SVM,tipo_vino,0.12619387458908707,función de decisión,120
+KNN,fixed acidity,0.04319759656062897,probabilidad de vino bueno,120
+KNN,volatile acidity,0.04701690052793081,probabilidad de vino bueno,120
+KNN,citric acid,0.017620865437614,probabilidad de vino bueno,120
+KNN,residual sugar,0.022098366890146874,probabilidad de vino bueno,120
+KNN,chlorides,0.022167807027733397,probabilidad de vino bueno,120
+KNN,free sulfur dioxide,0.03121161618455308,probabilidad de vino bueno,120
+KNN,total sulfur dioxide,0.024168247679356474,probabilidad de vino bueno,120
+KNN,density,0.03389759948939922,probabilidad de vino bueno,120
+KNN,pH,0.022325561459831816,probabilidad de vino bueno,120
+KNN,sulphates,0.02871120985642078,probabilidad de vino bueno,120
+KNN,alcohol,0.07059574816177135,probabilidad de vino bueno,120
+KNN,tipo_vino,0.014073873568035382,probabilidad de vino bueno,120
+Regresión Logística (L1/L2),fixed acidity,0.5100524285280715,logit (log-odds) de vino bueno,300
+Regresión Logística (L1/L2),volatile acidity,0.37638245212994204,logit (log-odds) de vino bueno,300
+Regresión Logística (L1/L2),citric acid,0.03846377816149775,logit (log-odds) de vino bueno,300
+Regresión Logística (L1/L2),residual sugar,0.7115460866779371,logit (log-odds) de vino bueno,300
+Regresión Logística (L1/L2),chlorides,0.17099968112283784,logit (log-odds) de vino bueno,300
+Regresión Logística (L1/L2),free sulfur dioxide,0.2330282744298546,logit (log-odds) de vino bueno,300
+Regresión Logística (L1/L2),total sulfur dioxide,0.2924336053428758,logit (log-odds) de vino bueno,300
+Regresión Logística (L1/L2),density,1.0449603387950266,logit (log-odds) de vino bueno,300
+Regresión Logística (L1/L2),pH,0.4226414012520499,logit (log-odds) de vino bueno,300
+Regresión Logística (L1/L2),sulphates,0.25833900813154204,logit (log-odds) de vino bueno,300
+Regresión Logística (L1/L2),alcohol,0.49105062529507315,logit (log-odds) de vino bueno,300
+Regresión Logística (L1/L2),tipo_vino,0.18871898352200522,logit (log-odds) de vino bueno,300
+Decision Tree,fixed acidity,0.0,probabilidad de vino bueno,300
+Decision Tree,volatile acidity,0.020379509870727997,probabilidad de vino bueno,300
+Decision Tree,citric acid,0.02029693611389012,probabilidad de vino bueno,300
+Decision Tree,residual sugar,0.0,probabilidad de vino bueno,300
+Decision Tree,chlorides,0.0,probabilidad de vino bueno,300
+Decision Tree,free sulfur dioxide,0.0,probabilidad de vino bueno,300
+Decision Tree,total sulfur dioxide,0.0,probabilidad de vino bueno,300
+Decision Tree,density,0.0,probabilidad de vino bueno,300
+Decision Tree,pH,0.0,probabilidad de vino bueno,300
+Decision Tree,sulphates,0.0,probabilidad de vino bueno,300
+Decision Tree,alcohol,0.14573761335261248,probabilidad de vino bueno,300
+Decision Tree,tipo_vino,0.0,probabilidad de vino bueno,300
+Naive Bayes,fixed acidity,0.00818036468892982,probabilidad de vino bueno,120
+Naive Bayes,volatile acidity,0.06171440110024624,probabilidad de vino bueno,120
+Naive Bayes,citric acid,0.04662515516424456,probabilidad de vino bueno,120
+Naive Bayes,residual sugar,0.045561801084083024,probabilidad de vino bueno,120
+Naive Bayes,chlorides,0.06040842171627798,probabilidad de vino bueno,120
+Naive Bayes,free sulfur dioxide,0.01677366071771091,probabilidad de vino bueno,120
+Naive Bayes,total sulfur dioxide,0.037603081945214535,probabilidad de vino bueno,120
+Naive Bayes,density,0.08038344281530678,probabilidad de vino bueno,120
+Naive Bayes,pH,0.008626633858840934,probabilidad de vino bueno,120
+Naive Bayes,sulphates,0.009567753717045631,probabilidad de vino bueno,120
+Naive Bayes,alcohol,0.10730266895692372,probabilidad de vino bueno,120
+Naive Bayes,tipo_vino,0.07379858509373165,probabilidad de vino bueno,120
+LightGBM,fixed acidity,0.14839535323883618,logit (log-odds) de vino bueno,300
+LightGBM,volatile acidity,0.3435983636470208,logit (log-odds) de vino bueno,300
+LightGBM,citric acid,0.3007163849995984,logit (log-odds) de vino bueno,300
+LightGBM,residual sugar,0.1543601777120855,logit (log-odds) de vino bueno,300
+LightGBM,chlorides,0.25117305278484664,logit (log-odds) de vino bueno,300
+LightGBM,free sulfur dioxide,0.23084855698466367,logit (log-odds) de vino bueno,300
+LightGBM,total sulfur dioxide,0.24194075365961917,logit (log-odds) de vino bueno,300
+LightGBM,density,0.26576631211231866,logit (log-odds) de vino bueno,300
+LightGBM,pH,0.20890586125758046,logit (log-odds) de vino bueno,300
+LightGBM,sulphates,0.22260540225779513,logit (log-odds) de vino bueno,300
+LightGBM,alcohol,0.8627747075344904,logit (log-odds) de vino bueno,300
+LightGBM,tipo_vino,0.011815849981459636,logit (log-odds) de vino bueno,300
+CatBoost,fixed acidity,0.15624943504345332,logit (log-odds) de vino bueno,300
+CatBoost,volatile acidity,0.42475043666107715,logit (log-odds) de vino bueno,300
+CatBoost,citric acid,0.31245355882371983,logit (log-odds) de vino bueno,300
+CatBoost,residual sugar,0.17834100814961992,logit (log-odds) de vino bueno,300
+CatBoost,chlorides,0.3359898853495864,logit (log-odds) de vino bueno,300
+CatBoost,free sulfur dioxide,0.25969259307437653,logit (log-odds) de vino bueno,300
+CatBoost,total sulfur dioxide,0.2546670949351479,logit (log-odds) de vino bueno,300
+CatBoost,density,0.3290249329687813,logit (log-odds) de vino bueno,300
+CatBoost,pH,0.2823302317233949,logit (log-odds) de vino bueno,300
+CatBoost,sulphates,0.29192203889122664,logit (log-odds) de vino bueno,300
+CatBoost,alcohol,1.0612812616509562,logit (log-odds) de vino bueno,300
+CatBoost,tipo_vino,0.07903708281373696,logit (log-odds) de vino bueno,300

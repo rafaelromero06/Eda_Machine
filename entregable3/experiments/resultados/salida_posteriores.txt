@@ -1,1 +1,84 @@
 == ablacion
+270 ajustes de ablación guardados
+== ablacion: código 0 en 5.8 min
+== modelos_finales
+                     modelo                                                                                                                                                                                             hiperparametros  score_interno  tamano_mb  ida_y_vuelta
+              Random Forest                                                                                                                       {"max_depth": 25, "max_features": "sqrt", "min_samples_leaf": 1, "n_estimators": 500}       0.859286     11.011          True
+                    XGBoost                                                        {"n_estimators": 211, "max_depth": 10, "learning_rate": 0.0180703563421257, "subsample": 0.8340886059849478, "colsample_bytree": 0.5584737825102304}       0.856903      1.265          True
+                        SVM                                                                                                                                                     {"C": 5.456725485601478, "gamma": 0.015876781526923997}       0.845388      0.093          True
+                        KNN                                                                                                                                                          {"n_neighbors": 41, "weights": "distance", "p": 1}       0.845835      0.335          True
+Regresión Logística (L1/L2)                                                                                                                                                                  {"C": 1.6342588311759756, "penalty": "l1"}       0.828385      0.002          True
+              Decision Tree                                                                                                                                             {"criterion": "entropy", "max_depth": 3, "min_samples_leaf": 6}       0.800924      0.003          True
+                Naive Bayes                                                                                                                                                                      {"var_smoothing": 9.9311272588918e-06}       0.765023      0.002          True
+                   LightGBM {"n_estimators": 155, "learning_rate": 0.03217554753344029, "num_leaves": 51, "min_child_samples": 13, "subsample": 0.8785359593239845, "colsample_bytree": 0.6944180659331829, "class_weight": "balanced"}       0.856023      0.371          True
+                   CatBoost                          {"iterations": 766, "learning_rate": 0.013290811331473206, "depth": 9, "l2_leaf_reg": 1.8803545997538655, "bagging_temperature": 0.27583413776432064, "ponderacion": "balanceada"}       0.861340      1.343          True
+  Bosque Ordinal Focalizado                      {"n_estimators": 438, "max_features": null, "min_samples_leaf": 1, "ancho_agregacion": 1.2808169943110324, "ancho_particion": 2.550448049715242, "desplazamiento": 0.3374414545918779}       0.858993     10.437          True
+== modelos_finales: código 0 en 0.5 min
+== robustez
+1160 tareas de robustez
+paralelo listo en 22.8 min
+== robustez: código 0 en 22.8 min
+== escalabilidad
+escalabilidad lista
+== escalabilidad: código 0 en 15.8 min
+== memoria
+{'modelo': 'Random Forest', 'memoria_base_mb': 191.44921875, 'memoria_pico_mb': 247.42578125, 'memoria_ajuste_mb': 55.9765625, 'tamano_en_memoria_mb': 49.25605869293213, 'ajuste_s': 2.267420800002583}
+{'modelo': 'XGBoost', 'memoria_base_mb': 191.82421875, 'memoria_pico_mb': 241.9375, 'memoria_ajuste_mb': 50.11328125, 'tamano_en_memoria_mb': 2.7315969467163086, 'ajuste_s': 0.8304606000019703}
+{'modelo': 'SVM', 'memoria_base_mb': 191.28125, 'memoria_pico_mb': 260.61328125, 'memoria_ajuste_mb': 69.33203125, 'tamano_en_memoria_mb': 0.34272098541259766, 'ajuste_s': 0.3515306000044802}
+{'modelo': 'KNN', 'memoria_base_mb': 191.6171875, 'memoria_pico_mb': 195.95703125, 'memoria_ajuste_mb': 4.33984375, 'tamano_en_memoria_mb': 0.6702775955200195, 'ajuste_s': 0.008554599997296464}
+{'modelo': 'Regresión Logística (L1/L2)', 'memoria_base_mb': 191.125, 'memoria_pico_mb': 195.49609375, 'memoria_ajuste_mb': 4.37109375, 'tamano_en_memoria_mb': 0.002758026123046875, 'ajuste_s': 0.14388100000360282}
+{'modelo': 'Decision Tree', 'memoria_base_mb': 191.62109375, 'memoria_pico_mb': 195.95703125, 'memoria_ajuste_mb': 4.3359375, 'tamano_en_memoria_mb': 0.004206657409667969, 'ajuste_s': 0.0107787000015378}
+{'modelo': 'Naive Bayes', 'memoria_base_mb': 191.37890625, 'memoria_pico_mb': 195.76171875, 'memoria_ajuste_mb': 4.3828125, 'tamano_en_memoria_mb': 0.0029354095458984375, 'ajuste_s': 0.005887399995117448}
+{'modelo': 'LightGBM', 'memoria_base_mb': 191.94921875, 'memoria_pico_mb': 199.2890625, 'memoria_ajuste_mb': 7.33984375, 'tamano_en_memoria_mb': 0.8260679244995117, 'ajuste_s': 0.13751870000123745}
+{'modelo': 'CatBoost', 'memoria_base_mb': 191.13671875, 'memoria_pico_mb': 236.0625, 'memoria_ajuste_mb': 44.92578125, 'tamano_en_memoria_mb': 5.960196495056152, 'ajuste_s': 12.550527499995951}
+{'modelo': 'Bosque Ordinal Focalizado', 'memoria_base_mb': 191.11328125, 'memoria_pico_mb': 615.04296875, 'memoria_ajuste_mb': 423.9296875, 'tamano_en_memoria_mb': 133.18939685821533, 'ajuste_s': 12.03341889999865}
+== memoria: código 0 en 0.9 min
+== analisis
+{
+ "mejor_benchmark": "CatBoost",
+ "auc_bof": 0.8649248435765817,
+ "auc_mejor_benchmark": 0.8630970234669367,
+ "condicion_1_media_mayor_que_todos": true,
+ "condicion_2_tres_pruebas": false,
+ "pruebas_que_rechazan": {
+  "P1_nemenyi": false,
+  "P2_wilcoxon": true,
+  "P3_t_corregida": false,
+  "P4_delong": true
+ },
+ "condicion_3_efecto_no_despreciable": true,
+ "delta_cliff": 0.0912,
+ "d_cohen_pareada": 0.42285549314966125,
+ "condicion_4_consistencia": false,
+ "conjuntos_donde_bof_gana": 0,
+ "conjuntos_significativamente_peor": 1,
+ "superior": false
+}
+tablas de robustez listas
+== analisis: código 0 en 0.2 min
+== tabla_maestra
+origen        conjunto        
+Entregable 2  vino                136
+Entregable 3  abalone              10
+              cardiotocografia     10
+              corazon              10
+              estudiantes          10
+              vino                 10
+dtype: int64
+== tabla_maestra: código 0 en 0.0 min
+== documentos
+MODEL_CARD.md generado
+== documentos: código 0 en 0.0 min
+== app
+SHAP global: Bosque Ordinal Focalizado
+SHAP global: Random Forest
+SHAP global: XGBoost
+SHAP global: SVM
+SHAP global: KNN
+SHAP global: Regresión Logística (L1/L2)
+SHAP global: Decision Tree
+SHAP global: Naive Bayes
+SHAP global: LightGBM
+SHAP global: CatBoost
+datos del dashboard listos en C:\Users\USER\OneDrive\Escritorio\Eda_Machine\entregable3\data\app
+== app: código 0 en 2.2 min
