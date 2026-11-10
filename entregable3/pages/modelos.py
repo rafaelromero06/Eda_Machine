@@ -14,7 +14,7 @@ from src.data import CATEGORICAS_VINO, NUMERICAS_VINO, cargar_vinos, json_app, t
 from src.original_model import auc_mann_whitney
 from src.prediccion import (COLUMNAS, ESQUEMA, armar_vino, distribucion_nota, evaluar, evaluar_lote, explicar, gemelos, palancas,
                             validar)
-from src.tablero import termino
+from src.tablero import idea, siguiente, termino
 from src.tablero_modelos import (contenido_shap, duelo, explicacion_completa, figura_torneo, jueces, resumen_prediccion, tab_comparacion,
                                  tab_diagnostico, tab_lideres, tab_prediccion)
 
@@ -22,8 +22,8 @@ dash.register_page(__name__, path="/modelos", name="Modelos", title="Modelos · 
 
 VINOS = cargar_vinos()
 FONDO = VINOS.sample(200, random_state=0)[NUMERICAS_VINO + CATEGORICAS_VINO]
-PESTANAS = {"lideres": "Tabla de líderes", "prediccion": "Predicción en vivo", "diagnostico": "Diagnóstico", "comparacion": "Comparación estadística",
-            "original": "Modelo original"}
+PESTANAS = {"lideres": "1 · Tabla de líderes", "prediccion": "2 · Predicción en vivo", "diagnostico": "3 · Diagnóstico",
+            "comparacion": "4 · Comparación estadística", "original": "5 · Modelo original"}
 
 
 def tab_original():
@@ -36,13 +36,14 @@ layout = html.Div([
     html.Section(dbc.Container([
         html.Div("Modelos", className="antetitulo"),
         html.H1("De la química a la copa"),
-        html.P("Los 10 finalistas, una predicción en vivo con su explicación y su incertidumbre, el diagnóstico de cada modelo, la comparación "
-               "estadística y el veredicto sobre el modelo original."),
+        html.P("Cinco pestañas, en orden: quién acierta más, cómo se predice un vino, cuánto se equivoca cada modelo, si la ventaja es real "
+               "y cómo funciona el modelo original."),
     ], fluid="xl"), className="pagina-titulo con-azulejo", style={"--patron": "#4c86e0", "--opacidad": "0.1"}),
     html.Section(dbc.Container([
         dbc.Tabs([dbc.Tab(label=texto, tab_id=clave) for clave, texto in PESTANAS.items()], id="pestanas", active_tab="lideres", class_name="pestanas"),
         dcc.Loading(html.Div(id="contenido-pestana"), type="dot", color="#1d5fc4", delay_show=300),
     ], fluid="xl"), className="banda banda-compacta"),
+    siguiente("/modelos", "¿Le ganarías al modelo? En la cata a ciegas eliges entre dos vinos reales y comparas tu acierto con el suyo."),
 ])
 
 
@@ -58,7 +59,13 @@ def renderizar(pestana):
             "original": tab_original}.get(pestana, tab_lideres)()
 
 
-clientside_callback(ClientsideFunction("cata", "cava"), Output("cava", "title"), Input("cava-datos", "data"), Input("cava-metrica", "value"))
+clientside_callback(ClientsideFunction("cata", "ir"), Output("pestanas", "active_tab", allow_duplicate=True),
+                    Input({"tipo": "ir", "pestana": ALL}, "n_clicks"), prevent_initial_call=True)
+
+clientside_callback(ClientsideFunction("cata", "recordar"), Output("contenido-pestana", "title"), Input("pestanas", "active_tab"))
+
+clientside_callback(ClientsideFunction("cata", "cava"), Output("cava", "title"), Output("cava-explica", "children"),
+                    Input("cava-datos", "data"), Input("cava-metrica", "value"))
 
 
 @callback(Output("g-torneo", "figure"), Output("l-torneo", "children"), Input("torneo-tarea", "value"))
@@ -167,27 +174,33 @@ def diagnostico(modelo):
     prec, rec, _ = precision_recall_curve(y, p)
     auc = auc_mann_whitney(y, p)
     pr_auc = float(np.sum(np.diff(rec[::-1]) * prec[::-1][1:]))
-    l_roc = [f"Si tomas un vino bueno y uno no bueno al azar, el modelo le da más puntaje al bueno el {100 * auc:.0f} % de las veces (", termino("AUC"),
-             f" = {auc:.3f}). El punto naranja es el umbral elegido a la izquierda."]
-    l_pr = (f"La línea gris es la prevalencia ({100 * y.mean():.0f} %), lo que lograría un modelo que no sabe nada. Al subir la sensibilidad la precisión "
-            "cae: encontrar casi todos los vinos buenos obliga a catar muchos que no lo son.")
+    l_roc = idea(f"De cada 100 parejas de vinos, ordena bien {100 * auc:.0f}.",
+                 "Una pareja es un vino bueno y uno que no lo es, tomados al azar; acierta si le da más puntaje al bueno. Eso mide el ", termino("AUC"),
+                 f" ({auc:.3f}). El punto naranja es el umbral elegido a la izquierda.")
+    l_pr = idea("Encontrar más vinos buenos cuesta más falsas alarmas.",
+                f"Al avanzar hacia la derecha el modelo encuentra más vinos buenos, pero acierta menos entre los que marca. La línea gris "
+                f"({100 * y.mean():.0f} %) es lo que lograría alguien que marcara vinos al azar.")
     curvas = tabla_app("calibracion_curvas.csv")
     cal = tabla_app("calibracion.csv")
     if modelo != "SVM" and curvas is not None and (curvas["modelo"] == modelo).any():
         fila_cal = cal.set_index("modelo").loc[modelo]
         fig_cal = plots.curva_calibracion(curvas[curvas["modelo"] == modelo], modelo)
-        l_cal = ["Si los puntos siguen la diagonal, la probabilidad se puede leer literalmente: de cada 100 vinos con 30 %, unos 30 son buenos. ",
-                 termino("ECE"), f" = {fila_cal['ece']:.3f} y ", termino("Brier"), f" = {fila_cal['brier']:.3f}."]
+        ece = float(fila_cal["ece"])
+        titular = ("Sus probabilidades son de fiar." if ece < 0.02 else "Sus probabilidades se desvían un poco de la realidad." if ece < 0.05
+                   else "Sus probabilidades no se pueden leer al pie de la letra.")
+        l_cal = idea(titular, f"En promedio se desvían {100 * ece:.1f} puntos porcentuales de lo que de verdad pasa (", termino("ECE"),
+                     f" = {ece:.3f}). Si dice 30 %, deberían ser buenos unos 30 de cada 100 vinos. ", termino("Brier"),
+                     f" = {fila_cal['brier']:.3f}.")
     else:
         fig_cal = plots.vacia("SVM entrega una función de decisión, no una probabilidad")
-        l_cal = "SVM no tiene curva de calibración porque su salida no es una probabilidad."
+        l_cal = idea("SVM no entrega probabilidades.", "Su salida es un puntaje sin escala, así que no tiene curva de calibración.")
     return (plots.curva_roc(fpr, tpr, auc, modelo), l_roc, plots.curva_pr(rec, prec, pr_auc, y.mean()), l_pr, fig_cal, l_cal, contenido_shap(modelo))
 
 
 clientside_callback(ClientsideFunction("cata", "decision"),
                     Output("dec-vp", "children"), Output("dec-fn", "children"), Output("dec-fp", "children"), Output("dec-vn", "children"),
                     Output("dec-precision", "children"), Output("dec-sensibilidad", "children"), Output("dec-f1", "children"),
-                    Output("dec-umbral-texto", "children"), Output("dec-sugerencia", "children"),
+                    Output("dec-umbral-texto", "children"), Output("dec-sugerencia", "children"), Output("dec-detalle", "children"),
                     Input("dec-datos", "data"), Input("diag-modelo", "value"), Input("dec-umbral", "value"), Input("dec-costo", "value"),
                     Input("g-roc", "figure"))
 

@@ -28,7 +28,8 @@ def test_filtros_del_eda(aplicacion):
     salida = actualizar_general(["red", "white"], [3, 9], [8.0, 15.0])
     assert len(salida) == 9
     assert "5320" in str(salida[0].to_plotly_json())
-    assert "19.0 %" in salida[2]
+    assert "19.0 %" in str(salida[2])
+    assert "son buenos" in salida[2][0].children
     figs = actualizar_variable(["white"], [3, 9], [8.0, 15.0], "alcohol")
     assert len(figs) == 3
     disp = actualizar_dispersion(["red", "white"], [3, 9], [8.0, 15.0], "alcohol", "volatile acidity", "clase")
@@ -108,3 +109,29 @@ def test_comparacion_con_cada_rival(aplicacion):
     for rival in pr["benchmark"]:
         duelo, jueces = comparar(rival)
         assert duelo and jueces
+
+
+def test_glosario_agrupado_y_completo(aplicacion):
+    from src.tablero import GLOSARIO, GRUPOS_GLOSARIO, panel_glosario
+    agrupadas = [c for claves in GRUPOS_GLOSARIO.values() for c in claves]
+    assert sorted(agrupadas) == sorted(GLOSARIO)
+    assert len(agrupadas) == len(set(agrupadas))
+    assert panel_glosario()
+
+
+def test_recorrido_marca_la_pagina_actual(aplicacion):
+    from src.tablero import PAGINAS, recorrido, siguiente
+    rutas = {p["path"] for p in dash.page_registry.values()}
+    assert {p[0] for p in PAGINAS} == rutas
+    for ruta, *_ in PAGINAS:
+        assert str(recorrido(ruta).to_plotly_json()).count("eslabon actual") == 1
+        assert siguiente(ruta) is not None
+
+
+def test_nombres_en_frases_respetan_simbolos():
+    from src.tablero import minuscula, p_valor
+    assert minuscula("Alcohol") == "alcohol"
+    assert minuscula("SO₂ libre") == "SO₂ libre"
+    assert minuscula("pH") == "pH"
+    assert p_valor(2.6e-101) == "< 0.0001"
+    assert p_valor(0.0451) == "0.0451"

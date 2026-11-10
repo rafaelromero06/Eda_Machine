@@ -68,7 +68,7 @@ def aplicar_balanceo(nombre_balanceo: str, nombre_modelo: str, estimador):
             params = estimador.get_params()
             return BalancedXGBClassifier(**params), [], True
         if nombre_modelo == "KNN":
-            return estimador, [], False  # no aplica: sin mecanismo de ponderación
+            return estimador, [], False
         raise ValueError(f"Modelo sin regla de class_weight definida: {nombre_modelo}")
 
     raise ValueError(f"Técnica de balanceo desconocida: {nombre_balanceo!r}")

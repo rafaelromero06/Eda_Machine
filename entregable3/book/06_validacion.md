@@ -96,7 +96,7 @@ glue("rango_mejor", f"{rangos[mejor]:.2f}", display=False)
 Izquierda: rangos medios de los 10 modelos en los 25 bloques y diferencia crítica de Nemenyi (α = 0.05); los modelos dentro de la franja azul no se distinguen del mejor. Derecha: AUC de cada bloque.
 ```
 
-La prueba de Friedman con la corrección de Iman–Davenport rechaza que los 10 modelos sean iguales (F = {glue:text}`F_ID`, p = {glue:text}`p_ID`), con un tamaño de efecto W de Kendall de {glue:text}`W`. El rango medio del BOF es {glue:text}`rango_bof` y el del mejor benchmark ({glue:text}`mejor`), {glue:text}`rango_mejor`. PENDIENTE: lectura del diagrama.
+La prueba de Friedman con la corrección de Iman–Davenport rechaza que los 10 modelos sean iguales (F = {glue:text}`F_ID`, p = {glue:text}`p_ID`), con un tamaño de efecto W de Kendall de {glue:text}`W`. El rango medio del BOF es {glue:text}`rango_bof` y el del mejor benchmark ({glue:text}`mejor`), {glue:text}`rango_mejor`. En el diagrama, la franja de la diferencia crítica (CD = 2.71) que parte del BOF cubre solo a CatBoost y a Random Forest: Nemenyi, que controla todas las comparaciones a la vez, no distingue a esos tres modelos. Sí separa al BOF de los otros siete, desde LightGBM hasta Naive Bayes. El panel derecho muestra por qué: la dispersión del AUC entre bloques de un mismo modelo es mayor que la distancia entre las medias de los primeros.
 
 ## Pruebas pareadas frente a cada benchmark
 
@@ -166,7 +166,7 @@ glue("dif_vinos", f"{dif_vinos:+.0f}", display=False)
 glue("dif_top", f"{dif_top:+d}", display=False)
 ```
 
-La tabla traduce la diferencia a vinos con las predicciones fuera de muestra de la repetición 1 (los 5320 vinos, {glue:text}`n_buenos` buenos). Con la misma tasa de falsos positivos (10 % de los vinos no buenos marcados como buenos), la diferencia entre el BOF y {glue:text}`mejor` es de {glue:text}`dif_vinos` vinos buenos detectados; si una bodega solo pudiera catar los {glue:text}`k_top` vinos con mayor puntaje (el 20 %), la diferencia sería de {glue:text}`dif_top` vinos buenos. PENDIENTE: juicio sobre la relevancia.
+La tabla traduce la diferencia a vinos con las predicciones fuera de muestra de la repetición 1 (los 5320 vinos, {glue:text}`n_buenos` buenos). Con la misma tasa de falsos positivos (10 % de los vinos no buenos marcados como buenos), la diferencia entre el BOF y {glue:text}`mejor` es de {glue:text}`dif_vinos` vinos buenos detectados; si una bodega solo pudiera catar los {glue:text}`k_top` vinos con mayor puntaje (el 20 %), la diferencia sería de {glue:text}`dif_top` vinos buenos. Son diferencias modestas pero no nulas: unos 50 vinos buenos más con la misma tasa de falsas alarmas y unos 30 más entre los que se catarían primero. Sin embargo, corresponden a una sola repetición, justo aquella en la que CatBoost queda más lejos de su media (0.8488 frente a 0.8631); frente a Random Forest, con las mismas predicciones, la ventaja es de 7 y 10 vinos. En el promedio de las 25 particiones la diferencia de AUC con CatBoost es de 0.0018, de modo que la ventaja práctica del BOF sobre el mejor benchmark es pequeña y depende de la partición.
 
 (sec-veredicto)=
 ## Veredicto sobre la superioridad (R3)
@@ -187,4 +187,4 @@ mostrar(pd.DataFrame([
 ]))
 ```
 
-PENDIENTE: redacción del veredicto.
+El BOF cumple dos de las cuatro condiciones. Tiene el AUC medio más alto de los 10 modelos (0.8649 frente a 0.8631 de CatBoost) y la d pareada (0.42) supera el umbral de un efecto no despreciable, aunque la δ de Cliff (0.09) no lo hace. No cumple la condición de las pruebas: frente a CatBoost solo rechazan la igualdad Wilcoxon (p ajustado = 0.045) y DeLong (p ajustado < 0.0001), mientras que Nemenyi (p = 0.999) y la t corregida de Nadeau y Bengio (p = 0.44) no lo hacen, y la regla exigía tres de cuatro. Tampoco cumple la de consistencia: no es el mejor en ninguno de los cuatro conjuntos adicionales y en Abalone es significativamente peor que el mejor benchmark. En consecuencia, **el BOF no es superior** según la regla pre-registrada. La lectura conjunta de las pruebas es coherente: el BOF gana 18 de los 25 bloques, casi siempre por poco, y la prueba bayesiana asigna una probabilidad de 0.90 a que ambos modelos sean equivalentes en la práctica (diferencia menor que 0.005 de AUC). Frente a 7 de los 9 benchmarks, en cambio, las tres pruebas pareadas confirman la ventaja.

@@ -6,7 +6,7 @@
 - **Versión:** 1.0 (2026-11-07). Artefacto: `artifacts/bosque_ordinal_focalizado/modelo.joblib` (SHA-256 `393b8457d4167611…`).
 - **Tipo:** clasificador binario basado en un bosque de árboles extremadamente aleatorizados de salida múltiple, programado desde cero con numpy y scipy (`src/original_model.py`).
 - **Algoritmo:** aprende las probabilidades acumuladas P(nota ≥ t) con una impureza ponderada por un núcleo centrado en el umbral 7, puntúa combinando los umbrales vecinos con un segundo núcleo y calibra el puntaje con los casos fuera de bolsa.
-- **Hiperparámetros finales:** `n_estimators` = 438, `max_features` = None, `min_samples_leaf` = 1, `ancho_agregacion` = 1.2808169943110324, `ancho_particion` = 2.550448049715242, `desplazamiento` = 0.3374414545918779. Se despliegan 231 árboles (el menor número con AUC fuera de bolsa a menos de 0.001 del bosque completo).
+- **Hiperparámetros finales:** `n_estimators` = 438, `max_features` = None, `min_samples_leaf` = 1, `ancho_agregacion` = 1.281, `ancho_particion` = 2.55, `desplazamiento` = 0.3374. Se despliegan 231 árboles (el menor número con AUC fuera de bolsa a menos de 0.001 del bosque completo).
 - **Licencia:** MIT. **Cita:** ver `CITATION.cff`.
 - **Contacto:** repositorio https://github.com/rafaelromero06/Eda_Machine.
 

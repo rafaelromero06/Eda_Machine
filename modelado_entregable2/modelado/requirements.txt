@@ -1,36 +1,25 @@
-
-# --- Núcleo ---
 numpy==2.4.4
 pandas==3.0.2
 scipy==1.17.1
 scikit-learn==1.8.0
-joblib==1.6.0        # ejecución en paralelo (return_as="generator_unordered")
+joblib==1.6.0
 xgboost==3.4.1
 
-# --- balanceo de clases (SMOTE, ADASYN) ---
 imbalanced-learn==0.14.2
 
-# ---  optimización de hiperparámetros ---
-optuna==5.0.0       # Bayesiano (sampler TPE)
-deap==1.4.4          # Algoritmo genético
+optuna==5.0.0
+deap==1.4.4
 
-# ---  interpretabilidad ---
 shap==0.52.0
 lime==0.2.0.1
 
-# ---  pruebas estadísticas ---
-statsmodels==0.15.0   # White, BDS, Ljung-Box (residuos)
-scikit-posthocs==0.16.1  # Nemenyi post-hoc (tras Friedman)
+statsmodels==0.15.0
+scikit-posthocs==0.16.1
 
-# --- medición de recursos (costo computacional) ---
 psutil==7.2.2
 
-# --- Visualización (curvas ROC, matrices de confusión, CD diagram, etc.) ---
 matplotlib==3.10.8
 seaborn==0.13.2
 
-# --- Notebooks (Jupyter / VS Code) ---
-ipykernel==6.27.0    # kernel para eda/EDA_wine_quality.ipynb y los notebooks 01 a 06 del modelado
+ipykernel==6.27.0
 
-# --- Entorno ---
-# Python 3.12.14

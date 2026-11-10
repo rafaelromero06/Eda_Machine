@@ -400,7 +400,9 @@
     svg.appendChild(crearSvg("rect", { class: "etiqueta-botella", x: "12", y: "128", width: "36", height: "34", rx: "3" }));
     var puesto = crearSvg("text", { x: "30", y: "151", "text-anchor": "middle" });
     svg.appendChild(puesto);
-    var nombre = crear("div", "botella-nombre", fila.corto);
+    var nombre = crear("div", "botella-nombre");
+    nombre.appendChild(crear("span", "largo", fila.nombre || fila.modelo));
+    nombre.appendChild(crear("span", "corto", fila.corto));
     div.appendChild(valor);
     div.appendChild(svg);
     div.appendChild(nombre);
@@ -410,7 +412,7 @@
 
   function cava(datos, metrica) {
     var contenedor = document.getElementById("cava");
-    if (!contenedor || !datos) return NO();
+    if (!contenedor || !datos) return [NO(), NO()];
     var m = METRICAS[metrica] || METRICAS.auc;
     var filas = datos.filas;
     var base = metrica === "auc" ? 0.5 : (metrica === "pr" ? datos.prevalencia : datos.prevalencia * (1 - datos.prevalencia));
@@ -439,7 +441,13 @@
       div.setAttribute("aria-label", texto);
       div.title = texto;
     });
-    return "Modelos ordenados por " + m.nombre;
+    var azar = datos.prevalencia;
+    var explica = {
+      auc: "AUC: de cada 100 parejas de vinos (uno bueno y uno que no), en cuántas el modelo le da más puntaje al bueno. 0.5 es adivinar y 1 es no fallar nunca.",
+      pr: "PR-AUC: qué tan limpia es la lista de vinos que el modelo marca como buenos. Marcando al azar valdría " + formato(azar, 2) + ", la proporción de vinos buenos.",
+      brier: "Brier: cuánto se equivocan sus probabilidades. Aquí menos es mejor: decir siempre " + Math.round(azar * 100) + " % daría " + formato(azar * (1 - azar), 3) + ". SVM no entrega probabilidades y queda al final."
+    };
+    return ["Modelos ordenados por " + m.nombre, explica[metrica] || explica.auc];
   }
 
   function nucleo(indice, desplazamiento, escala) {
@@ -472,7 +480,7 @@
 
   function decision(datos, modelo, umbral, costo) {
     var no = NO();
-    var vacio = [no, no, no, no, no, no, no, no, no];
+    var vacio = [no, no, no, no, no, no, no, no, no, no];
     if (!datos || !modelo || !datos.modelos[modelo]) return vacio;
     var i = Math.round(limitar(umbral, 0, 1) * 100);
     var m = datos.modelos[modelo];
@@ -481,6 +489,8 @@
     var precision = vp + fp > 0 ? vp / (vp + fp) : NaN;
     var sensibilidad = vp / P;
     var f1 = isFinite(precision) && precision + sensibilidad > 0 ? 2 * precision * sensibilidad / (precision + sensibilidad) : NaN;
+    var nvp = Math.round(100 * vp / total), nfn = Math.round(100 * fn / total), nfp = Math.round(100 * fp / total);
+    var nvn = Math.max(0, 100 - nvp - nfn - nfp);
     var mosaico = document.getElementById("mosaico");
     if (mosaico) {
       if (mosaico.children.length !== 100) {
@@ -491,7 +501,6 @@
           mosaico.appendChild(teja);
         }
       }
-      var nvp = Math.round(100 * vp / total), nfn = Math.round(100 * fn / total), nfp = Math.round(100 * fp / total);
       var clases = [];
       for (var a = 0; a < nvp; a++) clases.push(["vp", "✓"]);
       for (var b = 0; b < nfn; b++) clases.push(["fn", "○"]);
@@ -521,12 +530,15 @@
     var jm = Math.round(mejorUmbral * 100);
     var sensMejor = m.vp[jm] / P;
     var catas = m.vp[jm] + m.fp[jm];
-    var sugerencia = "Si perder un vino bueno cuesta " + formato(costo, 0) + " veces lo que cuesta catar uno que no lo es, el umbral más barato es " +
-      formato(mejorUmbral, 2) + ": encuentra el " + Math.round(sensMejor * 100) + " % de los vinos buenos y manda a cata " + formato(catas, 0) +
-      " de cada " + formato(total, 0) + " vinos.";
+    var sugerencia = "Conviene un umbral de " + Math.round(mejorUmbral * 100) + " %. Si perder un vino bueno es " + formato(costo, 0) +
+      " veces peor que catar uno que no lo es, ese es el más barato: encuentra " + Math.round(sensMejor * 100) +
+      " de cada 100 vinos buenos y manda a cata " + formato(catas, 0) + " de los " + formato(total, 0) + " vinos.";
     var pct = function (v) { return isFinite(v) ? Math.round(v * 100) + " %" : "—"; };
-    return [formato(vp, 0), formato(fn, 0), formato(fp, 0), formato(vn, 0), pct(precision), pct(sensibilidad), isFinite(f1) ? formato(f1, 2) : "—",
-      "Umbral " + formato(umbral, 2) + ": el modelo marca como bueno todo vino con probabilidad de " + formato(umbral, 2) + " o más.", sugerencia];
+    var detalle = "En los " + formato(total, 0) + " vinos: " + formato(vp, 0) + " buenos encontrados, " + formato(fn, 0) + " perdidos, " +
+      formato(fp, 0) + " falsas alarmas y " + formato(vn, 0) + " bien descartados.";
+    return [String(nvp), String(nfn), String(nfp), String(nvn), pct(precision), pct(sensibilidad), isFinite(f1) ? formato(f1, 2) : "—",
+      "Con " + Math.round(umbral * 100) + " %: el modelo llama «bueno» a todo vino al que le da " + Math.round(umbral * 100) + " % o más de probabilidad.",
+      sugerencia, detalle];
   }
 
   var Juego = {
@@ -588,12 +600,17 @@
     },
     comparacion: function (a, b) {
       var tabla = crear("div", "comparacion");
+      var pistas = this.datos.pistas || [];
       this.datos.escala.forEach(function (v, k) {
         var fila = crear("div", "comparacion-fila");
         [a, null, b].forEach(function (vino, j) {
           if (vino === null) {
             var nombre = crear("div", "comparacion-nombre", v.etiqueta);
             nombre.appendChild(crear("small", "", v.unidad));
+            var pista = pistas[k];
+            if (pista && pista.sentido !== 0) {
+              nombre.appendChild(crear("span", "pista" + (pista.clave ? " fuerte" : ""), pista.sentido > 0 ? "▲ más alto en los buenos" : "▼ más bajo en los buenos"));
+            }
             fila.appendChild(nombre);
             return;
           }
@@ -690,6 +707,68 @@
     }
   };
 
+  document.addEventListener("change", function (e) {
+    if (e.target && e.target.id === "juego-pistas") {
+      var juego = document.getElementById("juego");
+      if (juego) juego.classList.toggle("con-pistas", e.target.checked);
+    }
+  });
+
+  function filtrarGlosario(texto) {
+    var buscado = texto.trim().toLowerCase();
+    var visibles = 0;
+    document.querySelectorAll("#glosario-lista .glosario-bloque").forEach(function (bloque) {
+      var enBloque = 0;
+      bloque.querySelectorAll(".glosario-entrada").forEach(function (entrada) {
+        var coincide = !buscado || entrada.textContent.toLowerCase().indexOf(buscado) !== -1;
+        entrada.hidden = !coincide;
+        if (coincide) enBloque += 1;
+      });
+      bloque.hidden = enBloque === 0;
+      visibles += enBloque;
+    });
+    var vacio = document.getElementById("glosario-vacio");
+    if (vacio) vacio.hidden = visibles > 0;
+  }
+
+  document.addEventListener("input", function (e) {
+    if (e.target && e.target.id === "glosario-buscar") filtrarGlosario(e.target.value);
+  });
+
+  function abrirGlosario(clave) {
+    var boton = document.getElementById("glosario-boton");
+    if (!boton) return;
+    if (!document.querySelector(".panel-glosario.show")) boton.click();
+    var intentos = 0;
+    var buscar = function () {
+      var entrada = document.querySelector('#glosario-lista .glosario-entrada[data-termino="' + CSS.escape(clave) + '"]');
+      if (!entrada) {
+        if (intentos++ < 20) window.setTimeout(buscar, 60);
+        return;
+      }
+      var campo = document.getElementById("glosario-buscar");
+      if (campo && campo.value) {
+        campo.value = "";
+        filtrarGlosario("");
+      }
+      document.querySelectorAll(".glosario-entrada.resaltada").forEach(function (el) { el.classList.remove("resaltada"); });
+      entrada.classList.add("resaltada");
+      entrada.scrollIntoView({ block: "center", behavior: reducido ? "auto" : "smooth" });
+    };
+    window.setTimeout(buscar, 80);
+  }
+
+  document.addEventListener("click", function (e) {
+    var palabra = e.target && e.target.closest ? e.target.closest(".termino[data-clave]") : null;
+    if (palabra) abrirGlosario(palabra.dataset.clave);
+  });
+  document.addEventListener("keydown", function (e) {
+    if ((e.key === "Enter" || e.key === " ") && e.target && e.target.matches && e.target.matches(".termino[data-clave]")) {
+      e.preventDefault();
+      abrirGlosario(e.target.dataset.clave);
+    }
+  });
+
   window.Cata = { copa: copaDe };
 
   window.dash_clientside = Object.assign({}, window.dash_clientside, {
@@ -719,6 +798,21 @@
         return "Copa llena al " + Math.round(datos.p * 100) + " %: probabilidad de que el vino sea bueno según " + datos.modelo;
       },
       cava: cava,
+      ir: function () {
+        var ctx = window.dash_clientside.callback_context;
+        if (!ctx.triggered.length || !ctx.triggered[0].value) return NO();
+        var destino = JSON.parse(ctx.triggered[0].prop_id.split(".n_clicks")[0]).pestana;
+        var pestanas = document.getElementById("pestanas");
+        if (pestanas) pestanas.scrollIntoView({ block: "start", behavior: reducido ? "auto" : "smooth" });
+        return destino;
+      },
+      recordar: function (pestana) {
+        if (pestana && window.location.pathname === "/modelos") {
+          var destino = "/modelos?pestana=" + encodeURIComponent(pestana);
+          if (window.location.pathname + window.location.search !== destino) window.history.replaceState(window.history.state, "", destino);
+        }
+        return NO();
+      },
       nucleo: nucleo,
       decision: decision,
       juego: function (datos) {

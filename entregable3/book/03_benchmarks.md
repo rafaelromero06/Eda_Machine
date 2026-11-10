@@ -124,7 +124,7 @@ mostrar(t.drop(columns=["auc_ic_inf", "auc_ic_sup"]).rename(columns={"modelo": "
         {"AUC media": "{:.4f}", "DE": "{:.4f}", "AUC repetición 1": "{:.4f}", "PR-AUC": "{:.4f}", "Brier": "{:.4f}", "F1 (0.5)": "{:.3f}"})
 ```
 
-PENDIENTE: interpretación de la tabla de resultados.
+El BOF tiene el AUC medio más alto (0.8649), seguido de CatBoost (0.8631) y Random Forest (0.8609). Los tres quedan a menos de una desviación estándar entre sí (cerca de 0.012), de modo que el orden entre ellos no se puede leer en esta tabla: decidirlo es el objeto de las pruebas pareadas del capítulo 6. Después vienen LightGBM y XGBoost (0.857 y 0.856), SVM y KNN (0.848 y 0.847) y, más lejos, la regresión logística, el árbol de decisión y Naive Bayes. El PR-AUC conserva ese orden. En calibración, el BOF y Random Forest tienen los menores puntajes de Brier (0.108 y 0.109), mientras que los métodos de *boosting* quedan entre 0.115 y 0.122. El F1 con umbral 0.5 favorece a los modelos entrenados con balanceo (XGBoost con SMOTE, 0.555), porque desplazan las probabilidades hacia la clase minoritaria; el AUC, que no depende del umbral, no premia ese desplazamiento. En la repetición 1 el AUC de CatBoost (0.8488) queda por debajo de su media de 25 particiones: esa diferencia entre repeticiones es la razón para repetir la validación cinco veces y no decidir con una sola.
 
 ## Reentrenamiento final y serialización
 
@@ -144,4 +144,4 @@ artef = pd.DataFrame(filas)
 mostrar(artef, {"Tamaño (MB)": "{:.2f}", "Diferencia máxima": "{:.1e}"})
 ```
 
-PENDIENTE: comentario sobre tamaños y reducción de árboles.
+En los 10 modelos la predicción del artefacto recargado coincide con la del modelo en memoria. Los dos bosques son los artefactos más pesados (unos 10 MB el BOF y 11 MB Random Forest); CatBoost y XGBoost pesan cerca de 1.3 MB y los demás menos de 0.5 MB. Para que el servicio gratuito de Render (512 MB) los soporte, los bosques se reducen al menor número de árboles cuyo AUC fuera de bolsa queda a menos de 0.001 del bosque completo: el BOF despliega 231 de sus 438 árboles (AUC fuera de bolsa de 0.8609 frente a 0.8617) y Random Forest 425 de 500. La reducción se decide solo con los casos fuera de bolsa, sin tocar los resultados de la validación. Además, los valores de las hojas del BOF se guardan con precisión simple, por lo que su prueba de ida y vuelta admite una tolerancia de 10⁻⁶ entre sistemas operativos.

@@ -147,7 +147,7 @@ def ejecutar_lote(tarea, combinaciones, X, y, ruta_log: Path, reanudar=True,
             ]
             folds_hechos = set(int(f) for f in ya["fold_externo"].tolist())
         if len(folds_hechos) >= k_outer:
-            continue  # ya completo, no imprime nada (evita saturar el log en corridas largas)
+            continue
 
         faltan = sorted(set(range(k_outer)) - folds_hechos)
         print(f"[corriendo] {nombre_modelo} x {nombre_balanceo} x {nombre_optimizador} "
@@ -168,21 +168,6 @@ def ejecutar_lote(tarea, combinaciones, X, y, ruta_log: Path, reanudar=True,
     return log_previo if not log_previo.empty else pd.DataFrame()
 
 
-# =============================================================================
-# Ejecución en PARALELO (PC con varios núcleos)
-# =============================================================================
-# Cada tarea = un fold externo de una combinación (modelo, balanceo,
-# optimizador). Las tareas son independientes entre sí (cada una recibe su
-# propio split externo, determinado por la semilla), así que se reparten
-# entre N_WORKERS procesos. El proceso principal es el ÚNICO que escribe en
-# los CSV (a medida que cada tarea termina), así no hay dos procesos
-# escribiendo el mismo archivo a la vez y el checkpoint sigue siendo por
-# fold: si la corrida se interrumpe, volver a lanzarla retoma lo pendiente.
-
-# Peso relativo aproximado de cada tarea, medido en la corrida de 1 núcleo.
-# Solo se usa para ORDENAR: las tareas más pesadas se lanzan primero, así
-# no queda un Random Forest largo corriendo solo al final mientras el resto
-# de núcleos ya terminó (reduce el tiempo total de la corrida).
 _PESO_MODELO = {"Random Forest": 10, "XGBoost": 5, "SVM": 3, "SVR": 3, "KNN": 1.5}
 _PESO_BALANCEO = {"SMOTE": 2, "ADASYN": 2}
 _PESO_OPTIMIZADOR = {"Grid Search": 1.5}
@@ -198,7 +183,7 @@ def _ejecutar_fold(tarea, modelo, balanceo, optimizador, fold_i, X, y,
                    k_outer, k_inner, presupuesto, seed):
     """Corre UN fold externo. Se ejecuta dentro de un proceso worker."""
     import warnings
-    warnings.filterwarnings("ignore")  # los workers no heredan los filtros del proceso principal
+    warnings.filterwarnings("ignore")
     otros = frozenset(range(k_outer)) - {fold_i}
     filas = list(ejecutar_combinacion(
         tarea, modelo, balanceo, optimizador, X, y,

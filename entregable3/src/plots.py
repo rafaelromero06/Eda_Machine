@@ -91,10 +91,15 @@ def distribucion_objetivo(df):
                              text=[f"{100 * v / total:.1f} %" for v in c.values], textposition="outside", cliponaxis=False,
                              textfont=dict(size=11, color=TINTA_2),
                              hovertemplate="Nota %{x}<br>%{y} vinos (%{customdata:.1f} %)<extra></extra>"))
-    fig.update_xaxes(title="Nota de calidad (0 a 10)", type="category", categoryorder="array", categoryarray=[str(i) for i in range(3, 10)])
+    notas = [str(i) for i in range(3, 10)]
+    fig.add_trace(go.Bar(x=notas, y=[0] * len(notas), showlegend=False, hoverinfo="skip"))
+    fig.add_vline(x=3.5, line_color=TINTA_2, line_width=1.5, line_dash="dot")
+    fig.add_annotation(x=3.5, y=1, yref="paper", text="desde 7: bueno →", showarrow=False, xanchor="left", xshift=6, yanchor="top",
+                       font=dict(size=12, color=TINTA_2))
+    fig.update_xaxes(title="Nota de calidad (0 a 10)", type="category", categoryorder="array", categoryarray=notas)
     fig.update_yaxes(title="Número de vinos")
     fig = _base(fig, "¿Cuántos vinos hay de cada nota?", 360)
-    fig.update_layout(bargap=0.55)
+    fig.update_layout(bargap=0.55, barmode="overlay")
     return fig
 
 
@@ -115,7 +120,7 @@ def caja_atipicos(df, variable, etiqueta):
         fig.add_trace(go.Box(y=sub[variable], name=nombre.split(" (")[0], marker_color=color, boxpoints="outliers", line_width=1.5, marker=dict(size=5)))
     fig.update_yaxes(title=etiqueta)
     fig.update_layout(showlegend=False)
-    return _base(fig, "Valores atípicos (regla de 1.5 RIC)", 360)
+    return _base(fig, "¿Hay valores fuera de lo común?", 360)
 
 
 def correlaciones(df, columnas, etiquetas):
@@ -125,9 +130,11 @@ def correlaciones(df, columnas, etiquetas):
                                colorscale=[[0, OCRE], [0.5, NEUTRO], [1, COBALTO]], texttemplate="%{z:.2f}", textfont=dict(size=10),
                                hovertemplate="%{y} y %{x}<br>r = %{z:.2f}<extra></extra>",
                                colorbar=dict(title="r de Pearson", thickness=10, outlinewidth=0)))
+    n = len(nombres)
+    fig.add_shape(type="rect", x0=-0.5, x1=n - 0.5, y0=n - 1.5, y1=n - 0.5, line=dict(color=TINTA, width=2), fillcolor="rgba(0,0,0,0)")
     fig.update_yaxes(autorange="reversed", showgrid=False, ticks="")
     fig.update_xaxes(showgrid=False, tickangle=-45, ticks="")
-    return _base(fig, "Mural de correlaciones de Pearson", 560)
+    return _base(fig, "¿Qué mediciones van juntas? (correlación de Pearson)", 560)
 
 
 def huella_quimica(df, columnas, etiquetas):
@@ -145,9 +152,9 @@ def huella_quimica(df, columnas, etiquetas):
                                  hovertemplate="%{y}<br>%{x:+.2f} desviaciones estándar<extra></extra>"))
     limite = 1.3 * float(dif.abs().max() or 1)
     fig.add_vline(x=0, line_color=EJE, line_width=1)
-    fig.update_xaxes(title="Diferencia de medias (en desviaciones estándar)", range=[-limite, limite])
+    fig.update_xaxes(title="Diferencia entre vinos buenos y no buenos (en desviaciones estándar)", range=[-limite, limite])
     fig.update_yaxes(categoryorder="array", categoryarray=[etiquetas[c] for c in dif.index], showgrid=False, ticks="")
-    return _base(fig, "Huella química del vino bueno", 440)
+    return _base(fig, "Huella química: en qué se diferencian los vinos buenos", 440)
 
 
 def dispersion(df, x, y, color, etiquetas):
@@ -225,18 +232,22 @@ def barras_modelos(tabla, columna, titulo, eje, resaltar, error=None, formato=".
     return _base(fig, titulo, 60 + 34 * len(t))
 
 
-def costo_exactitud(t, resaltar, cortos):
-    """Tiempo de predicción frente a AUC: cuánto cuesta cada modelo por el desempeño que da."""
-    fig = go.Figure()
-    for destacado, color in ((False, GRIS), (True, COBALTO)):
-        sub = t[(t["modelo"] == resaltar) == destacado]
-        fig.add_trace(go.Scatter(x=sub["prediccion_ms_por_caso"], y=sub["auc_media"], mode="markers+text", text=[cortos[m] for m in sub["modelo"]],
-                                 textposition="top center", textfont=dict(size=12, color=TINTA), cliponaxis=False, customdata=sub[["modelo"]], showlegend=False,
-                                 marker=dict(size=14 if destacado else 11, color=color, line=dict(width=2, color=SUPERFICIE)),
-                                 hovertemplate="%{customdata[0]}<br>AUC %{y:.4f}<br>%{x:.3f} ms por vino<extra></extra>"))
-    fig.update_xaxes(title="Tiempo de predicción (ms por vino, escala logarítmica)", type="log")
-    fig.update_yaxes(title="AUC medio en 25 bloques")
-    return _base(fig, "¿Cuánto cuesta cada punto de AUC?", 400)
+def tiempo_prediccion(t, resaltar, nombres):
+    """Tiempo que tarda cada modelo en evaluar un vino, en el mismo orden de la tabla de líderes (mejor AUC arriba)."""
+    d = t.sort_values("auc_media")
+    y = [nombres.get(m, m) for m in d["modelo"]]
+    ms = d["prediccion_ms_por_caso"]
+    fig = go.Figure(go.Scatter(x=ms, y=y, mode="markers+text", text=[f"{v:.3g} ms" for v in ms], textposition="middle right",
+                               textfont=dict(size=12, color=TINTA_2), cliponaxis=False, customdata=d[["modelo", "auc_media"]],
+                               marker=dict(size=13, color=[COBALTO if m == resaltar else GRIS for m in d["modelo"]],
+                                           line=dict(width=2, color=SUPERFICIE)),
+                               hovertemplate="%{customdata[0]}<br>%{x:.3f} ms por vino<br>AUC %{customdata[1]:.4f}<extra></extra>"))
+    potencias = np.arange(np.floor(np.log10(ms.min())), np.ceil(np.log10(ms.max())) + 1)
+    fig.update_xaxes(title="Milisegundos por vino (cada marca es 10 veces la anterior)", type="log", tickvals=10.0 ** potencias,
+                     ticktext=[f"{10.0 ** k:g}" for k in potencias], range=[potencias[0] - 0.15, potencias[-1] + 0.45])
+    fig.update_yaxes(showgrid=True, ticks="")
+    fig.update_layout(margin=dict(l=170, r=30), showlegend=False)
+    return _base(fig, "¿Cuánto tarda cada modelo en evaluar un vino?", 90 + 30 * len(d))
 
 
 def mural(tabla, filas, columnas, valor, titulo, etiqueta, invertir=False, formato=".3f"):
@@ -289,8 +300,10 @@ def curva_roc(fpr, tpr, auc, nombre):
                              hovertemplate="Falsos positivos: %{x:.2f}<br>Sensibilidad: %{y:.2f}<extra></extra>"))
     fig.add_trace(go.Scatter(x=[None], y=[None], mode="markers", name="Umbral elegido", hoverinfo="skip",
                              marker=dict(size=14, color=OCRE, line=dict(width=2, color=SUPERFICIE))))
-    fig.update_xaxes(title="Tasa de falsos positivos", range=[0, 1])
-    fig.update_yaxes(title="Sensibilidad", range=[0, 1.02])
+    fig.add_annotation(x=0, y=1, text="lo ideal", showarrow=True, arrowhead=2, arrowcolor=TINTA_2, ax=44, ay=26,
+                       font=dict(size=12, color=TINTA_2))
+    fig.update_xaxes(title="Falsas alarmas entre los vinos no buenos", range=[-0.01, 1])
+    fig.update_yaxes(title="Vinos buenos encontrados (sensibilidad)", range=[0, 1.03])
     return _base(fig, f"Curva ROC (AUC {auc:.3f})", 360)
 
 
@@ -301,9 +314,9 @@ def curva_pr(recall, precision, pr_auc, prevalencia):
                              hovertemplate="Sensibilidad: %{x:.2f}<br>Precisión: %{y:.2f}<extra></extra>"))
     fig.add_trace(go.Scatter(x=[None], y=[None], mode="markers", name="Umbral elegido", hoverinfo="skip",
                              marker=dict(size=14, color=OCRE, line=dict(width=2, color=SUPERFICIE))))
-    fig.update_xaxes(title="Sensibilidad", range=[0, 1])
-    fig.update_yaxes(title="Precisión", range=[0, 1.02])
-    return _base(fig, f"Precisión y sensibilidad (PR-AUC {pr_auc:.3f})", 360)
+    fig.update_xaxes(title="Vinos buenos encontrados (sensibilidad)", range=[0, 1])
+    fig.update_yaxes(title="Aciertos entre los marcados (precisión)", range=[0, 1.02])
+    return _base(fig, f"Precisión frente a sensibilidad (PR-AUC {pr_auc:.3f})", 360)
 
 
 def curva_calibracion(curva, nombre):
@@ -312,12 +325,12 @@ def curva_calibracion(curva, nombre):
     fig.add_trace(go.Scatter(x=curva["p_media"], y=curva["frecuencia"], mode="lines+markers", name=nombre, line=dict(color=COBALTO, width=2),
                              marker=dict(size=9, line=dict(width=2, color=SUPERFICIE)), customdata=curva[["n"]],
                              hovertemplate="Probabilidad media: %{x:.2f}<br>Proporción real: %{y:.2f}<br>%{customdata[0]} vinos<extra></extra>"))
-    fig.update_xaxes(title="Probabilidad predicha", range=[0, 1])
+    fig.update_xaxes(title="Probabilidad que dice el modelo", range=[0, 1])
     fig.update_yaxes(title="Proporción real de vinos buenos", range=[0, 1])
-    return _base(fig, "Curva de calibración (10 grupos)", 360)
+    return _base(fig, "¿Se pueden creer sus probabilidades? (curva de calibración)", 360)
 
 
-def importancia_global(tabla, titulo, eje="Media del valor absoluto del aporte SHAP"):
+def importancia_global(tabla, titulo, eje="Peso medio en las predicciones (valor SHAP absoluto)"):
     t = tabla.sort_values("importancia")
     fig = go.Figure(go.Bar(x=t["importancia"], y=t["variable"], orientation="h", marker_color=COBALTO,
                            hovertemplate="%{y}<br>" + eje + ": %{x:.4f}<extra></extra>"))
@@ -336,7 +349,7 @@ def distribucion_nota(niveles, prob):
     return _base(fig, "Nota que espera el modelo original", 300)
 
 
-def diagrama_cd(rangos, cd, resaltar, rival=None, titulo="Diagrama de diferencia crítica (Nemenyi, α = 0.05)"):
+def diagrama_cd(rangos, cd, resaltar, rival=None, titulo="¿Quién empata con el primero? (diagrama de diferencia crítica)"):
     r = rangos.sort_values()
     y = np.arange(len(r))[::-1]
     color = [COBALTO if m == resaltar else (OCRE if m == rival else GRIS) for m in r.index]
@@ -346,20 +359,21 @@ def diagrama_cd(rangos, cd, resaltar, rival=None, titulo="Diagrama de diferencia
     mejor = r.iloc[0]
     fig.add_vrect(x0=mejor, x1=mejor + cd, fillcolor=COBALTO, opacity=0.08, line_width=0)
     fig.add_shape(type="line", x0=mejor, x1=mejor + cd, y0=len(r) - 0.4, y1=len(r) - 0.4, line=dict(color=TINTA, width=2))
-    fig.add_annotation(x=mejor + cd / 2, y=len(r) - 0.1, text=f"CD = {cd:.2f}", showarrow=False, font=dict(color=TINTA_2))
-    fig.update_xaxes(title="Rango medio en los 25 bloques (1 = mejor)", range=[0.5, max(r.max() + 3, mejor + cd + 0.5)])
+    fig.add_annotation(x=mejor + cd / 2, y=len(r) - 0.1, text=f"empate con el primero (CD = {cd:.2f})", showarrow=False,
+                       font=dict(color=TINTA_2))
+    fig.update_xaxes(title="Puesto promedio en los 25 exámenes (1 = mejor)", range=[0.5, max(r.max() + 3, mejor + cd + 0.5)])
     fig.update_yaxes(visible=False, range=[-0.8, len(r) + 0.4])
     return _base(fig, titulo, 90 + 34 * len(r))
 
 
-def cajas_bloques(tab, resaltar, titulo="AUC en cada bloque"):
+def cajas_bloques(tab, resaltar, titulo="AUC de cada modelo en los 25 exámenes"):
     orden = tab.mean().sort_values().index
     fig = go.Figure()
     for m in orden:
         fig.add_trace(go.Box(x=tab[m], name=m, orientation="h", marker_color=COBALTO if m == resaltar else GRIS, boxpoints="all", jitter=0.3,
                              pointpos=0, marker=dict(size=5), line_width=1.5, hovertemplate=m + "<br>AUC %{x:.3f}<extra></extra>"))
     fig.update_layout(showlegend=False)
-    fig.update_xaxes(title="AUC en el pliegue externo")
+    fig.update_xaxes(title="AUC en cada examen (pliegue externo)")
     fig.update_yaxes(showgrid=False, ticks="")
     return _base(fig, titulo, 80 + 38 * len(orden))
 

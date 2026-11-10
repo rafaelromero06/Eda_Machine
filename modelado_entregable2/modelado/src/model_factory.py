@@ -10,30 +10,22 @@ from xgboost import XGBClassifier, XGBRegressor
 
 from .config import RANDOM_STATE
 
-# =============================================================================
-# ESPACIOS DE BÚSQUEDA -- CLASIFICACIÓN
-# =============================================================================
 ESPACIOS_CLASIFICACION = {
     "KNN": {
         "estimator": KNeighborsClassifier(),
         "space": {
-            # sqrt(5320) ~= 73; se explora un rango amplio por debajo de eso
             "n_neighbors": {"type": "int", "low": 3, "high": 41, "log": False},
             "weights": {"type": "categorical", "categories": ["uniform", "distance"]},
-            "p": {"type": "categorical", "categories": [1, 2]},  # Manhattan vs Euclídea
+            "p": {"type": "categorical", "categories": [1, 2]},
         },
     },
     "Naive Bayes": {
         "estimator": GaussianNB(),
         "space": {
-            # var_smoothing es un factor multiplicativo de la varianza más
-            # grande observada; rango log típico recomendado por sklearn docs
             "var_smoothing": {"type": "float", "low": 1e-11, "high": 1e-5, "log": True},
         },
     },
     "Regresión Logística (L1/L2)": {
-        # solver="liblinear" soporta l1 y l2 con un solo solver (necesario
-        # para poder tratar "penalty" como un hiperparámetro buscable)
         "estimator": LogisticRegression(max_iter=5000, solver="liblinear",
                                          random_state=RANDOM_STATE),
         "space": {
@@ -50,14 +42,6 @@ ESPACIOS_CLASIFICACION = {
         },
     },
     "Random Forest": {
-        # n_jobs=1 en el estimador: el paralelismo se maneja a nivel de
-        # tarea (ver config.N_WORKERS) para no anidar pools de procesos.
-        # n_estimators en [100, 500]: la curva de error de un RF sobre
-        # ~5300 filas se aplana bastante antes de 500 árboles, así que el
-        # tope cubre la zona útil sin gastar cómputo en árboles que ya no
-        # mejoran el modelo. (En la primera corrida, hecha en un entorno de
-        # 1 solo núcleo, el tope se bajó a 200 porque RF era ~73% del
-        # tiempo total; con varios núcleos se restituye el rango completo.)
         "estimator": RandomForestClassifier(random_state=RANDOM_STATE, n_jobs=1),
         "space": {
             "n_estimators": {"type": "int", "low": 100, "high": 500, "log": False},
@@ -78,10 +62,6 @@ ESPACIOS_CLASIFICACION = {
         },
     },
     "SVM": {
-        # probability=False: decision_function alcanza para ROC-AUC y es
-        # mucho más barato. probability=True/CalibratedClassifierCV se usa
-        # aparte, solo para el análisis de calibración ,
-        # donde precisamente se espera que SVM salga mal calibrado.
         "estimator": SVC(kernel="rbf", probability=False, random_state=RANDOM_STATE),
         "space": {
             "C": {"type": "float", "low": 1e-2, "high": 1e2, "log": True},
@@ -90,9 +70,6 @@ ESPACIOS_CLASIFICACION = {
     },
 }
 
-# =============================================================================
-# ESPACIOS DE BÚSQUEDA -- REGRESIÓN
-# =============================================================================
 ESPACIOS_REGRESION = {
     "KNN": {
         "estimator": KNeighborsRegressor(),
@@ -122,8 +99,6 @@ ESPACIOS_REGRESION = {
         },
     },
     "Random Forest": {
-        # Ver justificación del rango de n_estimators en la versión de
-        # clasificación de este mismo diccionario, arriba.
         "estimator": RandomForestRegressor(random_state=RANDOM_STATE, n_jobs=1),
         "space": {
             "n_estimators": {"type": "int", "low": 100, "high": 500, "log": False},

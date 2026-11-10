@@ -29,24 +29,18 @@ class ResultadoOptimizacion:
     mejor_estimador: object
     mejores_hiperparametros: dict
     mejor_score_interno: float
-    historia: list            # mejor score visto hasta la evaluación i (anytime performance)
+    historia: list
     n_evaluaciones: int
     tiempo_segundos: float
     extra: dict = field(default_factory=dict)
 
 
-# =============================================================================
-# Adaptadores: espacio canónico -> formato específico de cada método
-# =============================================================================
 def _valores_continuos(spec: dict, n_puntos: int) -> list:
     low, high = spec["low"], spec["high"]
     vals = np.geomspace(low, high, n_puntos) if spec["log"] else np.linspace(low, high, n_puntos)
     if spec["type"] == "int":
         vals = sorted({int(round(v)) for v in vals})
     else:
-        # redondeo a 6 cifras SIGNIFICATIVAS (no decimales): con round(v, 8)
-        # valores como var_smoothing=1e-11 colapsaban a 0.0 y la grilla
-        # quedaba con puntos repetidos y fuera del rango declarado
         vals = sorted({float(f"{float(v):.6g}") for v in vals})
     return vals
 
@@ -103,7 +97,7 @@ def espacio_a_distribuciones(space: dict) -> dict:
         elif spec["type"] == "float":
             dist[nombre] = (loguniform(spec["low"], spec["high"]) if spec["log"]
                              else uniform(spec["low"], spec["high"] - spec["low"]))
-        else:  # int
+        else:
             dist[nombre] = (_LogUniformInt(spec["low"], spec["high"]) if spec["log"]
                              else randint(spec["low"], spec["high"] + 1))
     return dist
@@ -133,9 +127,6 @@ def _prefijar(d: dict) -> dict:
     return {f"modelo__{k}": v for k, v in d.items()}
 
 
-# =============================================================================
-# 1 GRID SEARCH
-# =============================================================================
 def buscar_grid(pipe, space, X, y, cv_inner, scoring, seed, presupuesto=16, n_jobs=config.N_JOBS) -> ResultadoOptimizacion:
     t0 = time.time()
     grid = espacio_a_grid(space, presupuesto=presupuesto)
@@ -156,9 +147,6 @@ def buscar_grid(pipe, space, X, y, cv_inner, scoring, seed, presupuesto=16, n_jo
     )
 
 
-# =============================================================================
-# 2 RANDOM SEARCH
-# =============================================================================
 def buscar_random(pipe, space, X, y, cv_inner, scoring, seed, presupuesto=16, n_jobs=config.N_JOBS) -> ResultadoOptimizacion:
     t0 = time.time()
     dist = espacio_a_distribuciones(space)
@@ -180,9 +168,6 @@ def buscar_random(pipe, space, X, y, cv_inner, scoring, seed, presupuesto=16, n_
     )
 
 
-# =============================================================================
-# 3 OPTIMIZACIÓN BAYESIANA 
-# =============================================================================
 def buscar_bayesiano(pipe, space, X, y, cv_inner, scoring, seed, presupuesto=16, n_jobs=config.N_JOBS) -> ResultadoOptimizacion:
     t0 = time.time()
 
@@ -223,9 +208,6 @@ def buscar_bayesiano(pipe, space, X, y, cv_inner, scoring, seed, presupuesto=16,
     )
 
 
-# =============================================================================
-# 4) ALGORITMO GENÉTICO 
-# =============================================================================
 def _diversidad_poblacion(poblacion) -> float:
     """Entropía de Shannon normalizada, promediada por gen, como indicador
     de diversidad genética (1 = máxima dispersión, 0 = población idéntica)."""
@@ -242,13 +224,8 @@ def _diversidad_poblacion(poblacion) -> float:
 
 def buscar_genetico(pipe, space, X, y, cv_inner, scoring, seed, presupuesto=16, n_jobs=config.N_JOBS) -> ResultadoOptimizacion:
     t0 = time.time()
-    random.seed(seed)  # semilla global: DEAP usa random.* internamente, no acepta un RNG propio
+    random.seed(seed)
 
-    # Discretización de los genes continuos: se parte de GA_N_ALELOS valores
-    # por gen y se duplica mientras el espacio discreto total sea más chico
-    # que 2x el presupuesto. Sin esto, en modelos de un solo hiperparámetro
-    # (Naive Bayes, Ridge, Lasso) el GA solo tendría 8 configuraciones
-    # posibles y no podría gastar un presupuesto de 40 evaluaciones.
     n_alelos = GA_N_ALELOS
     genes = espacio_a_genetico(space, n_alelos=n_alelos)
     hay_continuos = any(spec["type"] != "categorical" for spec in space.values())
@@ -276,8 +253,6 @@ def buscar_genetico(pipe, space, X, y, cv_inner, scoring, seed, presupuesto=16, 
         if clave in cache:
             return (cache[clave],)
         if len(historial_evals) >= presupuesto_real:
-            # presupuesto agotado: el individuo no se evalúa y queda con el
-            # peor fitness posible (no puede desplazar a la élite)
             return (-np.inf,)
         params = decodificar(ind)
         modelo = clone(pipe).set_params(**_prefijar(params))
@@ -331,12 +306,6 @@ def buscar_genetico(pipe, space, X, y, cv_inner, scoring, seed, presupuesto=16, 
                 toolbox.mutate(mut)
                 del mut.fitness.values
 
-        # Eliminación de duplicados: si un hijo es idéntico a una
-        # configuración ya evaluada, se le fuerza a cambiar un gen al azar
-        # (hasta 10 intentos). Sin esto, con poblaciones pequeñas la
-        # población converge rápido y las generaciones siguientes solo
-        # producen copias ya evaluadas -> el GA deja de explorar y no llega
-        # a gastar su presupuesto de evaluaciones.
         for ind in descendencia:
             intentos = 0
             while (tuple(ind) in cache and intentos < 10

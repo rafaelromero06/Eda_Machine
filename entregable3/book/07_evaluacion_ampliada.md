@@ -97,7 +97,7 @@ plt.close(fig)
 AUC del BOF al mover un hiperparámetro y dejar los demás en sus valores finales (banda: ± 1 error estándar entre pliegues). La línea naranja es el mejor benchmark con sus hiperparámetros finales en los mismos pliegues: por encima de ella el BOF conserva su ventaja. Si el mejor benchmark no es Random Forest, la línea gris discontinua marca a Random Forest, la referencia que fija el protocolo.
 ```
 
-PENDIENTE: lectura de la sensibilidad.
+El BOF es poco sensible a sus tres hiperparámetros propios: al mover el ancho de agregación, el ancho de partición o el desplazamiento, el AUC se mantiene entre 0.855 y 0.860, un intervalo más estrecho que el error estándar entre pliegues. Los valores extremos son informativos: con ancho de agregación 0 (solo el umbral del evento) el AUC es 0.8555 y sube a 0.8588 con ancho 1.5, lo que indica que combinar los umbrales vecinos aporta; con ancho de partición 0 (partición binaria) baja a 0.8554. Los hiperparámetros heredados de los bosques pesan más: el AUC cae a 0.839 con 20 casos por hoja y sube de 0.851 a 0.859 al pasar de 25 a 300 árboles. El mejor valor de la rejilla (0.8665) aparece con `max_features = sqrt`, por encima del valor que eligió la búsqueda (todas las variables, 0.8588); la diferencia es menor que la variación entre pliegues, pero señala que la búsqueda bayesiana de 40 evaluaciones no encontró el óptimo de este hiperparámetro. Con los hiperparámetros finales y en estos 5 pliegues, el BOF (0.8588) queda por debajo de CatBoost (0.8620) y de Random Forest (0.8605): la ventaja medida en la validación anidada no se conserva en esta comparación, y solo 5 de las 42 variaciones superan a Random Forest.
 
 ## Estabilidad por semilla
 
@@ -127,7 +127,7 @@ glue("de_bof", f"{de[ORIGINAL]:.4f}", display=False)
 AUC de los modelos con componentes aleatorios al cambiar su semilla (10 semillas, mismas particiones). La desviación estándar entre semillas del BOF es {glue:text}`de_bof`.
 ```
 
-PENDIENTE: comparar la variación por semilla con la variación entre particiones ({numref}`fig-cd`).
+La semilla casi no cambia el resultado: la desviación estándar entre 10 semillas es de 0.0006 en el BOF, 0.0005 en Random Forest y 0.0007 en CatBoost, unas veinte veces menor que la desviación entre particiones ({numref}`fig-cd`, cerca de 0.012). La incertidumbre de la comparación proviene, por tanto, de qué vinos caen en cada pliegue y no del azar interno de los algoritmos. Los intervalos de las 10 semillas del BOF (0.858 a 0.860) y de CatBoost (0.861 a 0.863) no se solapan en estos pliegues, a favor de CatBoost.
 
 ## Ruido y valores atípicos
 
@@ -158,7 +158,7 @@ plt.close(fig)
 AUC al contaminar las variables (entrenamiento y prueba), las notas del entrenamiento o al agregar atípicos al entrenamiento. Azul: BOF; naranja: mejor benchmark; gris: el resto.
 ```
 
-PENDIENTE: lectura del ruido (en particular, el ruido en la nota afecta directamente la información que usa el BOF).
+El ruido en las variables es el que más daña y lo hace por igual en todos los modelos fuertes: con σ = 0.25 el BOF pierde 0.025 de AUC, CatBoost 0.027 y Random Forest 0.030, y con σ = 0.5 los tres caen cerca de 0.052 a 0.055. El ruido en la nota era el riesgo específico del BOF, porque usa la nota completa y no solo la etiqueta binaria; sin embargo, es el que menos pierde: 0.0003 con el 10 % de las notas alteradas y 0.005 con el 20 %, frente a 0.007 de CatBoost y 0.010 de Random Forest. Una explicación probable es que mover una nota un punto solo cambia uno de los seis indicadores acumulados que aprende el BOF, mientras que en un modelo binario puede invertir la etiqueta completa. Los valores atípicos en el entrenamiento no afectan a ningún modelo de árboles (cambios menores que 0.005).
 
 ## Tamaño de muestra y escalabilidad
 
@@ -197,7 +197,7 @@ plt.close(fig)
 Izquierda: AUC con el 10, 25, 50 y 100 % del entrenamiento (submuestras estratificadas). Derecha: tiempo de ajuste con los hiperparámetros finales al variar n (un solo proceso).
 ```
 
-PENDIENTE: lectura de la curva de aprendizaje y del costo.
+Con pocos datos el BOF es el mejor de los tres modelos fuertes: con el 10 % del entrenamiento alcanza un AUC de 0.823, frente a 0.811 de Random Forest y 0.808 de CatBoost, y con el 25 % empata con CatBoost (0.836). Con el 50 % y el 100 % CatBoost pasa adelante (0.849 y 0.862 frente a 0.845 y 0.859). Las tres curvas siguen subiendo al llegar al 100 %, de modo que más vinos mejorarían a todos. El costo es la debilidad del BOF: ajustar los 5320 vinos tarda 11.9 s, frente a 2.3 s de Random Forest, y crece más rápido que linealmente con n (de 0.7 s con 500 vinos a 11.9 s con 5320), porque los árboles crecen hasta hojas puras sobre una implementación en numpy sin compilar. Al cuadruplicar el número de variables su tiempo se multiplica por 3, menos que el de CatBoost (por 6). La predicción tarda 0.12 ms por vino en este estudio, y el ajuste alcanza un pico de 424 MB de memoria, el mayor de los 10 modelos.
 
 ## Cambio de distribución
 
@@ -212,7 +212,7 @@ t.index.name = "Modelo"
 mostrar(t.reset_index(), {c: "{:.4f}" for c in t.columns})
 ```
 
-PENDIENTE: lectura del cambio de distribución.
+Es el resultado más favorable al BOF. Entrenado solo con tintos y evaluado en blancos obtiene un AUC de 0.781, y en la dirección contraria 0.810, frente a 0.746 y 0.745 de CatBoost y 0.750 y 0.751 de Random Forest. Solo la regresión logística lo supera (0.784 y 0.843), como cabe esperar de un modelo lineal cuando cambia la población. Los modelos fuertes pierden entre 0.05 y 0.12 respecto a su AUC dentro de la misma población, lo que confirma que tintos y blancos no son intercambiables y que el modelo no debe aplicarse a otro tipo de vino sin reentrenarlo. Una explicación probable de la ventaja del BOF es que aprender toda la escala de la nota impone una estructura más regular que la frontera binaria, y esa estructura se transfiere mejor.
 
 (sec-calibracion)=
 ## Calibración y reglas de puntuación
@@ -248,7 +248,7 @@ mostrar(cal.rename(columns={"modelo": "Modelo", "ece": "ECE", "brier": "Brier", 
                                                                   "Prevalencia real": "{:.3f}"})
 ```
 
-PENDIENTE: lectura de la calibración.
+El BOF y Random Forest son los modelos mejor calibrados entre los fuertes: su ECE es de 0.013 y su probabilidad media (0.190 y 0.186) coincide con la prevalencia real (0.190). KNN tiene un ECE similar (0.012), con peor Brier. Los métodos de *boosting* sobrestiman: CatBoost predice en promedio 0.226 (ECE de 0.042) y XGBoost 0.256 (ECE de 0.067), consecuencia de la ponderación de clases y del sobremuestreo con que se entrenaron. El BOF tiene además el menor puntaje de Brier (0.108) y la menor log-pérdida (0.339). La calibración del BOF proviene del ajuste de Platt con los casos fuera de bolsa: la ablación muestra que sin ese paso el AUC no cambia, pero el Brier sube de 0.108 a 0.139.
 
 ## Cuantificación de la incertidumbre: conjuntos conformes
 
@@ -263,7 +263,7 @@ t.index.name = "Modelo"
 mostrar(t.reset_index(), {c: "{:.3f}" for c in t.columns})
 ```
 
-Los conjuntos conformes por partición {cite:p}`angelopoulos2023` usan el 75 % del entrenamiento externo para ajustar y el 25 % para calibrar el umbral de no conformidad; la cobertura se mide en la prueba externa. Con nivel nominal del 90 % y del 95 %, la cobertura empírica debe quedar cerca de esos valores; el tamaño medio dice cuántas veces el conjunto contiene las dos clases (el modelo no decide). PENDIENTE: lectura, incluida la cobertura por clase (Mondrian).
+Los conjuntos conformes por partición {cite:p}`angelopoulos2023` usan el 75 % del entrenamiento externo para ajustar y el 25 % para calibrar el umbral de no conformidad; la cobertura se mide en la prueba externa. Con nivel nominal del 90 % y del 95 %, la cobertura empírica debe quedar cerca de esos valores; el tamaño medio dice cuántas veces el conjunto contiene las dos clases (el modelo no decide). La cobertura marginal se cumple en todos los modelos: con nivel nominal del 90 % el BOF cubre el 90.2 % de los vinos y con el 95 %, el 95.4 %, con conjuntos de 1.15 y 1.32 clases en promedio. Pero la cobertura marginal oculta un desequilibrio: con el 90 % nominal, los conjuntos del BOF contienen la clase correcta en el 98.1 % de los vinos no buenos y solo en el 56.4 % de los buenos (52.7 % en Random Forest y 80.5 % en CatBoost). La garantía se cumple en promedio a costa de la clase minoritaria, que es la que interesa. La variante por clase (Mondrian) lo corrige: la cobertura queda en 90.1 % y 91.5 % para cada clase, a cambio de conjuntos más grandes (1.31 clases en promedio), es decir, de que el modelo se abstenga de decidir con más frecuencia. El dashboard muestra la variante marginal junto con su cobertura empírica.
 
 ## Análisis de errores
 
@@ -294,7 +294,7 @@ glue("solo_rf", solo_rf, display=False)
 glue("mcnemar_p", p_texto(binomtest(solo_bof, solo_bof + solo_rf).pvalue if solo_bof + solo_rf else 1.0), display=False)
 ```
 
-La segunda tabla usa la regla de decisión de una bodega que solo cata el 20 % de vinos con mayor puntaje: un modelo acierta con un vino bueno si lo deja en ese 20 % y con uno no bueno si lo deja fuera. En {glue:text}`solo_bof` vinos acierta solo el BOF y en {glue:text}`solo_rf` solo Random Forest (prueba exacta de McNemar, p = {glue:text}`mcnemar_p`). PENDIENTE: dónde falla el BOF y dónde no supera a los benchmarks.
+La segunda tabla usa la regla de decisión de una bodega que solo cata el 20 % de vinos con mayor puntaje: un modelo acierta con un vino bueno si lo deja en ese 20 % y con uno no bueno si lo deja fuera. En {glue:text}`solo_bof` vinos acierta solo el BOF y en {glue:text}`solo_rf` solo Random Forest (prueba exacta de McNemar, p = {glue:text}`mcnemar_p`). La diferencia no es significativa: con esa regla de decisión los dos bosques se equivocan en vinos distintos, pero en cantidades parecidas. El BOF falla donde fallan todos: su AUC baja a 0.750 en los vinos de alcohol alto y a 0.779 en la frontera de las notas 6 y 7, que reúne al 60 % de los vinos. En esa frontera no supera a Random Forest (0.780), y entre los tintos empatan (0.884); su ventaja se concentra en los blancos (0.855 frente a 0.850) y en los vinos de alcohol bajo y medio. La probabilidad media por nota muestra el mecanismo: el BOF asigna más probabilidad que Random Forest a los vinos de 7, 8 y 9 (0.42, 0.51 y 0.60 frente a 0.40, 0.45 y 0.53) y menos a los de 3 y 4, pero también algo más a los de 6 (0.195 frente a 0.190). Usar la nota completa ordena mejor los extremos de la escala y no resuelve la confusión entre 6 y 7, que es donde se decide el evento. La causa probable es que esas dos notas apenas difieren en su química y que la nota, mediana de pocos catadores, tiene un ruido comparable a esa diferencia.
 
 (sec-interpretabilidad)=
 ## Interpretabilidad: SHAP del modelo original frente al mejor benchmark
@@ -330,4 +330,4 @@ glue("rho_shap", f"{spearmanr(piv[ORIGINAL], piv[mejor]).statistic:.2f}", displa
 Importancia SHAP global (media del valor absoluto del aporte, normalizada) del BOF, del mejor benchmark y de Random Forest, calculada sobre los mismos 300 vinos. El BOF se explica con un `TreeExplainer` exacto sobre sus propios árboles (`src/explicaciones.py::arboles_bof`).
 ```
 
-La correlación de Spearman entre la importancia de las variables del BOF y la del mejor benchmark ({glue:text}`mejor_shap`) es {glue:text}`rho_shap`. PENDIENTE: lectura.
+La correlación de Spearman entre la importancia de las variables del BOF y la del mejor benchmark ({glue:text}`mejor_shap`) es {glue:text}`rho_shap`. Los tres modelos coinciden en la variable principal, el alcohol, y la acidez volátil es la segunda en el BOF y en CatBoost, pero el BOF concentra más su explicación: el alcohol reúne el 39 % de su importancia, frente al 27 % en CatBoost y el 23 % en Random Forest, que reparten más peso entre la densidad, los cloruros y el SO₂ total. Como la densidad depende sobre todo del alcohol y del azúcar, los modelos distribuyen de forma distinta una misma información entre variables correlacionadas; la importancia SHAP describe cómo decide cada modelo, no un efecto causal de cada variable sobre la nota.

@@ -17,8 +17,6 @@ def combinaciones_clasificacion():
 
 
 def combinaciones_regresion():
-    # "no_aplica" en la columna balanceo, consistente con la Sección 2:
-    # el balanceo de clases se omite por completo en regresión.
     return [(m, "no_aplica", o) for m in ESPACIOS_REGRESION for o in OPTIMIZADORES]
 
 
@@ -49,5 +47,5 @@ def main():
     print(f"\n=== FIN {time.strftime('%Y-%m-%d %H:%M:%S')} ===", flush=True)
 
 
-if __name__ == "__main__":  # obligatorio en Windows para usar varios procesos
+if __name__ == "__main__":
     main()
