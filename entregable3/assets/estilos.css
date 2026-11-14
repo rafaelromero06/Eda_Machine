@@ -2895,9 +2895,22 @@ abbr[title] {
   right: calc(50% + var(--v) * 38% + 4px);
 }
 
+.matriz {
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr) minmax(0, 1fr);
+}
+
 .matriz > div {
   min-width: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+}
+
+.matriz .celda {
+  font-size: 0.8rem;
+  line-height: 1.25;
+}
+
+.rc-slider-mark-text {
+  white-space: nowrap;
 }
 
 @media (max-width: 767.98px) {

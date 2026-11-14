@@ -347,7 +347,7 @@ def tab_diagnostico():
                    marks={0.1: "10 %", 0.3: "30 %", 0.5: "50 %", 0.7: "70 %", 0.9: "90 %"}),
         html.Div(id="dec-umbral-texto", className="small text-secondary mb-2"),
         dbc.Row([
-            dbc.Col(html.Div(id="mosaico", className="mosaico", role="img", **{"aria-label": "Cien vinos clasificados con el umbral elegido"}), sm=6),
+            dbc.Col(html.Div(id="mosaico", className="mosaico", role="img", **{"aria-label": "Cien vinos clasificados con el umbral elegido"}), sm=5),
             dbc.Col([
                 html.Div("De cada 100 vinos", className="matriz-titulo"),
                 html.Div([html.Div(), html.Div("El modelo dice «bueno»", className="rotulo"), html.Div("El modelo dice «no bueno»", className="rotulo"),
@@ -359,7 +359,7 @@ def tab_diagnostico():
                           html.Div([html.Strong(id="dec-vn"), "bien descartados"], className="celda")], className="matriz", role="table",
                          **{"aria-label": "Matriz de confusión por cada 100 vinos"}),
                 html.Div(id="dec-detalle", className="small text-secondary mt-2"),
-            ], sm=6),
+            ], sm=7),
         ]),
         html.Div([html.Div([html.Strong(id="dec-precision"), html.Span(["de los que marca como buenos lo son (", termino("precisión"), ")"])], className="metrica-mini"),
                   html.Div([html.Strong(id="dec-sensibilidad"), html.Span(["de los vinos buenos, encontrados (", termino("sensibilidad"), ")"])], className="metrica-mini"),
